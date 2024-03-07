@@ -1,4 +1,4 @@
-# Project Title
+# Utilizing Large Language Models for Causal Discovery and Legal Text Interpretation: A Case Study on the German GoZ
 This is the source code to "Utilizing Large Language Models for Causal Discovery and Legal Text Interpretation: A Case Study on the German GoZ"   
 
 The project is split into two parts. The first part is in [causal_discovery](causal_discovery) where preliminary experiments were conducted.
