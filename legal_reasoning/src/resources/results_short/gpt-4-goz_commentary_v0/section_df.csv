@@ -1,0 +1,566 @@
+,section,content,reference,extr_ref_calls,extr_ref_prompt_tokens,extr_ref_completion_tokens,extr_ref_total_cost,parsed_references,section_letter,commentary,rule,extr_rules_calls,extr_rules_prompt_tokens,extr_rules_completion_tokens,extr_rules_total_cost,llm_response,query,llm_inputs,llm_calls,prompt_tokens,completion_tokens,total_cost,parsed_code,correction_count
+0,A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",A,"A Allgemeine zahnärztliche Leistungen
+Allgemeine Bestimmungen Teil A Kommentar zur Leistungsbeschreibung
+Die Berechnung einer Beratungsgebühr ist auf
+1. den Behandlungsfall begrenzt.
+Eine Beratungsgebühr nach der Nummer 1 des Werden nach der ersten Beratung im Behand-
+Gebührenverzeichnisses für ärztliche Leistungen - lungsfall weitere Beratungen zusammen mit einer
+Anlage zur Gebührenordnung für Ärzte in der am weiteren Leistung des Gebührenverzeichnisses in
+[Datum des Inkrafttretens der GOZ-Novelle] gel- einer folgenden Sitzung erbracht, sind diese Bera-
+tenden Fassung - darf im Behandlungsfall nur ein- tungen nicht gesondert berechnungsfähig, son-
+mal zusammen mit einer Gebühr für eine Leistung dern mit der ersten Beratung abgegolten. Dies gilt
+nach diesem Gebührenverzeichnis und für eine nur insoweit, bis der Behandlungsfall beendet ist.
+Leistung aus den Abschnitten C bis O des Gebüh- Überdauert eine Erkrankung einen Zeitraum von
+renverzeichnisses für ärztliche Leistungen berech- einem Monat, beginnt gebührenrechtlich ein
+net werden. neuer Behandlungsfall, der die erneute Berech-
+Eine Beratungsgebühr nach der Nummer 3 des nung einer Beratung zulässt. Tritt innerhalb des
+Gebührenverzeichnisses für ärztliche Leistungen ist Zeitraums von einem Monat nach Beginn der ers-
+nur berechnungsfähig als einzige Leistung oder im ten Erkrankung eine neue Erkrankung ein, zählt
+Zusammenhang mit einer Untersuchung nach der diese als neuer Behandlungsfall, sodass dann
+Nummer 0010 oder einer Untersuchung nach den auch nach weniger als einem Monat seit der ers-
+Nummern 5 oder 6 des Gebührenverzeichnisses ten Beratung eine erneute Beratung berechnet
+für ärztliche Leistungen. Andere weitere Leistun- werden kann.
+gen dürfen neben der Leistung nach der Nummer Die Einschränkungen zur Berechnung der Bera-
+3 nicht berechnet werden. tung gelten immer nur, sofern eine weitere Leis-
+Als Behandlungsfall gilt für die Behandlung dersel- tung aus den Gebührenverzeichnissen zu der
+ben Erkrankung der Zeitraum eines Monats nach Beratung hinzutritt. Sofern die Beratung als allei-
+der jeweils ersten Inanspruchnahme des Zahnarztes. nige Leistung erbracht wird, ist sie unabhängig
+von den genannten Einschränkungen immer be-
+2. rechnungsfähig.
+Das bei Leistungen nach diesem Gebührenver-
+zeichnis verwendete Abformungsmaterial ist ge- Die Beratungsgebühr nach Nummer Ä3 kann nur
+sondert berechnungsfähig. dann mit einer anderen Leistung in derselben Sit-
+zung berechnet werden, wenn es sich um eine
+3. Untersuchungsleistung nach den Nummern 0010
+Material- und Laborkosten im Sinne dieses Gebüh- (GOZ) oder 5 oder 6 (GOÄ) handelt. Im Übrigen
+renverzeichnisses umfassen Praxiskosten nach § 4 gelten die Abrechnungsbestimmungen zur GOÄ
+Abs. 3 und Auslagen für zahntechnische Leistun- 3 - Mindestdauer 10 Minuten - auf Grund der Ge-
+gen nach § 9 dieser Gebührenordnung. neralvorschrift des § 6 Absatz 2 GOZ auch für die
+Anwendung der GOÄ 3 durch Zahnärzte.
+Als Abformungsmaterial sind alle Materialien zu ver-
+stehen, die die Oberflächen von Hartsubstanzen
+oder von Weichgeweben im Mund wiedergeben.
+<<
+Inhalt Die Höhe der Kosten ist vom Zahnarzt auf der
+Grundlage der Beschaffungskosten und auf-
+grund des Verbrauchs im individuellen Einzelfall
+festzulegen.
+36
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeichnisses für ärztliche Leistungen darf im Behandlungsfall nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.,1,1004,335,0.0,"---
+Rule 1:
+Thoughts: This rule states that a consultation fee under number 1 of the fee schedule for medical services can only be charged once per treatment case, along with a fee for a service from this fee schedule and a service from sections C to O of the fee schedule for medical services. In the context of the given invoice schema, this means that a service with the service number 1 can only appear once in the list of services for a given invoice. If it appears more than once, the invoice is invalid.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Service, (member(service(Service, _, _, _, _, _, _, _), Services), Service = 1), Consultations),
+    length(Consultations, Count),
+    Count > 1,
+    print('Invalid invoice: Consultation fee under number 1 of the fee schedule for medical services charged more than once.'),
+    true.
+```
+---
+Rule 2:
+Thoughts: This rule states that a consultation fee under number 3 of the fee schedule for medical services can only be charged as the only service or in conjunction with an examination under number 0010 or an examination under numbers 5 or 6 of the fee schedule for medical services. No other services may be charged alongside the service under number 3. In the context of the given invoice schema, this means that if a service with the service number 3 appears in the list of services for a given invoice, no other services can appear in the list, except for services with the service numbers 0010, 5, or 6.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(3, _, _, _, _, _, _, _), Services),
+    findall(Service, (member(service(Service, _, _, _, _, _, _, _), Services), Service \= 3, Service \= 0010, Service \= 5, Service \= 6), OtherServices),
+    length(OtherServices, Count),
+    Count > 0,
+    print('Invalid invoice: Consultation fee under number 3 of the fee schedule for medical services charged alongside other services not under numbers 0010, 5, or 6.'),
+    true.
+```
+---
+Rule 3:
+Thoughts: This rule states that a treatment case is considered to be the treatment of the same disease over a period of one month after the first consultation with the dentist. This rule is not directly translatable into Prolog code given the current invoice schema, as the schema does not include information about the disease being treated or the duration of the treatment.
+
+Translation:
+```prolog
+```
+---
+Rule 4:
+Thoughts: This rule states that the impression material used for services according to this fee schedule is separately chargeable. This rule is not directly translatable into Prolog code given the current invoice schema, as the schema does not include information about the use of impression material.
+
+Translation:
+```prolog
+```
+---
+Rule 5:
+Thoughts: This rule states that material and laboratory costs in the sense of this fee schedule include practice costs according to § 4 paragraph 3 and expenses for dental technical services according to § 9 of this fee schedule. This rule is not directly translatable into Prolog code given the current invoice schema, as the schema does not include information about the breakdown of material and laboratory costs.
+
+Translation:
+```prolog
+```",,"Given this rules from the german GOZ:
+---
+Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeichnisses für ärztliche Leistungen darf im Behandlungsfall nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+---
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung oder im Zusammenhang mit einer Untersuchung nach der Nummer 0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Gebührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistungen dürfen neben der Leistung nach der Nummer 3 nicht berechnet werden.
+---
+Als Behandlungsfall gilt für die Behandlung derselben Erkrankung der Zeitraum eines Monats nach der jeweils ersten Inanspruchnahme des Zahnarztes.
+---
+Das bei Leistungen nach diesem Gebührenverzeichnis verwendete Abformungsmaterial ist gesondert berechnungsfähig.
+---
+Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechnische Leistungen nach § 9 dieser Gebührenordnung.
+---
+
+
+And this invoice schema:
+```prolog
+invoice(
+    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, its point score, the teeth it is applied to, ...
+    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...
+    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    invoice_date(date(Year, Month, Day)),
+    invoice_amount(InvoiceAmount)
+).
+% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100
+% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema
+% Area = 1 -> Right upper jaw
+% Area = 2 -> Left upper jaw
+% Area = 3 -> Left lower jaw
+% Area = 4 -> Right lower jaw
+% Position is exact position of this tooth in its area (from 1 to 8)
+% Example invoice
+invoice(
+    [
+        service(11111, date(2023, 10, 01), 1.0, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),
+        service(11111, date(2023, 10, 01), 1.0, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),
+        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),
+        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])
+    ],
+    [
+        material_cost('§ 4 (1)', date(2023, 10, 02), 1.0, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])
+    ]
+    invoice_date(date(2023, 10, 04),
+    invoice_amount(110.01)
+).
+```
+The 5 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.
+We want to mark invoices as invalid if they do not adhere to those rules.
+Which of those rules can you translate into prolog code given following restriction:
+Only translate the rules as they are, do not include any examples.
+Be as accurate as possible.
+You must be able to exactly define every new predicate based on the given ones.
+Do not make any assumptions which are not given.
+Translate the rules where a translation given the restrictions is possible.
+If you can not translate the ful rule, translate as much as possible, but do not invent something. Maybe you can translate a part of the rule.
+Keep the code as simple as possible.
+To determine if an invoice is correct, use the predicate 
+```prolog
+is_invoice_invalid(Invoice) : -
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),
+    % The corresponding rule (only one rule for each predicate)
+    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.
+    % Keep the code as simple as possible.
+    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice
+    true. % Then the invoice is invalid.
+```
+Use this predicate to check each rule individually. Before you translate a rule, think about it.
+Expected format:
+---
+Rule 1:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+Rule 2:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+... 
+
+When you can not translate leaf the code section empty like this:
+---
+Rule X:
+Thoughts: ...
+Translation:
+```prolog
+```
+---
+
+So you should have a block for each of the 5 given rules at the end.
+For translated rules include print/1 statements, so that the user can see the reason for the invalidity of the invoice.
+When you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).
+I only want to have exactly defined rules.
+First, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.
+
+In the following I will give you some more context text. This text is only intended to help you understand the context in which you are translating the rule.
+Context:
+>>>
+A Allgemeine zahnärztliche Leistungen
+Allgemeine Bestimmungen Teil A Kommentar zur Leistungsbeschreibung
+Die Berechnung einer Beratungsgebühr ist auf
+1. den Behandlungsfall begrenzt.
+Eine Beratungsgebühr nach der Nummer 1 des Werden nach der ersten Beratung im Behand-
+Gebührenverzeichnisses für ärztliche Leistungen - lungsfall weitere Beratungen zusammen mit einer
+Anlage zur Gebührenordnung für Ärzte in der am weiteren Leistung des Gebührenverzeichnisses in
+[Datum des Inkrafttretens der GOZ-Novelle] gel- einer folgenden Sitzung erbracht, sind diese Bera-
+tenden Fassung - darf im Behandlungsfall nur ein- tungen nicht gesondert berechnungsfähig, son-
+mal zusammen mit einer Gebühr für eine Leistung dern mit der ersten Beratung abgegolten. Dies gilt
+nach diesem Gebührenverzeichnis und für eine nur insoweit, bis der Behandlungsfall beendet ist.
+Leistung aus den Abschnitten C bis O des Gebüh- Überdauert eine Erkrankung einen Zeitraum von
+renverzeichnisses für ärztliche Leistungen berech- einem Monat, beginnt gebührenrechtlich ein
+net werden. neuer Behandlungsfall, der die erneute Berech-
+Eine Beratungsgebühr nach der Nummer 3 des nung einer Beratung zulässt. Tritt innerhalb des
+Gebührenverzeichnisses für ärztliche Leistungen ist Zeitraums von einem Monat nach Beginn der ers-
+nur berechnungsfähig als einzige Leistung oder im ten Erkrankung eine neue Erkrankung ein, zählt
+Zusammenhang mit einer Untersuchung nach der diese als neuer Behandlungsfall, sodass dann
+Nummer 0010 oder einer Untersuchung nach den auch nach weniger als einem Monat seit der ers-
+Nummern 5 oder 6 des Gebührenverzeichnisses ten Beratung eine erneute Beratung berechnet
+für ärztliche Leistungen. Andere weitere Leistun- werden kann.
+gen dürfen neben der Leistung nach der Nummer Die Einschränkungen zur Berechnung der Bera-
+3 nicht berechnet werden. tung gelten immer nur, sofern eine weitere Leis-
+Als Behandlungsfall gilt für die Behandlung dersel- tung aus den Gebührenverzeichnissen zu der
+ben Erkrankung der Zeitraum eines Monats nach Beratung hinzutritt. Sofern die Beratung als allei-
+der jeweils ersten Inanspruchnahme des Zahnarztes. nige Leistung erbracht wird, ist sie unabhängig
+von den genannten Einschränkungen immer be-
+2. rechnungsfähig.
+Das bei Leistungen nach diesem Gebührenver-
+zeichnis verwendete Abformungsmaterial ist ge- Die Beratungsgebühr nach Nummer Ä3 kann nur
+sondert berechnungsfähig. dann mit einer anderen Leistung in derselben Sit-
+zung berechnet werden, wenn es sich um eine
+3. Untersuchungsleistung nach den Nummern 0010
+Material- und Laborkosten im Sinne dieses Gebüh- (GOZ) oder 5 oder 6 (GOÄ) handelt. Im Übrigen
+renverzeichnisses umfassen Praxiskosten nach § 4 gelten die Abrechnungsbestimmungen zur GOÄ
+Abs. 3 und Auslagen für zahntechnische Leistun- 3 - Mindestdauer 10 Minuten - auf Grund der Ge-
+gen nach § 9 dieser Gebührenordnung. neralvorschrift des § 6 Absatz 2 GOZ auch für die
+Anwendung der GOÄ 3 durch Zahnärzte.
+Als Abformungsmaterial sind alle Materialien zu ver-
+stehen, die die Oberflächen von Hartsubstanzen
+oder von Weichgeweben im Mund wiedergeben.
+<<
+Inhalt Die Höhe der Kosten ist vom Zahnarzt auf der
+Grundlage der Beschaffungskosten und auf-
+grund des Verbrauchs im individuellen Einzelfall
+festzulegen.
+36
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014
+>>>
+
+The rules references some already translated section.
+As references for you, here are the translations of the referenced sections:
+
+",1.0,2616.0,725.0,0.12197999999999999,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Service, (member(service(Service, _, _, _, _, _, _, _), Services), Service = 1), Consultations),
+    length(Consultations, Count),
+    Count > 1,
+    print('Invalid invoice: Consultation fee under number 1 of the fee schedule for medical services charged more than once.'),
+    true.
+",0.0
+1,A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",A,"A Allgemeine zahnärztliche Leistungen
+Allgemeine Bestimmungen Teil A Kommentar zur Leistungsbeschreibung
+Die Berechnung einer Beratungsgebühr ist auf
+1. den Behandlungsfall begrenzt.
+Eine Beratungsgebühr nach der Nummer 1 des Werden nach der ersten Beratung im Behand-
+Gebührenverzeichnisses für ärztliche Leistungen - lungsfall weitere Beratungen zusammen mit einer
+Anlage zur Gebührenordnung für Ärzte in der am weiteren Leistung des Gebührenverzeichnisses in
+[Datum des Inkrafttretens der GOZ-Novelle] gel- einer folgenden Sitzung erbracht, sind diese Bera-
+tenden Fassung - darf im Behandlungsfall nur ein- tungen nicht gesondert berechnungsfähig, son-
+mal zusammen mit einer Gebühr für eine Leistung dern mit der ersten Beratung abgegolten. Dies gilt
+nach diesem Gebührenverzeichnis und für eine nur insoweit, bis der Behandlungsfall beendet ist.
+Leistung aus den Abschnitten C bis O des Gebüh- Überdauert eine Erkrankung einen Zeitraum von
+renverzeichnisses für ärztliche Leistungen berech- einem Monat, beginnt gebührenrechtlich ein
+net werden. neuer Behandlungsfall, der die erneute Berech-
+Eine Beratungsgebühr nach der Nummer 3 des nung einer Beratung zulässt. Tritt innerhalb des
+Gebührenverzeichnisses für ärztliche Leistungen ist Zeitraums von einem Monat nach Beginn der ers-
+nur berechnungsfähig als einzige Leistung oder im ten Erkrankung eine neue Erkrankung ein, zählt
+Zusammenhang mit einer Untersuchung nach der diese als neuer Behandlungsfall, sodass dann
+Nummer 0010 oder einer Untersuchung nach den auch nach weniger als einem Monat seit der ers-
+Nummern 5 oder 6 des Gebührenverzeichnisses ten Beratung eine erneute Beratung berechnet
+für ärztliche Leistungen. Andere weitere Leistun- werden kann.
+gen dürfen neben der Leistung nach der Nummer Die Einschränkungen zur Berechnung der Bera-
+3 nicht berechnet werden. tung gelten immer nur, sofern eine weitere Leis-
+Als Behandlungsfall gilt für die Behandlung dersel- tung aus den Gebührenverzeichnissen zu der
+ben Erkrankung der Zeitraum eines Monats nach Beratung hinzutritt. Sofern die Beratung als allei-
+der jeweils ersten Inanspruchnahme des Zahnarztes. nige Leistung erbracht wird, ist sie unabhängig
+von den genannten Einschränkungen immer be-
+2. rechnungsfähig.
+Das bei Leistungen nach diesem Gebührenver-
+zeichnis verwendete Abformungsmaterial ist ge- Die Beratungsgebühr nach Nummer Ä3 kann nur
+sondert berechnungsfähig. dann mit einer anderen Leistung in derselben Sit-
+zung berechnet werden, wenn es sich um eine
+3. Untersuchungsleistung nach den Nummern 0010
+Material- und Laborkosten im Sinne dieses Gebüh- (GOZ) oder 5 oder 6 (GOÄ) handelt. Im Übrigen
+renverzeichnisses umfassen Praxiskosten nach § 4 gelten die Abrechnungsbestimmungen zur GOÄ
+Abs. 3 und Auslagen für zahntechnische Leistun- 3 - Mindestdauer 10 Minuten - auf Grund der Ge-
+gen nach § 9 dieser Gebührenordnung. neralvorschrift des § 6 Absatz 2 GOZ auch für die
+Anwendung der GOÄ 3 durch Zahnärzte.
+Als Abformungsmaterial sind alle Materialien zu ver-
+stehen, die die Oberflächen von Hartsubstanzen
+oder von Weichgeweben im Mund wiedergeben.
+<<
+Inhalt Die Höhe der Kosten ist vom Zahnarzt auf der
+Grundlage der Beschaffungskosten und auf-
+grund des Verbrauchs im individuellen Einzelfall
+festzulegen.
+36
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung oder im Zusammenhang mit einer Untersuchung nach der Nummer 0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Gebührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistungen dürfen neben der Leistung nach der Nummer 3 nicht berechnet werden.,1,1004,335,0.0,nan,n,nan,,,,,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(3, _, _, _, _, _, _, _), Services),
+    findall(Service, (member(service(Service, _, _, _, _, _, _, _), Services), Service \= 3, Service \= 0010, Service \= 5, Service \= 6), OtherServices),
+    length(OtherServices, Count),
+    Count > 0,
+    print('Invalid invoice: Consultation fee under number 3 of the fee schedule for medical services charged alongside other services not under numbers 0010, 5, or 6.'),
+    true.
+",0.0
+2,A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",A,"A Allgemeine zahnärztliche Leistungen
+Allgemeine Bestimmungen Teil A Kommentar zur Leistungsbeschreibung
+Die Berechnung einer Beratungsgebühr ist auf
+1. den Behandlungsfall begrenzt.
+Eine Beratungsgebühr nach der Nummer 1 des Werden nach der ersten Beratung im Behand-
+Gebührenverzeichnisses für ärztliche Leistungen - lungsfall weitere Beratungen zusammen mit einer
+Anlage zur Gebührenordnung für Ärzte in der am weiteren Leistung des Gebührenverzeichnisses in
+[Datum des Inkrafttretens der GOZ-Novelle] gel- einer folgenden Sitzung erbracht, sind diese Bera-
+tenden Fassung - darf im Behandlungsfall nur ein- tungen nicht gesondert berechnungsfähig, son-
+mal zusammen mit einer Gebühr für eine Leistung dern mit der ersten Beratung abgegolten. Dies gilt
+nach diesem Gebührenverzeichnis und für eine nur insoweit, bis der Behandlungsfall beendet ist.
+Leistung aus den Abschnitten C bis O des Gebüh- Überdauert eine Erkrankung einen Zeitraum von
+renverzeichnisses für ärztliche Leistungen berech- einem Monat, beginnt gebührenrechtlich ein
+net werden. neuer Behandlungsfall, der die erneute Berech-
+Eine Beratungsgebühr nach der Nummer 3 des nung einer Beratung zulässt. Tritt innerhalb des
+Gebührenverzeichnisses für ärztliche Leistungen ist Zeitraums von einem Monat nach Beginn der ers-
+nur berechnungsfähig als einzige Leistung oder im ten Erkrankung eine neue Erkrankung ein, zählt
+Zusammenhang mit einer Untersuchung nach der diese als neuer Behandlungsfall, sodass dann
+Nummer 0010 oder einer Untersuchung nach den auch nach weniger als einem Monat seit der ers-
+Nummern 5 oder 6 des Gebührenverzeichnisses ten Beratung eine erneute Beratung berechnet
+für ärztliche Leistungen. Andere weitere Leistun- werden kann.
+gen dürfen neben der Leistung nach der Nummer Die Einschränkungen zur Berechnung der Bera-
+3 nicht berechnet werden. tung gelten immer nur, sofern eine weitere Leis-
+Als Behandlungsfall gilt für die Behandlung dersel- tung aus den Gebührenverzeichnissen zu der
+ben Erkrankung der Zeitraum eines Monats nach Beratung hinzutritt. Sofern die Beratung als allei-
+der jeweils ersten Inanspruchnahme des Zahnarztes. nige Leistung erbracht wird, ist sie unabhängig
+von den genannten Einschränkungen immer be-
+2. rechnungsfähig.
+Das bei Leistungen nach diesem Gebührenver-
+zeichnis verwendete Abformungsmaterial ist ge- Die Beratungsgebühr nach Nummer Ä3 kann nur
+sondert berechnungsfähig. dann mit einer anderen Leistung in derselben Sit-
+zung berechnet werden, wenn es sich um eine
+3. Untersuchungsleistung nach den Nummern 0010
+Material- und Laborkosten im Sinne dieses Gebüh- (GOZ) oder 5 oder 6 (GOÄ) handelt. Im Übrigen
+renverzeichnisses umfassen Praxiskosten nach § 4 gelten die Abrechnungsbestimmungen zur GOÄ
+Abs. 3 und Auslagen für zahntechnische Leistun- 3 - Mindestdauer 10 Minuten - auf Grund der Ge-
+gen nach § 9 dieser Gebührenordnung. neralvorschrift des § 6 Absatz 2 GOZ auch für die
+Anwendung der GOÄ 3 durch Zahnärzte.
+Als Abformungsmaterial sind alle Materialien zu ver-
+stehen, die die Oberflächen von Hartsubstanzen
+oder von Weichgeweben im Mund wiedergeben.
+<<
+Inhalt Die Höhe der Kosten ist vom Zahnarzt auf der
+Grundlage der Beschaffungskosten und auf-
+grund des Verbrauchs im individuellen Einzelfall
+festzulegen.
+36
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",Als Behandlungsfall gilt für die Behandlung derselben Erkrankung der Zeitraum eines Monats nach der jeweils ersten Inanspruchnahme des Zahnarztes.,1,1004,335,0.0,nan,n,nan,,,,,"
+",0.0
+3,A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",A,"A Allgemeine zahnärztliche Leistungen
+Allgemeine Bestimmungen Teil A Kommentar zur Leistungsbeschreibung
+Die Berechnung einer Beratungsgebühr ist auf
+1. den Behandlungsfall begrenzt.
+Eine Beratungsgebühr nach der Nummer 1 des Werden nach der ersten Beratung im Behand-
+Gebührenverzeichnisses für ärztliche Leistungen - lungsfall weitere Beratungen zusammen mit einer
+Anlage zur Gebührenordnung für Ärzte in der am weiteren Leistung des Gebührenverzeichnisses in
+[Datum des Inkrafttretens der GOZ-Novelle] gel- einer folgenden Sitzung erbracht, sind diese Bera-
+tenden Fassung - darf im Behandlungsfall nur ein- tungen nicht gesondert berechnungsfähig, son-
+mal zusammen mit einer Gebühr für eine Leistung dern mit der ersten Beratung abgegolten. Dies gilt
+nach diesem Gebührenverzeichnis und für eine nur insoweit, bis der Behandlungsfall beendet ist.
+Leistung aus den Abschnitten C bis O des Gebüh- Überdauert eine Erkrankung einen Zeitraum von
+renverzeichnisses für ärztliche Leistungen berech- einem Monat, beginnt gebührenrechtlich ein
+net werden. neuer Behandlungsfall, der die erneute Berech-
+Eine Beratungsgebühr nach der Nummer 3 des nung einer Beratung zulässt. Tritt innerhalb des
+Gebührenverzeichnisses für ärztliche Leistungen ist Zeitraums von einem Monat nach Beginn der ers-
+nur berechnungsfähig als einzige Leistung oder im ten Erkrankung eine neue Erkrankung ein, zählt
+Zusammenhang mit einer Untersuchung nach der diese als neuer Behandlungsfall, sodass dann
+Nummer 0010 oder einer Untersuchung nach den auch nach weniger als einem Monat seit der ers-
+Nummern 5 oder 6 des Gebührenverzeichnisses ten Beratung eine erneute Beratung berechnet
+für ärztliche Leistungen. Andere weitere Leistun- werden kann.
+gen dürfen neben der Leistung nach der Nummer Die Einschränkungen zur Berechnung der Bera-
+3 nicht berechnet werden. tung gelten immer nur, sofern eine weitere Leis-
+Als Behandlungsfall gilt für die Behandlung dersel- tung aus den Gebührenverzeichnissen zu der
+ben Erkrankung der Zeitraum eines Monats nach Beratung hinzutritt. Sofern die Beratung als allei-
+der jeweils ersten Inanspruchnahme des Zahnarztes. nige Leistung erbracht wird, ist sie unabhängig
+von den genannten Einschränkungen immer be-
+2. rechnungsfähig.
+Das bei Leistungen nach diesem Gebührenver-
+zeichnis verwendete Abformungsmaterial ist ge- Die Beratungsgebühr nach Nummer Ä3 kann nur
+sondert berechnungsfähig. dann mit einer anderen Leistung in derselben Sit-
+zung berechnet werden, wenn es sich um eine
+3. Untersuchungsleistung nach den Nummern 0010
+Material- und Laborkosten im Sinne dieses Gebüh- (GOZ) oder 5 oder 6 (GOÄ) handelt. Im Übrigen
+renverzeichnisses umfassen Praxiskosten nach § 4 gelten die Abrechnungsbestimmungen zur GOÄ
+Abs. 3 und Auslagen für zahntechnische Leistun- 3 - Mindestdauer 10 Minuten - auf Grund der Ge-
+gen nach § 9 dieser Gebührenordnung. neralvorschrift des § 6 Absatz 2 GOZ auch für die
+Anwendung der GOÄ 3 durch Zahnärzte.
+Als Abformungsmaterial sind alle Materialien zu ver-
+stehen, die die Oberflächen von Hartsubstanzen
+oder von Weichgeweben im Mund wiedergeben.
+<<
+Inhalt Die Höhe der Kosten ist vom Zahnarzt auf der
+Grundlage der Beschaffungskosten und auf-
+grund des Verbrauchs im individuellen Einzelfall
+festzulegen.
+36
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",Das bei Leistungen nach diesem Gebührenverzeichnis verwendete Abformungsmaterial ist gesondert berechnungsfähig.,1,1004,335,0.0,nan,n,nan,,,,,"
+",0.0
+4,A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",A,"A Allgemeine zahnärztliche Leistungen
+Allgemeine Bestimmungen Teil A Kommentar zur Leistungsbeschreibung
+Die Berechnung einer Beratungsgebühr ist auf
+1. den Behandlungsfall begrenzt.
+Eine Beratungsgebühr nach der Nummer 1 des Werden nach der ersten Beratung im Behand-
+Gebührenverzeichnisses für ärztliche Leistungen - lungsfall weitere Beratungen zusammen mit einer
+Anlage zur Gebührenordnung für Ärzte in der am weiteren Leistung des Gebührenverzeichnisses in
+[Datum des Inkrafttretens der GOZ-Novelle] gel- einer folgenden Sitzung erbracht, sind diese Bera-
+tenden Fassung - darf im Behandlungsfall nur ein- tungen nicht gesondert berechnungsfähig, son-
+mal zusammen mit einer Gebühr für eine Leistung dern mit der ersten Beratung abgegolten. Dies gilt
+nach diesem Gebührenverzeichnis und für eine nur insoweit, bis der Behandlungsfall beendet ist.
+Leistung aus den Abschnitten C bis O des Gebüh- Überdauert eine Erkrankung einen Zeitraum von
+renverzeichnisses für ärztliche Leistungen berech- einem Monat, beginnt gebührenrechtlich ein
+net werden. neuer Behandlungsfall, der die erneute Berech-
+Eine Beratungsgebühr nach der Nummer 3 des nung einer Beratung zulässt. Tritt innerhalb des
+Gebührenverzeichnisses für ärztliche Leistungen ist Zeitraums von einem Monat nach Beginn der ers-
+nur berechnungsfähig als einzige Leistung oder im ten Erkrankung eine neue Erkrankung ein, zählt
+Zusammenhang mit einer Untersuchung nach der diese als neuer Behandlungsfall, sodass dann
+Nummer 0010 oder einer Untersuchung nach den auch nach weniger als einem Monat seit der ers-
+Nummern 5 oder 6 des Gebührenverzeichnisses ten Beratung eine erneute Beratung berechnet
+für ärztliche Leistungen. Andere weitere Leistun- werden kann.
+gen dürfen neben der Leistung nach der Nummer Die Einschränkungen zur Berechnung der Bera-
+3 nicht berechnet werden. tung gelten immer nur, sofern eine weitere Leis-
+Als Behandlungsfall gilt für die Behandlung dersel- tung aus den Gebührenverzeichnissen zu der
+ben Erkrankung der Zeitraum eines Monats nach Beratung hinzutritt. Sofern die Beratung als allei-
+der jeweils ersten Inanspruchnahme des Zahnarztes. nige Leistung erbracht wird, ist sie unabhängig
+von den genannten Einschränkungen immer be-
+2. rechnungsfähig.
+Das bei Leistungen nach diesem Gebührenver-
+zeichnis verwendete Abformungsmaterial ist ge- Die Beratungsgebühr nach Nummer Ä3 kann nur
+sondert berechnungsfähig. dann mit einer anderen Leistung in derselben Sit-
+zung berechnet werden, wenn es sich um eine
+3. Untersuchungsleistung nach den Nummern 0010
+Material- und Laborkosten im Sinne dieses Gebüh- (GOZ) oder 5 oder 6 (GOÄ) handelt. Im Übrigen
+renverzeichnisses umfassen Praxiskosten nach § 4 gelten die Abrechnungsbestimmungen zur GOÄ
+Abs. 3 und Auslagen für zahntechnische Leistun- 3 - Mindestdauer 10 Minuten - auf Grund der Ge-
+gen nach § 9 dieser Gebührenordnung. neralvorschrift des § 6 Absatz 2 GOZ auch für die
+Anwendung der GOÄ 3 durch Zahnärzte.
+Als Abformungsmaterial sind alle Materialien zu ver-
+stehen, die die Oberflächen von Hartsubstanzen
+oder von Weichgeweben im Mund wiedergeben.
+<<
+Inhalt Die Höhe der Kosten ist vom Zahnarzt auf der
+Grundlage der Beschaffungskosten und auf-
+grund des Verbrauchs im individuellen Einzelfall
+festzulegen.
+36
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechnische Leistungen nach § 9 dieser Gebührenordnung.,1,1004,335,0.0,nan,n,nan,,,,,"
+",0.0

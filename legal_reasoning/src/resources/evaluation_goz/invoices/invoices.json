@@ -1,0 +1,1647 @@
+[
+  {
+    "is_correct": false,
+    "tests_rule": "§ 5",
+    "explanation": "Multiplier > 2.3 without Justification",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Behandlungsdatum": "2012-02-12",
+          "_Faktor": 3.5,
+          "_Anzahl": 1,
+          "_Betrag": 47.24,
+          "_Leistungsbeschreibung": "Provisorische Brücke im direkten Verfahren mit Abformung, je Zahn oder Implantat, einschließlich Entfernung",
+          "_Nr": "5120",
+          "_Zahn": [15],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 47.24,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": false,
+    "tests_rule": "§ 10",
+    "explanation": "Service has not date",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Behandlungsdatum": "",
+          "_Faktor": 2.30,
+          "_Anzahl": 1,
+          "_Betrag": 31.05,
+          "_Leistungsbeschreibung": "Provisorische Brücke im direkten Verfahren mit Abformung, je Zahn oder Implantat, einschließlich Entfernung",
+          "_Nr": "5120",
+          "_Zahn": [15],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 31.05,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "§ 10",
+    "explanation": "Service has not description",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Behandlungsdatum": "2012-02-12",
+          "_Faktor": 2.30,
+          "_Anzahl": 1,
+          "_Betrag": 31.05,
+          "_Leistungsbeschreibung": "",
+          "_Nr": "5120",
+          "_Zahn": [15],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 31.05,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "L_Zuschläge_zu_bestimmten",
+    "explanation": "Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem einfachen Gebührensatz berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Behandlungsdatum": "2012-02-12",
+          "_Faktor": 1.0,
+          "_Anzahl": 1,
+          "_Betrag": 22.50,
+          "_Leistungsbeschreibung": "Zuschlag",
+          "_Nr": "0500",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 22.50,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": true,
+    "tests_rule": "L_Zuschläge_zu_bestimmten",
+    "explanation": "Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem einfachen Gebührensatz berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Behandlungsdatum": "2012-02-12",
+          "_Faktor": 1.0,
+          "_Anzahl": 1,
+          "_Betrag": 123.73,
+          "_Leistungsbeschreibung": "Zuschlag",
+          "_Nr": "0530",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 123.73,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "L_Zuschläge_zu_bestimmten",
+    "explanation": "Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem einfachen Gebührensatz berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Behandlungsdatum": "2012-02-12",
+          "_Faktor": 2,
+          "_Anzahl": 1,
+          "_Betrag": 45,
+          "_Leistungsbeschreibung": "Zuschlag",
+          "_Nr": "0500",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 45,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "L_Zuschläge_zu_bestimmten",
+    "explanation": "Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem einfachen Gebührensatz berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Behandlungsdatum": "2012-02-12",
+          "_Faktor": 2,
+          "_Anzahl": 1,
+          "_Betrag": 247.46,
+          "_Leistungsbeschreibung": "Zuschlag",
+          "_Nr": "0530",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 247.46,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "0040",
+    "explanation": "Services with numbers 0030 and 0040 cannot be billed together.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 12.94,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0010",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 25.87,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0030",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 38.81,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "0040",
+    "explanation": "Services with numbers 0030 and 0040 cannot be billed together.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 25.87,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0030",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 32.34,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0040",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 58.21,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "0060",
+    "explanation": "For services with \"ServiceNumber\" 0050 and 0060, a \"Justification\" must be provided in the invoice.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 15.52,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0050",
+          "_Typ": "Service",
+          "_Begründung": "Irgend eine Begründung"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 33.63,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0060",
+          "_Typ": "Service",
+          "_Begründung": "Irgend eine Begründung"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 49.15,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "0060",
+    "explanation": "For services with \"ServiceNumber\" 0050 and 0060, a \"Justification\" must be provided in the invoice.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 15.52,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0050",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 33.63,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0060",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 49.15,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "0065",
+    "explanation": "If the service under number 0065 is included in the invoice, conventional impressions (e.g. 5170) for the same half of the jaw or the same front tooth area cannot be billed.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 10.35,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0065",
+          "_Typ": "Service",
+          "_Zahn": [31, 32, 33, 34, 35, 36, 37]
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 32.34,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "5170",
+          "_Typ": "Service",
+          "_Zahn": [11, 12, 13, 14, 15, 16, 17]
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 42.69,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "0065",
+    "explanation": "If the service under number 0065 is included in the invoice, conventional impressions (e.g. 5170) for the same half of the jaw or the same front tooth area cannot be billed.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 10.35,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0065",
+          "_Typ": "Service",
+          "_Zahn": [11, 12, 13, 14, 15, 16, 17]
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 32.34,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "5170",
+          "_Typ": "Service",
+          "_Zahn": [11, 12, 13, 14, 15, 16, 17]
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 42.69,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "0100",
+    "explanation": "If the service is billed more than once per tooth under code 0090, this must be justified in the invoice.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 2,
+          "_Betrag": 18.10,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0090",
+          "_Typ": "Service",
+          "_Zahn": [31, 32],
+          "_Begründung": "Eine Begründung"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-03-12",
+          "_Anzahl": 2,
+          "_Betrag": 18.10,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0090",
+          "_Typ": "Service",
+          "_Zahn": [33, 34],
+          "_Begründung": "Eine Begründung"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 36.20,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "0100",
+    "explanation": "If the service is billed more than once per tooth under code 0090, this must be justified in the invoice.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 2,
+          "_Betrag": 18.10,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0090",
+          "_Typ": "Service",
+          "_Zahn": [31, 31]
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 18.10,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "0100",
+    "explanation": "If the service is billed more than once per tooth under code 0090, this must be justified in the invoice.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0090",
+          "_Typ": "Service",
+          "_Zahn": [31]
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-03-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0090",
+          "_Typ": "Service",
+          "_Zahn": [31]
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 18.10,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "0110",
+    "explanation": "The surcharge according to ServiceNumber 0110 can only be charged once per treatment day and only at the regular fee rate.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 1.0,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 22.50,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0110",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 1.0,
+          "_Behandlungsdatum": "2012-03-12",
+          "_Anzahl": 1,
+          "_Betrag": 22.50,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0110",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 45.00,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "0110",
+    "explanation": "The surcharge according to ServiceNumber 0110 can only be charged once per treatment day and only at the regular fee rate.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 45.00,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0110",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 45.00,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "0110",
+    "explanation": "The surcharge according to ServiceNumber 0110 can only be charged once per treatment day and only at the regular fee rate.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 1.0,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 22.50,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0110",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 1.0,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 22.50,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0110",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 45.00,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "0120",
+    "explanation": "The surcharge according to number 0120 amounts to 100% of the basic fee rate for the respective service, but not more than 68 euros. The surcharge according to number 0120 can only be calculated once per treatment day.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Aufbereitung eines Wurzelkanals",
+          "_Nr": "2410",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 1.0,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410",
+          "_Nr": "0120",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-03-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Aufbereitung eines Wurzelkanals",
+          "_Nr": "2410",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 1.0,
+          "_Behandlungsdatum": "2012-03-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410",
+          "_Nr": "0120",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 202.84,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "0120",
+    "explanation": "The surcharge according to number 0120 amounts to 100% of the basic fee rate for the respective service, but not more than 68 euros. The surcharge according to number 0120 can only be calculated once per treatment day.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Aufbereitung eines Wurzelkanals",
+          "_Nr": "2410",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 1.0,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410",
+          "_Nr": "0120",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 1.0,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410",
+          "_Nr": "0120",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 152.13,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "0120",
+    "explanation": "The surcharge according to number 0120 amounts to 100% of the basic fee rate for the respective service, but not more than 68 euros. The surcharge according to number 0120 can only be calculated once per treatment day.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Aufbereitung eines Wurzelkanals",
+          "_Nr": "2410",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 1.0,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 70.00,
+          "_Leistungsbeschreibung": "Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410",
+          "_Nr": "0120",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 120.71,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "1020",
+    "explanation": "In connection with the services\naccording to numbers 1000 and 1010\nservices according to numbers 0010, 4000 and 8000 as well as consultations and examinations\nin accordance with the\nphysicians' fee schedule are only billable\nif these services serve other\npurposes and this is justified in the\njustified in the invoice",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 6.47,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "1010",
+          "_Typ": "Service",
+          "_Begründung": "irgend eine Begründung"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 12.94,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0010",
+          "_Typ": "Service",
+          "_Begründung": "irgend eine Begründung"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 19.41,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "1020",
+    "explanation": "In connection with the services\naccording to numbers 1000 and 1010\nservices according to numbers 0010, 4000 and 8000 as well as consultations and examinations\nin accordance with the\nphysicians' fee schedule are only billable\nif these services serve other\npurposes and this is justified in the\njustified in the invoice",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 6.47,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "1010",
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 12.94,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "0010",
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 19.41,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": false,
+    "tests_rule": "1040",
+    "explanation": "The service according to number 1040 is not billable in addition to the services according to numbers 1020, 4050, 4055, 4060, 4070, 4075, 4090, and 4100.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 6.47,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "1020",
+          "_Typ": "Service",
+          "_Zahn": [15]
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 3.62,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "1040",
+          "_Typ": "Service",
+          "_Zahn": [15]
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 10.09,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "1040",
+    "explanation": "The service according to number 1040 is not billable in addition to the services according to numbers 1020, 4050, 4055, 4060, 4070, 4075, 4090, and 4100.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 35.57,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "4100",
+          "_Typ": "Service",
+          "_Zahn": [15]
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 3.62,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "1040",
+          "_Typ": "Service",
+          "_Zahn": [15]
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 39.19,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "2030",
+    "explanation": "Die Leistung nach der Nummer 2030 ist je Sitzung für eine Kieferhälfte oder einen Frontzahnbereich höchstens einmal für besondere Maßnahmen beim Präparieren und höchstens einmal für besondere Maßnahmen beim Füllen von Kavitäten berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 8.41,
+          "_Leistungsbeschreibung": "Präparieren",
+          "_Nr": "2030",
+          "_Zahn": [10],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 8.41,
+          "_Leistungsbeschreibung": "Füllen",
+          "_Nr": "2030",
+          "_Zahn": [10],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 8.41,
+          "_Leistungsbeschreibung": "Präparieren",
+          "_Nr": "2030",
+          "_Zahn": [20],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 25.23,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "2030",
+    "explanation": "Die Leistung nach der Nummer 2030 ist je Sitzung für eine Kieferhälfte oder einen Frontzahnbereich höchstens einmal für besondere Maßnahmen beim Präparieren und höchstens einmal für besondere Maßnahmen beim Füllen von Kavitäten berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 8.41,
+          "_Leistungsbeschreibung": "Präparieren",
+          "_Nr": "2030",
+          "_Zahn": [10],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 8.41,
+          "_Leistungsbeschreibung": "Präparieren",
+          "_Nr": "2030",
+          "_Zahn": [10],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 8.41,
+          "_Leistungsbeschreibung": "Präparieren",
+          "_Nr": "2030",
+          "_Zahn": [10],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 25.23,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "2195",
+    "explanation": "Die Leistungen nach den Nummern 2180, 2190 oder 2195 sind neben den Leistungen nach den Nummern 2150 bis 2170 nicht berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 38.81,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2195",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 38.81,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "2195",
+    "explanation": "Die Leistungen nach den Nummern 2180, 2190 oder 2195 sind neben den Leistungen nach den Nummern 2150 bis 2170 nicht berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 38.81,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2195",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 19.40,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2180",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 147.60,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2150",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 205.81,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "2195",
+    "explanation": "Die Leistung nach der Nummer 2180 ist neben der Leistung nach der Nummer 2190 nicht berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 58.21,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2190",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 19.40,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2180",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 77.61,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": true,
+    "tests_rule": "2195",
+    "explanation": "Die Leistungen nach den Nummern 2180, 2190 und/oder die Leistung nach der Nummer 2195 ist je Zahn nur jeweils einmal berechnungsfähig.\n",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 58.21,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2190",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 58.21,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2190",
+          "_Zahn": [12],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 116.42,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "2195",
+    "explanation": "Die Leistungen nach den Nummern 2180, 2190 und/oder die Leistung nach der Nummer 2195 ist je Zahn nur jeweils einmal berechnungsfähig.\n",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 58.21,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2190",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 58.21,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2190",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 116.42,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "2220",
+    "explanation": "",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 267.38,
+          "_Leistungsbeschreibung": "Versorgung eines Zahnes durch eine Teilkrone",
+          "_Nr": "2220",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 147.60,
+          "_Leistungsbeschreibung": "Einlagefüllung, einflächig",
+          "_Nr": "2150",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 414.98,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "2220",
+    "explanation": "Neben den Leistungen nach den Nummern 2200 bis 2220 sind die Leistungen nach den Nummern 2050 bis 2130 nicht berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 267.38,
+          "_Leistungsbeschreibung": "Versorgung eines Zahnes durch eine Teilkrone",
+          "_Nr": "2220",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 27.55,
+          "_Leistungsbeschreibung": "Präparieren einer Kavität und Restauration mit plastischem Füllungsmaterial",
+          "_Nr": "2050",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 294.93,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "2220",
+    "explanation": "Neben den Leistungen nach den Nummern 2200 bis 2220 sind die Leistungen nach den Nummern 2050 bis 2130 nicht berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 217.06,
+          "_Leistungsbeschreibung": "Versorgung eines Zahnes durch eine Vollkrone",
+          "_Nr": "2210",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 83.05,
+          "_Leistungsbeschreibung": "Präparieren einer Kavität und Restauration mit Kompositmaterialien",
+          "_Nr": "2100",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 300.11,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "2240",
+    "explanation": "Die Leistung nach den Nummern 2230 oder 2240 sind nur berechnungsfähig, wenn es dem Zahnarzt objektiv auf Dauer unmöglich war, die Behandlung fortzusetzen oder eine Fortsetzung aus medizinischen Gründen nicht indiziert war.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2240",
+          "_Zahn": [11],
+          "_Typ": "Service",
+          "_Begründung": "It was impossible for the dentist to continue the treatment or a continuation was not indicated for medical reasons."
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 9.05,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "2240",
+    "explanation": "Die Leistung nach den Nummern 2230 oder 2240 sind nur berechnungsfähig, wenn es dem Zahnarzt objektiv auf Dauer unmöglich war, die Behandlung fortzusetzen oder eine Fortsetzung aus medizinischen Gründen nicht indiziert war.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2240",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 9.05,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "2400",
+    "explanation": "Die Leistung nach der Nummer 2400 ist je Wurzelkanal höchstens zweimal je Sitzung berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2400",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+        "_Faktor": 2.3,
+        "_Behandlungsdatum": "2012-02-12",
+        "_Anzahl": 1,
+        "_Betrag": 9.05,
+        "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+        "_Nr": "2400",
+        "_Zahn": [11],
+        "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2400",
+          "_Zahn": [12],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 27.15,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": true,
+    "tests_rule": "2400",
+    "explanation": "Die Leistung nach der Nummer 2400 ist je Wurzelkanal höchstens zweimal je Sitzung berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2400",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2400",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-03-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2400",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 27.15,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "2400",
+    "explanation": "Die Leistung nach der Nummer 2400 ist je Wurzelkanal höchstens zweimal je Sitzung berechnungsfähig.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2400",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2400",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 9.05,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2400",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 27.15,
+      "_Waehrung": "EUR"
+    }
+  },
+
+
+  {
+    "is_correct": true,
+    "tests_rule": "2410",
+    "explanation": "Die Leistung nach der Nummer 2410 ist für denselben Wurzelkanal nur dann erneut berechnungsfähig, wenn der Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden ist.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [12],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [13],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 152.13,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": true,
+    "tests_rule": "2410",
+    "explanation": "Die Leistung nach der Nummer 2410 ist für denselben Wurzelkanal nur dann erneut berechnungsfähig, wenn der Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden ist.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [11],
+          "_Typ": "Service",
+          "_Begründung": "Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [11],
+          "_Typ": "Service",
+          "_Begründung": "Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [12],
+          "_Typ": "Service",
+          "_Begründung": "Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 152.13,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "2410",
+    "explanation": "Die Leistung nach der Nummer 2410 ist für denselben Wurzelkanal nur dann erneut berechnungsfähig, wenn der Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden ist.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [11],
+          "_Typ": "Service"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [13],
+          "_Typ": "Service"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 152.13,
+      "_Waehrung": "EUR"
+    }
+  },
+  {
+    "is_correct": false,
+    "tests_rule": "2410",
+    "explanation": "Die Leistung nach der Nummer 2410 ist für denselben Wurzelkanal nur dann erneut berechnungsfähig, wenn der Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden ist.",
+    "invoice": {
+      "_Positionen": [
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [11],
+          "_Typ": "Service",
+          "_Begründung": "Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [11],
+          "_Typ": "Service",
+          "_Begründung": "Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden"
+        },
+        {
+          "_Faktor": 2.3,
+          "_Behandlungsdatum": "2012-02-12",
+          "_Anzahl": 1,
+          "_Betrag": 50.71,
+          "_Leistungsbeschreibung": "Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen",
+          "_Nr": "2410",
+          "_Zahn": [11],
+          "_Typ": "Service",
+          "_Begründung": "Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden"
+        }
+      ],
+      "_Kassenanteil": {
+        "_KassenanteilSumme": null
+      },
+      "_Rechnungsnummer": "97997",
+      "_Rechnungsdatum": "2012-07-03",
+      "_Rechnungsbetrag": 152.13,
+      "_Waehrung": "EUR"
+    }
+  }
+]

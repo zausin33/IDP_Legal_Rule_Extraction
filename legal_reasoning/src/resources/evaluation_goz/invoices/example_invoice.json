@@ -1,0 +1,40 @@
+{
+  "_Positionen": [
+    {
+      "_Behandlungsdatum": "2016-09-02",
+      "_Faktor": 1.0,
+      "_Anzahl": 1,
+      "_Betrag": 11.25,
+      "_Leistungsbeschreibung": "Erstellung eines Mundhygienestatus und eigenhende Unterweisung zur Vorbeugung gegen Karies und parodontale Erkrankungen, Dauer mindestens 25 Minuten",
+      "_Nr": "1000",
+      "_Typ": "Service"
+    },
+    {
+      "_Behandlungsdatum": "2016-09-02",
+      "_Faktor": 2.0,
+      "_Anzahl": 28,
+      "_Betrag": 88.20,
+      "_Leistungsbeschreibung": "Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)",
+      "_Zahn": [17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47],
+      "_Nr": "1040",
+      "_Typ": "Service"
+    },
+    {
+      "_Behandlungsdatum": "2016-09-06",
+      "_Faktor": 3.5,
+      "_Anzahl": 1,
+      "_Betrag": 151.57,
+      "_Leistungsbeschreibung": "Präparieren einer Kavität und Restauration mit Kompositmaterialien, in Adhäsivtechnik (Konditionieren), mehr als dreiflächig, ggf. einschließlich Polieren, ggf. einschließlich Verwendung von Inserts",
+      "_Begründung": "Überdurchscnittlicher Schwierigkeitsgrad und Zeitaufwand wegen erschwertem Anlegen von Matrizen/Bändern durch Zahnengstand und tiefer, sehr schwer einsehbarer Approximalkavität",
+      "_Nr": "2120",
+      "_Typ": "Service"
+    }
+  ],
+  "_Kassenanteil": {
+    "_KassenanteilSumme": -54.47
+  },
+  "_Rechnungsnummer": "92545-16",
+  "_Rechnungsdatum": "2016-11-11",
+  "_Rechnungsbetrag": 251.02,
+  "_Waehrung": "EUR"
+}

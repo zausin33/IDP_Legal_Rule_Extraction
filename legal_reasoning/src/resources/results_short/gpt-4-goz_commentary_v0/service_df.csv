@@ -1,0 +1,788 @@
+,number,content,section,Punktzahl,1.0-fach,2.3-fach,3.5-fach,reference,extr_ref_calls,extr_ref_prompt_tokens,extr_ref_completion_tokens,extr_ref_total_cost,parsed_references,commentary,rule,extr_rules_calls,extr_rules_prompt_tokens,extr_rules_completion_tokens,extr_rules_total_cost,llm_response,query,llm_inputs,llm_calls,prompt_tokens,completion_tokens,total_cost,parsed_code,correction_count
+0,10,"Eingehende Untersuchung zur
+Feststellung von Zahn-, Mund- und
+Kiefererkrankungen einschließlich
+Erhebung des Parodontalbefun -
+des sowie Aufzeichnung des Be -
+fundes",A_Allgemeine_zahnärztliche_Leistungen,100.0,5.62,12.94,19.68,The text does not mention any references to other paragraphs.,1,111,11,0.00399,,"GOZ Nr. 0010
+Eingehende Untersuchung zur Feststellung von Zusätzlicher Aufwand
+Zahn-, Mund- und Kiefererkrankungen einschließ- – Zusätzlicher Zeitaufwand, z. B. bei der Erstunter-
+lich Erhebung des Parodontalbefundes sowie Auf- suchung
+zeichnung des Befundes – Besonders umfangreiche Befunderhebung
+– Besonders umfangreiche Anamneseerhebung
+Punktzahl 100 Punkte
+– u. v. m.
+Faktor 1,0-fach 2,3-fach 3,5-fach
+Gebühr in € 5,62 € 12,94 € 19,68 € Zusätzlich berechnungsfähige Leistungen
+– Beratungsleistungen GOÄ 1 ff.
+Kommentar zur Leistungsbeschreibung – Röntgenleistungen GOÄ 5000 ff.
+Die „Eingehende Untersuchung“ ist die intra- und – Vitalitätsprobe GOZ 0070
+extraorale Untersuchung zur Feststellung von Er- – Abformung(en) für Situationsmodell(e)
+krankungen des Zahn-, Mund- und Kieferbereichs- GOZ 0050
+und ggf. verbunden mit einer kurzen Anamnese. GOZ 0060
+Es handelt sich um einen orientierenden diagnos- – Erhebung eines Gingival-, Parodontal-Index
+tischen Überblick im Sinne eines Screenings zur (z. B. PSI): GOZ 4005
+Feststellung der Behandlungsbedürftigkeit – z. B.
+an welchen Zähnen Karies vorhanden ist, ob pa- – Weiterreichende Befundungen:
+thologische Parodontalbefunde vorliegen, ob – Mundhygienestatus GOZ 1000
+eine prothetische Versorgung indiziert ist oder ob – Parodontalstatus GOZ 4000
+Kiefergelenkbefunde oder andere Befunde beste- – Kieferorthopädische Diagnostik GOZ 6000 ff.
+hen. Die Untersuchung dient auch zur Feststellung, – Klinische Funktionsanalyse GOZ 8000
+ob weitergehende Untersuchungen erforderlich – Implantatbezogene Analyse GOZ 9000
+sind. Diese sind ggf. gesondert berechnungsfähig – CMD-Screening zur Überprüfung des Vorhan-
+(siehe unten) oder müssen mittels Anwendung der denseins spezifischer Symptome cranioman-
+§§ 5 bzw. 2 eine Honorierung finden. dibulärer Dysfunktionen GOZ § 6 Abs. 1
+Die „Eingehende Untersuchung“ ist auch die er- – u. v. m.
+neute Befundung bei Kontrolluntersuchungen, die
+aus präventiven Gründen vorgenommen wer- GOZ 1988
+den. Ein zeitlicher Mindestabstand zwischen zwei GOZ Nr.: 001
+„Eingehenden Untersuchungen“ besteht nicht. Eingehende Untersuchung zur Feststellung von
+Verlaufskontrollen während der Therapie einer Er- Zahn-, Mund- und Kiefererkrankungen einschließ-
+krankung erfüllen den Leistungsinhalt der „Einge- lich Erhebung des Parodontalbefundes sowie Auf-
+henden Untersuchung“ nicht. zeichnung des Befundes
+Der Befund muss dokumentiert werden, Form und
+Umfang der Dokumentation bestimmt der Zahnarzt. Punktzahl 100 Punkte
+Die Erhebung von Indizes, wie Gingival-Indizes bzw. Faktor 1,0-fach 2,3-fach 3,5-fach
+Parodontal-Indizes (z. B. PSI, API) oder eines PAR-Status
+Gebühr in € 5,62 € 12,94 € 19,68 €
+sind nicht Bestandteil dieser Leistung. Beratungsleis-
+tungen im Zusammenhang mit der „Eingehenden
+Untersuchung“ können zusätzlich berechnet wer-
+<<
+den. Neben der Leistung nach der Nummer 6190 ist
+die Leistung nach der Nummer 0010 in derselben Sit- Inhalt
+zung nicht berechnungsfähig. Die Leistung nach der
+Nummer 8000 (Klinische Funktionsanalyse) kann
+gegebenenfalls in derselben Sitzung berechnet wer-
+den wie auch andere weitergehende Untersuchun-
+gen, Analysen und Diagnostiken.
+37
+Bundeszahnärztekammer|GOZ-Kommentar|Letzte Überarbeitung dieser
+Seite 14.11.2018",,1,658,5,0.0,nan,n,nan,,,,,nan,
+1,30,"Aufstellung eines schriftlichen Heil-
+und Kostenplans nach Befundauf -
+nahme und gegebenenfalls Aus -
+wertung von Modellen",A_Allgemeine_zahnärztliche_Leistungen,200.0,11.25,25.87,39.37,The text does not mention any references to other paragraphs.,1,91,11,0.00339,,"A Allgemeine zahnärztliche Leistungen
+GOZ Nr. 0030
+Aufstellung eines schriftlichen Heil- und Kosten- absichtigt sind, liegt eine Nebeneinanderberech-
+plans nach Befundaufnahme und gegebenenfalls nung im Sinne der nachgelagerten Abrechnungsbe-
+Auswertung von Modellen stimmung nicht vor. Sinngemäß gilt dies auch bei der
+Abrechnungsbestimmung zeitgleich möglichen Mehrfachberechnung der
+Die Leistungen nach den Nummern 0030 und 0040 Nummer 0030 oder der Nummer 0040 bei sich unter-
+sind nicht nebeneinander berechnungsfähig. scheidenden Planungsinhalten.
+Zur Leistung gehören die Aufstellung der geplan-
+Punktzahl 200 Punkte ten Maßnahmen, die Honorarkalkulation nach
+Faktor 1,0-fach 2,3-fach 3,5-fach dem voraussichtlichen Aufwand und ggf. zahn-
+technische oder andere Fremdleistungen.
+Gebühr in € 11,25 € 25,87 € 39,37 €
+Unterschiedliche Versorgungsalternativen oder
+Kommentar zur Leistungsbeschreibung zeitlich getrennte Behandlungsabschnitte sind in
+Die Leistung erfolgt nach einer Befundung. Die vor- einzelnen Heil- und Kostenplänen separat berech-
+herige Aufnahme des Befundes ist obligatorisch nungsfähig. Der Heil- und Kostenplan für medizi-
+und separat berechnungsfähig. Die Aufstellung nisch nicht notwendige Leistungen (nach § 2 Abs.
+eines „Schriftlichen Heil- und Kostenplans“ ist unab- 3) kann ebenfalls nach Nummer 0030 berechnet
+hängig von einer Anforderung seitens des Patien- werden.
+ten oder eines Kostenträgers berechnungsfähig. Schreibgebühren sind nicht gesondert berech-
+Sofern Planungsmodelle des/der Kiefer erstellt wur- nungsfähig.
+den, ist deren Auswertung einzubeziehen. Der Heil-
+und Kostenplan muss schriftlich niedergelegt wer- Zusätzlicher Aufwand
+den. Der Patient bzw. Versicherte hat einen An- Besonders zeitaufwendige Planung wegen
+spruch auf Aushändigung einer Ausfertigung. – Umfangs der geplanten Maßnahmen
+Die Aufstellung des Heil- und Kostenplans ist nicht auf – Ausführlicher Erläuterung der Planung
+die prothetische Planung begrenzt. Sie kann auch für – Zusätzlicher Diskussion von Alternativen
+andere Teilgebiete der zahnmedizinischen Versor- – u. v. m.
+gung berechnet werden, sofern diese Leistung nicht
+Nummer 0040 (KFO und/oder FAL/FTL) unterfällt. Die Zusätzlich berechnungsfähige Leistungen
+Nummer 0030 ist auch dann anzusetzen, wenn Leis- – Untersuchungs- und Beratungsleistungen
+tungen der Abschnitte G oder J der GOZ im Wege GOÄ 1 ff.
+der Analogie bewertet werden, es sich bei den ana- – Abformung(en) eines oder beider Kiefer ein-
+log bewerteten Leistungen jedoch nicht um kieferor- schließlich Auswertung zur Diagnose oder
+thopädische Leistungen oder FAL/FTL handelt. Planung GOZ 0050/0060
+Entscheidend ist die fachliche Zuordnung, nicht die – Therapie- und Kostenplanung je Behandlungsal-
+Zugehörigkeit zu einem bestimmten Abschnitt der ternative mit zusätzlichen KFO- oder FAL/FTL
+GOZ oder GOÄ. GOZ 0040
+Die Nummern 0030 und 0040 sind gemäß nachgela- – u. v. m.
+gerter Abrechnungsbestimmung nicht nebeneinan-
+der berechnungsfähig. Enthält eine geplante GOZ 1988
+Behandlung also sowohl FAL/FTL oder KFO-Leistun- GOZ Nr.: 003
+gen und andere Behandlungsmaßnahmen der GOZ Aufstellung eines schriftlichen Heil- und Kosten-
+<<
+und/oder GOÄ, so kann die Nummer 0030 dennoch plans zur prothetischen Versorgung nach Befund-
+Inhalt nicht neben der Nummer 0040 berechnet werden. aufnahme und gegebenenfalls Auswertung von
+Ein derartiger Sachverhalt ist vielmehr gemäß § 5 Abs. Modellen
+2 GOZ bei der Bemessung des Steigerungssatzes be-
+Punktzahl 220 Punkte
+rücksichtigungsfähig. Werden jedoch zeitgleich z.B.
+zwei unterschiedliche prothetische Versorgungen Faktor 1,0-fach 2,3-fach 3,5-fach
+geplant, wobei bei einer Versorgungsform zusätzlich Gebühr in € 12,37 € 28,45 € 43,30 €
+38 kieferorthopädische Behandlungsmaßnahmen be-
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",,1,638,5,0.0,nan,n,nan,,,,,nan,
+2,40,"Aufstellung eines schriftlichen Heil-
+und Kostenplans bei kieferortho -
+pädischer Behandlung oder bei
+funktionsanalytischen und funkti -
+onstherapeutischen Maßnahmen
+nach Befundaufnahme und Aus -
+arbeitung einer Behandlungspla -
+nung
+Die Leistungen nach den Num -
+mern 0030 und 0040 sind nicht ne -
+beneinander berechnungsfähig.",A_Allgemeine_zahnärztliche_Leistungen,250.0,14.06,32.34,49.21,"References: Nummern 0030, 0040",1,161,12,0.00555,,"GOZ Nr. 0040
+Aufstellung eines schriftlichen Heil- und Kosten- derartiger Sachverhalt ist vielmehr gemäß § 5 Abs.
+plans bei kieferorthopädischer Behandlung oder 2 GOZ bei der Bemessung des Steigerungssatzes
+bei funktionsanalytischen und funktionstherapeu- berücksichtigungsfähig. Werden jedoch zeitgleich
+tischen Maßnahmen nach Befundaufnahme und z.B. zwei unterschiedliche prothetische Versorgun-
+Ausarbeitung einer Behandlungsplanung gen geplant, wobei bei einer Versorgungsform
+Abrechnungsbestimmung zusätzlich kieferorthopädische Behandlungsmaß-
+Die Leistungen nach den Nummern 0030 und 0040 nahmen beabsichtigt sind, liegt eine Nebeneinan-
+sind nicht nebeneinander berechnungsfähig. derberechnung im Sinne der nachgelagerten
+Abrechnungsbestimmung nicht vor. Sinngemäß gilt
+Punktzahl 250 Punkte
+dies auch bei der zeitgleich möglichen Mehrfach-
+Faktor 1,0-fach 2,3-fach 3,5-fach berechnung der Nummer 0030 oder der Nummer
+Gebühr in € 14,06 € 32,34 € 49,21 € 0040 bei sich unterscheidenden Planungsinhalten.
+Zur Leistung gehören die Aufstellung der geplanten
+Kommentar zur Leistungsbeschreibung Maßnahmen, die Honorarkalkulation nach dem vo-
+Die Leistung erfolgt nach einer Befundung. Die vor- raussichtlichen Aufwand und ggf. zahntechnische
+herige Aufnahme des Befundes ist obligatorisch und/oder andere Fremdleistungen. Der Heil- und
+und separat berechnungsfähig. Sofern Planungs- Kostenplan für medizinisch nicht notwendige Leis-
+modelle des/der Kiefer erstellt wurden, ist deren tungen (nach § 2 Abs. 3) kann ebenfalls nach Num-
+Auswertung einzubeziehen. Die Aufstellung eines mer 0040 berechnet werden. Schreibgebühren
+„Schriftlichen Heil- und Kostenplans“ ist unabhängig sind nicht gesondert berechnungsfähig.
+von einer Anforderung seitens des Patienten oder
+eines Kostenträgers berechnungsfähig. Der Heil- Zusätzlicher Aufwand
+und Kostenplan muss schriftlich niedergelegt wer- Besonders zeitaufwendige Planung wegen
+den. Der Patient bzw. Versicherte hat einen An- – Umfangs der geplanten Maßnahmen
+spruch auf Aushändigung einer Ausfertigung. Die – Ausführlicher Erläuterung der Planung
+Nummer 0040 ist dann berechnungsfähig, wenn – Zusätzlicher Diskussion von Alternativen
+Bestandteil der Behandlungsplanung sowohl FAL als – u. v. m.
+auch FTL oder KFO-Behandlungsmaßnahmen sind.
+Zusätzlich berechnungsfähige Leistungen
+Eine lediglich versorgungsbegleitende Berechnung
+– Untersuchungs- und Beratungsleistungen
+von Leistungen aus dem Abschnitt J reicht nicht
+GOÄ 1 ff.
+aus. Die Nummer 0040 ist auch dann anzusetzen,
+– Abformung(en) eines oder beider Kiefer ein-
+wenn analog bewertete Leistungen, die fachlich
+schließlich Auswertung zur Diagnose oder
+den vorstehend bezeichneten Leistungsbereichen
+Planung GOZ 0050/0060
+zuzuordnen sind, anderen als den Abschnitten G
+– Therapie- und Kostenplanung je Behandlungsal-
+oder J der GOZ oder den gemäß § 6 Abs. 2 GOZ
+ternative mit zusätzlichen KFO- oder FAL/FTL
+dem zahnärztlichen Zugriff eröffneten Abschnitten
+GOZ 0040
+der GOÄ entstammen. Entscheidend ist die fachli-
+– Therapie- und Kostenplanung je Behandlungsal-
+che Zuordnung, nicht die Zugehörigkeit zu einem
+ternative ohne KFO- oder FAL/TFL GOZ 0030
+bestimmten Abschnitt der GOZ oder GOÄ. Werden
+– u. v. m.
+zeitgleich über FAL/FTL und über KFO-Behandlungs-
+maßnahmen Heil- und Kostenpläne erstellt, ist die
+GOZ 1988
+<<
+Nummer 0040 zweimal ansatzfähig. Die Nummern
+GOZ Nr.: 004
+0030 und 0040 sind gemäß nachgelagerter Ab- Aufstellung eines Heil- und Kostenplans bei kieferor- Inhalt
+rechnungsbestimmung nicht nebeneinander be-
+thopädischer Behandlung nach Befundaufnahme
+rechnungsfähig. Enthält eine geplante Behandlung
+und Ausarbeitung einer Behandlungsplanung
+also sowohl FAL/FTL oder KFO-Leistungen und an-
+dere Behandlungsmaßnahmen der GOZ und/oder Punktzahl 250 Punkte
+GOÄ, so kann die Nummer 0030 dennoch nicht
+Faktor 1,0-fach 2,3-fach 3,5-fach
+neben der Nummer 0040 berechnet werden. Ein 39
+Gebühr in € 14,06 € 32,23 € 49,21 €
+Bundeszahnärztekammer|GOZ-Kommentar|Letzte Überarbeitung dieser
+Seite 28.10.2021",Die Leistungen nach den Nummern 0030 und 0040 sind nicht nebeneinander berechnungsfähig.,1,708,31,0.0,"---
+Rule 1:
+Thoughts: 
+The rule states that the services with the numbers 0030 and 0040 cannot be billed together. This can be translated into a Prolog rule by checking if both services are present in the same invoice. If they are, the invoice is invalid.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(0030, _, _, _, _, _, _, _), Services),
+    member(service(0040, _, _, _, _, _, _, _), Services),
+    print('Services 0030 and 0040 cannot be billed together.'),
+    true.
+```
+---
+Rule 2:
+Thoughts: 
+The rule states that if services 0050 and 0060 are billed together, the invoice must provide a justification. This can be translated into a Prolog rule by checking if both services are present in the same invoice and if the justification is empty. If both services are present and the justification is empty, the invoice is invalid.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(0050, _, _, _, _, _, Justification, _), Services),
+    member(service(0060, _, _, _, _, _, Justification, _), Services),
+    Justification = '',
+    print('If services 0050 and 0060 are billed together, a justification must be provided.'),
+    true.
+```
+---
+Rule 3:
+Thoughts: 
+The rule states that if service 0065 is billed, no other conventional impressions for the same jaw half or the same anterior tooth area can be billed. This rule is complex and requires knowledge about which services are considered ""conventional impressions"". Without this information, it is not possible to translate this rule into Prolog code. 
+
+Translation:
+```prolog
+```
+---",,"Given this rules from the german GOZ:
+---
+Die Leistungen nach den Nummern 0030 und 0040 sind nicht nebeneinander berechnungsfähig.
+---
+Die Nebeneinanderberechnung der Leistungen nach den Nummern 0050 und 0060 ist in der Rechnung zu begründen.
+---
+Neben der Leistung nach der Nummer 0065 sind konventionelle Abformungen nach diesem Gebührenverzeichnis für dieselbe Kieferhälfte oder denselben Frontzahnbereich nicht berechnungsfähig.
+---
+
+
+And this invoice schema:
+```prolog
+invoice(
+    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, its point score, the teeth it is applied to, ...
+    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...
+    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    invoice_date(date(Year, Month, Day)),
+    invoice_amount(InvoiceAmount)
+).
+% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100
+% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema
+% Area = 1 -> Right upper jaw
+% Area = 2 -> Left upper jaw
+% Area = 3 -> Left lower jaw
+% Area = 4 -> Right lower jaw
+% Position is exact position of this tooth in its area (from 1 to 8)
+% Example invoice
+invoice(
+    [
+        service(11111, date(2023, 10, 01), 1.0, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),
+        service(11111, date(2023, 10, 01), 1.0, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),
+        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),
+        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])
+    ],
+    [
+        material_cost('§ 4 (1)', date(2023, 10, 02), 1.0, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])
+    ]
+    invoice_date(date(2023, 10, 04),
+    invoice_amount(110.01)
+).
+```
+The 3 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.
+We want to mark invoices as invalid if they do not adhere to those rules.
+Which of those rules can you translate into prolog code given following restriction:
+Only translate the rules as they are, do not include any examples.
+Be as accurate as possible.
+You must be able to exactly define every new predicate based on the given ones.
+Do not make any assumptions which are not given.
+Translate the rules where a translation given the restrictions is possible.
+If you can not translate the ful rule, translate as much as possible, but do not invent something. Maybe you can translate a part of the rule.
+Keep the code as simple as possible.
+To determine if an invoice is correct, use the predicate 
+```prolog
+is_invoice_invalid(Invoice) : -
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),
+    % The corresponding rule (only one rule for each predicate)
+    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.
+    % Keep the code as simple as possible.
+    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice
+    true. % Then the invoice is invalid.
+```
+Use this predicate to check each rule individually. Before you translate a rule, think about it.
+Expected format:
+---
+Rule 1:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+Rule 2:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+... 
+
+When you can not translate leaf the code section empty like this:
+---
+Rule X:
+Thoughts: ...
+Translation:
+```prolog
+```
+---
+
+So you should have a block for each of the 3 given rules at the end.
+For translated rules include print/1 statements, so that the user can see the reason for the invalidity of the invoice.
+When you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).
+I only want to have exactly defined rules.
+First, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.
+
+In the following I will give you some more context text. This text is only intended to help you understand the context in which you are translating the rule.
+Context:
+>>>
+A Allgemeine zahnärztliche Leistungen
+GOZ Nr. 0065
+Optisch-elektronische Abformung einschließlich Zusätzlicher Aufwand
+vorbereitender Maßnahmen, einfache digitale – Erschwernisse bei der Abformung (z. B. Stel-
+Bissregistrierung und Archivierung, je Kieferhälfte lungsanomalie)
+oder Frontzahnbereich – Erschwerte Zuordnung der Kiefermodelle zur
+Abrechnungsbestimmung Bisslageeinstellung
+Neben der Leistung nach der Nummer 0065 sind – Erschwernis bei der Trockenlegung bzw. erhöhte
+konventionelle Abformungen nach diesem Gebüh- Salivation
+renverzeichnis für dieselbe Kieferhälfte oder densel- – Motorische Unruhe
+ben Frontzahnbereich nicht berechnungsfähig. – Anzahl der abzuformenden Zähne
+– Ungünstige Position der abzuformenden Zähne
+Punktzahl 80 Punkte
+– u. v. m.
+Faktor 1,0-fach 2,3-fach 3,5-fach
+Gebühr in € 4,50 € 10,35 € 15,75 € Zusätzlich berechnungsfähige Leistungen
+– Planungsmodelle GOZ 0050
+Kommentar zur Leistungsbeschreibung und 0060
+Die Leistung beschreibt die dreidimensionale – Anästhesien GOZ 0080 ff.
+Datenerfassung intraoraler Strukturen mittels op- – Anwendung von Methoden zur Analyse von Kie-
+tisch-elektronischer Apparaturen zum Zweck der fermodellen GOZ 6010
+Herstellung einer Restauration bzw. Rekonstruktion – Registrieren der gelenkbezüglichen Zentrallage
+auf direktem Weg oder auf indirektem Weg nach des Unterkiefers GOZ 8010
+Herstellung eines CAD/CAM-Modells. Die einfa- – PC-gestützte Auswertung einer opto-elektroni-
+che Registrierung der Bissverhältnisse auf digita- schen Abformung analog § 6 Absatz 1 GOZ
+lem Weg ist nicht gesondert berechnungsfähig. – u. v. m.
+Darüber hinausgehende Bissregistrierungen sind
+nicht inbegriffen.
+Die Leistung wird je Kieferhälfte oder Frontzahnbe-
+reich berechnet und kann ggf. bis zu viermal je Sit-
+zung anfallen. Bei unterschiedlicher Indikation kann
+die Leistung auch mehrfach berechnet werden.
+Vorbereitende Maßnahmen wie z. B. die optische
+Aufbereitung der abzuformenden Zähne oder Mo-
+delle sowie die Archivierung der Daten sind einge-
+schlossen. Die Nebeneinanderberechnung dieser
+Leistung und einer konventionellen Abformung in
+derselben Sitzung für dasselbe Behandlungsgebiet
+ist nicht statthaft. Die Geb.-Nr. 0065 darf neben
+einer Leistung, die neben anderen Leistungsbe-
+standteilen auch Abformungen beinhalten, zusätz-
+lich berechnet werden.
+Konventionelle Abformungen im Sinne der nach
+gelagerten Abrechnungsbestimmungen sind aus-
+<<
+schließlich die Abformungen nach den Geb.-Nrn.
+Inhalt 5170, 5180, 5190 GOZ. Die Nebeneinanderberech-
+nung dieser Leistungen und der Geb.-Nr. 0065 für
+denselben Kiefer ist nicht statthaft. Die PC-ge-
+stützte Auswertung zur Diagnose und Planung ist
+bei dieser Gebührennummer nicht enthalten und
+muss daher analog berechnet werden.
+42
+Bundeszahnärztekammer|GOZ-Kommentar|Letzte Überarbeitung dieser
+Seite 30.10.2018<<GOZ Nr. 0040
+Aufstellung eines schriftlichen Heil- und Kosten- derartiger Sachverhalt ist vielmehr gemäß § 5 Abs.
+plans bei kieferorthopädischer Behandlung oder 2 GOZ bei der Bemessung des Steigerungssatzes
+bei funktionsanalytischen und funktionstherapeu- berücksichtigungsfähig. Werden jedoch zeitgleich
+tischen Maßnahmen nach Befundaufnahme und z.B. zwei unterschiedliche prothetische Versorgun-
+Ausarbeitung einer Behandlungsplanung gen geplant, wobei bei einer Versorgungsform
+Abrechnungsbestimmung zusätzlich kieferorthopädische Behandlungsmaß-
+Die Leistungen nach den Nummern 0030 und 0040 nahmen beabsichtigt sind, liegt eine Nebeneinan-
+sind nicht nebeneinander berechnungsfähig. derberechnung im Sinne der nachgelagerten
+Abrechnungsbestimmung nicht vor. Sinngemäß gilt
+Punktzahl 250 Punkte
+dies auch bei der zeitgleich möglichen Mehrfach-
+Faktor 1,0-fach 2,3-fach 3,5-fach berechnung der Nummer 0030 oder der Nummer
+Gebühr in € 14,06 € 32,34 € 49,21 € 0040 bei sich unterscheidenden Planungsinhalten.
+Zur Leistung gehören die Aufstellung der geplanten
+Kommentar zur Leistungsbeschreibung Maßnahmen, die Honorarkalkulation nach dem vo-
+Die Leistung erfolgt nach einer Befundung. Die vor- raussichtlichen Aufwand und ggf. zahntechnische
+herige Aufnahme des Befundes ist obligatorisch und/oder andere Fremdleistungen. Der Heil- und
+und separat berechnungsfähig. Sofern Planungs- Kostenplan für medizinisch nicht notwendige Leis-
+modelle des/der Kiefer erstellt wurden, ist deren tungen (nach § 2 Abs. 3) kann ebenfalls nach Num-
+Auswertung einzubeziehen. Die Aufstellung eines mer 0040 berechnet werden. Schreibgebühren
+„Schriftlichen Heil- und Kostenplans“ ist unabhängig sind nicht gesondert berechnungsfähig.
+von einer Anforderung seitens des Patienten oder
+eines Kostenträgers berechnungsfähig. Der Heil- Zusätzlicher Aufwand
+und Kostenplan muss schriftlich niedergelegt wer- Besonders zeitaufwendige Planung wegen
+den. Der Patient bzw. Versicherte hat einen An- – Umfangs der geplanten Maßnahmen
+spruch auf Aushändigung einer Ausfertigung. Die – Ausführlicher Erläuterung der Planung
+Nummer 0040 ist dann berechnungsfähig, wenn – Zusätzlicher Diskussion von Alternativen
+Bestandteil der Behandlungsplanung sowohl FAL als – u. v. m.
+auch FTL oder KFO-Behandlungsmaßnahmen sind.
+Zusätzlich berechnungsfähige Leistungen
+Eine lediglich versorgungsbegleitende Berechnung
+– Untersuchungs- und Beratungsleistungen
+von Leistungen aus dem Abschnitt J reicht nicht
+GOÄ 1 ff.
+aus. Die Nummer 0040 ist auch dann anzusetzen,
+– Abformung(en) eines oder beider Kiefer ein-
+wenn analog bewertete Leistungen, die fachlich
+schließlich Auswertung zur Diagnose oder
+den vorstehend bezeichneten Leistungsbereichen
+Planung GOZ 0050/0060
+zuzuordnen sind, anderen als den Abschnitten G
+– Therapie- und Kostenplanung je Behandlungsal-
+oder J der GOZ oder den gemäß § 6 Abs. 2 GOZ
+ternative mit zusätzlichen KFO- oder FAL/FTL
+dem zahnärztlichen Zugriff eröffneten Abschnitten
+GOZ 0040
+der GOÄ entstammen. Entscheidend ist die fachli-
+– Therapie- und Kostenplanung je Behandlungsal-
+che Zuordnung, nicht die Zugehörigkeit zu einem
+ternative ohne KFO- oder FAL/TFL GOZ 0030
+bestimmten Abschnitt der GOZ oder GOÄ. Werden
+– u. v. m.
+zeitgleich über FAL/FTL und über KFO-Behandlungs-
+maßnahmen Heil- und Kostenpläne erstellt, ist die
+GOZ 1988
+<<
+Nummer 0040 zweimal ansatzfähig. Die Nummern
+GOZ Nr.: 004
+0030 und 0040 sind gemäß nachgelagerter Ab- Aufstellung eines Heil- und Kostenplans bei kieferor- Inhalt
+rechnungsbestimmung nicht nebeneinander be-
+thopädischer Behandlung nach Befundaufnahme
+rechnungsfähig. Enthält eine geplante Behandlung
+und Ausarbeitung einer Behandlungsplanung
+also sowohl FAL/FTL oder KFO-Leistungen und an-
+dere Behandlungsmaßnahmen der GOZ und/oder Punktzahl 250 Punkte
+GOÄ, so kann die Nummer 0030 dennoch nicht
+Faktor 1,0-fach 2,3-fach 3,5-fach
+neben der Nummer 0040 berechnet werden. Ein 39
+Gebühr in € 14,06 € 32,23 € 49,21 €
+Bundeszahnärztekammer|GOZ-Kommentar|Letzte Überarbeitung dieser
+Seite 28.10.2021<<GOZ Nr. 0060
+Abformung beider Kiefer für Situationsmodelle Zusätzlicher Aufwand
+und einfache Bissfixierung einschließlich Auswer- – Erschwernisse bei der Abformung (z. B. Stel-
+tung zur Diagnose oder Planung lungsanomalie, inserierende Bänder, Würgereiz)
+Abrechnungsbestimmung – Erschwerte Zuordnung der Kiefermodelle zur
+Die Nebeneinanderberechnung der Leistungen Bisslageeinstellung
+nach den Nummern 0050 und 0060 ist in der Rech- – Zusätzliche Anwendung einer Bissschablone
+nung zu begründen. – u. v. m.
+Punktzahl 260 Punkte Zusätzlich berechnungsfähige Leistungen
+Faktor 1,0-fach 2,3-fach 3,5-fach – Abformung mit individuellem Löffel GOZ 5170
+– Oberflächenanästhesie GOZ 0080
+Gebühr in € 14,62 € 33,63 € 51,18 €
+– Anwendung von Methoden zur Analyse
+Kommentar zur Leistungsbeschreibung von Kiefermodellen GOZ 6010
+Die Leistung umfasst die Abformungen von Ober-
+und Unterkiefer zur Herstellung von Situationsmo- – Registrieren der gelenkbezüglichen Zentrallage
+dellen und ggf. auch die erforderlichen Maßnah- des Unterkiefers GOZ 8010
+men zur Fixierung der Modelle in habitueller – optisch-elektronische Abformung GOZ 0065
+Position. Die Abformung(en) erfolgen mit kon- – u. v. m.
+fektioniertem oder individuellem Abformlöffel
+oder optisch-elektronisch. Die Leistung ist für die GOZ 1988
+Herstellung von Kiefermodellen berechnungsfä- GOZ Nr.: 006
+hig, die zur Auswertung und Planung beider Kie- Abformung beider Kiefer für Situationsmodelle
+fer und ihrer Lagebeziehung zueinander dienen. und einfache Bißfixierung einschließlich Auswer-
+Erfolgt die Leistung zu Dokumentationszwecken, tung zur Diagnose oder Planung
+ist sie - ggf. auch mehrfach - berechnungsfähig,
+Punktzahl 260 Punkte
+sofern die Dokumentation der weiteren Planung
+und Diagnose dient. Die diagnostische bzw. die Faktor 1,0-fach 2,3-fach 3,5-fach
+planerische Leistung ist in der Position enthalten, Gebühr in € 14,62 € 33,63 € 51,18 €
+soweit sie sich auf die Auswertung der Modelle
+bezieht.
+Für zahntechnische Arbeitsmodelle kann die
+Nummer 0060 nicht berechnet werden.
+Das Berechnen der Leistungen nach den Num-
+mern 0050 und 0060 in derselben Sitzung ist nicht
+grundsätzlich ausgeschlossen, muss aber in der
+Rechnung gesondert begründet werden.
+Bei Änderungen der Kiefersituation kann die Leis-
+tung erneut erforderlich werden. Situationsmodelle
+zur Diagnose und Planung unterliegen der Aufbe-
+wahrungspflicht. Die anfallenden Material- und La-
+borkosten sind zusätzlich berechnungsfähig.
+<<
+Die Anwendung von bestimmten Methoden zur
+Analyse von Kiefermodellen (Nummer 6010) bleibt Inhalt
+unabhängig von der Leistung nach Nummer
+0060. Die Abdruckdesinfektion ist als zahntechni-
+sche Leistung nach § 9 berechnungsfähig.
+41
+Bundeszahnärztekammer|GOZ-Kommentar|Letzte Überarbeitung dieser
+Seite 25.03.2022
+>>>",1.0,4591.0,393.0,0.16130999999999998,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(0030, _, _, _, _, _, _, _), Services),
+    member(service(0040, _, _, _, _, _, _, _), Services),
+    print('Services 0030 and 0040 cannot be billed together.'),
+    true.
+",0.0
+3,50,"Abformung oder Teilabformung
+eines Kiefers für ein Situationsmo -
+dell einschließlich Auswertung zur
+Diagnose oder Planung",A_Allgemeine_zahnärztliche_Leistungen,120.0,6.75,15.52,23.62,The text does not mention any references to other paragraphs.,1,96,11,0.0035399999999999,,"A Allgemeine zahnärztliche Leistungen
+GOZ Nr. 0050
+Abformung oder Teilabformung eines Kiefers für Zusätzlich berechnungsfähige Leistungen
+ein Situationsmodell einschließlich Auswertung zur – Abformung mit individuellem Löffel GOZ 5170
+Diagnose oder Planung – Oberflächenanästhesie GOZ 0080
+Abrechnungsbestimmung – optisch-elektronische Abformung GOZ 0065
+Die Nebeneinanderberechnung der Leistungen – u. v. m.
+nach den Nummern 0050 und 0060 ist in der Rech-
+nung zu begründen. GOZ 1988
+GOZ Nr.: 005
+Punktzahl 120 Punkte
+Abformung eines Kiefers für ein Situationsmodell,
+Faktor 1,0-fach 2,3-fach 3,5-fach auch Teilabformung, einschließlich Auswertung
+Gebühr in € 6,75 € 15,52 € 23,62 € zur Diagnose oder Planung
+Punktzahl 120 Punkte
+Kommentar zur Leistungsbeschreibung
+Die Leistung umfasst die Abformung zur Herstel- Faktor 1,0-fach 2,3-fach 3,5-fach
+lung eines Situationsmodells. Die Abformung er- Gebühr in € 6,75 € 15,52 € 23,62 €
+folgt mit konfektioniertem/ggf. auch individuellem
+Abdrucklöffel oder optisch-elektronisch. Auch
+eine Teilabformung erfüllt den Leistungsinhalt.
+Die Leistung ist für die Herstellung eines Kiefermo-
+dells zur Auswertung berechnungsfähig. Erfolgt die
+Leistung zu Dokumentationszwecken, ist sie berech-
+nungsfähig, sofern die Dokumentation der weiteren
+Planung und Diagnose dient. Die diagnostische
+bzw. die planerische Leistung ist in der Position ent-
+halten, soweit sie sich auf die Auswertung des Mo-
+dells bezieht.
+Für zahntechnische Arbeitsmodelle kann die
+Nummer 0050 nicht berechnet werden.
+Bei Änderungen der Kiefersituation kann die Leis-
+tung erneut erforderlich werden. Situationsmodelle
+zur Diagnose und Planung unterliegen der Aufbe-
+wahrungspflicht. Die anfallenden Material- und La-
+borkosten sind zusätzlich berechnungsfähig. Die
+Abdruckdesinfektion ist als zahntechnische Leis-
+tung nach § 9 berechnungsfähig.
+Zusätzlicher Aufwand
+– Erschwernisse bei der Abformung (z. B. Stel-
+lungsanomalie, inserierende Bänder, Würgereiz)
+– u. v. m.
+<<
+Inhalt
+40
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.03.2022",,1,643,5,0.0,nan,n,nan,,,,,nan,
+4,60,"Abformung beider Kiefer für Situa -
+tionsmodelle und einfache Bissfi -
+xierung einschließlich Auswertung
+zur Diagnose oder Planung
+Die Nebeneinanderberechnung
+der Leistungen nach den Num -
+mern 0050 und 0060 ist in der
+Rechnung zu begründen.",A_Allgemeine_zahnärztliche_Leistungen,260.0,14.62,33.63,51.18,"References: Nummern 0050, 0060",1,138,12,0.00486,,"GOZ Nr. 0060
+Abformung beider Kiefer für Situationsmodelle Zusätzlicher Aufwand
+und einfache Bissfixierung einschließlich Auswer- – Erschwernisse bei der Abformung (z. B. Stel-
+tung zur Diagnose oder Planung lungsanomalie, inserierende Bänder, Würgereiz)
+Abrechnungsbestimmung – Erschwerte Zuordnung der Kiefermodelle zur
+Die Nebeneinanderberechnung der Leistungen Bisslageeinstellung
+nach den Nummern 0050 und 0060 ist in der Rech- – Zusätzliche Anwendung einer Bissschablone
+nung zu begründen. – u. v. m.
+Punktzahl 260 Punkte Zusätzlich berechnungsfähige Leistungen
+Faktor 1,0-fach 2,3-fach 3,5-fach – Abformung mit individuellem Löffel GOZ 5170
+– Oberflächenanästhesie GOZ 0080
+Gebühr in € 14,62 € 33,63 € 51,18 €
+– Anwendung von Methoden zur Analyse
+Kommentar zur Leistungsbeschreibung von Kiefermodellen GOZ 6010
+Die Leistung umfasst die Abformungen von Ober-
+und Unterkiefer zur Herstellung von Situationsmo- – Registrieren der gelenkbezüglichen Zentrallage
+dellen und ggf. auch die erforderlichen Maßnah- des Unterkiefers GOZ 8010
+men zur Fixierung der Modelle in habitueller – optisch-elektronische Abformung GOZ 0065
+Position. Die Abformung(en) erfolgen mit kon- – u. v. m.
+fektioniertem oder individuellem Abformlöffel
+oder optisch-elektronisch. Die Leistung ist für die GOZ 1988
+Herstellung von Kiefermodellen berechnungsfä- GOZ Nr.: 006
+hig, die zur Auswertung und Planung beider Kie- Abformung beider Kiefer für Situationsmodelle
+fer und ihrer Lagebeziehung zueinander dienen. und einfache Bißfixierung einschließlich Auswer-
+Erfolgt die Leistung zu Dokumentationszwecken, tung zur Diagnose oder Planung
+ist sie - ggf. auch mehrfach - berechnungsfähig,
+Punktzahl 260 Punkte
+sofern die Dokumentation der weiteren Planung
+und Diagnose dient. Die diagnostische bzw. die Faktor 1,0-fach 2,3-fach 3,5-fach
+planerische Leistung ist in der Position enthalten, Gebühr in € 14,62 € 33,63 € 51,18 €
+soweit sie sich auf die Auswertung der Modelle
+bezieht.
+Für zahntechnische Arbeitsmodelle kann die
+Nummer 0060 nicht berechnet werden.
+Das Berechnen der Leistungen nach den Num-
+mern 0050 und 0060 in derselben Sitzung ist nicht
+grundsätzlich ausgeschlossen, muss aber in der
+Rechnung gesondert begründet werden.
+Bei Änderungen der Kiefersituation kann die Leis-
+tung erneut erforderlich werden. Situationsmodelle
+zur Diagnose und Planung unterliegen der Aufbe-
+wahrungspflicht. Die anfallenden Material- und La-
+borkosten sind zusätzlich berechnungsfähig.
+<<
+Die Anwendung von bestimmten Methoden zur
+Analyse von Kiefermodellen (Nummer 6010) bleibt Inhalt
+unabhängig von der Leistung nach Nummer
+0060. Die Abdruckdesinfektion ist als zahntechni-
+sche Leistung nach § 9 berechnungsfähig.
+41
+Bundeszahnärztekammer|GOZ-Kommentar|Letzte Überarbeitung dieser
+Seite 25.03.2022",Die Nebeneinanderberechnung der Leistungen nach den Nummern 0050 und 0060 ist in der Rechnung zu begründen.,1,685,37,0.0,nan,n,nan,,,,,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(0050, _, _, _, _, _, Justification, _), Services),
+    member(service(0060, _, _, _, _, _, Justification, _), Services),
+    Justification = '',
+    print('If services 0050 and 0060 are billed together, a justification must be provided.'),
+    true.
+",0.0
+5,65,"Optisch-elektronische Abformung
+einschließlich vorbereitender Maß -
+nahmen, einfache digitale Bissre -
+gistrierung und Archivierung, je
+Kieferhälfte oder Frontzahnbereich
+Neben der Leistung nach der
+Nummer 0065 sind konventionelle
+Abformungen nach diesem Ge -
+bührenverzeichnis für dieselbe
+Kieferhälfte oder denselben Front -
+zahnbereich nicht berechnungs -
+fähig.",A_Allgemeine_zahnärztliche_Leistungen,80.0,4.5,10.35,15.75,The text does not contain any references to other paragraphs.,1,179,11,0.00603,,"A Allgemeine zahnärztliche Leistungen
+GOZ Nr. 0065
+Optisch-elektronische Abformung einschließlich Zusätzlicher Aufwand
+vorbereitender Maßnahmen, einfache digitale – Erschwernisse bei der Abformung (z. B. Stel-
+Bissregistrierung und Archivierung, je Kieferhälfte lungsanomalie)
+oder Frontzahnbereich – Erschwerte Zuordnung der Kiefermodelle zur
+Abrechnungsbestimmung Bisslageeinstellung
+Neben der Leistung nach der Nummer 0065 sind – Erschwernis bei der Trockenlegung bzw. erhöhte
+konventionelle Abformungen nach diesem Gebüh- Salivation
+renverzeichnis für dieselbe Kieferhälfte oder densel- – Motorische Unruhe
+ben Frontzahnbereich nicht berechnungsfähig. – Anzahl der abzuformenden Zähne
+– Ungünstige Position der abzuformenden Zähne
+Punktzahl 80 Punkte
+– u. v. m.
+Faktor 1,0-fach 2,3-fach 3,5-fach
+Gebühr in € 4,50 € 10,35 € 15,75 € Zusätzlich berechnungsfähige Leistungen
+– Planungsmodelle GOZ 0050
+Kommentar zur Leistungsbeschreibung und 0060
+Die Leistung beschreibt die dreidimensionale – Anästhesien GOZ 0080 ff.
+Datenerfassung intraoraler Strukturen mittels op- – Anwendung von Methoden zur Analyse von Kie-
+tisch-elektronischer Apparaturen zum Zweck der fermodellen GOZ 6010
+Herstellung einer Restauration bzw. Rekonstruktion – Registrieren der gelenkbezüglichen Zentrallage
+auf direktem Weg oder auf indirektem Weg nach des Unterkiefers GOZ 8010
+Herstellung eines CAD/CAM-Modells. Die einfa- – PC-gestützte Auswertung einer opto-elektroni-
+che Registrierung der Bissverhältnisse auf digita- schen Abformung analog § 6 Absatz 1 GOZ
+lem Weg ist nicht gesondert berechnungsfähig. – u. v. m.
+Darüber hinausgehende Bissregistrierungen sind
+nicht inbegriffen.
+Die Leistung wird je Kieferhälfte oder Frontzahnbe-
+reich berechnet und kann ggf. bis zu viermal je Sit-
+zung anfallen. Bei unterschiedlicher Indikation kann
+die Leistung auch mehrfach berechnet werden.
+Vorbereitende Maßnahmen wie z. B. die optische
+Aufbereitung der abzuformenden Zähne oder Mo-
+delle sowie die Archivierung der Daten sind einge-
+schlossen. Die Nebeneinanderberechnung dieser
+Leistung und einer konventionellen Abformung in
+derselben Sitzung für dasselbe Behandlungsgebiet
+ist nicht statthaft. Die Geb.-Nr. 0065 darf neben
+einer Leistung, die neben anderen Leistungsbe-
+standteilen auch Abformungen beinhalten, zusätz-
+lich berechnet werden.
+Konventionelle Abformungen im Sinne der nach
+gelagerten Abrechnungsbestimmungen sind aus-
+<<
+schließlich die Abformungen nach den Geb.-Nrn.
+Inhalt 5170, 5180, 5190 GOZ. Die Nebeneinanderberech-
+nung dieser Leistungen und der Geb.-Nr. 0065 für
+denselben Kiefer ist nicht statthaft. Die PC-ge-
+stützte Auswertung zur Diagnose und Planung ist
+bei dieser Gebührennummer nicht enthalten und
+muss daher analog berechnet werden.
+42
+Bundeszahnärztekammer|GOZ-Kommentar|Letzte Überarbeitung dieser
+Seite 30.10.2018",Neben der Leistung nach der Nummer 0065 sind konventionelle Abformungen nach diesem Gebührenverzeichnis für dieselbe Kieferhälfte oder denselben Frontzahnbereich nicht berechnungsfähig.,1,726,58,0.0,nan,n,nan,,,,,"
+",0.0
+6,70,"Vitalitätsprüfung eines Zahnes
+oder mehrerer Zähne einschließ -
+lich Vergleichstest, je Sitzung",A_Allgemeine_zahnärztliche_Leistungen,50.0,2.81,6.47,9.84,The text does not mention any references to other paragraphs.,1,90,11,0.0033599999999999,,"GOZ Nr. 0070
+Vitalitätsprüfung eines Zahnes oder mehrerer
+Zähne einschließlich Vergleichstest, je Sitzung
+Punktzahl 50 Punkte
+Faktor 1,0-fach 2,3-fach 3,5-fach
+Gebühr in € 2,81 € 6,47 € 9,84 €
+Kommentar zur Leistungsbeschreibung
+Die Überprüfung der Sensibilität eines Zahnes bzw.
+der Vitalität der Pulpa kann mittels verschiedener
+Methoden erfolgen. Die Prüfung kann an einem,
+mehreren oder allen Zähnen durchgeführt werden.
+Der Reaktionsvergleich mit anderen Zähnen in
+derselben Sitzung ist abgegolten.
+Auch bei der Anwendung unterschiedlicher Me-
+thoden ist die Testung nur einmal berechenbar.
+Die Vitalitätsprobe kann im Verlauf einer Behand-
+lung an unterschiedlichen Behandlungstagen er-
+neut erforderlich werden.
+Zusätzlicher Aufwand
+– Höhere Anzahl der überprüften Zähne
+– Mehrfache (Vergleichs-)Testungen
+– Anwendung verschiedener Testmethoden
+– Erhöhter Zeitaufwand z. B. bei retrahierter Pulpa,
+bei traumatisiertem Zahn
+– Erhöhter Zeitaufwand bei überkronten Zähnen
+– Probetrepanation
+– u. v. m.
+GOZ 1988
+GOZ Nr.: 007
+Vitalitätsprüfung eines Zahnes oder mehrerer
+Zähne einschließlich Vergleichstest
+Punktzahl 50 Punkte
+Faktor 1,0-fach 2,3-fach 3,5-fach
+Gebühr in € 2,81 € 6,46 € 9,84 €
+<<
+Inhalt
+43
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",,1,637,5,0.0,nan,n,nan,,,,,nan,
+7,80,"Intraorale Oberflächenanästhesie,
+je Kieferhälfte oder Frontzahnbe -
+reich",A_Allgemeine_zahnärztliche_Leistungen,30.0,1.69,3.88,5.91,The text provided does not contain any references to other paragraphs.,1,89,12,0.00339,,"A Allgemeine zahnärztliche Leistungen
+GOZ Nr. 0080
+Intraorale Oberflächenanästhesie, je Kieferhälfte Zusätzlich berechnungsfähige Leistungen
+oder Frontzahnbereich – Weitere Anästhesieleistungen GOZ 0090/0100
+– u. v. m.
+Punktzahl 30 Punkte
+Faktor 1,0-fach 2,3-fach 3,5-fach GOZ 1988
+Gebühr in € 1,69 € 3,88 € 5,91 € GOZ Nr.: 008
+Intraorale Oberflächenanästhesie, je Kieferhälfte
+Kommentar zur Leistungsbeschreibung oder Frontzahnbereich
+Das Aufbringen von Medikamenten in Form von
+Punktzahl 30 Punkte
+Spray, Lösungen, Gelen o. Ä. zur „Intraoralen
+Oberflächenanästhesie“ ist als selbstständige Leis- Faktor 1,0-fach 2,3-fach 3,5-fach
+tung (z. B. zum Ausschalten des Würgereflexes) Gebühr in € 1,69 € 3,88 € 5,90 €
+oder als vorbereitende Maßnahme bei anderen
+Anästhesien (Infiltrations- oder Leitungsanästhe-
+sie) berechenbar.
+Auch spezielle elektrische Verfahren mittels
+Schwachstrom (TENS), thermische Verfahren (Kälte-
+spray) oder mechanische Verfahren zur Durchfüh-
+rung einer Anästhesie der Schleimhautoberfläche
+können eingesetzt werden.
+Die Gebühr ist je Kieferhälfte oder Frontzahnbe-
+reich anzusetzen. Die Wiederholung einer Ober-
+flächenanästhesie nach Wirkungsverlust löst
+erneut den Ansatz der Nummer 0080 aus.
+Nicht berechenbar ist die Leistung für eine extrao-
+rale Oberflächenbetäubung.
+Das verwendete Medikament kann nicht separat
+berechnet werden.
+Zusätzlicher Aufwand
+– Oberflächenanästhesien an mehreren Stellen
+innerhalb einer Kieferhälfte bzw. eines Frontzahn-
+bereichs
+– subgingivale Applikation
+– u. v. m.
+<<
+Inhalt
+44
+Bundeszahnärztekammer|GOZ-Kommentar|Letzte Überarbeitung dieser
+Seite 2.3.2015",,1,636,5,0.0,nan,n,nan,,,,,nan,

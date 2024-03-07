@@ -1,0 +1,14 @@
+{
+  "HFLX": "sensible plus latent heat flux (HFLX)",
+  "SW": "net shortwave flux at the surface (SW)",
+  "LW": "net longwave flux at the surface (LW)",
+  "GH": " geopotential height (GH)",
+  "SLP": "sea level pressure (SLP)",
+  "Precip": "total precipitation (Precip)",
+  "RH": "relative humidity (RH)",
+  "u10m":  "zonal (u-component) wind at 10 m (u10m)",
+  "v10m": "meridional (v-component) wind at 10 m (v10m)",
+  "sea_ice": "sea ice coverage and/or sea ice thickness (sea_ice)",
+  "CC": "total cloud cover (CC)",
+  "CW": "total cloud water path (CW)"
+}

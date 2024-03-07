@@ -1,0 +1,1113 @@
+,tests_rule,invoice,result,interpreter_result,code,is_correct,explanation,prediction
+0,40,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 12.94, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0010', '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 25.87, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0030', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 38.81, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(0030, _, _, _, _, _, _, _), Services),
+    member(service(0040, _, _, _, _, _, _, _), Services),
+    print('Services 0030 and 0040 cannot be charged together.'),
+    true.
+
+example_invoice(invoice([
+		service(0010, date(2012, 2, 12), 2.3, 100.0, 12.94, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', []),
+		service(0030, date(2012, 2, 12), 2.3, 200.0, 25.87, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(38.81)
+)).",True,Services with numbers 0030 and 0040 cannot be billed together.,True
+1,40,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 25.87, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0030', '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 32.34, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0040', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 58.21, '_Waehrung': 'EUR'}",'Services 0030 and 0040 cannot be charged together.','Services 0030 and 0040 cannot be charged together.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(0030, _, _, _, _, _, _, _), Services),
+    member(service(0040, _, _, _, _, _, _, _), Services),
+    print('Services 0030 and 0040 cannot be charged together.'),
+    true.
+
+example_invoice(invoice([
+		service(0030, date(2012, 2, 12), 2.3, 200.0, 25.87, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', []),
+		service(0040, date(2012, 2, 12), 2.3, 250.0, 32.34, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(58.21)
+)).",False,Services with numbers 0030 and 0040 cannot be billed together.,False
+2,60,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 15.52, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0050', '_Typ': 'Service', '_Begründung': 'Irgend eine Begründung'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 33.63, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0060', '_Typ': 'Service', '_Begründung': 'Irgend eine Begründung'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 49.15, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(0050, _, _, _, _, _, Justification1, _), Services),
+    member(service(0060, _, _, _, _, _, Justification2, _), Services),
+    (Justification1 = '' ; Justification2 = ''),
+    print('Justification must be provided for services 0050 and 0060.'),
+    true.
+
+example_invoice(invoice([
+		service(0050, date(2012, 2, 12), 2.3, 120.0, 15.52, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Irgend eine Begründung', []),
+		service(0060, date(2012, 2, 12), 2.3, 260.0, 33.63, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Irgend eine Begründung', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(49.15)
+)).",True,"For services with ""ServiceNumber"" 0050 and 0060, a ""Justification"" must be provided in the invoice.",True
+3,60,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 15.52, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0050', '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 33.63, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0060', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 49.15, '_Waehrung': 'EUR'}",'Justification must be provided for services 0050 and 0060.','Justification must be provided for services 0050 and 0060.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(0050, _, _, _, _, _, Justification1, _), Services),
+    member(service(0060, _, _, _, _, _, Justification2, _), Services),
+    (Justification1 = '' ; Justification2 = ''),
+    print('Justification must be provided for services 0050 and 0060.'),
+    true.
+
+example_invoice(invoice([
+		service(0050, date(2012, 2, 12), 2.3, 120.0, 15.52, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', []),
+		service(0060, date(2012, 2, 12), 2.3, 260.0, 33.63, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(49.15)
+)).",False,"For services with ""ServiceNumber"" 0050 and 0060, a ""Justification"" must be provided in the invoice.",False
+4,65,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 10.35, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0065', '_Typ': 'Service', '_Zahn': [31, 32, 33, 34, 35, 36, 37]}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 32.34, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '5170', '_Typ': 'Service', '_Zahn': [11, 12, 13, 14, 15, 16, 17]}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 42.69, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+
+example_invoice(invoice([
+		service(0065, date(2012, 2, 12), 2.3, 80.0, 10.35, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(3, 1), tooth(3, 2), tooth(3, 3), tooth(3, 4), tooth(3, 5), tooth(3, 6), tooth(3, 7)]),
+		service(5170, date(2012, 2, 12), 2.3, 250.0, 32.34, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1), tooth(1, 2), tooth(1, 3), tooth(1, 4), tooth(1, 5), tooth(1, 6), tooth(1, 7)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(42.69)
+)).",True,"If the service under number 0065 is included in the invoice, conventional impressions (e.g. 5170) for the same half of the jaw or the same front tooth area cannot be billed.",False
+5,65,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 10.35, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0065', '_Typ': 'Service', '_Zahn': [11, 12, 13, 14, 15, 16, 17]}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 32.34, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '5170', '_Typ': 'Service', '_Zahn': [11, 12, 13, 14, 15, 16, 17]}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 42.69, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+
+example_invoice(invoice([
+		service(0065, date(2012, 2, 12), 2.3, 80.0, 10.35, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1), tooth(1, 2), tooth(1, 3), tooth(1, 4), tooth(1, 5), tooth(1, 6), tooth(1, 7)]),
+		service(5170, date(2012, 2, 12), 2.3, 250.0, 32.34, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1), tooth(1, 2), tooth(1, 3), tooth(1, 4), tooth(1, 5), tooth(1, 6), tooth(1, 7)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(42.69)
+)).",False,"If the service under number 0065 is included in the invoice, conventional impressions (e.g. 5170) for the same half of the jaw or the same front tooth area cannot be billed.",False
+6,100,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 2, '_Betrag': 18.1, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0090', '_Typ': 'Service', '_Zahn': [31, 32], '_Begründung': 'Eine Begründung'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-03-12', '_Anzahl': 2, '_Betrag': 18.1, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0090', '_Typ': 'Service', '_Zahn': [33, 34], '_Begründung': 'Eine Begründung'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 36.2, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Tooth, (member(service(0090, _, _, _, _, _, Justification, Teeth), Services), member(Tooth, Teeth), Justification = ''), List),
+    sort(List, Sorted),
+    length(List, Length1),
+    length(Sorted, Length2),
+    Length1 > Length2,
+    print('Justification must be provided if service 0090 is charged more than once per tooth.'),
+    true.
+
+
+
+example_invoice(invoice([
+		service(0090, date(2012, 2, 12), 2.3, 60.0, 18.1, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Eine Begründung', [tooth(3, 1)]),
+		service(0090, date(2012, 2, 12), 2.3, 60.0, 18.1, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Eine Begründung', [tooth(3, 2)]),
+		service(0090, date(2012, 3, 12), 2.3, 60.0, 18.1, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Eine Begründung', [tooth(3, 3)]),
+		service(0090, date(2012, 3, 12), 2.3, 60.0, 18.1, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Eine Begründung', [tooth(3, 4)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(36.2)
+)).",True,"If the service is billed more than once per tooth under code 0090, this must be justified in the invoice.",True
+7,100,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 2, '_Betrag': 18.1, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0090', '_Typ': 'Service', '_Zahn': [31, 31]}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 18.1, '_Waehrung': 'EUR'}",'Justification must be provided if service 0090 is charged more than once per tooth.','Justification must be provided if service 0090 is charged more than once per tooth.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Tooth, (member(service(0090, _, _, _, _, _, Justification, Teeth), Services), member(Tooth, Teeth), Justification = ''), List),
+    sort(List, Sorted),
+    length(List, Length1),
+    length(Sorted, Length2),
+    Length1 > Length2,
+    print('Justification must be provided if service 0090 is charged more than once per tooth.'),
+    true.
+
+
+
+example_invoice(invoice([
+		service(0090, date(2012, 2, 12), 2.3, 60.0, 18.1, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(3, 1)]),
+		service(0090, date(2012, 2, 12), 2.3, 60.0, 18.1, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(3, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(18.1)
+)).",False,"If the service is billed more than once per tooth under code 0090, this must be justified in the invoice.",False
+8,100,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0090', '_Typ': 'Service', '_Zahn': [31]}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-03-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0090', '_Typ': 'Service', '_Zahn': [31]}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 18.1, '_Waehrung': 'EUR'}",'Justification must be provided if service 0090 is charged more than once per tooth.','Justification must be provided if service 0090 is charged more than once per tooth.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Tooth, (member(service(0090, _, _, _, _, _, Justification, Teeth), Services), member(Tooth, Teeth), Justification = ''), List),
+    sort(List, Sorted),
+    length(List, Length1),
+    length(Sorted, Length2),
+    Length1 > Length2,
+    print('Justification must be provided if service 0090 is charged more than once per tooth.'),
+    true.
+
+
+
+example_invoice(invoice([
+		service(0090, date(2012, 2, 12), 2.3, 60.0, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(3, 1)]),
+		service(0090, date(2012, 3, 12), 2.3, 60.0, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(3, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(18.1)
+)).",False,"If the service is billed more than once per tooth under code 0090, this must be justified in the invoice.",False
+9,110,"{'_Positionen': [{'_Faktor': 1.0, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 22.5, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0110', '_Typ': 'Service'}, {'_Faktor': 1.0, '_Behandlungsdatum': '2012-03-12', '_Anzahl': 1, '_Betrag': 22.5, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0110', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 45.0, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Date, member(service(0110, Date, _, _, _, _, _, _), Services), Dates),
+    sort(Dates, Sorted),
+    length(Dates, Length1),
+    length(Sorted, Length2),
+    Length1 > Length2,
+    print('The surcharge according to number 0110 can only be charged once per treatment day.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(0110, _, Multiplier, _, _, _, _, _), Services),
+    Multiplier \= 1.0,
+    print('The surcharge according to number 0110 can only be charged with the simple fee rate.'),
+    true.
+
+example_invoice(invoice([
+		service(0110, date(2012, 2, 12), 1.0, 400.0, 22.5, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', []),
+		service(0110, date(2012, 3, 12), 1.0, 400.0, 22.5, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(45.0)
+)).",True,The surcharge according to ServiceNumber 0110 can only be charged once per treatment day and only at the regular fee rate.,True
+10,110,"{'_Positionen': [{'_Faktor': 2, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 45.0, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0110', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 45.0, '_Waehrung': 'EUR'}",'The surcharge according to number 0110 can only be charged with the simple fee rate.','The surcharge according to number 0110 can only be charged with the simple fee rate.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Date, member(service(0110, Date, _, _, _, _, _, _), Services), Dates),
+    sort(Dates, Sorted),
+    length(Dates, Length1),
+    length(Sorted, Length2),
+    Length1 > Length2,
+    print('The surcharge according to number 0110 can only be charged once per treatment day.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(0110, _, Multiplier, _, _, _, _, _), Services),
+    Multiplier \= 1.0,
+    print('The surcharge according to number 0110 can only be charged with the simple fee rate.'),
+    true.
+
+example_invoice(invoice([
+		service(0110, date(2012, 2, 12), 2, 400.0, 45.0, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(45.0)
+)).",False,The surcharge according to ServiceNumber 0110 can only be charged once per treatment day and only at the regular fee rate.,False
+11,110,"{'_Positionen': [{'_Faktor': 1.0, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 22.5, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0110', '_Typ': 'Service'}, {'_Faktor': 1.0, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 22.5, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0110', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 45.0, '_Waehrung': 'EUR'}",'The surcharge according to number 0110 can only be charged once per treatment day.','The surcharge according to number 0110 can only be charged once per treatment day.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Date, member(service(0110, Date, _, _, _, _, _, _), Services), Dates),
+    sort(Dates, Sorted),
+    length(Dates, Length1),
+    length(Sorted, Length2),
+    Length1 > Length2,
+    print('The surcharge according to number 0110 can only be charged once per treatment day.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(0110, _, Multiplier, _, _, _, _, _), Services),
+    Multiplier \= 1.0,
+    print('The surcharge according to number 0110 can only be charged with the simple fee rate.'),
+    true.
+
+example_invoice(invoice([
+		service(0110, date(2012, 2, 12), 1.0, 400.0, 22.5, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', []),
+		service(0110, date(2012, 2, 12), 1.0, 400.0, 22.5, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(45.0)
+)).",False,The surcharge according to ServiceNumber 0110 can only be charged once per treatment day and only at the regular fee rate.,False
+12,120,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Aufbereitung eines Wurzelkanals', '_Nr': '2410', '_Typ': 'Service'}, {'_Faktor': 1.0, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410', '_Nr': '0120', '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-03-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Aufbereitung eines Wurzelkanals', '_Nr': '2410', '_Typ': 'Service'}, {'_Faktor': 1.0, '_Behandlungsdatum': '2012-03-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410', '_Nr': '0120', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 202.84, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Date, member(service(0120, Date, _, _, _, _, _, _), Services), Dates),
+    sort(Dates, Sorted),
+    length(Dates, Length1),
+    length(Sorted, Length2),
+    Length1 > Length2,
+    print('The surcharge under the number 0120 can only be charged once per treatment day.'),
+    true.
+
+example_invoice(invoice([
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Aufbereitung eines Wurzelkanals', '', []),
+		service(0120, date(2012, 2, 12), 1.0, nan, 50.71, 'Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410', '', []),
+		service(2410, date(2012, 3, 12), 2.3, 392.0, 50.71, 'Aufbereitung eines Wurzelkanals', '', []),
+		service(0120, date(2012, 3, 12), 1.0, nan, 50.71, 'Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(202.84)
+)).",True,"The surcharge according to number 0120 amounts to 100% of the basic fee rate for the respective service, but not more than 68 euros. The surcharge according to number 0120 can only be calculated once per treatment day.",True
+13,120,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Aufbereitung eines Wurzelkanals', '_Nr': '2410', '_Typ': 'Service'}, {'_Faktor': 1.0, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410', '_Nr': '0120', '_Typ': 'Service'}, {'_Faktor': 1.0, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410', '_Nr': '0120', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 152.13, '_Waehrung': 'EUR'}",'The surcharge under the number 0120 can only be charged once per treatment day.','The surcharge under the number 0120 can only be charged once per treatment day.',"
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Date, member(service(0120, Date, _, _, _, _, _, _), Services), Dates),
+    sort(Dates, Sorted),
+    length(Dates, Length1),
+    length(Sorted, Length2),
+    Length1 > Length2,
+    print('The surcharge under the number 0120 can only be charged once per treatment day.'),
+    true.
+
+example_invoice(invoice([
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Aufbereitung eines Wurzelkanals', '', []),
+		service(0120, date(2012, 2, 12), 1.0, nan, 50.71, 'Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410', '', []),
+		service(0120, date(2012, 2, 12), 1.0, nan, 50.71, 'Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(152.13)
+)).",False,"The surcharge according to number 0120 amounts to 100% of the basic fee rate for the respective service, but not more than 68 euros. The surcharge according to number 0120 can only be calculated once per treatment day.",False
+14,120,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Aufbereitung eines Wurzelkanals', '_Nr': '2410', '_Typ': 'Service'}, {'_Faktor': 1.0, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 70.0, '_Leistungsbeschreibung': 'Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410', '_Nr': '0120', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 120.71, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Date, member(service(0120, Date, _, _, _, _, _, _), Services), Dates),
+    sort(Dates, Sorted),
+    length(Dates, Length1),
+    length(Sorted, Length2),
+    Length1 > Length2,
+    print('The surcharge under the number 0120 can only be charged once per treatment day.'),
+    true.
+
+example_invoice(invoice([
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Aufbereitung eines Wurzelkanals', '', []),
+		service(0120, date(2012, 2, 12), 1.0, nan, 70.0, 'Zuschlag für die Anwendung eines Lasers bei Leistung nach Nummer 2410', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(120.71)
+)).",False,"The surcharge according to number 0120 amounts to 100% of the basic fee rate for the respective service, but not more than 68 euros. The surcharge according to number 0120 can only be calculated once per treatment day.",True
+15,1020,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 6.47, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '1010', '_Typ': 'Service', '_Begründung': 'irgend eine Begründung'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 12.94, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0010', '_Typ': 'Service', '_Begründung': 'irgend eine Begründung'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 19.41, '_Waehrung': 'EUR'}",False,"Warning: c:/users/jonas/ideaprojects/idp/legal rule extraction goz/goz/src/temp.pl:2:
+Warning:    Singleton variables: [Year]
+Warning: c:/users/jonas/ideaprojects/idp/legal rule extraction goz/goz/src/temp.pl:11:
+Warning:    Singleton variables: [Year]
+Warning: c:/users/jonas/ideaprojects/idp/legal rule extraction goz/goz/src/temp.pl:20:
+Warning:    Singleton variables: [Year]
+ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Service, (member(service(Service, date(Year, _, _), _, _, _, _, _, _), Services), Service = 1000), Services1000),
+    length(Services1000, Count),
+    Count > 1,
+    print('Service with ServiceNumber 1000 charged more than once within a year.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Service, (member(service(Service, date(Year, _, _), _, _, _, _, _, _), Services), Service = 1010), Services1010),
+    length(Services1010, Count),
+    Count > 3,
+    print('Service with ServiceNumber 1010 charged more than three times within a year.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Service, (member(service(Service, date(Year, _, _), _, _, _, _, _, _), Services), Service = 1020), Services1020),
+    length(Services1020, Count),
+    Count > 4,
+    print('Service with ServiceNumber 1020 charged more than four times within a year.'),
+    true.
+
+
+
+example_invoice(invoice([
+		service(1010, date(2012, 2, 12), 2.3, 100.0, 6.47, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'irgend eine Begründung', []),
+		service(0010, date(2012, 2, 12), 2.3, 100.0, 12.94, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'irgend eine Begründung', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(19.41)
+)).",True,"In connection with the services
+according to numbers 1000 and 1010
+services according to numbers 0010, 4000 and 8000 as well as consultations and examinations
+in accordance with the
+physicians' fee schedule are only billable
+if these services serve other
+purposes and this is justified in the
+justified in the invoice",True
+16,1020,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 6.47, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '1010', '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 12.94, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '0010', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 19.41, '_Waehrung': 'EUR'}",False,"Warning: c:/users/jonas/ideaprojects/idp/legal rule extraction goz/goz/src/temp.pl:2:
+Warning:    Singleton variables: [Year]
+Warning: c:/users/jonas/ideaprojects/idp/legal rule extraction goz/goz/src/temp.pl:11:
+Warning:    Singleton variables: [Year]
+Warning: c:/users/jonas/ideaprojects/idp/legal rule extraction goz/goz/src/temp.pl:20:
+Warning:    Singleton variables: [Year]
+ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Service, (member(service(Service, date(Year, _, _), _, _, _, _, _, _), Services), Service = 1000), Services1000),
+    length(Services1000, Count),
+    Count > 1,
+    print('Service with ServiceNumber 1000 charged more than once within a year.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Service, (member(service(Service, date(Year, _, _), _, _, _, _, _, _), Services), Service = 1010), Services1010),
+    length(Services1010, Count),
+    Count > 3,
+    print('Service with ServiceNumber 1010 charged more than three times within a year.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Service, (member(service(Service, date(Year, _, _), _, _, _, _, _, _), Services), Service = 1020), Services1020),
+    length(Services1020, Count),
+    Count > 4,
+    print('Service with ServiceNumber 1020 charged more than four times within a year.'),
+    true.
+
+
+
+example_invoice(invoice([
+		service(1010, date(2012, 2, 12), 2.3, 100.0, 6.47, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', []),
+		service(0010, date(2012, 2, 12), 2.3, 100.0, 12.94, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(19.41)
+)).",False,"In connection with the services
+according to numbers 1000 and 1010
+services according to numbers 0010, 4000 and 8000 as well as consultations and examinations
+in accordance with the
+physicians' fee schedule are only billable
+if these services serve other
+purposes and this is justified in the
+justified in the invoice",True
+17,1040,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 6.47, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '1020', '_Typ': 'Service', '_Zahn': [15]}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 3.62, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '1040', '_Typ': 'Service', '_Zahn': [15]}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 10.09, '_Waehrung': 'EUR'}","'Service with ServiceNumber 1040 charged in addition to the services with the numbers 1020, 4050, 4055, 4060, 4070, 4075, 4090 and 4100.'","'Service with ServiceNumber 1040 charged in addition to the services with the numbers 1020, 4050, 4055, 4060, 4070, 4075, 4090 and 4100.'","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(1040, _, _, _, _, _, _, _), Services),
+    member(service(Service, _, _, _, _, _, _, _), Services),
+    member(Service, [1020, 4050, 4055, 4060, 4070, 4075, 4090, 4100]),
+    print('Service with ServiceNumber 1040 charged in addition to the services with the numbers 1020, 4050, 4055, 4060, 4070, 4075, 4090 and 4100.'),
+    true.
+
+example_invoice(invoice([
+		service(1020, date(2012, 2, 12), 2.3, 50.0, 6.47, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 5)]),
+		service(1040, date(2012, 2, 12), 2.3, 28.0, 3.62, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 5)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(10.09)
+)).",False,"The service according to number 1040 is not billable in addition to the services according to numbers 1020, 4050, 4055, 4060, 4070, 4075, 4090, and 4100.",False
+18,1040,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 35.57, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '4100', '_Typ': 'Service', '_Zahn': [15]}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 3.62, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '1040', '_Typ': 'Service', '_Zahn': [15]}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 39.19, '_Waehrung': 'EUR'}","'Service with ServiceNumber 1040 charged in addition to the services with the numbers 1020, 4050, 4055, 4060, 4070, 4075, 4090 and 4100.'","'Service with ServiceNumber 1040 charged in addition to the services with the numbers 1020, 4050, 4055, 4060, 4070, 4075, 4090 and 4100.'","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(1040, _, _, _, _, _, _, _), Services),
+    member(service(Service, _, _, _, _, _, _, _), Services),
+    member(Service, [1020, 4050, 4055, 4060, 4070, 4075, 4090, 4100]),
+    print('Service with ServiceNumber 1040 charged in addition to the services with the numbers 1020, 4050, 4055, 4060, 4070, 4075, 4090 and 4100.'),
+    true.
+
+example_invoice(invoice([
+		service(4100, date(2012, 2, 12), 2.3, 275.0, 35.57, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 5)]),
+		service(1040, date(2012, 2, 12), 2.3, 28.0, 3.62, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 5)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(39.19)
+)).",False,"The service according to number 1040 is not billable in addition to the services according to numbers 1020, 4050, 4055, 4060, 4070, 4075, 4090, and 4100.",False
+19,2030,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 8.41, '_Leistungsbeschreibung': 'Präparieren', '_Nr': '2030', '_Zahn': [10], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 8.41, '_Leistungsbeschreibung': 'Füllen', '_Nr': '2030', '_Zahn': [10], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 8.41, '_Leistungsbeschreibung': 'Präparieren', '_Nr': '2030', '_Zahn': [20], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 25.23, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+example_invoice(invoice([
+		service(2030, date(2012, 2, 12), 2.3, 65.0, 8.41, 'Präparieren', '', [tooth(1, 0)]),
+		service(2030, date(2012, 2, 12), 2.3, 65.0, 8.41, 'Füllen', '', [tooth(1, 0)]),
+		service(2030, date(2012, 2, 12), 2.3, 65.0, 8.41, 'Präparieren', '', [tooth(2, 0)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(25.23)
+)).",True,Die Leistung nach der Nummer 2030 ist je Sitzung für eine Kieferhälfte oder einen Frontzahnbereich höchstens einmal für besondere Maßnahmen beim Präparieren und höchstens einmal für besondere Maßnahmen beim Füllen von Kavitäten berechnungsfähig.,False
+20,2030,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 8.41, '_Leistungsbeschreibung': 'Präparieren', '_Nr': '2030', '_Zahn': [10], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 8.41, '_Leistungsbeschreibung': 'Präparieren', '_Nr': '2030', '_Zahn': [10], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 8.41, '_Leistungsbeschreibung': 'Präparieren', '_Nr': '2030', '_Zahn': [10], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 25.23, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+example_invoice(invoice([
+		service(2030, date(2012, 2, 12), 2.3, 65.0, 8.41, 'Präparieren', '', [tooth(1, 0)]),
+		service(2030, date(2012, 2, 12), 2.3, 65.0, 8.41, 'Präparieren', '', [tooth(1, 0)]),
+		service(2030, date(2012, 2, 12), 2.3, 65.0, 8.41, 'Präparieren', '', [tooth(1, 0)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(25.23)
+)).",False,Die Leistung nach der Nummer 2030 ist je Sitzung für eine Kieferhälfte oder einen Frontzahnbereich höchstens einmal für besondere Maßnahmen beim Präparieren und höchstens einmal für besondere Maßnahmen beim Füllen von Kavitäten berechnungsfähig.,False
+21,2195,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 38.81, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2195', '_Zahn': [11], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 38.81, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+example_invoice(invoice([
+		service(2195, date(2012, 2, 12), 2.3, 300.0, 38.81, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(38.81)
+)).",True,"Die Leistungen nach den Nummern 2180, 2190 oder 2195 sind neben den Leistungen nach den Nummern 2150 bis 2170 nicht berechnungsfähig.",False
+22,2195,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 38.81, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2195', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 19.4, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2180', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 147.6, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2150', '_Zahn': [11], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 205.81, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+example_invoice(invoice([
+		service(2195, date(2012, 2, 12), 2.3, 300.0, 38.81, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2180, date(2012, 2, 12), 2.3, 150.0, 19.4, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2150, date(2012, 2, 12), 2.3, 1141.0, 147.6, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(205.81)
+)).",False,"Die Leistungen nach den Nummern 2180, 2190 oder 2195 sind neben den Leistungen nach den Nummern 2150 bis 2170 nicht berechnungsfähig.",False
+23,2195,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 58.21, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2190', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 19.4, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2180', '_Zahn': [11], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 77.61, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+example_invoice(invoice([
+		service(2190, date(2012, 2, 12), 2.3, 450.0, 58.21, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2180, date(2012, 2, 12), 2.3, 150.0, 19.4, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(77.61)
+)).",False,Die Leistung nach der Nummer 2180 ist neben der Leistung nach der Nummer 2190 nicht berechnungsfähig.,False
+24,2195,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 58.21, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2190', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 58.21, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2190', '_Zahn': [12], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 116.42, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+example_invoice(invoice([
+		service(2190, date(2012, 2, 12), 2.3, 450.0, 58.21, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2190, date(2012, 2, 12), 2.3, 450.0, 58.21, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 2)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(116.42)
+)).",True,"Die Leistungen nach den Nummern 2180, 2190 und/oder die Leistung nach der Nummer 2195 ist je Zahn nur jeweils einmal berechnungsfähig.
+",False
+25,2195,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 58.21, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2190', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 58.21, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2190', '_Zahn': [11], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 116.42, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+example_invoice(invoice([
+		service(2190, date(2012, 2, 12), 2.3, 450.0, 58.21, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2190, date(2012, 2, 12), 2.3, 450.0, 58.21, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(116.42)
+)).",False,"Die Leistungen nach den Nummern 2180, 2190 und/oder die Leistung nach der Nummer 2195 ist je Zahn nur jeweils einmal berechnungsfähig.
+",False
+26,2220,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 267.38, '_Leistungsbeschreibung': 'Versorgung eines Zahnes durch eine Teilkrone', '_Nr': '2220', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 147.6, '_Leistungsbeschreibung': 'Einlagefüllung, einflächig', '_Nr': '2150', '_Zahn': [11], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 414.98, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+
+example_invoice(invoice([
+		service(2220, date(2012, 2, 12), 2.3, 2067.0, 267.38, 'Versorgung eines Zahnes durch eine Teilkrone', '', [tooth(1, 1)]),
+		service(2150, date(2012, 2, 12), 2.3, 1141.0, 147.6, 'Einlagefüllung, einflächig', '', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(414.98)
+)).",True,,False
+27,2220,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 267.38, '_Leistungsbeschreibung': 'Versorgung eines Zahnes durch eine Teilkrone', '_Nr': '2220', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 27.55, '_Leistungsbeschreibung': 'Präparieren einer Kavität und Restauration mit plastischem Füllungsmaterial', '_Nr': '2050', '_Zahn': [11], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 294.93, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+
+example_invoice(invoice([
+		service(2220, date(2012, 2, 12), 2.3, 2067.0, 267.38, 'Versorgung eines Zahnes durch eine Teilkrone', '', [tooth(1, 1)]),
+		service(2050, date(2012, 2, 12), 2.3, 213.0, 27.55, 'Präparieren einer Kavität und Restauration mit plastischem Füllungsmaterial', '', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(294.93)
+)).",False,Neben den Leistungen nach den Nummern 2200 bis 2220 sind die Leistungen nach den Nummern 2050 bis 2130 nicht berechnungsfähig.,False
+28,2220,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 217.06, '_Leistungsbeschreibung': 'Versorgung eines Zahnes durch eine Vollkrone', '_Nr': '2210', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 83.05, '_Leistungsbeschreibung': 'Präparieren einer Kavität und Restauration mit Kompositmaterialien', '_Nr': '2100', '_Zahn': [11], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 300.11, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+
+example_invoice(invoice([
+		service(2210, date(2012, 2, 12), 2.3, 1678.0, 217.06, 'Versorgung eines Zahnes durch eine Vollkrone', '', [tooth(1, 1)]),
+		service(2100, date(2012, 2, 12), 2.3, 642.0, 83.05, 'Präparieren einer Kavität und Restauration mit Kompositmaterialien', '', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(300.11)
+)).",False,Neben den Leistungen nach den Nummern 2200 bis 2220 sind die Leistungen nach den Nummern 2050 bis 2130 nicht berechnungsfähig.,False
+29,2240,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2240', '_Zahn': [11], '_Typ': 'Service', '_Begründung': 'It was impossible for the dentist to continue the treatment or a continuation was not indicated for medical reasons.'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 9.05, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+example_invoice(invoice([
+		service(2240, date(2012, 2, 12), 2.3, nan, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'It was impossible for the dentist to continue the treatment or a continuation was not indicated for medical reasons.', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(9.05)
+)).",True,"Die Leistung nach den Nummern 2230 oder 2240 sind nur berechnungsfähig, wenn es dem Zahnarzt objektiv auf Dauer unmöglich war, die Behandlung fortzusetzen oder eine Fortsetzung aus medizinischen Gründen nicht indiziert war.",False
+30,2240,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2240', '_Zahn': [11], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 9.05, '_Waehrung': 'EUR'}",Error,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: '<meta-call>'/1: Unknown procedure: is_invoice_invalid/1
+","
+example_invoice(invoice([
+		service(2240, date(2012, 2, 12), 2.3, nan, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(9.05)
+)).",False,"Die Leistung nach den Nummern 2230 oder 2240 sind nur berechnungsfähig, wenn es dem Zahnarzt objektiv auf Dauer unmöglich war, die Behandlung fortzusetzen oder eine Fortsetzung aus medizinischen Gründen nicht indiziert war.",False
+31,2400,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2400', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2400', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2400', '_Zahn': [12], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 27.15, '_Waehrung': 'EUR'}",'Invalid invoice: Service number 2400 is charged more than twice per session.','Invalid invoice: Service number 2400 is charged more than twice per session.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(2400, _, Multiplier, _, _, _, _, _), Services),
+    Multiplier > 2,
+    print('Invalid invoice: Service number 2400 is charged more than twice per session.'),
+    true.
+
+example_invoice(invoice([
+		service(2400, date(2012, 2, 12), 2.3, 70.0, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2400, date(2012, 2, 12), 2.3, 70.0, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2400, date(2012, 2, 12), 2.3, 70.0, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 2)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(27.15)
+)).",True,Die Leistung nach der Nummer 2400 ist je Wurzelkanal höchstens zweimal je Sitzung berechnungsfähig.,False
+32,2400,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2400', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2400', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-03-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2400', '_Zahn': [11], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 27.15, '_Waehrung': 'EUR'}",'Invalid invoice: Service number 2400 is charged more than twice per session.','Invalid invoice: Service number 2400 is charged more than twice per session.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(2400, _, Multiplier, _, _, _, _, _), Services),
+    Multiplier > 2,
+    print('Invalid invoice: Service number 2400 is charged more than twice per session.'),
+    true.
+
+example_invoice(invoice([
+		service(2400, date(2012, 2, 12), 2.3, 70.0, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2400, date(2012, 2, 12), 2.3, 70.0, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2400, date(2012, 3, 12), 2.3, 70.0, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(27.15)
+)).",True,Die Leistung nach der Nummer 2400 ist je Wurzelkanal höchstens zweimal je Sitzung berechnungsfähig.,False
+33,2400,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2400', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2400', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 9.05, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2400', '_Zahn': [11], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 27.15, '_Waehrung': 'EUR'}",'Invalid invoice: Service number 2400 is charged more than twice per session.','Invalid invoice: Service number 2400 is charged more than twice per session.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(2400, _, Multiplier, _, _, _, _, _), Services),
+    Multiplier > 2,
+    print('Invalid invoice: Service number 2400 is charged more than twice per session.'),
+    true.
+
+example_invoice(invoice([
+		service(2400, date(2012, 2, 12), 2.3, 70.0, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2400, date(2012, 2, 12), 2.3, 70.0, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2400, date(2012, 2, 12), 2.3, 70.0, 9.05, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(27.15)
+)).",False,Die Leistung nach der Nummer 2400 ist je Wurzelkanal höchstens zweimal je Sitzung berechnungsfähig.,False
+34,2410,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [12], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [13], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 152.13, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+
+
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, Description, _, _), Services),
+    sub_string(Description, _, _, _, ""root canal preparation""),
+    Multiplier > 2,
+    print('Invalid invoice: Root canal preparation is charged more than twice.'),
+    true.
+
+example_invoice(invoice([
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 2)]),
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 3)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(152.13)
+)).",True,"Die Leistung nach der Nummer 2410 ist für denselben Wurzelkanal nur dann erneut berechnungsfähig, wenn der Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden ist.",True
+35,2410,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [11], '_Typ': 'Service', '_Begründung': 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [11], '_Typ': 'Service', '_Begründung': 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [12], '_Typ': 'Service', '_Begründung': 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 152.13, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+
+
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, Description, _, _), Services),
+    sub_string(Description, _, _, _, ""root canal preparation""),
+    Multiplier > 2,
+    print('Invalid invoice: Root canal preparation is charged more than twice.'),
+    true.
+
+example_invoice(invoice([
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden', [tooth(1, 1)]),
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden', [tooth(1, 1)]),
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden', [tooth(1, 2)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(152.13)
+)).",True,"Die Leistung nach der Nummer 2410 ist für denselben Wurzelkanal nur dann erneut berechnungsfähig, wenn der Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden ist.",True
+36,2410,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [11], '_Typ': 'Service'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [13], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 152.13, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+
+
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, Description, _, _), Services),
+    sub_string(Description, _, _, _, ""root canal preparation""),
+    Multiplier > 2,
+    print('Invalid invoice: Root canal preparation is charged more than twice.'),
+    true.
+
+example_invoice(invoice([
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 1)]),
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '', [tooth(1, 3)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(152.13)
+)).",False,"Die Leistung nach der Nummer 2410 ist für denselben Wurzelkanal nur dann erneut berechnungsfähig, wenn der Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden ist.",True
+37,2410,"{'_Positionen': [{'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [11], '_Typ': 'Service', '_Begründung': 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [11], '_Typ': 'Service', '_Begründung': 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden'}, {'_Faktor': 2.3, '_Behandlungsdatum': '2012-02-12', '_Anzahl': 1, '_Betrag': 50.71, '_Leistungsbeschreibung': 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', '_Nr': '2410', '_Zahn': [11], '_Typ': 'Service', '_Begründung': 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 152.13, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+
+
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, Description, _, _), Services),
+    sub_string(Description, _, _, _, ""root canal preparation""),
+    Multiplier > 2,
+    print('Invalid invoice: Root canal preparation is charged more than twice.'),
+    true.
+
+example_invoice(invoice([
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden', [tooth(1, 1)]),
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden', [tooth(1, 1)]),
+		service(2410, date(2012, 2, 12), 2.3, 392.0, 50.71, 'Eingehende Untersuchung zur Feststellung von Zahn-, Mund- und Kiefererkrankungen', 'Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden', [tooth(1, 1)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(152.13)
+)).",False,"Die Leistung nach der Nummer 2410 ist für denselben Wurzelkanal nur dann erneut berechnungsfähig, wenn der Wurzelkanal nach der ersten Aufbereitung definitiv versorgt worden ist.",True
+38,L_Zuschläge_zu_bestimmten,"{'_Positionen': [{'_Behandlungsdatum': '2012-02-12', '_Faktor': 1.0, '_Anzahl': 1, '_Betrag': 22.5, '_Leistungsbeschreibung': 'Zuschlag', '_Nr': '0500', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 22.5, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, Multiplier, _, _, _, _, _), Services),
+    between(500, 530, Service),
+    Multiplier \= 1.0,
+    print('Invalid invoice: Service with number between 0500 and 0530 has a multiplier other than 1.'),
+    true.
+
+
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service1, Date, _, _, _, _, _, _), Services),
+    (between(110, 120, Service1); between(500, 530, Service1)),
+    member(service(Service2, Date, _, _, _, _, _, _), Services),
+    between(440, 445, Service2),
+    print('Invalid invoice: Service with number 0110, 0120, 0500 to 0530 is billed on the same date as a service with number 440 to 445.'),
+    true.
+
+example_invoice(invoice([
+		service(0500, date(2012, 2, 12), 1.0, 400.0, 22.5, 'Zuschlag', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(22.5)
+)).",True,Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem einfachen Gebührensatz berechnungsfähig.,True
+39,L_Zuschläge_zu_bestimmten,"{'_Positionen': [{'_Behandlungsdatum': '2012-02-12', '_Faktor': 1.0, '_Anzahl': 1, '_Betrag': 123.73, '_Leistungsbeschreibung': 'Zuschlag', '_Nr': '0530', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 123.73, '_Waehrung': 'EUR'}",False,"ERROR: -g example_invoice(X), is_invoice_invalid(X).: false
+","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, Multiplier, _, _, _, _, _), Services),
+    between(500, 530, Service),
+    Multiplier \= 1.0,
+    print('Invalid invoice: Service with number between 0500 and 0530 has a multiplier other than 1.'),
+    true.
+
+
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service1, Date, _, _, _, _, _, _), Services),
+    (between(110, 120, Service1); between(500, 530, Service1)),
+    member(service(Service2, Date, _, _, _, _, _, _), Services),
+    between(440, 445, Service2),
+    print('Invalid invoice: Service with number 0110, 0120, 0500 to 0530 is billed on the same date as a service with number 440 to 445.'),
+    true.
+
+example_invoice(invoice([
+		service(0530, date(2012, 2, 12), 1.0, 2200.0, 123.73, 'Zuschlag', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(123.73)
+)).",True,Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem einfachen Gebührensatz berechnungsfähig.,True
+40,L_Zuschläge_zu_bestimmten,"{'_Positionen': [{'_Behandlungsdatum': '2012-02-12', '_Faktor': 2, '_Anzahl': 1, '_Betrag': 45, '_Leistungsbeschreibung': 'Zuschlag', '_Nr': '0500', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 45, '_Waehrung': 'EUR'}",'Invalid invoice: Service with number between 0500 and 0530 has a multiplier other than 1.','Invalid invoice: Service with number between 0500 and 0530 has a multiplier other than 1.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, Multiplier, _, _, _, _, _), Services),
+    between(500, 530, Service),
+    Multiplier \= 1.0,
+    print('Invalid invoice: Service with number between 0500 and 0530 has a multiplier other than 1.'),
+    true.
+
+
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service1, Date, _, _, _, _, _, _), Services),
+    (between(110, 120, Service1); between(500, 530, Service1)),
+    member(service(Service2, Date, _, _, _, _, _, _), Services),
+    between(440, 445, Service2),
+    print('Invalid invoice: Service with number 0110, 0120, 0500 to 0530 is billed on the same date as a service with number 440 to 445.'),
+    true.
+
+example_invoice(invoice([
+		service(0500, date(2012, 2, 12), 2, 400.0, 45, 'Zuschlag', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(45)
+)).",False,Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem einfachen Gebührensatz berechnungsfähig.,False
+41,L_Zuschläge_zu_bestimmten,"{'_Positionen': [{'_Behandlungsdatum': '2012-02-12', '_Faktor': 2, '_Anzahl': 1, '_Betrag': 247.46, '_Leistungsbeschreibung': 'Zuschlag', '_Nr': '0530', '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 247.46, '_Waehrung': 'EUR'}",'Invalid invoice: Service with number between 0500 and 0530 has a multiplier other than 1.','Invalid invoice: Service with number between 0500 and 0530 has a multiplier other than 1.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, Multiplier, _, _, _, _, _), Services),
+    between(500, 530, Service),
+    Multiplier \= 1.0,
+    print('Invalid invoice: Service with number between 0500 and 0530 has a multiplier other than 1.'),
+    true.
+
+
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service1, Date, _, _, _, _, _, _), Services),
+    (between(110, 120, Service1); between(500, 530, Service1)),
+    member(service(Service2, Date, _, _, _, _, _, _), Services),
+    between(440, 445, Service2),
+    print('Invalid invoice: Service with number 0110, 0120, 0500 to 0530 is billed on the same date as a service with number 440 to 445.'),
+    true.
+
+example_invoice(invoice([
+		service(0530, date(2012, 2, 12), 2, 2200.0, 247.46, 'Zuschlag', '', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(247.46)
+)).",False,Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem einfachen Gebührensatz berechnungsfähig.,False
+42,§ 10,"{'_Positionen': [{'_Behandlungsdatum': '', '_Faktor': 2.3, '_Anzahl': 1, '_Betrag': 31.05, '_Leistungsbeschreibung': 'Provisorische Brücke im direkten Verfahren mit Abformung, je Zahn oder Implantat, einschließlich Entfernung', '_Nr': '5120', '_Zahn': [15], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 31.05, '_Waehrung': 'EUR'}",'Invalid invoice: Date of treatment is missing for a service or material cost.',"Warning: c:/users/jonas/ideaprojects/idp/legal rule extraction goz/goz/src/temp.pl:2:
+Warning:    Singleton variable in branch: Month
+Warning:    Singleton variable in branch: Day
+'Invalid invoice: Date of treatment is missing for a service or material cost.'","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, Material_Costs, _, _),
+    (member(service(_, date(Year, Month, Day), _, _, _, _, _, _), Services),
+    Year = '' ; Month = '' ; Day = '';
+    member(material_cost(_, date(Year, Month, Day), _, _, _, _, _, _), Material_Costs),
+    Year = '' ; Month = '' ; Day = ''),
+    print('Invalid invoice: Date of treatment is missing for a service or material cost.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, Multiplier, _, Charge, Description, _, Teeth), Services),
+    (Service = '' ; Multiplier = '' ; Charge = '' ; Description = '' ; Teeth = []),
+    print('Invalid invoice: Service number, multiplier, charge, description or treated teeth are missing for a service.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(_, Material_Costs, _, _),
+    member(material_cost(_, _, _, Count, Charge, Description, _, _), Material_Costs),
+    (Count = '' ; Charge = '' ; Description = ''),
+    print('Invalid invoice: Count, charge or description is missing for a material cost.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, _, Justification, _), Services),
+    Multiplier > 2.3,
+    Justification = '',
+    print('Invalid invoice: Justification is missing for a service with a multiplier greater than 2.3.'),
+    true.
+
+
+
+
+
+
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, _, _, _, Description, _, _), Services),
+    Description = '',
+    print('Invalid invoice: Description is missing for a service.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, _, _, _, _, Justification, _), Services),
+    \+ sub_string(Justification, _, _, _, ""corresponding""),
+    print('Invalid invoice: Justification does not contain the word ""corresponding"" for a service.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, _, _, _, _, _, _), Services),
+    Service = '',
+    print('Invalid invoice: Service number is missing for a service.'),
+    true.
+
+
+
+
+
+
+
+example_invoice(invoice([
+		service(5120, date('', '', ''), 2.3, 240.0, 31.05, 'Provisorische Brücke im direkten Verfahren mit Abformung, je Zahn oder Implantat, einschließlich Entfernung', '', [tooth(1, 5)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(31.05)
+)).",False,Service has not date,False
+43,§ 10,"{'_Positionen': [{'_Behandlungsdatum': '2012-02-12', '_Faktor': 2.3, '_Anzahl': 1, '_Betrag': 31.05, '_Leistungsbeschreibung': '', '_Nr': '5120', '_Zahn': [15], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 31.05, '_Waehrung': 'EUR'}",'Invalid invoice: Date of treatment is missing for a service or material cost.',"Warning: c:/users/jonas/ideaprojects/idp/legal rule extraction goz/goz/src/temp.pl:2:
+Warning:    Singleton variable in branch: Month
+Warning:    Singleton variable in branch: Day
+'Invalid invoice: Date of treatment is missing for a service or material cost.'","
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, Material_Costs, _, _),
+    (member(service(_, date(Year, Month, Day), _, _, _, _, _, _), Services),
+    Year = '' ; Month = '' ; Day = '';
+    member(material_cost(_, date(Year, Month, Day), _, _, _, _, _, _), Material_Costs),
+    Year = '' ; Month = '' ; Day = ''),
+    print('Invalid invoice: Date of treatment is missing for a service or material cost.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, Multiplier, _, Charge, Description, _, Teeth), Services),
+    (Service = '' ; Multiplier = '' ; Charge = '' ; Description = '' ; Teeth = []),
+    print('Invalid invoice: Service number, multiplier, charge, description or treated teeth are missing for a service.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(_, Material_Costs, _, _),
+    member(material_cost(_, _, _, Count, Charge, Description, _, _), Material_Costs),
+    (Count = '' ; Charge = '' ; Description = ''),
+    print('Invalid invoice: Count, charge or description is missing for a material cost.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, _, Justification, _), Services),
+    Multiplier > 2.3,
+    Justification = '',
+    print('Invalid invoice: Justification is missing for a service with a multiplier greater than 2.3.'),
+    true.
+
+
+
+
+
+
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, _, _, _, Description, _, _), Services),
+    Description = '',
+    print('Invalid invoice: Description is missing for a service.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, _, _, _, _, Justification, _), Services),
+    \+ sub_string(Justification, _, _, _, ""corresponding""),
+    print('Invalid invoice: Justification does not contain the word ""corresponding"" for a service.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, _, _, _, _, _, _), Services),
+    Service = '',
+    print('Invalid invoice: Service number is missing for a service.'),
+    true.
+
+
+
+
+
+
+
+example_invoice(invoice([
+		service(5120, date(2012, 2, 12), 2.3, 240.0, 31.05, '', '', [tooth(1, 5)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(31.05)
+)).",False,Service has not description,False
+44,§ 5,"{'_Positionen': [{'_Behandlungsdatum': '2012-02-12', '_Faktor': 3.5, '_Anzahl': 1, '_Betrag': 47.24, '_Leistungsbeschreibung': 'Provisorische Brücke im direkten Verfahren mit Abformung, je Zahn oder Implantat, einschließlich Entfernung', '_Nr': '5120', '_Zahn': [15], '_Typ': 'Service'}], '_Kassenanteil': {'_KassenanteilSumme': None}, '_Rechnungsnummer': '97997', '_Rechnungsdatum': '2012-07-03', '_Rechnungsbetrag': 47.24, '_Waehrung': 'EUR'}",'Invalid invoice: Multiplier for a service exceeds 2.3 without justification.','Invalid invoice: Multiplier for a service exceeds 2.3 without justification.',"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, _, _, _), Services),
+    (Multiplier < 1 ; Multiplier > 3.5),
+    print('Invalid invoice: Multiplier for a service is not between 1 and 3.5.'),
+    true.
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, PointScore, Charge, _, _, _), Services),
+    CalculatedCharge is round(Multiplier * PointScore * 0.0562421 * 100) / 100,
+    Charge \= CalculatedCharge,
+    print('Invalid invoice: Calculated charge for a service does not match the charge specified in the invoice.'),
+    true.
+
+
+
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, _, Justification, _), Services),
+    Multiplier > 2.3,
+    Justification = '',
+    print('Invalid invoice: Multiplier for a service exceeds 2.3 without justification.'),
+    true.
+
+
+
+example_invoice(invoice([
+		service(5120, date(2012, 2, 12), 3.5, 240.0, 47.24, 'Provisorische Brücke im direkten Verfahren mit Abformung, je Zahn oder Implantat, einschließlich Entfernung', '', [tooth(1, 5)])
+	],
+	[
+		
+	],
+	invoice_date(date(2012, 7, 3)),
+	invoice_amount(47.24)
+)).",False,Multiplier > 2.3 without Justification,False

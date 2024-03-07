@@ -1,0 +1,106 @@
+CAUSALITY BETWEEN ATMOSPHERIC PROCESSES AND ARCTIC SEA ICE VARIATIONS
+Due to the two-way interactions between the atmosphere and sea ice, studying causality between them is a challenging but
+important task, which makes it an area of high interest within polar climate community. The sea ice variations can be
+caused by different dynamical and thermodynamical processes. Important dynamical processes include anomalous surface
+wind (Spreen et al., 2011; Wu et al., 2012), regional atmospheric circulation patterns (Overland and Wang, 2010;
+Screen et al., 2018; Rinke et al., 2019) and abnormal storm activities (Simmonds et al., 2008; Simmonds and Keay, 2009;
+Screen et al., 2011; Simmonds and Rudeva, 2012; Parkinson and Comiso, 2013; Simmonds and Rudeva, 2014). Cloud (Kapsch
+et al., 2013), radiation (Kay and Gettelman, 2009; Choi et al., 2014) and precipitation (Boisvert et al., 2018; Wang
+et al., 2019; Marcovecchio et al., 2021) are the important thermodynamic factors controlling Arctic sea ice trends
+and variability. On the other hand, sea ice decline in turn exerts large influence on the atmosphere, including
+cloud (Kay and Gettelman, 2009; Morrison et al., 2018), surface energy budget (Semmler et al., 2012; Boisvert et al.,
+2015; Boisvert and Stroeve, 2015), precipitation (Bintanja and Selten, 2014; Kopec et al., 2016) and large-scale
+circulation (Chemke et al., 2019; Kennel and Yulaeva, 2020). Figure 1 depicts the causal relations between key
+atmospheric variables and sea ice over the Arctic. The sea ice here represents sea ice coverage and/or sea ice
+thickness. Note that the processes a − d are well-known atmospheric processes, including cloud microphysics,
+thermodynamics, radiation, climate dynamics, which have been studied over the past few decades. The processes
+e − i are summarized from more recent publications, which are still under investigation by climate scientists.
+We will explain processes e − i in details in the next paragraph. The arrow e represents the two-way effect between
+sea ice and net longwave flux at the surface. Based on global reanalysis (Kapsch et al., 2013; Lee et al., 2017),
+surface (Cox et al., 2016) and satellite observations (Huang et al., 2017), as well as model simulations (Kapsch et
+al., 2016; Huang et al., 2019a), the downward longwave radiation at the surface dominates surface warming and
+therefore enhances sea ice melt in winter and spring. The increase in downward longwave flux is a result of an
+increase in cloudiness and moisture in the Arctic Basin, which is caused by enhanced local evaporation or moisture
+transport from mid-latitudes (Luo et al., 2017). Positive anomalies of longwave flux in spring and early summer
+initiate an earlier melt onset, thereby triggering several feedback mechanisms which amplify melt during the
+succeeding months (Kapsch et al., 2016; Huang et al., 2019b). The sea ice melt increases the air temperature
+and thus increases the longwave flux at the FIGURE 1 | The causality graph between key atmospheric variables and
+sea ice over the Arctic based on literature review. This graph represents the domain knowledge. Note that the
+processes a − d are well-known atmospheric processes, which can be summarized from multiple textbooks.
+The processes e − i are summarized from recent peer-reviewed publications and they are ongoing research.
+The sea_ice here represents sea ice coverage and/or sea ice thickness; GH is the geopotential height;
+RH is relative humidity; SLP means sea level pressure; u10m and v10m represents meridional and zonal wind at 10 m,
+respectively; HFLX is the sensible plus latent heat flux; Precip is the total precipitation; CW is the total
+cloud water path; CC is the total cloud cover; SW and LW represent net shortwave and longwave flux at the
+surface, respectively. Frontiers in Big Data | www.frontiersin.org 3 August 2021 | Volume 4 | Article 642182
+Huang et al. Arctic Sea Ice Causality Discovery surface. The downward shortwave flux, however, appears only
+important after the melt has started (Kapsch et al., 2013; Huang et al., 2017). Once the surface albedo is
+significantly reduced due to sea ice melt, the solar radiation could be absorbed by ocean, which further
+accelerates ice melt in late spring and summer (Kay and Gettelman, 2009; Choi et al., 2014; Kapsch et al., 2016).
+The feedback between surface net shortwave flux and sea ice, represented by arrow f in Figure 1, has been
+confirmed by both model simulations (Kapsch et al., 2016) and satellite observations (Kay and Gettelman, 2009;
+Nussbaumer and Pinker, 2012; Choi et al., 2014). The arrows g indicate the interactions between the sea ice variations
+and atmospheric dynamical processes. A series of studies demonstrated that recent loss of Arctic sea ice is triggered
+by the atmospheric circulation changes such as a tendency toward a dipole pattern in the mean sea level pressure trend
+with an increase over the Arctic Ocean and a decrease over Siberia. The Arctic dipole anomaly in summer
+(Wang et al., 2009), winter (Watanabe et al., 2006) and spring (Kapsch et al., 2019) produces a strong meridional
+wind (v-component) anomaly that drives more sea ice out of the Arctic Ocean. In addition, this dipole anomaly promotes
+transport of heat and moisture and thus enhances downward longwave radiation and control the melt onset
+(Huang et al., 2019b; Kapsch et al., 2019). Moreover, the changes in cyclone occurrence and/or depth during spring
+(Screen et al., 2011) and summer (Simmonds and Rudeva, 2012) have preconditioning effects on the sea ice cover and
+exert a strong influence on the amount of sea ice that survives the melt season. A recent study also pointed out that
+a stronger anticyclonic circulation over Greenland and the Arctic Ocean in the troposphere may have contributed as much
+as 60% to the September sea ice extent decline since 1979, by warming and moistening the lower atmosphere
+(Ding et al., 2017; Huang et al., 2021; Luo et al., 2021). On the other hand, the reduction in Arctic sea ice extent
+and increase in open water area in late summer are found to directly contribute to a modification of large-scale
+FIGURE 2 | The study area (60°N northward). The circle of 60°N is marked in red. Depending on the season, sea ice
+could occur south of 60°N. Frontiers in Big Data | www.frontiersin.org 4 August 2021 | Volume 4 | Article 642182
+Huang et al. Arctic Sea Ice Causality Discovery circulation patterns in the following autumn through the additional
+heat stored in the Arctic Ocean and released to the atmosphere during the autumn (Overland and Wang, 2010). The
+increased 1,000–500 hPa thickness in autumn produce anomalous easterley zonal wind component (u-component), especially
+over the north of Alaska and Canada. Moreover, a more meridional flow pattern associated with sea ice reduction have
+an impact on the mid-latitude weather (Overland and Wang, 2010). These conclusions are mainly drawn from model
+simulations (Watanabe et al., 2006; Rinke et al., 2019), reanalysis and observations (Wang et al., 2009; Overland and
+Wang, 2010; Kapsch et al., 2019). In addition to radiation, the sensible plus latent heat flux also plays an important
+role in the Arctic energy budget. The increase in the downward moisture flux triggers the melting of the sea ice in
+spring (Boisvert et al., 2015; Boisvert and Stroeve, 2015; Marcovecchio et al., 2021). Earlier melt onset and loss of
+sea ice in the spring enhance warming of the ice-free ocean surface, which in turn leads to an increase of evaporation
+from the surface into the atmosphere in the autumn. This positive feedback between heat flux and sea ice, indicated
+by arrow h, has been confirmed by satellite observations (Boisvert et al., 2015; Boisvert and Stroeve, 2015) and model
+simulations (Huang et al., 2019a) during most months of the year. The arrow i represents the influence of precipitation
+on Arctic sea ice variations. Specifically, the magnitude of precipitation accumulating over the sea ice pack largely
+determines the depth of the snow layer, which modulates the rate of sea ice growth because of its highly insulating
+properties (Sturm et al., 2002). The phase of the precipitation falling on the sea ice pack is also important. As rain,
+it can melt, compact, and densify the snowpack, thus reducing the surface albedo and promoting sea ice melt (Perovich
+et al., 2002).The recent snowfall decline in summer is essentially caused by changes in precipitation form (snow
+turning to rain) with very little influence of decreases in total precipitation, which is a result of
+lower-atmospheric warming. Then the loss of snow-on-ice results in a substantial decrease in the surface albedo over
+the Arctic Ocean, causing additional surface ice melt by absorbing more solar radiation (Screen and Simmonds, 2012).
+These conclusions are mainly drawn from in-situ measurements during field campaign (Perovich et al., 2002; Sturm et al.,
+2002), global reanalysis products and surface observations (Screen and Simmonds, 2012; Boisvert et al., 2018;
+Wang et al., 2019). The higher precipitation and snowfall could result in a thicker snowpack that allows less heat
+loss to the atmosphere. More importantly, modeling studies suggest that increases in Arctic precipitation over the
+21st century, particularly in late autumn and winter, are due mainly to strongly intensified local surface evaporation
+(latent heat flux) (Bintanja and Selten, 2014). Therefore, we believe that Arctic precipitation exerts direct influence
+on sea ice variations (arrow i), while sea ice modulates precipitation mainly through sensible plus latent heat flux
+(arrows h, b). Among these studies, very few of them have demonstrated the delayed impact of one variable on another.
+Specifically, the net shortwave flux at the surface in early summer (May–July) is found to enhance sea ice melt with a
+lag of 1–4 months (Choi et al., 2014). Moreover, the sea ice condition exhibits the delayed impacts on itself, which is
+called sea ice anomaly persistence (Guemas et al., 2016; Cruz-García et al., 2019; Holland et al., 2019). The sea ice
+anomaly persistence depends on the predictand (area, extent, volume), region, and the initial and target dates, which
+can be varied from a few days to a few years (Guemas et al., 2016). With sea ice anomaly persistence,
+there is predictability for the sea ice area in winter but low predictability throughout the rest of the year in
+peripheral seas. Based on multiple model simulations, the Labrador Sea stands out among the considered regions,
+with sea ice predictability extending up to 1.5 years (Cruz-García et al., 2019). Note that most of studies mentioned
+above determine the changes in one variable, happening before another one, by applying time series analysis and/or
+composite analysis based on observations, reanalysis or model output (Perovich et al., 2002; Sturm et al., 2002; Kay
+and Gettelman, 2009; Wang et al., 2009; Nussbaumer and Pinker, 2012; Kapsch et al., 2013; Choi et al., 2014; Boisvert
+et al., 2015; Boisvert and Stroeve, 2015; Cox et al., 2016; Huang et al., 2017; Huang et al., 2019b; Boisvert et al.,
+2018; Wang et al., 2019). Among them, some studies use more advanced statistical analysis such as empirical orthogonal
+function (Watanabe et al., 2006; Overland and Wang, 2010) and self-organizing map (Kapsch et al., 2019; Rinke et al.,
+2019). Other studies assess the causal links through targeted modeling experiments (Bintanja and Selten, 2014; Kapsch
+et al., 2016; Ding et al., 2017; Huang et al., 2019a; Cruz-García et al., 2019), in order to test whether a manipulation
+of one variable has an impact on others. And most of the studies focus on relationships between only one or two
+atmospheric processes with changes in Arctic sea ice. Therefore, in this study, we target to provide a more
+comprehensive analysis about causality between multiple atmospheric processes and sea ice by applying different
+data-driven causality approaches.

@@ -1,0 +1,1461 @@
+,section,content,reference,parsed_references,rule,llm_response,query,llm_inputs,llm_calls,prompt_tokens,completion_tokens,total_cost,parsed_code
+0,A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9","[{'section': '4'}, {'section': '9'}]",Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeichnisses für ärztliche Leistungen darf im Behandlungsfall nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.,"Rule 1:
+Thoughts: This rule states that a consultation fee (service number 1) can only be charged once per treatment case, and only in conjunction with a service from the same fee schedule or a service from sections C to O of the medical fee schedule. In the given predicates, we don't have information about the sections of the medical fee schedule, so we can't check this part of the rule. However, we can check if the consultation fee (service number 1) is charged more than once per treatment case. A treatment case is defined as the treatment of the same disease within a period of one month after the first consultation of the dentist. In the given predicates, we don't have information about the disease, so we can't check this part of the rule. However, we can check if the consultation fee (service number 1) is charged more than once within a period of one month.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Date, (member(service(1, Date, _, _, _, _, _, _), Services)), Dates),
+    sort(Dates, SortedDates),
+    length(SortedDates, Length),
+    Length > 1,
+    print('Consultation fee (service number 1) is charged more than once within a period of one month.'),
+    true.
+```
+
+Rule 2:
+Thoughts: This rule states that a consultation fee (service number 3) can only be charged as a single service or in conjunction with an examination (service number 0010) or an examination (service numbers 5 or 6). Other services may not be charged in addition to the service number 3. In the given predicates, we can check if the consultation fee (service number 3) is charged in conjunction with other services that are not examinations (service numbers 0010, 5, or 6).
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(3, _, _, _, _, _, _, _), Services),
+    findall(Service, (member(service(Service, _, _, _, _, _, _, _), Services), Service \= 3, Service \= 0010, Service \= 5, Service \= 6), OtherServices),
+    length(OtherServices, Length),
+    Length > 0,
+    print('Consultation fee (service number 3) is charged in conjunction with other services that are not examinations (service numbers 0010, 5, or 6).'),
+    true.
+```
+
+Rule 3:
+Thoughts: This rule defines a treatment case as the treatment of the same disease within a period of one month after the first consultation of the dentist. In the given predicates, we don't have information about the disease, so we can't translate this rule.
+
+Translation:
+```prolog
+```
+
+Rule 4:
+Thoughts: This rule states that the impression material used for services according to this fee schedule is separately chargeable. In the given predicates, we don't have information about the impression material, so we can't translate this rule.
+
+Translation:
+```prolog
+```
+
+Rule 5:
+Thoughts: This rule states that material and laboratory costs in the sense of this fee schedule include practice costs according to § 4 paragraph 3 and expenses for dental technical services according to § 9 of this fee schedule. In the given predicates, we don't have information about the practice costs and the expenses for dental technical services, so we can't translate this rule.
+
+Translation:
+```prolog
+```",,"Given this rules from the german GOZ:
+---
+Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeichnisses für ärztliche Leistungen darf im Behandlungsfall nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+---
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung oder im Zusammenhang mit einer Untersuchung nach der Nummer 0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Gebührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistungen dürfen neben der Leistung nach der Nummer 3 nicht berechnet werden.
+---
+Als Behandlungsfall gilt für die Behandlung derselben Erkrankung der Zeitraum eines Monats nach der jeweils ersten Inanspruchnahme des Zahnarztes.
+---
+Das bei Leistungen nach diesem Gebührenverzeichnis verwendete Abformungsmaterial ist gesondert berechnungsfähig.
+---
+Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechnische Leistungen nach § 9 dieser Gebührenordnung.
+---
+
+
+And this predicates:
+```prolog
+invoice(
+    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...
+    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...
+    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    invoice_date(date(Year, Month, Day)),
+    invoice_amount(InvoiceAmount)
+).
+% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100
+% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema
+% Area = 1 -> Right upper jaw
+% Area = 2 -> Left upper jaw
+% Area = 3 -> Left lower jaw
+% Area = 4 -> Right lower jaw
+% Position is exact position of this tooth in its area (from 1 to 8)
+% Example invoice
+invoice(
+    [
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),
+        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),
+        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])
+    ],
+    [
+        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])
+    ]
+    invoice_date(date(2023, 10, 04),
+    invoice_amount(110.01)
+).
+```
+The 5 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.
+We want to mark invoices as invalid if they do not adhere to those rules.
+Which of those rules can you translate into prolog code given following restriction:
+Only translate the rules as they are, do not include any examples.
+Be as accurate as possible.
+You must be able to exactly define every new predicate based on the given ones.
+Do not make any assumptions which are not given.
+Translate the rules where a translation given the restrictions is possible.
+To determine if an invoice is correct, use the predicate 
+```prolog
+is_invoice_invalid(Invoice) : -
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),
+    % The corresponding rule (only one rule for each predicate)
+    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.
+    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice
+    true. % Then the invoice is invalid.
+```
+Use this predicate to check each rule individually. Before you translate a rule, think about it.
+Expected format:
+---
+Rule 1:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+Rule 2:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+... 
+
+When you can not translate leaf the code section empty like this:
+---
+Rule X:
+Thoughts: ...
+Translation:
+```prolog
+```
+---
+
+So you should have a block for each of the 5 given rules at the end.
+For translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.
+When you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).
+I only want to have exactly defined rules.
+First, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.",1.0,1473.0,750.0,0.08918999999999999,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    findall(Date, (member(service(1, Date, _, _, _, _, _, _), Services)), Dates),
+    sort(Dates, SortedDates),
+    length(SortedDates, Length),
+    Length > 1,
+    print('Consultation fee (service number 1) is charged more than once within a period of one month.'),
+    true.
+"
+1,A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9","[{'section': '4'}, {'section': '9'}]",Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung oder im Zusammenhang mit einer Untersuchung nach der Nummer 0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Gebührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistungen dürfen neben der Leistung nach der Nummer 3 nicht berechnet werden.,,,,,,,,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(3, _, _, _, _, _, _, _), Services),
+    findall(Service, (member(service(Service, _, _, _, _, _, _, _), Services), Service \= 3, Service \= 0010, Service \= 5, Service \= 6), OtherServices),
+    length(OtherServices, Length),
+    Length > 0,
+    print('Consultation fee (service number 3) is charged in conjunction with other services that are not examinations (service numbers 0010, 5, or 6).'),
+    true.
+"
+2,A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9","[{'section': '4'}, {'section': '9'}]",Als Behandlungsfall gilt für die Behandlung derselben Erkrankung der Zeitraum eines Monats nach der jeweils ersten Inanspruchnahme des Zahnarztes.,,,,,,,,"
+"
+3,A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9","[{'section': '4'}, {'section': '9'}]",Das bei Leistungen nach diesem Gebührenverzeichnis verwendete Abformungsmaterial ist gesondert berechnungsfähig.,,,,,,,,"
+"
+4,A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9","[{'section': '4'}, {'section': '9'}]",Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechnische Leistungen nach § 9 dieser Gebührenordnung.,,,,,,,,"
+"
+5,B_Prophylaktische_Leistungen,"Allgemeine Bestimmungen
+Prophylaktische Leistungen nach Abschnitt B sind nur bei Einzelunterwei -
+sung (Individualprophylaxe) berechnungsfähig; bei Gruppenunterwei -
+sung (Gruppenprophylaxe) sind sie nicht berechnungsfähig.",The text does not mention any references to other paragraphs.,,,,,,,,,,
+6,C_Konservierende_Leistungen,"Allgemeine Bestimmungen
+Nur einmal verwendbare Nickel-Titan-Instrumente zur Wurzelkanalauf -
+bereitung sind gesondert berechnungsfähig.",The text does not mention any references to other paragraphs.,,Only once usable nickel-titanium instruments for root canal preparation can be charged separately.,"Rule 1:
+Thoughts: The rule states that ""Only once usable nickel-titanium instruments for root canal preparation can be charged separately."" This means that if a nickel-titanium instrument is used more than once in the same invoice, the invoice is invalid. We can check this by counting the number of times a nickel-titanium instrument is charged in the material costs. If it is more than once, we print an error message and return true for `is_invoice_invalid`.
+
+Translation:
+```prolog
+% Helper predicate to count the number of times a nickel-titanium instrument is charged
+count_nickel_titanium_instruments([], 0).
+count_nickel_titanium_instruments([material_cost(_, _, _, _, _, Description, _, _) | T], Count) :-
+    (Description = 'Nickel-Titanium Instrument' -> count_nickel_titanium_instruments(T, Count1), Count is Count1 + 1; count_nickel_titanium_instruments(T, Count)).
+
+% Main predicate to check the rule
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(_, Material_Costs, _, _),
+    count_nickel_titanium_instruments(Material_Costs, Count),
+    (Count > 1 -> print('Invalid invoice: Nickel-Titanium Instrument charged more than once.'), true; false).
+```
+In the above code, `count_nickel_titanium_instruments/2` is a helper predicate that recursively counts the number of times a nickel-titanium instrument is charged in the material costs. The main predicate `is_invoice_invalid/1` uses this helper predicate to check if a nickel-titanium instrument is charged more than once. If it is, it prints an error message and returns true, indicating that the invoice is invalid. Otherwise, it returns false, indicating that the invoice is valid.",,"Given this rules from the german GOZ:
+---
+Only once usable nickel-titanium instruments for root canal preparation can be charged separately.
+---
+
+
+And this predicates:
+```prolog
+invoice(
+    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...
+    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...
+    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    invoice_date(date(Year, Month, Day)),
+    invoice_amount(InvoiceAmount)
+).
+% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100
+% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema
+% Area = 1 -> Right upper jaw
+% Area = 2 -> Left upper jaw
+% Area = 3 -> Left lower jaw
+% Area = 4 -> Right lower jaw
+% Position is exact position of this tooth in its area (from 1 to 8)
+% Example invoice
+invoice(
+    [
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),
+        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),
+        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])
+    ],
+    [
+        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])
+    ]
+    invoice_date(date(2023, 10, 04),
+    invoice_amount(110.01)
+).
+```
+The 1 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.
+We want to mark invoices as invalid if they do not adhere to those rules.
+Which of those rules can you translate into prolog code given following restriction:
+Only translate the rules as they are, do not include any examples.
+Be as accurate as possible.
+You must be able to exactly define every new predicate based on the given ones.
+Do not make any assumptions which are not given.
+Translate the rules where a translation given the restrictions is possible.
+To determine if an invoice is correct, use the predicate 
+```prolog
+is_invoice_invalid(Invoice) : -
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),
+    % The corresponding rule (only one rule for each predicate)
+    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.
+    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice
+    true. % Then the invoice is invalid.
+```
+Use this predicate to check each rule individually. Before you translate a rule, think about it.
+Expected format:
+---
+Rule 1:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+Rule 2:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+... 
+
+When you can not translate leaf the code section empty like this:
+---
+Rule X:
+Thoughts: ...
+Translation:
+```prolog
+```
+---
+
+So you should have a block for each of the 1 given rules at the end.
+For translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.
+When you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).
+I only want to have exactly defined rules.
+First, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.",1.0,1157.0,383.0,0.05769,"
+% Helper predicate to count the number of times a nickel-titanium instrument is charged
+count_nickel_titanium_instruments([], 0).
+count_nickel_titanium_instruments([material_cost(_, _, _, _, _, Description, _, _) | T], Count) :-
+    (Description = 'Nickel-Titanium Instrument' -> count_nickel_titanium_instruments(T, Count1), Count is Count1 + 1; count_nickel_titanium_instruments(T, Count)).
+
+% Main predicate to check the rule
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(_, Material_Costs, _, _),
+    count_nickel_titanium_instruments(Material_Costs, Count),
+    (Count > 1 -> print('Invalid invoice: Nickel-Titanium Instrument charged more than once.'), true; false).
+"
+7,D_Chirurgische_Leistungen,"Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des
+Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätz -
+liche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wund -
+verbandes) ist Bestandteil der Leistungen nach Abschnitt D und nicht
+gesondert berechnungsfähig.
+2. Die Schaffung des operativen Zugangs ist Bestandteil der Leistungen
+nach Abschnitt D und nicht gesondert berechnungsfähig.
+3. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Ver -
+schluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen
+oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Ner -
+ven) erforderlich ist, sowie atraumatisches Nahtmaterial oder nur einmal
+verwendbare Explantationsfräsen, sind gesondert berechnungsfähig.",The text does not contain any references to other paragraphs.,,"1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätzliche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen nach Abschnitt D und nicht gesondert berechnungsfähig.","Rule 1:
+Thoughts: This rule states that primary wound care is part of the services in section D and cannot be billed separately. However, we don't have any information about what services are in section D or how to identify primary wound care in the given predicates. Therefore, we cannot translate this rule into Prolog code.
+
+Translation:
+```prolog
+```
+
+Rule 2:
+Thoughts: This rule states that the creation of the operative access is part of the services in section D and cannot be billed separately. Similar to rule 1, we don't have any information about what services are in section D or how to identify the creation of the operative access in the given predicates. Therefore, we cannot translate this rule into Prolog code.
+
+Translation:
+```prolog
+```
+
+Rule 3:
+Thoughts: This rule states that certain materials (bone replacement materials, materials for promoting blood clotting or tissue regeneration, materials for closing superficial bleeding in hemorrhagic diatheses or when necessary to protect important anatomical structures, atraumatic suture material, or disposable explantation drills) can be billed separately. However, we don't have any information about how to identify these materials in the given predicates. Therefore, we cannot translate this rule into Prolog code.
+
+Translation:
+```prolog
+```",,"Given this rules from the german GOZ:
+---
+1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätzliche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen nach Abschnitt D und nicht gesondert berechnungsfähig.
+---
+2. Die Schaffung des operativen Zugangs ist Bestandteil der Leistungen nach Abschnitt D und nicht gesondert berechnungsfähig.
+---
+3. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutgerinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Verschluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Nerven) erforderlich ist, sowie atraumatisches Nahtmaterial oder nur einmal verwendbare Explantationsfräsen, sind gesondert berechnungsfähig.
+---
+
+
+And this predicates:
+```prolog
+invoice(
+    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...
+    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...
+    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    invoice_date(date(Year, Month, Day)),
+    invoice_amount(InvoiceAmount)
+).
+% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100
+% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema
+% Area = 1 -> Right upper jaw
+% Area = 2 -> Left upper jaw
+% Area = 3 -> Left lower jaw
+% Area = 4 -> Right lower jaw
+% Position is exact position of this tooth in its area (from 1 to 8)
+% Example invoice
+invoice(
+    [
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),
+        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),
+        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])
+    ],
+    [
+        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])
+    ]
+    invoice_date(date(2023, 10, 04),
+    invoice_amount(110.01)
+).
+```
+The 3 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.
+We want to mark invoices as invalid if they do not adhere to those rules.
+Which of those rules can you translate into prolog code given following restriction:
+Only translate the rules as they are, do not include any examples.
+Be as accurate as possible.
+You must be able to exactly define every new predicate based on the given ones.
+Do not make any assumptions which are not given.
+Translate the rules where a translation given the restrictions is possible.
+To determine if an invoice is correct, use the predicate 
+```prolog
+is_invoice_invalid(Invoice) : -
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),
+    % The corresponding rule (only one rule for each predicate)
+    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.
+    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice
+    true. % Then the invoice is invalid.
+```
+Use this predicate to check each rule individually. Before you translate a rule, think about it.
+Expected format:
+---
+Rule 1:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+Rule 2:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+... 
+
+When you can not translate leaf the code section empty like this:
+---
+Rule X:
+Thoughts: ...
+Translation:
+```prolog
+```
+---
+
+So you should have a block for each of the 3 given rules at the end.
+For translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.
+When you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).
+I only want to have exactly defined rules.
+First, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.",1.0,1387.0,266.0,0.05757,"
+"
+8,D_Chirurgische_Leistungen,"Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des
+Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätz -
+liche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wund -
+verbandes) ist Bestandteil der Leistungen nach Abschnitt D und nicht
+gesondert berechnungsfähig.
+2. Die Schaffung des operativen Zugangs ist Bestandteil der Leistungen
+nach Abschnitt D und nicht gesondert berechnungsfähig.
+3. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Ver -
+schluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen
+oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Ner -
+ven) erforderlich ist, sowie atraumatisches Nahtmaterial oder nur einmal
+verwendbare Explantationsfräsen, sind gesondert berechnungsfähig.",The text does not contain any references to other paragraphs.,,2. Die Schaffung des operativen Zugangs ist Bestandteil der Leistungen nach Abschnitt D und nicht gesondert berechnungsfähig.,,,,,,,,"
+"
+9,D_Chirurgische_Leistungen,"Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des
+Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätz -
+liche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wund -
+verbandes) ist Bestandteil der Leistungen nach Abschnitt D und nicht
+gesondert berechnungsfähig.
+2. Die Schaffung des operativen Zugangs ist Bestandteil der Leistungen
+nach Abschnitt D und nicht gesondert berechnungsfähig.
+3. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Ver -
+schluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen
+oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Ner -
+ven) erforderlich ist, sowie atraumatisches Nahtmaterial oder nur einmal
+verwendbare Explantationsfräsen, sind gesondert berechnungsfähig.",The text does not contain any references to other paragraphs.,,"3. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutgerinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Verschluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Nerven) erforderlich ist, sowie atraumatisches Nahtmaterial oder nur einmal verwendbare Explantationsfräsen, sind gesondert berechnungsfähig.",,,,,,,,"
+"
+10,E_Leistungen_bei_Erkrankungen_der_Mundschleimhaut,"und des Parodontiums
+Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des
+Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätz -
+liche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wund -
+verbandes) ist Bestandteil der Leistungen nach Abschnitt E und nicht
+gesondert berechnungsfähig.
+2. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Ver -
+schluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen
+oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Ner -
+ven) erforderlich ist, sowie atraumatisches Nahtmaterial und Materialien
+zur Fixierung von Membranen sind gesondert berechnungsfähig.",The text does not contain any references to other paragraphs.,,"1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätzliche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen nach Abschnitt E und nicht gesondert berechnungsfähig.","Rule 1:
+Thoughts: This rule states that primary wound care is included in the services under section E and cannot be billed separately. However, we don't have any information about what services are under section E or how to identify primary wound care in the given predicates. Therefore, we cannot translate this rule into Prolog code.
+
+Translation:
+```prolog
+```
+
+Rule 2:
+Thoughts: This rule states that certain materials (bone replacement materials, materials for promoting blood clotting or tissue regeneration, atraumatic suture material, and materials for fixing membranes) can be billed separately. However, we don't have any information about how to identify these materials in the given predicates. Therefore, we cannot translate this rule into Prolog code.
+
+Translation:
+```prolog
+```",,"Given this rules from the german GOZ:
+---
+1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätzliche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen nach Abschnitt E und nicht gesondert berechnungsfähig.
+---
+2. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutgerinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Verschluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Nerven) erforderlich ist, sowie atraumatisches Nahtmaterial und Materialien zur Fixierung von Membranen sind gesondert berechnungsfähig.
+---
+
+
+And this predicates:
+```prolog
+invoice(
+    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...
+    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...
+    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    invoice_date(date(Year, Month, Day)),
+    invoice_amount(InvoiceAmount)
+).
+% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100
+% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema
+% Area = 1 -> Right upper jaw
+% Area = 2 -> Left upper jaw
+% Area = 3 -> Left lower jaw
+% Area = 4 -> Right lower jaw
+% Position is exact position of this tooth in its area (from 1 to 8)
+% Example invoice
+invoice(
+    [
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),
+        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),
+        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])
+    ],
+    [
+        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])
+    ]
+    invoice_date(date(2023, 10, 04),
+    invoice_amount(110.01)
+).
+```
+The 2 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.
+We want to mark invoices as invalid if they do not adhere to those rules.
+Which of those rules can you translate into prolog code given following restriction:
+Only translate the rules as they are, do not include any examples.
+Be as accurate as possible.
+You must be able to exactly define every new predicate based on the given ones.
+Do not make any assumptions which are not given.
+Translate the rules where a translation given the restrictions is possible.
+To determine if an invoice is correct, use the predicate 
+```prolog
+is_invoice_invalid(Invoice) : -
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),
+    % The corresponding rule (only one rule for each predicate)
+    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.
+    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice
+    true. % Then the invoice is invalid.
+```
+Use this predicate to check each rule individually. Before you translate a rule, think about it.
+Expected format:
+---
+Rule 1:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+Rule 2:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+... 
+
+When you can not translate leaf the code section empty like this:
+---
+Rule X:
+Thoughts: ...
+Translation:
+```prolog
+```
+---
+
+So you should have a block for each of the 2 given rules at the end.
+For translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.
+When you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).
+I only want to have exactly defined rules.
+First, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.",1.0,1348.0,159.0,0.049980000000000004,"
+"
+11,E_Leistungen_bei_Erkrankungen_der_Mundschleimhaut,"und des Parodontiums
+Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des
+Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätz -
+liche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wund -
+verbandes) ist Bestandteil der Leistungen nach Abschnitt E und nicht
+gesondert berechnungsfähig.
+2. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Ver -
+schluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen
+oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Ner -
+ven) erforderlich ist, sowie atraumatisches Nahtmaterial und Materialien
+zur Fixierung von Membranen sind gesondert berechnungsfähig.",The text does not contain any references to other paragraphs.,,"2. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutgerinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Verschluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Nerven) erforderlich ist, sowie atraumatisches Nahtmaterial und Materialien zur Fixierung von Membranen sind gesondert berechnungsfähig.",,,,,,,,"
+"
+12,G_Kieferorthopädische_Leistungen,"Allgemeine Bestimmungen
+Die Leistungen nach den Nummern 6100, 6120, 6140 und 6150 beinhal -
+ten auch die Material- und Laborkosten für Standardmaterialien wie
+zum Beispiel unprogrammierte Edelstahlbrackets, unprogrammierte At -
+tachments und Edelstahlbänder.
+Werden darüber hinausgehende Materialien verwendet, können die
+Mehrkosten für diese Materialien gesondert berechnet werden, wenn
+dies vor der Verwendung mit dem Zahlungspflichtigen nach persönli -
+cher Absprache schriftlich vereinbart worden ist. Diese Vereinbarung
+hat Angaben über die voraussichtliche Höhe der einzelnen Material-
+und Laborkosten und die Material- und Laborkosten der in Abzug zu
+bringenden Standardmaterialien zu enthalten. In der Vereinbarung ist
+darauf hinzuweisen, dass eine Erstattung durch Erstattungsstellen mög -
+licherweise nicht im vollen Umfang gewährleistet ist.",The text does not mention any references to other paragraphs.,,"Werden darüber hinausgehende Materialien verwendet, können die Mehrkosten für diese Materialien gesondert berechnet werden, wenn dies vor der Verwendung mit dem Zahlungspflichtigen nach persönlicher Absprache schriftlich vereinbart worden ist. Diese Vereinbarung hat Angaben über die voraussichtliche Höhe der einzelnen Material- und Laborkosten und die Material- und Laborkosten der in Abzug zu bringenden Standardmaterialien zu enthalten.","Rule 1:
+Thoughts: This rule states that if additional materials are used, the extra costs for these materials can be charged separately, but only if this has been agreed in writing with the person responsible for payment before the materials are used. The agreement must include information about the expected individual material and laboratory costs and the material and laboratory costs of the standard materials to be deducted. This rule is difficult to translate into Prolog code because it involves agreements and written contracts, which are not represented in the given predicates. We can't check if there was a written agreement or what it contained. Therefore, this rule can't be translated into Prolog code given the current predicates.
+
+Translation:
+```prolog
+```
+
+Rule 2:
+Thoughts: This rule states that the agreement must point out that a refund by refund agencies may not be guaranteed in full. Similar to the first rule, this rule involves agreements and written contracts, which are not represented in the given predicates. We can't check if there was a written agreement or what it contained. Therefore, this rule can't be translated into Prolog code given the current predicates.
+
+Translation:
+```prolog
+```",,"Given this rules from the german GOZ:
+---
+Werden darüber hinausgehende Materialien verwendet, können die Mehrkosten für diese Materialien gesondert berechnet werden, wenn dies vor der Verwendung mit dem Zahlungspflichtigen nach persönlicher Absprache schriftlich vereinbart worden ist. Diese Vereinbarung hat Angaben über die voraussichtliche Höhe der einzelnen Material- und Laborkosten und die Material- und Laborkosten der in Abzug zu bringenden Standardmaterialien zu enthalten.
+---
+In der Vereinbarung ist darauf hinzuweisen, dass eine Erstattung durch Erstattungsstellen möglicherweise nicht im vollen Umfang gewährleistet ist.
+---
+
+
+And this predicates:
+```prolog
+invoice(
+    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...
+    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...
+    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    invoice_date(date(Year, Month, Day)),
+    invoice_amount(InvoiceAmount)
+).
+% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100
+% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema
+% Area = 1 -> Right upper jaw
+% Area = 2 -> Left upper jaw
+% Area = 3 -> Left lower jaw
+% Area = 4 -> Right lower jaw
+% Position is exact position of this tooth in its area (from 1 to 8)
+% Example invoice
+invoice(
+    [
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),
+        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),
+        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])
+    ],
+    [
+        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])
+    ]
+    invoice_date(date(2023, 10, 04),
+    invoice_amount(110.01)
+).
+```
+The 2 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.
+We want to mark invoices as invalid if they do not adhere to those rules.
+Which of those rules can you translate into prolog code given following restriction:
+Only translate the rules as they are, do not include any examples.
+Be as accurate as possible.
+You must be able to exactly define every new predicate based on the given ones.
+Do not make any assumptions which are not given.
+Translate the rules where a translation given the restrictions is possible.
+To determine if an invoice is correct, use the predicate 
+```prolog
+is_invoice_invalid(Invoice) : -
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),
+    % The corresponding rule (only one rule for each predicate)
+    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.
+    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice
+    true. % Then the invoice is invalid.
+```
+Use this predicate to check each rule individually. Before you translate a rule, think about it.
+Expected format:
+---
+Rule 1:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+Rule 2:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+... 
+
+When you can not translate leaf the code section empty like this:
+---
+Rule X:
+Thoughts: ...
+Translation:
+```prolog
+```
+---
+
+So you should have a block for each of the 2 given rules at the end.
+For translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.
+When you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).
+I only want to have exactly defined rules.
+First, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.",1.0,1287.0,234.0,0.05265,"
+"
+13,G_Kieferorthopädische_Leistungen,"Allgemeine Bestimmungen
+Die Leistungen nach den Nummern 6100, 6120, 6140 und 6150 beinhal -
+ten auch die Material- und Laborkosten für Standardmaterialien wie
+zum Beispiel unprogrammierte Edelstahlbrackets, unprogrammierte At -
+tachments und Edelstahlbänder.
+Werden darüber hinausgehende Materialien verwendet, können die
+Mehrkosten für diese Materialien gesondert berechnet werden, wenn
+dies vor der Verwendung mit dem Zahlungspflichtigen nach persönli -
+cher Absprache schriftlich vereinbart worden ist. Diese Vereinbarung
+hat Angaben über die voraussichtliche Höhe der einzelnen Material-
+und Laborkosten und die Material- und Laborkosten der in Abzug zu
+bringenden Standardmaterialien zu enthalten. In der Vereinbarung ist
+darauf hinzuweisen, dass eine Erstattung durch Erstattungsstellen mög -
+licherweise nicht im vollen Umfang gewährleistet ist.",The text does not mention any references to other paragraphs.,,"In der Vereinbarung ist darauf hinzuweisen, dass eine Erstattung durch Erstattungsstellen möglicherweise nicht im vollen Umfang gewährleistet ist.",,,,,,,,"
+"
+14,H_Eingliederung_von_Aufbissbehelfen_und_Schienen,"Allgemeine Bestimmungen
+Endgültige Kronen, Brücken und Prothesen dürfen nicht als Aufbissbe -
+helfe oder Schienen nach Abschnitt H berechnet werden.",References: Abschnitt H,,"Endgültige Kronen, Brücken und Prothesen dürfen nicht als Aufbissbe -
+helfe oder Schienen nach Abschnitt H berechnet werden.","Rule 1:
+Thoughts: The rule states that final crowns, bridges and prostheses cannot be billed as occlusal aids or splints according to section H. This means that if a service is a final crown, bridge or prosthesis, it should not be billed under the section H of the GOZ. We can check this by looking at the service description and the GOZ section. If the service description is one of the mentioned services and the GOZ section is H, then the invoice is invalid.
+
+Translation:
+```prolog
+% Helper predicate to check if a service is a final crown, bridge or prosthesis
+is_final_crown_bridge_or_prosthesis(Description) :-
+    member(Description, ['Final Crown', 'Bridge', 'Prosthesis']).
+
+% Helper predicate to check if a service is billed under section H
+is_billed_under_section_H(GOZ_Section) :-
+    GOZ_Section = 'H'.
+
+% Main predicate to check if the invoice is invalid
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day)), invoice_amount(InvoiceAmount)),
+    member(service(_, _, _, _, _, Description, _, _), Services),
+    is_final_crown_bridge_or_prosthesis(Description),
+    member(material_cost(GOZ_Section, _, _, _, _, _, _, _), Material_Costs),
+    is_billed_under_section_H(GOZ_Section),
+    print('Invoice is invalid because final crowns, bridges and prostheses cannot be billed as occlusal aids or splints according to section H.'),
+    true.
+```
+Note: The helper predicates `is_final_crown_bridge_or_prosthesis/1` and `is_billed_under_section_H/1` are used to make the main predicate `is_invoice_invalid/1` more readable. The `member/2` predicate is used to check if a certain condition holds for at least one element in a list. The `print/1` predicate is used to print a message to the console. The `true/0` predicate is used to indicate that the invoice is invalid.",,"Given this rules from the german GOZ:
+---
+Endgültige Kronen, Brücken und Prothesen dürfen nicht als Aufbissbe -
+helfe oder Schienen nach Abschnitt H berechnet werden.
+---
+
+
+And this predicates:
+```prolog
+invoice(
+    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...
+    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...
+    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    invoice_date(date(Year, Month, Day)),
+    invoice_amount(InvoiceAmount)
+).
+% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100
+% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema
+% Area = 1 -> Right upper jaw
+% Area = 2 -> Left upper jaw
+% Area = 3 -> Left lower jaw
+% Area = 4 -> Right lower jaw
+% Position is exact position of this tooth in its area (from 1 to 8)
+% Example invoice
+invoice(
+    [
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),
+        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),
+        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])
+    ],
+    [
+        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])
+    ]
+    invoice_date(date(2023, 10, 04),
+    invoice_amount(110.01)
+).
+```
+The 1 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.
+We want to mark invoices as invalid if they do not adhere to those rules.
+Which of those rules can you translate into prolog code given following restriction:
+Only translate the rules as they are, do not include any examples.
+Be as accurate as possible.
+You must be able to exactly define every new predicate based on the given ones.
+Do not make any assumptions which are not given.
+Translate the rules where a translation given the restrictions is possible.
+To determine if an invoice is correct, use the predicate 
+```prolog
+is_invoice_invalid(Invoice) : -
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),
+    % The corresponding rule (only one rule for each predicate)
+    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.
+    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice
+    true. % Then the invoice is invalid.
+```
+Use this predicate to check each rule individually. Before you translate a rule, think about it.
+Expected format:
+---
+Rule 1:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+Rule 2:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+... 
+
+When you can not translate leaf the code section empty like this:
+---
+Rule X:
+Thoughts: ...
+Translation:
+```prolog
+```
+---
+
+So you should have a block for each of the 1 given rules at the end.
+For translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.
+When you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).
+I only want to have exactly defined rules.
+First, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.",1.0,1177.0,451.0,0.06237,"
+% Helper predicate to check if a service is a final crown, bridge or prosthesis
+is_final_crown_bridge_or_prosthesis(Description) :-
+    member(Description, ['Final Crown', 'Bridge', 'Prosthesis']).
+
+% Helper predicate to check if a service is billed under section H
+is_billed_under_section_H(GOZ_Section) :-
+    GOZ_Section = 'H'.
+
+% Main predicate to check if the invoice is invalid
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day)), invoice_amount(InvoiceAmount)),
+    member(service(_, _, _, _, _, Description, _, _), Services),
+    is_final_crown_bridge_or_prosthesis(Description),
+    member(material_cost(GOZ_Section, _, _, _, _, _, _, _), Material_Costs),
+    is_billed_under_section_H(GOZ_Section),
+    print('Invoice is invalid because final crowns, bridges and prostheses cannot be billed as occlusal aids or splints according to section H.'),
+    true.
+"
+15,J_Funktionsanalytische_und,funktionstherapeutische Leistungen,The text provided does not contain any references to other paragraphs.,,,,,,,,,,
+16,K_Implantologische_Leistungen,"
+Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z. B. Reinigen der Wunde, Wundver -
+schluss ohne zusätzliche Lappenbildung, gegebenenfalls einschließlich
+Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen
+nach Abschnitt K und nicht gesondert berechnungsfähig.
+2. Die bei den Leistungen nach Abschnitt K verwendeten Implantate,
+Implantatteile und nur einmal verwendbare Implantatfräsen sind ge -
+sondert berechnungsfähig.
+Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z. B. Membranen), zur Fixierung
+von Membranen, zum Verschluss von oberflächlichen Blutungen bei hä -
+morrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anato -
+mischer Strukturen (z. B. Nerven) erforderlich ist, sowie atraumatisches
+Nahtmaterial oder nur einmal verwendbare Explantationsfräsen, sind
+gesondert berechnungsfähig.",The text does not mention any references to other paragraphs.,,"1. Die primäre Wundversorgung (z. B. Reinigen der Wunde, Wundver -
+schluss ohne zusätzliche Lappenbildung, gegebenenfalls einschließlich
+Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen
+nach Abschnitt K und nicht gesondert berechnungsfähig.","Rule 1:
+Thoughts: This rule states that primary wound care is included in the services under section K and cannot be billed separately. This means that if a service related to primary wound care is found in the invoice, it should not be charged separately. However, we do not have a clear definition or list of services that fall under primary wound care or section K. Therefore, we cannot translate this rule into Prolog code without making assumptions or having additional information.
+
+Translation:
+```prolog
+```
+
+Rule 2:
+Thoughts: This rule states that implants, implant parts, and single-use implant drills used in services under section K can be billed separately. This means that if such materials are found in the material costs of the invoice, they should be charged separately. However, we do not have a clear definition or list of materials that fall under these categories or section K. Therefore, we cannot translate this rule into Prolog code without making assumptions or having additional information.
+
+Translation:
+```prolog
+```
+
+Rule 3:
+Thoughts: This rule states that bone replacement materials, materials for promoting blood coagulation or tissue regeneration, materials for fixing membranes, materials for closing superficial bleeding in hemorrhagic diatheses, materials for protecting important anatomical structures, atraumatic suture material, and single-use explantation drills can be billed separately. This means that if such materials are found in the material costs of the invoice, they should be charged separately. However, we do not have a clear definition or list of materials that fall under these categories. Therefore, we cannot translate this rule into Prolog code without making assumptions or having additional information.
+
+Translation:
+```prolog
+```",,"Given this rules from the german GOZ:
+---
+1. Die primäre Wundversorgung (z. B. Reinigen der Wunde, Wundver -
+schluss ohne zusätzliche Lappenbildung, gegebenenfalls einschließlich
+Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen
+nach Abschnitt K und nicht gesondert berechnungsfähig.
+---
+2. Die bei den Leistungen nach Abschnitt K verwendeten Implantate,
+Implantatteile und nur einmal verwendbare Implantatfräsen sind ge -
+sondert berechnungsfähig.
+---
+Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z. B. Membranen), zur Fixierung
+von Membranen, zum Verschluss von oberflächlichen Blutungen bei hä -
+morrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anato -
+mischer Strukturen (z. B. Nerven) erforderlich ist, sowie atraumatisches
+Nahtmaterial oder nur einmal verwendbare Explantationsfräsen, sind
+gesondert berechnungsfähig.
+---
+
+
+And this predicates:
+```prolog
+invoice(
+    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...
+    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...
+    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    invoice_date(date(Year, Month, Day)),
+    invoice_amount(InvoiceAmount)
+).
+% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100
+% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema
+% Area = 1 -> Right upper jaw
+% Area = 2 -> Left upper jaw
+% Area = 3 -> Left lower jaw
+% Area = 4 -> Right lower jaw
+% Position is exact position of this tooth in its area (from 1 to 8)
+% Example invoice
+invoice(
+    [
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),
+        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),
+        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])
+    ],
+    [
+        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])
+    ]
+    invoice_date(date(2023, 10, 04),
+    invoice_amount(110.01)
+).
+```
+The 3 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.
+We want to mark invoices as invalid if they do not adhere to those rules.
+Which of those rules can you translate into prolog code given following restriction:
+Only translate the rules as they are, do not include any examples.
+Be as accurate as possible.
+You must be able to exactly define every new predicate based on the given ones.
+Do not make any assumptions which are not given.
+Translate the rules where a translation given the restrictions is possible.
+To determine if an invoice is correct, use the predicate 
+```prolog
+is_invoice_invalid(Invoice) : -
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),
+    % The corresponding rule (only one rule for each predicate)
+    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.
+    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice
+    true. % Then the invoice is invalid.
+```
+Use this predicate to check each rule individually. Before you translate a rule, think about it.
+Expected format:
+---
+Rule 1:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+Rule 2:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+... 
+
+When you can not translate leaf the code section empty like this:
+---
+Rule X:
+Thoughts: ...
+Translation:
+```prolog
+```
+---
+
+So you should have a block for each of the 3 given rules at the end.
+For translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.
+When you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).
+I only want to have exactly defined rules.
+First, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.",1.0,1407.0,342.0,0.06273,"
+"
+17,K_Implantologische_Leistungen,"
+Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z. B. Reinigen der Wunde, Wundver -
+schluss ohne zusätzliche Lappenbildung, gegebenenfalls einschließlich
+Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen
+nach Abschnitt K und nicht gesondert berechnungsfähig.
+2. Die bei den Leistungen nach Abschnitt K verwendeten Implantate,
+Implantatteile und nur einmal verwendbare Implantatfräsen sind ge -
+sondert berechnungsfähig.
+Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z. B. Membranen), zur Fixierung
+von Membranen, zum Verschluss von oberflächlichen Blutungen bei hä -
+morrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anato -
+mischer Strukturen (z. B. Nerven) erforderlich ist, sowie atraumatisches
+Nahtmaterial oder nur einmal verwendbare Explantationsfräsen, sind
+gesondert berechnungsfähig.",The text does not mention any references to other paragraphs.,,"2. Die bei den Leistungen nach Abschnitt K verwendeten Implantate,
+Implantatteile und nur einmal verwendbare Implantatfräsen sind ge -
+sondert berechnungsfähig.",,,,,,,,"
+"
+18,K_Implantologische_Leistungen,"
+Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z. B. Reinigen der Wunde, Wundver -
+schluss ohne zusätzliche Lappenbildung, gegebenenfalls einschließlich
+Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen
+nach Abschnitt K und nicht gesondert berechnungsfähig.
+2. Die bei den Leistungen nach Abschnitt K verwendeten Implantate,
+Implantatteile und nur einmal verwendbare Implantatfräsen sind ge -
+sondert berechnungsfähig.
+Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z. B. Membranen), zur Fixierung
+von Membranen, zum Verschluss von oberflächlichen Blutungen bei hä -
+morrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anato -
+mischer Strukturen (z. B. Nerven) erforderlich ist, sowie atraumatisches
+Nahtmaterial oder nur einmal verwendbare Explantationsfräsen, sind
+gesondert berechnungsfähig.",The text does not mention any references to other paragraphs.,,"Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z. B. Membranen), zur Fixierung
+von Membranen, zum Verschluss von oberflächlichen Blutungen bei hä -
+morrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anato -
+mischer Strukturen (z. B. Nerven) erforderlich ist, sowie atraumatisches
+Nahtmaterial oder nur einmal verwendbare Explantationsfräsen, sind
+gesondert berechnungsfähig.",,,,,,,,"
+"
+19,L_Zuschläge_zu_bestimmten,"zahnärztlich-chirurgischen Leistungen
+Allgemeine Bestimmungen
+1. Bei nichtstationärer Durchführung bestimmter zahnärztlich-chirurgi -
+scher Leistungen in der Praxis niedergelassener Zahnärzte oder in Kran -
+kenhäusern können zur Abgeltung der Kosten für die Aufbereitung
+wiederverwendbarer Operationsmaterialien bzw. -geräte und/oder von
+Materialien, die mit der einmaligen Verwendung verbraucht sind, Zu -
+schläge berechnet werden.
+2. Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem
+einfachen Gebührensatz berechnungsfähig.
+3. Die Zuschläge nach den Nummern 0500 bis 0530 sind zahnärztlich-
+chirurgische Leistungen
+-nach den Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120,
+3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280 in Ab -
+schnitt D,
+-nach den Nummern 4090, 4100, 4130 und 4133 in Abschnitt E sowie
+-nach den Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140,
+9150, 9160 und 9170 in Abschnitt K
+zuzuordnen.
+4. Die Zuschläge sind in der Rechnung unmittelbar im Anschluss an die
+zugeordnete zahnärztlich-chirurgische Leistung aufzuführen.
+5. Maßgeblich für den Ansatz eines Zuschlages nach den Nummern
+0500 bis 0530 ist die erbrachte zahnärztlich-chirurgische Leistung mit der
+höchsten Punktzahl. Eine Zuordnung des Zuschlags nach den Nummern
+0500 bis 0530 zu der Summe der jeweils ambulant erbrachten einzelnen
+zahnärztlich-chirurgischen Leistungen ist nicht möglich.
+
+
+6. Die Zuschläge nach den Nummern 0500 bis 0530 sind nicht berech -
+nungsfähig, wenn der Patient an demselben Tag wegen derselben Er -
+krankung in stationäre Krankenhausbehandlung aufgenommen wird;
+das gilt nicht, wenn die stationäre Behandlung wegen unvorhersehba -
+rer Komplikationen während oder nach der nichtstationären Operation
+notwendig und entsprechend begründet wird.
+7. Die Zuschläge nach den Nummern 0110, 0120 sowie 0500 bis 0530
+sind neben den entsprechenden Zuschlägen nach den Nummer 440
+bis 445 des Gebührenverzeichnisses für ärztliche Leistungen für dieselbe
+Sitzung nicht berechnungsfähig.","References: Nummern 0500 bis 0530, Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120, 3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280, Nummern 4090, 4100, 4130 und 4133, Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140, 9150, 9160 und 9170, Nummern 0110, 0120, Nummer 440 bis 445.",,2. Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem einfachen Gebührensatz berechnungsfähig.,"Rule 1:
+Thoughts: This rule states that the surcharges with the numbers 0500 to 0530 can only be calculated with the simple fee rate. This means that the multiplier for these services should be 1. We can check this by iterating over the services in the invoice and checking if any of these services have a multiplier other than 1.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, Multiplier, _, _, _, _, _), Services),
+    between(500, 530, Service),
+    Multiplier \= 1,
+    print('Invalid invoice: Surcharge with number between 500 and 530 has a multiplier other than 1.'),
+    true.
+```
+
+Rule 2:
+Thoughts: This rule states that the surcharges should be listed immediately after the associated dental-surgical service in the invoice. This is a bit tricky to implement in Prolog as it requires checking the order of elements in a list. However, it is not possible to translate this rule into Prolog code given the current predicates and data structure. The order of services in the list does not necessarily reflect the order in which they were performed or billed.
+
+Translation:
+```prolog
+```
+
+Rule 3:
+Thoughts: This rule states that the surcharge between the numbers 0500 to 0530 should be applied to the dental-surgical service with the highest point score. This means that we need to find the service with the highest point score and check if the surcharge is applied to it. However, it is not possible to translate this rule into Prolog code given the current predicates and data structure. The current data structure does not provide a way to associate a surcharge with a specific service.
+
+Translation:
+```prolog
+```
+
+Rule 4:
+Thoughts: This rule states that the surcharges with the numbers 0500 to 0530 cannot be calculated if the patient is admitted to hospital treatment on the same day for the same disease. However, the current predicates and data structure do not provide information about hospital admissions or diseases. Therefore, it is not possible to translate this rule into Prolog code.
+
+Translation:
+```prolog
+```
+
+Rule 5:
+Thoughts: This rule states that the surcharges with the numbers 0110, 0120, and 0500 to 0530 cannot be calculated alongside the surcharges with the numbers 440 to 445 for the same session. This means that we need to check if any of these surcharges are present in the same session. However, the current predicates and data structure do not provide a way to associate a surcharge with a specific session. Therefore, it is not possible to translate this rule into Prolog code.
+
+Translation:
+```prolog
+```",,"Given this rules from the german GOZ:
+---
+2. Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem einfachen Gebührensatz berechnungsfähig.
+---
+4. Die Zuschläge sind in der Rechnung unmittelbar im Anschluss an die zugeordnete zahnärztlich-chirurgische Leistung aufzuführen.
+---
+5. Maßgeblich für den Ansatz eines Zuschlages nach den Nummern 0500 bis 0530 ist die erbrachte zahnärztlich-chirurgische Leistung mit der höchsten Punktzahl. Eine Zuordnung des Zuschlags nach den Nummern 0500 bis 0530 zu der Summe der jeweils ambulant erbrachten einzelnen zahnärztlich-chirurgischen Leistungen ist nicht möglich.
+---
+6. Die Zuschläge nach den Nummern 0500 bis 0530 sind nicht berechnungsfähig, wenn der Patient an demselben Tag wegen derselben Erkrankung in stationäre Krankenhausbehandlung aufgenommen wird; das gilt nicht, wenn die stationäre Behandlung wegen unvorhersehbarer Komplikationen während oder nach der nichtstationären Operation notwendig und entsprechend begründet wird.
+---
+7. Die Zuschläge nach den Nummern 0110, 0120 sowie 0500 bis 0530 sind neben den entsprechenden Zuschlägen nach den Nummer 440 bis 445 des Gebührenverzeichnisses für ärztliche Leistungen für dieselbe Sitzung nicht berechnungsfähig.
+---
+
+
+And this predicates:
+```prolog
+invoice(
+    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...
+    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...
+    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    invoice_date(date(Year, Month, Day)),
+    invoice_amount(InvoiceAmount)
+).
+% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100
+% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema
+% Area = 1 -> Right upper jaw
+% Area = 2 -> Left upper jaw
+% Area = 3 -> Left lower jaw
+% Area = 4 -> Right lower jaw
+% Position is exact position of this tooth in its area (from 1 to 8)
+% Example invoice
+invoice(
+    [
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),
+        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),
+        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])
+    ],
+    [
+        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])
+    ]
+    invoice_date(date(2023, 10, 04),
+    invoice_amount(110.01)
+).
+```
+The 5 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.
+We want to mark invoices as invalid if they do not adhere to those rules.
+Which of those rules can you translate into prolog code given following restriction:
+Only translate the rules as they are, do not include any examples.
+Be as accurate as possible.
+You must be able to exactly define every new predicate based on the given ones.
+Do not make any assumptions which are not given.
+Translate the rules where a translation given the restrictions is possible.
+To determine if an invoice is correct, use the predicate 
+```prolog
+is_invoice_invalid(Invoice) : -
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),
+    % The corresponding rule (only one rule for each predicate)
+    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.
+    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice
+    true. % Then the invoice is invalid.
+```
+Use this predicate to check each rule individually. Before you translate a rule, think about it.
+Expected format:
+---
+Rule 1:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+Rule 2:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+... 
+
+When you can not translate leaf the code section empty like this:
+---
+Rule X:
+Thoughts: ...
+Translation:
+```prolog
+```
+---
+
+So you should have a block for each of the 5 given rules at the end.
+For translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.
+When you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).
+I only want to have exactly defined rules.
+First, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.",1.0,1504.0,580.0,0.07991999999999999,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, Multiplier, _, _, _, _, _), Services),
+    between(500, 530, Service),
+    Multiplier \= 1,
+    print('Invalid invoice: Surcharge with number between 500 and 530 has a multiplier other than 1.'),
+    true.
+"
+20,L_Zuschläge_zu_bestimmten,"zahnärztlich-chirurgischen Leistungen
+Allgemeine Bestimmungen
+1. Bei nichtstationärer Durchführung bestimmter zahnärztlich-chirurgi -
+scher Leistungen in der Praxis niedergelassener Zahnärzte oder in Kran -
+kenhäusern können zur Abgeltung der Kosten für die Aufbereitung
+wiederverwendbarer Operationsmaterialien bzw. -geräte und/oder von
+Materialien, die mit der einmaligen Verwendung verbraucht sind, Zu -
+schläge berechnet werden.
+2. Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem
+einfachen Gebührensatz berechnungsfähig.
+3. Die Zuschläge nach den Nummern 0500 bis 0530 sind zahnärztlich-
+chirurgische Leistungen
+-nach den Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120,
+3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280 in Ab -
+schnitt D,
+-nach den Nummern 4090, 4100, 4130 und 4133 in Abschnitt E sowie
+-nach den Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140,
+9150, 9160 und 9170 in Abschnitt K
+zuzuordnen.
+4. Die Zuschläge sind in der Rechnung unmittelbar im Anschluss an die
+zugeordnete zahnärztlich-chirurgische Leistung aufzuführen.
+5. Maßgeblich für den Ansatz eines Zuschlages nach den Nummern
+0500 bis 0530 ist die erbrachte zahnärztlich-chirurgische Leistung mit der
+höchsten Punktzahl. Eine Zuordnung des Zuschlags nach den Nummern
+0500 bis 0530 zu der Summe der jeweils ambulant erbrachten einzelnen
+zahnärztlich-chirurgischen Leistungen ist nicht möglich.
+
+
+6. Die Zuschläge nach den Nummern 0500 bis 0530 sind nicht berech -
+nungsfähig, wenn der Patient an demselben Tag wegen derselben Er -
+krankung in stationäre Krankenhausbehandlung aufgenommen wird;
+das gilt nicht, wenn die stationäre Behandlung wegen unvorhersehba -
+rer Komplikationen während oder nach der nichtstationären Operation
+notwendig und entsprechend begründet wird.
+7. Die Zuschläge nach den Nummern 0110, 0120 sowie 0500 bis 0530
+sind neben den entsprechenden Zuschlägen nach den Nummer 440
+bis 445 des Gebührenverzeichnisses für ärztliche Leistungen für dieselbe
+Sitzung nicht berechnungsfähig.","References: Nummern 0500 bis 0530, Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120, 3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280, Nummern 4090, 4100, 4130 und 4133, Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140, 9150, 9160 und 9170, Nummern 0110, 0120, Nummer 440 bis 445.",,4. Die Zuschläge sind in der Rechnung unmittelbar im Anschluss an die zugeordnete zahnärztlich-chirurgische Leistung aufzuführen.,,,,,,,,"
+"
+21,L_Zuschläge_zu_bestimmten,"zahnärztlich-chirurgischen Leistungen
+Allgemeine Bestimmungen
+1. Bei nichtstationärer Durchführung bestimmter zahnärztlich-chirurgi -
+scher Leistungen in der Praxis niedergelassener Zahnärzte oder in Kran -
+kenhäusern können zur Abgeltung der Kosten für die Aufbereitung
+wiederverwendbarer Operationsmaterialien bzw. -geräte und/oder von
+Materialien, die mit der einmaligen Verwendung verbraucht sind, Zu -
+schläge berechnet werden.
+2. Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem
+einfachen Gebührensatz berechnungsfähig.
+3. Die Zuschläge nach den Nummern 0500 bis 0530 sind zahnärztlich-
+chirurgische Leistungen
+-nach den Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120,
+3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280 in Ab -
+schnitt D,
+-nach den Nummern 4090, 4100, 4130 und 4133 in Abschnitt E sowie
+-nach den Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140,
+9150, 9160 und 9170 in Abschnitt K
+zuzuordnen.
+4. Die Zuschläge sind in der Rechnung unmittelbar im Anschluss an die
+zugeordnete zahnärztlich-chirurgische Leistung aufzuführen.
+5. Maßgeblich für den Ansatz eines Zuschlages nach den Nummern
+0500 bis 0530 ist die erbrachte zahnärztlich-chirurgische Leistung mit der
+höchsten Punktzahl. Eine Zuordnung des Zuschlags nach den Nummern
+0500 bis 0530 zu der Summe der jeweils ambulant erbrachten einzelnen
+zahnärztlich-chirurgischen Leistungen ist nicht möglich.
+
+
+6. Die Zuschläge nach den Nummern 0500 bis 0530 sind nicht berech -
+nungsfähig, wenn der Patient an demselben Tag wegen derselben Er -
+krankung in stationäre Krankenhausbehandlung aufgenommen wird;
+das gilt nicht, wenn die stationäre Behandlung wegen unvorhersehba -
+rer Komplikationen während oder nach der nichtstationären Operation
+notwendig und entsprechend begründet wird.
+7. Die Zuschläge nach den Nummern 0110, 0120 sowie 0500 bis 0530
+sind neben den entsprechenden Zuschlägen nach den Nummer 440
+bis 445 des Gebührenverzeichnisses für ärztliche Leistungen für dieselbe
+Sitzung nicht berechnungsfähig.","References: Nummern 0500 bis 0530, Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120, 3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280, Nummern 4090, 4100, 4130 und 4133, Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140, 9150, 9160 und 9170, Nummern 0110, 0120, Nummer 440 bis 445.",,5. Maßgeblich für den Ansatz eines Zuschlages nach den Nummern 0500 bis 0530 ist die erbrachte zahnärztlich-chirurgische Leistung mit der höchsten Punktzahl. Eine Zuordnung des Zuschlags nach den Nummern 0500 bis 0530 zu der Summe der jeweils ambulant erbrachten einzelnen zahnärztlich-chirurgischen Leistungen ist nicht möglich.,,,,,,,,"
+"
+22,L_Zuschläge_zu_bestimmten,"zahnärztlich-chirurgischen Leistungen
+Allgemeine Bestimmungen
+1. Bei nichtstationärer Durchführung bestimmter zahnärztlich-chirurgi -
+scher Leistungen in der Praxis niedergelassener Zahnärzte oder in Kran -
+kenhäusern können zur Abgeltung der Kosten für die Aufbereitung
+wiederverwendbarer Operationsmaterialien bzw. -geräte und/oder von
+Materialien, die mit der einmaligen Verwendung verbraucht sind, Zu -
+schläge berechnet werden.
+2. Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem
+einfachen Gebührensatz berechnungsfähig.
+3. Die Zuschläge nach den Nummern 0500 bis 0530 sind zahnärztlich-
+chirurgische Leistungen
+-nach den Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120,
+3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280 in Ab -
+schnitt D,
+-nach den Nummern 4090, 4100, 4130 und 4133 in Abschnitt E sowie
+-nach den Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140,
+9150, 9160 und 9170 in Abschnitt K
+zuzuordnen.
+4. Die Zuschläge sind in der Rechnung unmittelbar im Anschluss an die
+zugeordnete zahnärztlich-chirurgische Leistung aufzuführen.
+5. Maßgeblich für den Ansatz eines Zuschlages nach den Nummern
+0500 bis 0530 ist die erbrachte zahnärztlich-chirurgische Leistung mit der
+höchsten Punktzahl. Eine Zuordnung des Zuschlags nach den Nummern
+0500 bis 0530 zu der Summe der jeweils ambulant erbrachten einzelnen
+zahnärztlich-chirurgischen Leistungen ist nicht möglich.
+
+
+6. Die Zuschläge nach den Nummern 0500 bis 0530 sind nicht berech -
+nungsfähig, wenn der Patient an demselben Tag wegen derselben Er -
+krankung in stationäre Krankenhausbehandlung aufgenommen wird;
+das gilt nicht, wenn die stationäre Behandlung wegen unvorhersehba -
+rer Komplikationen während oder nach der nichtstationären Operation
+notwendig und entsprechend begründet wird.
+7. Die Zuschläge nach den Nummern 0110, 0120 sowie 0500 bis 0530
+sind neben den entsprechenden Zuschlägen nach den Nummer 440
+bis 445 des Gebührenverzeichnisses für ärztliche Leistungen für dieselbe
+Sitzung nicht berechnungsfähig.","References: Nummern 0500 bis 0530, Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120, 3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280, Nummern 4090, 4100, 4130 und 4133, Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140, 9150, 9160 und 9170, Nummern 0110, 0120, Nummer 440 bis 445.",,"6. Die Zuschläge nach den Nummern 0500 bis 0530 sind nicht berechnungsfähig, wenn der Patient an demselben Tag wegen derselben Erkrankung in stationäre Krankenhausbehandlung aufgenommen wird; das gilt nicht, wenn die stationäre Behandlung wegen unvorhersehbarer Komplikationen während oder nach der nichtstationären Operation notwendig und entsprechend begründet wird.",,,,,,,,"
+"
+23,L_Zuschläge_zu_bestimmten,"zahnärztlich-chirurgischen Leistungen
+Allgemeine Bestimmungen
+1. Bei nichtstationärer Durchführung bestimmter zahnärztlich-chirurgi -
+scher Leistungen in der Praxis niedergelassener Zahnärzte oder in Kran -
+kenhäusern können zur Abgeltung der Kosten für die Aufbereitung
+wiederverwendbarer Operationsmaterialien bzw. -geräte und/oder von
+Materialien, die mit der einmaligen Verwendung verbraucht sind, Zu -
+schläge berechnet werden.
+2. Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem
+einfachen Gebührensatz berechnungsfähig.
+3. Die Zuschläge nach den Nummern 0500 bis 0530 sind zahnärztlich-
+chirurgische Leistungen
+-nach den Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120,
+3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280 in Ab -
+schnitt D,
+-nach den Nummern 4090, 4100, 4130 und 4133 in Abschnitt E sowie
+-nach den Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140,
+9150, 9160 und 9170 in Abschnitt K
+zuzuordnen.
+4. Die Zuschläge sind in der Rechnung unmittelbar im Anschluss an die
+zugeordnete zahnärztlich-chirurgische Leistung aufzuführen.
+5. Maßgeblich für den Ansatz eines Zuschlages nach den Nummern
+0500 bis 0530 ist die erbrachte zahnärztlich-chirurgische Leistung mit der
+höchsten Punktzahl. Eine Zuordnung des Zuschlags nach den Nummern
+0500 bis 0530 zu der Summe der jeweils ambulant erbrachten einzelnen
+zahnärztlich-chirurgischen Leistungen ist nicht möglich.
+
+
+6. Die Zuschläge nach den Nummern 0500 bis 0530 sind nicht berech -
+nungsfähig, wenn der Patient an demselben Tag wegen derselben Er -
+krankung in stationäre Krankenhausbehandlung aufgenommen wird;
+das gilt nicht, wenn die stationäre Behandlung wegen unvorhersehba -
+rer Komplikationen während oder nach der nichtstationären Operation
+notwendig und entsprechend begründet wird.
+7. Die Zuschläge nach den Nummern 0110, 0120 sowie 0500 bis 0530
+sind neben den entsprechenden Zuschlägen nach den Nummer 440
+bis 445 des Gebührenverzeichnisses für ärztliche Leistungen für dieselbe
+Sitzung nicht berechnungsfähig.","References: Nummern 0500 bis 0530, Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120, 3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280, Nummern 4090, 4100, 4130 und 4133, Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140, 9150, 9160 und 9170, Nummern 0110, 0120, Nummer 440 bis 445.",,"7. Die Zuschläge nach den Nummern 0110, 0120 sowie 0500 bis 0530 sind neben den entsprechenden Zuschlägen nach den Nummer 440 bis 445 des Gebührenverzeichnisses für ärztliche Leistungen für dieselbe Sitzung nicht berechnungsfähig.",,,,,,,,"
+"

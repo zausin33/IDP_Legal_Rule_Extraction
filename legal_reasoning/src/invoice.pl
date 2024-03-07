@@ -1,0 +1,38 @@
+example_invoice(invoice([
+		service(1000, date(2016, 9, 2), 1.0, 200.0, 11.25, 'Erstellung eines Mundhygienestatus und eigenhende Unterweisung zur Vorbeugung gegen Karies und parodontale Erkrankungen, Dauer mindestens 25 Minuten', '', []),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(1, 7)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(1, 6)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(1, 5)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(1, 4)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(1, 3)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(1, 2)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(1, 1)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(2, 1)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(2, 2)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(2, 3)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(2, 4)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(2, 5)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(2, 6)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(2, 7)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(3, 7)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(3, 6)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(3, 5)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(3, 4)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(3, 3)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(3, 2)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(3, 1)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(4, 1)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(4, 2)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(4, 3)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(4, 4)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(4, 5)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(4, 6)]),
+		service(1040, date(2016, 9, 2), 2.0, 28.0, 88.2, 'Professionelle Zahnreinigung (Zahn: 17,16,15,14,13,12,11,21,22,23,24,25,26,27,37,36,35,34,33,32,31,41,42,43,44,45,46,47)', '', [tooth(4, 7)]),
+		service(2120, date(2016, 9, 6), 3.5, 770.0, 151.57, 'Pr‰parieren einer Kavit‰t und Restauration mit Kompositmaterialien, in Adh‰sivtechnik (Konditionieren), mehr als dreifl‰chig, ggf. einschlieﬂlich Polieren, ggf. einschlieﬂlich Verwendung von Inserts', '‹berdurchscnittlicher Schwierigkeitsgrad und Zeitaufwand wegen erschwertem Anlegen von Matrizen/B‰ndern durch Zahnengstand und tiefer, sehr schwer einsehbarer Approximalkavit‰t', [])
+	],
+	[
+		
+	],
+	invoice_date(date(2016, 11, 11)),
+	invoice_amount(251.02)
+)).

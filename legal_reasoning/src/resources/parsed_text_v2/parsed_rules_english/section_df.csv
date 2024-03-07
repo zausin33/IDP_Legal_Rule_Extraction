@@ -1,0 +1,375 @@
+section,content,reference,extr_ref_calls,extr_ref_prompt_tokens,extr_ref_completion_tokens,extr_ref_total_cost,parsed_references,rule,extr_rules_calls,extr_rules_prompt_tokens,extr_rules_completion_tokens,extr_rules_total_cost
+A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]","Rule 1: A consultation fee under number 1 of the fee schedule for medical services can only be charged once per treatment case, in conjunction with a fee for a service according to this fee schedule and for a service from sections C to O of the fee schedule for medical services.",1,2594,225,0.09131999999999998
+A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",Rule 2: A consultation fee under number 3 of the fee schedule for medical services can only be charged as a single service or in conjunction with an examination under number 0010 or an examination under numbers 5 or 6 of the fee schedule for medical services. No other additional services may be charged alongside the service under number 3.,1,2594,225,0.09131999999999998
+A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]","Rule 3: For the treatment of the same disease, the period of one month after the first consultation of the dentist is considered as a treatment case.",1,2594,225,0.09131999999999998
+A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",Rule 4: The impression material used for services according to this fee schedule can be charged separately.,1,2594,225,0.09131999999999998
+A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",Rule 5: Material and laboratory costs in the sense of this fee schedule include practice costs according to § 4 paragraph 3 and expenses for dental technical services according to § 9 of this fee schedule.,1,2594,225,0.09131999999999998
+B_Prophylaktische_Leistungen,"Allgemeine Bestimmungen
+Prophylaktische Leistungen nach Abschnitt B sind nur bei Einzelunterwei -
+sung (Individualprophylaxe) berechnungsfähig; bei Gruppenunterwei -
+sung (Gruppenprophylaxe) sind sie nicht berechnungsfähig.",The text does not mention any references to other paragraphs.,1,128,11,0.0045,,,1,670,5,0.0204
+C_Konservierende_Leistungen,"Allgemeine Bestimmungen
+Nur einmal verwendbare Nickel-Titan-Instrumente zur Wurzelkanalauf -
+bereitung sind gesondert berechnungsfähig.",The text does not mention any references to other paragraphs.,1,99,11,0.00363,,,1,641,5,0.019530000000000002
+D_Chirurgische_Leistungen,"Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des
+Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätz -
+liche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wund -
+verbandes) ist Bestandteil der Leistungen nach Abschnitt D und nicht
+gesondert berechnungsfähig.
+2. Die Schaffung des operativen Zugangs ist Bestandteil der Leistungen
+nach Abschnitt D und nicht gesondert berechnungsfähig.
+3. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Ver -
+schluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen
+oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Ner -
+ven) erforderlich ist, sowie atraumatisches Nahtmaterial oder nur einmal
+verwendbare Explantationsfräsen, sind gesondert berechnungsfähig.",The text does not contain any references to other paragraphs.,1,324,11,0.0103799999999999,,,1,866,5,0.02628
+E_Leistungen_bei_Erkrankungen_der_Mundschleimhaut,"und des Parodontiums
+Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des
+Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätz -
+liche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wund -
+verbandes) ist Bestandteil der Leistungen nach Abschnitt E und nicht
+gesondert berechnungsfähig.
+2. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Ver -
+schluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen
+oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Ner -
+ven) erforderlich ist, sowie atraumatisches Nahtmaterial und Materialien
+zur Fixierung von Membranen sind gesondert berechnungsfähig.",The text does not contain any references to other paragraphs.,1,292,11,0.0094199999999999,,"Rule 1: The primary wound care (e.g., cleaning the wound, smoothing the bone, incision, tamponade, wound closure without additional flap formation, possibly fixing a plastic wound dressing) is part of the services according to section E and cannot be billed separately.",1,834,132,0.03294
+E_Leistungen_bei_Erkrankungen_der_Mundschleimhaut,"und des Parodontiums
+Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z.B. Reinigen der Wunde, Glätten des
+Knochens, Umschneidung, Tamponieren, Wundverschluss ohne zusätz -
+liche Lappenbildung, gegebenenfalls Fixieren eines plastischen Wund -
+verbandes) ist Bestandteil der Leistungen nach Abschnitt E und nicht
+gesondert berechnungsfähig.
+2. Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z.B. Membranen) sowie zum Ver -
+schluss von oberflächlichen Blutungen bei hämorrhagischen Diathesen
+oder, wenn dies zum Schutz wichtiger anatomischer Strukturen (z.B. Ner -
+ven) erforderlich ist, sowie atraumatisches Nahtmaterial und Materialien
+zur Fixierung von Membranen sind gesondert berechnungsfähig.",The text does not contain any references to other paragraphs.,1,292,11,0.0094199999999999,,"Rule 2: Bone replacement materials as well as materials to promote blood coagulation or tissue regeneration (e.g., membranes) as well as to close superficial bleeding in hemorrhagic diatheses or, if necessary to protect important anatomical structures (e.g., nerves), as well as atraumatic suture material and materials for fixing membranes can be billed separately.",1,834,132,0.03294
+E_Leistungen_bei_Erkrankungen_der_Mundschleimhaut,und des Parodontiums,The text provided does not contain any references to other paragraphs.,1,66,12,0.0027,,,1,608,5,0.01854
+E_Leistungen_bei_Erkrankungen_der_Mundschleimhaut,und des Parodontiums,The text provided does not contain any references to other paragraphs.,1,66,12,0.0027,,,1,608,5,0.01854
+G_Kieferorthopädische_Leistungen,"Allgemeine Bestimmungen
+Die Leistungen nach den Nummern 6100, 6120, 6140 und 6150 beinhal -
+ten auch die Material- und Laborkosten für Standardmaterialien wie
+zum Beispiel unprogrammierte Edelstahlbrackets, unprogrammierte At -
+tachments und Edelstahlbänder.
+Werden darüber hinausgehende Materialien verwendet, können die
+Mehrkosten für diese Materialien gesondert berechnet werden, wenn
+dies vor der Verwendung mit dem Zahlungspflichtigen nach persönli -
+cher Absprache schriftlich vereinbart worden ist. Diese Vereinbarung
+hat Angaben über die voraussichtliche Höhe der einzelnen Material-
+und Laborkosten und die Material- und Laborkosten der in Abzug zu
+bringenden Standardmaterialien zu enthalten. In der Vereinbarung ist
+darauf hinzuweisen, dass eine Erstattung durch Erstattungsstellen mög -
+licherweise nicht im vollen Umfang gewährleistet ist.",The text does not contain any references to other paragraphs.,1,298,11,0.0096,,,1,840,5,0.0255
+H_Eingliederung_von_Aufbissbehelfen_und_Schienen,"Allgemeine Bestimmungen
+Endgültige Kronen, Brücken und Prothesen dürfen nicht als Aufbissbe -
+helfe oder Schienen nach Abschnitt H berechnet werden.",References: Abschnitt H,1,103,5,0.00339,,,1,645,5,0.01965
+J_Funktionsanalytische_und,funktionstherapeutische Leistungen,The text provided does not contain any references to other paragraphs.,1,70,12,0.00282,,,1,612,5,0.01866
+J_Funktionsanalytische_und,funktionstherapeutische Leistungen,The text provided does not contain any references to other paragraphs.,1,70,12,0.00282,,,1,612,5,0.01866
+K_Implantologische_Leistungen,"
+Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z. B. Reinigen der Wunde, Wundver -
+schluss ohne zusätzliche Lappenbildung, gegebenenfalls einschließlich
+Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen
+nach Abschnitt K und nicht gesondert berechnungsfähig.
+2. Die bei den Leistungen nach Abschnitt K verwendeten Implantate,
+Implantatteile und nur einmal verwendbare Implantatfräsen sind ge -
+sondert berechnungsfähig.
+Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z. B. Membranen), zur Fixierung
+von Membranen, zum Verschluss von oberflächlichen Blutungen bei hä -
+morrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anato -
+mischer Strukturen (z. B. Nerven) erforderlich ist, sowie atraumatisches
+Nahtmaterial oder nur einmal verwendbare Explantationsfräsen, sind
+gesondert berechnungsfähig.",The text does not contain any references to other paragraphs.,1,331,11,0.0105899999999999,,"Rule 1: The primary wound care (e.g., cleaning the wound, wound closure without additional flap formation, possibly including fixation of a plastic wound dressing) is part of the services in section K and cannot be billed separately.",1,873,155,0.035489999999999994
+K_Implantologische_Leistungen,"
+Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z. B. Reinigen der Wunde, Wundver -
+schluss ohne zusätzliche Lappenbildung, gegebenenfalls einschließlich
+Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen
+nach Abschnitt K und nicht gesondert berechnungsfähig.
+2. Die bei den Leistungen nach Abschnitt K verwendeten Implantate,
+Implantatteile und nur einmal verwendbare Implantatfräsen sind ge -
+sondert berechnungsfähig.
+Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z. B. Membranen), zur Fixierung
+von Membranen, zum Verschluss von oberflächlichen Blutungen bei hä -
+morrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anato -
+mischer Strukturen (z. B. Nerven) erforderlich ist, sowie atraumatisches
+Nahtmaterial oder nur einmal verwendbare Explantationsfräsen, sind
+gesondert berechnungsfähig.",The text does not contain any references to other paragraphs.,1,331,11,0.0105899999999999,,"Rule 2: The implants, implant parts, and single-use implant drills used in the services according to section K can be billed separately.",1,873,155,0.035489999999999994
+K_Implantologische_Leistungen,"
+Allgemeine Bestimmungen
+1. Die primäre Wundversorgung (z. B. Reinigen der Wunde, Wundver -
+schluss ohne zusätzliche Lappenbildung, gegebenenfalls einschließlich
+Fixieren eines plastischen Wundverbandes) ist Bestandteil der Leistungen
+nach Abschnitt K und nicht gesondert berechnungsfähig.
+2. Die bei den Leistungen nach Abschnitt K verwendeten Implantate,
+Implantatteile und nur einmal verwendbare Implantatfräsen sind ge -
+sondert berechnungsfähig.
+Knochenersatzmaterialien sowie Materialien zur Förderung der Blutge -
+rinnung oder der Geweberegeneration (z. B. Membranen), zur Fixierung
+von Membranen, zum Verschluss von oberflächlichen Blutungen bei hä -
+morrhagischen Diathesen oder, wenn dies zum Schutz wichtiger anato -
+mischer Strukturen (z. B. Nerven) erforderlich ist, sowie atraumatisches
+Nahtmaterial oder nur einmal verwendbare Explantationsfräsen, sind
+gesondert berechnungsfähig.",The text does not contain any references to other paragraphs.,1,331,11,0.0105899999999999,,"Rule 3: Bone replacement materials and materials for promoting blood coagulation or tissue regeneration (e.g., membranes), for fixing membranes, for closing superficial bleeding in hemorrhagic diatheses or, if necessary for the protection of important anatomical structures (e.g., nerves), as well as atraumatic suture material or single-use explantation drills, can be billed separately.",1,873,155,0.035489999999999994
+L_Zuschläge_zu_bestimmten,"zahnärztlich-chirurgischen Leistungen
+Allgemeine Bestimmungen
+1. Bei nichtstationärer Durchführung bestimmter zahnärztlich-chirurgi -
+scher Leistungen in der Praxis niedergelassener Zahnärzte oder in Kran -
+kenhäusern können zur Abgeltung der Kosten für die Aufbereitung
+wiederverwendbarer Operationsmaterialien bzw. -geräte und/oder von
+Materialien, die mit der einmaligen Verwendung verbraucht sind, Zu -
+schläge berechnet werden.
+2. Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem
+einfachen Gebührensatz berechnungsfähig.
+3. Die Zuschläge nach den Nummern 0500 bis 0530 sind zahnärztlich-
+chirurgische Leistungen
+-nach den Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120,
+3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280 in Ab -
+schnitt D,
+-nach den Nummern 4090, 4100, 4130 und 4133 in Abschnitt E sowie
+-nach den Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140,
+9150, 9160 und 9170 in Abschnitt K
+zuzuordnen.
+4. Die Zuschläge sind in der Rechnung unmittelbar im Anschluss an die
+zugeordnete zahnärztlich-chirurgische Leistung aufzuführen.
+5. Maßgeblich für den Ansatz eines Zuschlages nach den Nummern
+0500 bis 0530 ist die erbrachte zahnärztlich-chirurgische Leistung mit der
+höchsten Punktzahl. Eine Zuordnung des Zuschlags nach den Nummern
+0500 bis 0530 zu der Summe der jeweils ambulant erbrachten einzelnen
+zahnärztlich-chirurgischen Leistungen ist nicht möglich.
+
+
+6. Die Zuschläge nach den Nummern 0500 bis 0530 sind nicht berech -
+nungsfähig, wenn der Patient an demselben Tag wegen derselben Er -
+krankung in stationäre Krankenhausbehandlung aufgenommen wird;
+das gilt nicht, wenn die stationäre Behandlung wegen unvorhersehba -
+rer Komplikationen während oder nach der nichtstationären Operation
+notwendig und entsprechend begründet wird.
+7. Die Zuschläge nach den Nummern 0110, 0120 sowie 0500 bis 0530
+sind neben den entsprechenden Zuschlägen nach den Nummer 440
+bis 445 des Gebührenverzeichnisses für ärztliche Leistungen für dieselbe
+Sitzung nicht berechnungsfähig.","References: Nummern 0500 bis 0530, Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120, 3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280, Nummern 4090, 4100, 4130 und 4133, Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140, 9150, 9160 und 9170, Nummern 0110, 0120, Nummer 440 bis 445.",1,768,177,0.0336599999999999,,"Rule 1: The surcharges according to numbers 0500 to 0530 can only be calculated with the simple fee rate. This implies that the ""Multiplier"" for these service numbers should be 1.",1,1310,260,0.054900000000000004
+L_Zuschläge_zu_bestimmten,"zahnärztlich-chirurgischen Leistungen
+Allgemeine Bestimmungen
+1. Bei nichtstationärer Durchführung bestimmter zahnärztlich-chirurgi -
+scher Leistungen in der Praxis niedergelassener Zahnärzte oder in Kran -
+kenhäusern können zur Abgeltung der Kosten für die Aufbereitung
+wiederverwendbarer Operationsmaterialien bzw. -geräte und/oder von
+Materialien, die mit der einmaligen Verwendung verbraucht sind, Zu -
+schläge berechnet werden.
+2. Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem
+einfachen Gebührensatz berechnungsfähig.
+3. Die Zuschläge nach den Nummern 0500 bis 0530 sind zahnärztlich-
+chirurgische Leistungen
+-nach den Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120,
+3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280 in Ab -
+schnitt D,
+-nach den Nummern 4090, 4100, 4130 und 4133 in Abschnitt E sowie
+-nach den Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140,
+9150, 9160 und 9170 in Abschnitt K
+zuzuordnen.
+4. Die Zuschläge sind in der Rechnung unmittelbar im Anschluss an die
+zugeordnete zahnärztlich-chirurgische Leistung aufzuführen.
+5. Maßgeblich für den Ansatz eines Zuschlages nach den Nummern
+0500 bis 0530 ist die erbrachte zahnärztlich-chirurgische Leistung mit der
+höchsten Punktzahl. Eine Zuordnung des Zuschlags nach den Nummern
+0500 bis 0530 zu der Summe der jeweils ambulant erbrachten einzelnen
+zahnärztlich-chirurgischen Leistungen ist nicht möglich.
+
+
+6. Die Zuschläge nach den Nummern 0500 bis 0530 sind nicht berech -
+nungsfähig, wenn der Patient an demselben Tag wegen derselben Er -
+krankung in stationäre Krankenhausbehandlung aufgenommen wird;
+das gilt nicht, wenn die stationäre Behandlung wegen unvorhersehba -
+rer Komplikationen während oder nach der nichtstationären Operation
+notwendig und entsprechend begründet wird.
+7. Die Zuschläge nach den Nummern 0110, 0120 sowie 0500 bis 0530
+sind neben den entsprechenden Zuschlägen nach den Nummer 440
+bis 445 des Gebührenverzeichnisses für ärztliche Leistungen für dieselbe
+Sitzung nicht berechnungsfähig.","References: Nummern 0500 bis 0530, Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120, 3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280, Nummern 4090, 4100, 4130 und 4133, Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140, 9150, 9160 und 9170, Nummern 0110, 0120, Nummer 440 bis 445.",1,768,177,0.0336599999999999,,"Rule 2: The surcharges according to numbers 0500 to 0530 are not billable if the patient is admitted to hospital treatment on the same day for the same disease; this does not apply if the hospital treatment is necessary due to unforeseen complications during or after the outpatient operation and is accordingly justified. This implies that if a service with numbers 0500 to 0530 is billed on the same date as a hospital admission for the same disease, it should not be billable unless there is a justification for unforeseen complications.",1,1310,260,0.054900000000000004
+L_Zuschläge_zu_bestimmten,"zahnärztlich-chirurgischen Leistungen
+Allgemeine Bestimmungen
+1. Bei nichtstationärer Durchführung bestimmter zahnärztlich-chirurgi -
+scher Leistungen in der Praxis niedergelassener Zahnärzte oder in Kran -
+kenhäusern können zur Abgeltung der Kosten für die Aufbereitung
+wiederverwendbarer Operationsmaterialien bzw. -geräte und/oder von
+Materialien, die mit der einmaligen Verwendung verbraucht sind, Zu -
+schläge berechnet werden.
+2. Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem
+einfachen Gebührensatz berechnungsfähig.
+3. Die Zuschläge nach den Nummern 0500 bis 0530 sind zahnärztlich-
+chirurgische Leistungen
+-nach den Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120,
+3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280 in Ab -
+schnitt D,
+-nach den Nummern 4090, 4100, 4130 und 4133 in Abschnitt E sowie
+-nach den Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140,
+9150, 9160 und 9170 in Abschnitt K
+zuzuordnen.
+4. Die Zuschläge sind in der Rechnung unmittelbar im Anschluss an die
+zugeordnete zahnärztlich-chirurgische Leistung aufzuführen.
+5. Maßgeblich für den Ansatz eines Zuschlages nach den Nummern
+0500 bis 0530 ist die erbrachte zahnärztlich-chirurgische Leistung mit der
+höchsten Punktzahl. Eine Zuordnung des Zuschlags nach den Nummern
+0500 bis 0530 zu der Summe der jeweils ambulant erbrachten einzelnen
+zahnärztlich-chirurgischen Leistungen ist nicht möglich.
+
+
+6. Die Zuschläge nach den Nummern 0500 bis 0530 sind nicht berech -
+nungsfähig, wenn der Patient an demselben Tag wegen derselben Er -
+krankung in stationäre Krankenhausbehandlung aufgenommen wird;
+das gilt nicht, wenn die stationäre Behandlung wegen unvorhersehba -
+rer Komplikationen während oder nach der nichtstationären Operation
+notwendig und entsprechend begründet wird.
+7. Die Zuschläge nach den Nummern 0110, 0120 sowie 0500 bis 0530
+sind neben den entsprechenden Zuschlägen nach den Nummer 440
+bis 445 des Gebührenverzeichnisses für ärztliche Leistungen für dieselbe
+Sitzung nicht berechnungsfähig.","References: Nummern 0500 bis 0530, Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120, 3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280, Nummern 4090, 4100, 4130 und 4133, Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140, 9150, 9160 und 9170, Nummern 0110, 0120, Nummer 440 bis 445.",1,768,177,0.0336599999999999,,"Rule 3: The surcharges according to numbers 0110, 0120 as well as 0500 to 0530 are not billable in addition to the corresponding surcharges according to number 440 to 445 of the fee schedule for medical services for the same session. This implies that if a service with numbers 0110, 0120, 0500 to 0530 is billed, no service with numbers 440 to 445 should be billed for the same date of treatment.",1,1310,260,0.054900000000000004
+L_Zuschläge_zu_bestimmten,"zahnärztlich-chirurgischen Leistungen
+Allgemeine Bestimmungen
+1. Bei nichtstationärer Durchführung bestimmter zahnärztlich-chirurgi -
+scher Leistungen in der Praxis niedergelassener Zahnärzte oder in Kran -
+kenhäusern können zur Abgeltung der Kosten für die Aufbereitung
+wiederverwendbarer Operationsmaterialien bzw. -geräte und/oder von
+Materialien, die mit der einmaligen Verwendung verbraucht sind, Zu -
+schläge berechnet werden.
+2. Die Zuschläge nach den Nummern 0500 bis 0530 sind nur mit dem
+einfachen Gebührensatz berechnungsfähig.
+3. Die Zuschläge nach den Nummern 0500 bis 0530 sind zahnärztlich-
+chirurgische Leistungen
+-nach den Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120,
+3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280 in Ab -
+schnitt D,
+-nach den Nummern 4090, 4100, 4130 und 4133 in Abschnitt E sowie
+-nach den Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140,
+9150, 9160 und 9170 in Abschnitt K
+zuzuordnen.
+4. Die Zuschläge sind in der Rechnung unmittelbar im Anschluss an die
+zugeordnete zahnärztlich-chirurgische Leistung aufzuführen.
+5. Maßgeblich für den Ansatz eines Zuschlages nach den Nummern
+0500 bis 0530 ist die erbrachte zahnärztlich-chirurgische Leistung mit der
+höchsten Punktzahl. Eine Zuordnung des Zuschlags nach den Nummern
+0500 bis 0530 zu der Summe der jeweils ambulant erbrachten einzelnen
+zahnärztlich-chirurgischen Leistungen ist nicht möglich.
+
+
+6. Die Zuschläge nach den Nummern 0500 bis 0530 sind nicht berech -
+nungsfähig, wenn der Patient an demselben Tag wegen derselben Er -
+krankung in stationäre Krankenhausbehandlung aufgenommen wird;
+das gilt nicht, wenn die stationäre Behandlung wegen unvorhersehba -
+rer Komplikationen während oder nach der nichtstationären Operation
+notwendig und entsprechend begründet wird.
+7. Die Zuschläge nach den Nummern 0110, 0120 sowie 0500 bis 0530
+sind neben den entsprechenden Zuschlägen nach den Nummer 440
+bis 445 des Gebührenverzeichnisses für ärztliche Leistungen für dieselbe
+Sitzung nicht berechnungsfähig.","References: Nummern 0500 bis 0530, Nummern 3020, 3030, 3040, 3045, 3090, 3100, 3110, 3120, 3130, 3140, 3160, 3190, 3200, 3230, 3240, 3250, 3260, 3270, 3280, Nummern 4090, 4100, 4130 und 4133, Nummern 9010, 9020, 9090, 9100, 9110, 9120, 9130, 9140, 9150, 9160 und 9170, Nummern 0110, 0120, Nummer 440 bis 445.",1,768,177,0.0336599999999999,,,1,1310,260,0.054900000000000004
+L_Zuschläge_zu_bestimmten,zahnärztlich-chirurgischen Leistungen,The text provided does not contain any references to other paragraphs.,1,72,12,0.0028799999999999,,,1,614,5,0.01872

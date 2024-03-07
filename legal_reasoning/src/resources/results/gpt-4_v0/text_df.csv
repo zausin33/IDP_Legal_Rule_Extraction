@@ -1,0 +1,613 @@
+,section,subsection,content,reference,section_number,paragraph_number,parsed_references,rule,llm_response,query,llm_inputs,llm_calls,prompt_tokens,completion_tokens,total_cost,parsed_code
+0,,,"Erste Verordnung zur Änderung der Gebührenordnung für Zahnärzte Vom 5. Dezember 2011 Auf Grund des § 15 des Gesetzes über die Ausübung der Zahnheilkunde in der Fassung der Bekanntmachung vom 16. April 1987 (BGBl. I S. 1225) verordnet die Bundesregierung: Artikel 1 Änderung der Gebührenordnung für Zahnärzte Die Gebührenordnung für Zahnärzte vom 22. Oktober 1987 (BGBl. I S. 2316), die zuletzt durch Artikel 18 des Gesetzes vom 4. Dezember 2001 (BGBl. I S. 3320) geändert worden ist, wird wie folgt geändert:",References: § 15,,,[{'section': '15'}],,,,,,,,,
+1,§ 1 Anwendungsbereich ,(1),"Die Vergütungen für die beruflichen Leistungen der Zahnärzte bestimmen sich nach dieser Verordnung, soweit nicht durch Bundesgesetz etwas anderes bestimmt ist.",The text does not mention any references to other paragraphs.,1.0,1.0,,,,,,,,,,
+2,§ 1 Anwendungsbereich ,(2),"Vergütungen darf der Zahnarzt nur für Leistungen berechnen, die nach den Regeln der zahnärztlichen Kunst für eine zahnmedizinisch notwendige zahnärztliche Versorgung erforderlich sind. Leistungen, die über das Maß einer zahnmedizinisch notwendigen zahnärztlichen Versorgung hinausgehen, darf er nur berechnen, wenn sie auf Verlangen des Zahlungspflichtigen erbracht worden sind.",The text does not mention any references to other paragraphs.,1.0,2.0,,,,,,,,,,
+3,§ 2 Abweichende Vereinbarung ,(1),Durch Vereinbarung zwischen Zahnarzt und Zahlungspflichtigem kann eine von dieser Verordnung abweichende Gebührenhöhe festgelegt werden. Die Vereinbarung einer abweichenden Punktzahl (§ 5 Absatz 1 Satz 2) oder eines abweichenden Punktwertes (§ 5 Absatz 1 Satz 3) ist nicht zulässig. Notfall- und akute Schmerzbehandlungen dürfen nicht von einer Vereinbarung nach Satz 1 abhängig gemacht werden.,References: §5 (1),2.0,1.0,"[{'section': '5', 'paragraph': '1'}]",Durch Vereinbarung zwischen Zahnarzt und Zahlungspflichtigem kann eine von dieser Verordnung abweichende Gebührenhöhe festgelegt werden.,"Rule 1:
+Thoughts: This rule states that the dentist and the payer can agree on a different fee amount. However, this rule is not directly translatable into Prolog code because it does not provide a specific condition that can be checked. It is more of a general statement that allows for flexibility in the fee amount.
+
+Translation:
+```prolog
+```
+
+Rule 2:
+Thoughts: This rule states that it is not allowed to agree on a different point score or point value. This can be translated into Prolog code by checking if the point score and point value used in the invoice match the standard point score and point value.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, _, PointScore, Charge, _, _, _), Services),
+    \+ calculate_charge(PointScore, _, Charge),
+    print('Invalid invoice: The point score or point value for a service does not match the standard.'),
+    true.
+```
+
+Rule 3:
+Thoughts: This rule states that emergency and acute pain treatments cannot be dependent on an agreement. However, this rule is not directly translatable into Prolog code because it does not provide a specific condition that can be checked. It is more of a general statement that requires human judgement to determine if a treatment is an emergency or acute pain treatment.
+
+Translation:
+```prolog
+```
+
+Rule 4:
+Thoughts: This rule states that an agreement must be made in writing before the service is provided. This can be translated into Prolog code by checking if the date of the service is after the date of the agreement.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, invoice_date(AgreementDate), _),
+    member(service(_, ServiceDate, _, _, _, _, _, _), Services),
+    ServiceDate @< AgreementDate,
+    print('Invalid invoice: A service was provided before the agreement was made.'),
+    true.
+```
+
+Rule 5:
+Thoughts: This rule states that the agreement must include certain information. However, this rule is not directly translatable into Prolog code because it does not provide a specific condition that can be checked. It is more of a general statement that requires human judgement to determine if all the required information is included in the agreement.
+
+Translation:
+```prolog
+```
+
+Rule 6:
+Thoughts: This rule states that the agreement cannot contain any other explanations. However, this rule is not directly translatable into Prolog code because it does not provide a specific condition that can be checked. It is more of a general statement that requires human judgement to determine if the agreement contains any other explanations.
+
+Translation:
+```prolog
+```
+
+Rule 7:
+Thoughts: This rule states that the dentist must give the payer a copy of the agreement. However, this rule is not directly translatable into Prolog code because it does not provide a specific condition that can be checked. It is more of a general statement that requires human judgement to determine if the payer has received a copy of the agreement.
+
+Translation:
+```prolog
+```
+
+Rule 8:
+Thoughts: This rule states that services and their fees must be agreed upon in a treatment and cost plan. However, this rule is not directly translatable into Prolog code because it does not provide a specific condition that can be checked. It is more of a general statement that requires human judgement to determine if the services and their fees have been agreed upon in a treatment and cost plan.
+
+Translation:
+```prolog
+```
+
+Rule 9:
+Thoughts: This rule states that the treatment and cost plan must be created before the service is provided and must include certain information. However, this rule is not directly translatable into Prolog code because it does not provide a specific condition that can be checked. It is more of a general statement that requires human judgement to determine if the treatment and cost plan has been created before the service is provided and includes all the required information.
+
+Translation:
+```prolog
+```",,"[""Given this rules from the german GOZ:\n---\nDurch Vereinbarung zwischen Zahnarzt und Zahlungspflichtigem kann eine von dieser Verordnung abweichende Gebührenhöhe festgelegt werden.\n---\nDie Vereinbarung einer abweichenden Punktzahl (§ 5 Absatz 1 Satz 2) oder eines abweichenden Punktwertes (§ 5 Absatz 1 Satz 3) ist nicht zulässig.\n---\nNotfall- und akute Schmerzbehandlungen dürfen nicht von einer Vereinbarung nach Satz 1 abhängig gemacht werden.\n---\nEine Vereinbarung nach Absatz 1 Satz 1 ist nach persönlicher Absprache im Einzelfall zwischen Zahnarzt und Zahlungspflichtigem vor Erbringung der Leistung des Zahnarztes schriftlich zu treffen.\n---\nDieses muss neben der Nummer und der Bezeichnung der Leistung, dem vereinbarten Steigerungssatz und dem sich daraus ergebenden Betrag auch die Feststellung enthalten, dass eine Erstattung der Vergütung durch Erstattungsstellen möglicherweise nicht in vollem Umfang gewährleistet ist.\n---\nWeitere Erklärungen darf die Vereinbarung nicht enthalten.\n---\nDer Zahnarzt hat dem Zahlungspflichtigen einen Abdruck der Vereinbarung auszuhändigen.\n---\nLeistungen nach § 1 Absatz 2 Satz 2 und ihre Vergütung müssen in einem Heil- und Kostenplan schriftlich vereinbart werden.\n---\nDer Heil- und Kostenplan muss vor Erbringung der Leistung erstellt werden; er muss die einzelnen Leistungen und Vergütungen sowie die Feststellung enthalten, dass es sich um Leistungen auf Verlangen handelt und eine Erstattung möglicherweise nicht gewährleistet ist.\n---\n\n\nAnd this predicates:\n```prolog\ninvoice(\n    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...\n    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...\n    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    invoice_date(date(Year, Month, Day)),\n    invoice_amount(InvoiceAmount)\n).\n% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100\n% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema\n% Area = 1 -> Right upper jaw\n% Area = 2 -> Left upper jaw\n% Area = 3 -> Left lower jaw\n% Area = 4 -> Right lower jaw\n% Position is exact position of this tooth in its area (from 1 to 8)\n% Example invoice\ninvoice(\n    [\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),\n        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),\n        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])\n    ],\n    [\n        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])\n    ]\n    invoice_date(date(2023, 10, 04),\n    invoice_amount(110.01)\n).\n```\nThe 9 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.\nWe want to mark invoices as invalid if they do not adhere to those rules.\nWhich of those rules can you translate into prolog code given following restriction:\nOnly translate the rules as they are, do not include any examples.\nBe as accurate as possible.\nYou must be able to exactly define every new predicate based on the given ones.\nDo not make any assumptions which are not given.\nTranslate the rules where a translation given the restrictions is possible.\nTo determine if an invoice is correct, use the predicate \n```prolog\nis_invoice_invalid(Invoice) : -\n    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),\n    % The corresponding rule (only one rule for each predicate)\n    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.\n    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice\n    true. % Then the invoice is invalid.\n```\nUse this predicate to check each rule individually. Before you translate a rule, think about it.\nExpected format:\n---\nRule 1:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\nRule 2:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\n... \n\nWhen you can not translate leaf the code section empty like this:\n---\nRule X:\nThoughts: ...\nTranslation:\n```prolog\n```\n---\n\nSo you should have a block for each of the 9 given rules at the end.\nFor translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.\nWhen you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).\nI only want to have exactly defined rules.\nFirst, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.\n\nThe rules references some already translated section.\nAs references for you, here are the translations of the referenced sections:\n§ 5:\n\ncalculate_charge(PointScore, Multiplier, Charge) :-\n    PointValue = 0.0562421,\n    CalculatedCharge is round(PointValue * Multiplier * PointScore * 100) / 100,\n    Charge = CalculatedCharge.\n\nis_invoice_invalid(Invoice) :-\n    Invoice = invoice(Services, _, _, _),\n    member(service(_, _, Multiplier, PointScore, Charge, _, _, _), Services),\n    \\+ calculate_charge(PointScore, Multiplier, Charge),\n    print('Invalid invoice: The charge for a service does not match the calculated charge.'),\n    true.\n\n\nis_multiplier_valid(Multiplier, Justification) :-\n    Multiplier =< 2.3;\n    (Multiplier > 2.3, Justification \\= '').\n\nis_invoice_invalid(Invoice) :-\n    Invoice = invoice(Services, _, _, _),\n    member(service(_, _, Multiplier, _, _, _, Justification, _), Services),\n    \\+ is_multiplier_valid(Multiplier, Justification),\n    print('Invalid invoice: The multiplier for a service exceeds 2.3 and there is no justification for this.'),\n    true.\n\n""]",1.0,1819.0,830.0,0.10436999999999999,"
+"
+4,§ 2 Abweichende Vereinbarung ,(1),Durch Vereinbarung zwischen Zahnarzt und Zahlungspflichtigem kann eine von dieser Verordnung abweichende Gebührenhöhe festgelegt werden. Die Vereinbarung einer abweichenden Punktzahl (§ 5 Absatz 1 Satz 2) oder eines abweichenden Punktwertes (§ 5 Absatz 1 Satz 3) ist nicht zulässig. Notfall- und akute Schmerzbehandlungen dürfen nicht von einer Vereinbarung nach Satz 1 abhängig gemacht werden.,References: §5 (1),2.0,1.0,"[{'section': '5', 'paragraph': '1'}]",Die Vereinbarung einer abweichenden Punktzahl (§ 5 Absatz 1 Satz 2) oder eines abweichenden Punktwertes (§ 5 Absatz 1 Satz 3) ist nicht zulässig.,,,,,,,,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, _, PointScore, Charge, _, _, _), Services),
+    \+ calculate_charge(PointScore, _, Charge),
+    print('Invalid invoice: The point score or point value for a service does not match the standard.'),
+    true.
+"
+5,§ 2 Abweichende Vereinbarung ,(1),Durch Vereinbarung zwischen Zahnarzt und Zahlungspflichtigem kann eine von dieser Verordnung abweichende Gebührenhöhe festgelegt werden. Die Vereinbarung einer abweichenden Punktzahl (§ 5 Absatz 1 Satz 2) oder eines abweichenden Punktwertes (§ 5 Absatz 1 Satz 3) ist nicht zulässig. Notfall- und akute Schmerzbehandlungen dürfen nicht von einer Vereinbarung nach Satz 1 abhängig gemacht werden.,References: §5 (1),2.0,1.0,"[{'section': '5', 'paragraph': '1'}]",Notfall- und akute Schmerzbehandlungen dürfen nicht von einer Vereinbarung nach Satz 1 abhängig gemacht werden.,,,,,,,,"
+"
+6,§ 2 Abweichende Vereinbarung ,(2),"Eine Vereinbarung nach Absatz 1 Satz 1 ist nach persönlicher Absprache im Einzelfall zwischen Zahnarzt und Zahlungspflichtigem vor Erbringung der Leistung des Zahnarztes schriftlich zu treffen. Dieses muss neben der Nummer und der Bezeichnung der Leistung, dem vereinbarten Steigerungssatz und dem sich daraus ergebenden Betrag auch die Feststellung enthalten, dass eine Erstattung der Vergütung durch Erstattungsstellen möglicherweise nicht in vollem Umfang gewährleistet ist. Weitere Erklärungen darf die Vereinbarung nicht enthalten. Der Zahnarzt hat dem Zahlungspflichtigen einen Abdruck der Vereinbarung auszuhändigen.",The text does not contain any references to other paragraphs.,2.0,2.0,,Eine Vereinbarung nach Absatz 1 Satz 1 ist nach persönlicher Absprache im Einzelfall zwischen Zahnarzt und Zahlungspflichtigem vor Erbringung der Leistung des Zahnarztes schriftlich zu treffen.,,,,,,,,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, invoice_date(AgreementDate), _),
+    member(service(_, ServiceDate, _, _, _, _, _, _), Services),
+    ServiceDate @< AgreementDate,
+    print('Invalid invoice: A service was provided before the agreement was made.'),
+    true.
+"
+7,§ 2 Abweichende Vereinbarung ,(2),"Eine Vereinbarung nach Absatz 1 Satz 1 ist nach persönlicher Absprache im Einzelfall zwischen Zahnarzt und Zahlungspflichtigem vor Erbringung der Leistung des Zahnarztes schriftlich zu treffen. Dieses muss neben der Nummer und der Bezeichnung der Leistung, dem vereinbarten Steigerungssatz und dem sich daraus ergebenden Betrag auch die Feststellung enthalten, dass eine Erstattung der Vergütung durch Erstattungsstellen möglicherweise nicht in vollem Umfang gewährleistet ist. Weitere Erklärungen darf die Vereinbarung nicht enthalten. Der Zahnarzt hat dem Zahlungspflichtigen einen Abdruck der Vereinbarung auszuhändigen.",The text does not contain any references to other paragraphs.,2.0,2.0,,"Dieses muss neben der Nummer und der Bezeichnung der Leistung, dem vereinbarten Steigerungssatz und dem sich daraus ergebenden Betrag auch die Feststellung enthalten, dass eine Erstattung der Vergütung durch Erstattungsstellen möglicherweise nicht in vollem Umfang gewährleistet ist.",,,,,,,,"
+"
+8,§ 2 Abweichende Vereinbarung ,(2),"Eine Vereinbarung nach Absatz 1 Satz 1 ist nach persönlicher Absprache im Einzelfall zwischen Zahnarzt und Zahlungspflichtigem vor Erbringung der Leistung des Zahnarztes schriftlich zu treffen. Dieses muss neben der Nummer und der Bezeichnung der Leistung, dem vereinbarten Steigerungssatz und dem sich daraus ergebenden Betrag auch die Feststellung enthalten, dass eine Erstattung der Vergütung durch Erstattungsstellen möglicherweise nicht in vollem Umfang gewährleistet ist. Weitere Erklärungen darf die Vereinbarung nicht enthalten. Der Zahnarzt hat dem Zahlungspflichtigen einen Abdruck der Vereinbarung auszuhändigen.",The text does not contain any references to other paragraphs.,2.0,2.0,,Weitere Erklärungen darf die Vereinbarung nicht enthalten.,,,,,,,,"
+"
+9,§ 2 Abweichende Vereinbarung ,(2),"Eine Vereinbarung nach Absatz 1 Satz 1 ist nach persönlicher Absprache im Einzelfall zwischen Zahnarzt und Zahlungspflichtigem vor Erbringung der Leistung des Zahnarztes schriftlich zu treffen. Dieses muss neben der Nummer und der Bezeichnung der Leistung, dem vereinbarten Steigerungssatz und dem sich daraus ergebenden Betrag auch die Feststellung enthalten, dass eine Erstattung der Vergütung durch Erstattungsstellen möglicherweise nicht in vollem Umfang gewährleistet ist. Weitere Erklärungen darf die Vereinbarung nicht enthalten. Der Zahnarzt hat dem Zahlungspflichtigen einen Abdruck der Vereinbarung auszuhändigen.",The text does not contain any references to other paragraphs.,2.0,2.0,,Der Zahnarzt hat dem Zahlungspflichtigen einen Abdruck der Vereinbarung auszuhändigen.,,,,,,,,"
+"
+10,§ 2 Abweichende Vereinbarung ,(3),"Leistungen nach § 1 Absatz 2 Satz 2 und ihre Vergütung müssen in einem Heil- und Kostenplan schriftlich vereinbart werden. Der Heil- und Kostenplan muss vor Erbringung der Leistung erstellt werden; er muss die einzelnen Leistungen und Vergütungen sowie die Feststellung enthalten, dass es sich um Leistungen auf Verlangen handelt und eine Erstattung möglicherweise nicht gewährleistet ist. § 6 Absatz 1 bleibt unberührt.","References: §1 Absatz 2 Satz 2, §6 Absatz 1",2.0,3.0,"[{'section': '1', 'paragraph': '2', 'sentence': None}, {'section': '6', 'paragraph': '1', 'sentence': '1'}]",Leistungen nach § 1 Absatz 2 Satz 2 und ihre Vergütung müssen in einem Heil- und Kostenplan schriftlich vereinbart werden.,,,,,,,,"
+"
+11,§ 2 Abweichende Vereinbarung ,(3),"Leistungen nach § 1 Absatz 2 Satz 2 und ihre Vergütung müssen in einem Heil- und Kostenplan schriftlich vereinbart werden. Der Heil- und Kostenplan muss vor Erbringung der Leistung erstellt werden; er muss die einzelnen Leistungen und Vergütungen sowie die Feststellung enthalten, dass es sich um Leistungen auf Verlangen handelt und eine Erstattung möglicherweise nicht gewährleistet ist. § 6 Absatz 1 bleibt unberührt.","References: §1 Absatz 2 Satz 2, §6 Absatz 1",2.0,3.0,"[{'section': '1', 'paragraph': '2', 'sentence': None}, {'section': '6', 'paragraph': '1', 'sentence': '1'}]","Der Heil- und Kostenplan muss vor Erbringung der Leistung erstellt werden; er muss die einzelnen Leistungen und Vergütungen sowie die Feststellung enthalten, dass es sich um Leistungen auf Verlangen handelt und eine Erstattung möglicherweise nicht gewährleistet ist.",,,,,,,,"
+"
+12,§ 2 Abweichende Vereinbarung ,(4),"Bei vollstationären, teilstationären sowie vor- und nachstationären privatzahnärztlichen Leistungen ist eine Vereinbarung nach Absatz 1 Satz 1 nur für vom Wahlzahnarzt persönlich erbrachte Leistungen zulässig.",The text does not mention any references to other paragraphs.,2.0,4.0,,,,,,,,,,
+13,§ 3 Vergütungen ,,"Als Vergütungen stehen dem Zahnarzt Gebühren, Entschädigungen und Ersatz von Auslagen zu.",The text does not mention any references to other paragraphs.,3.0,,,,,,,,,,,
+14,§ 4 Gebühren ,(1),Gebühren sind Vergütungen für die im Gebührenverzeichnis (Anlage 1) genannten zahnärztlichen Leistungen.,The text does not mention any references to other paragraphs.,4.0,1.0,,,,,,,,,,
+15,§ 4 Gebühren ,(2),"Der Zahnarzt kann Gebühren nur für selbstständige zahnärztliche Leistungen berechnen, die er selbst erbracht hat oder die unter seiner Aufsicht nach fachlicher Weisung erbracht wurden (eigene Leistungen). Für eine Leistung, die Bestandteil oder eine besondere Ausführung einer anderen Leistung nach dem Gebührenverzeichnis ist, kann der Zahnarzt eine Gebühr nicht berechnen, wenn er für die andere Leistung eine Gebühr berechnet. Dies gilt auch für die zur Erbringung der im Gebührenverzeichnis aufgeführten operativen Leistungen methodisch notwendigen operativen Einzelschritte. Eine Leistung ist methodisch notwendiger Bestandteil einer anderen Leistung, wenn sie inhaltlich von der Leistungsbeschreibung der anderen Leistung (Zielleistung) umfasst und auch in deren Bewertung berücksichtigt worden ist.",The text does not mention any references to other paragraphs.,4.0,2.0,,"Für eine Leistung, die Bestandteil oder eine besondere Ausführung einer anderen Leistung nach dem Gebührenverzeichnis ist, kann der Zahnarzt eine Gebühr nicht berechnen, wenn er für die andere Leistung eine Gebühr berechnet.","Rule 1:
+Thoughts: This rule states that if a service is a part of another service, then the dentist cannot charge for both services. This means that if a service is a subset of another service, then the dentist cannot charge for the subset service. This can be translated into Prolog by checking if there exists a service that is a subset of another service in the invoice. If such a service exists, then the invoice is invalid.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service1, _, _, _, _, _, _, Teeth1), Services),
+    member(service(Service2, _, _, _, _, _, _, Teeth2), Services),
+    Service1 \= Service2,
+    subset(Teeth1, Teeth2),
+    print('Invoice is invalid because a service is a subset of another service.'),
+    true.
+```
+---
+Rule 2:
+Thoughts: This rule states that the dentist cannot charge for the individual steps required to perform a service. This means that if a service is composed of multiple steps, then the dentist cannot charge for each step individually. This can be translated into Prolog by checking if there exists a service that is composed of multiple steps and if the dentist has charged for each step individually. If such a service exists, then the invoice is invalid.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, _, _, _, _, _, Teeth), Services),
+    findall(S, (member(service(S, _, _, _, _, _, _, T), Services), Service \= S, subset(T, Teeth)), Steps),
+    length(Steps, L),
+    L > 0,
+    print('Invoice is invalid because the dentist has charged for individual steps of a service.'),
+    true.
+```
+---
+Rule 3:
+Thoughts: This rule states that a service is a necessary part of another service if it is included in the description and evaluation of the other service. This means that if a service is included in the description and evaluation of another service, then the dentist cannot charge for the included service. This can be translated into Prolog by checking if there exists a service that is included in the description and evaluation of another service. If such a service exists, then the invoice is invalid.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service1, _, _, _, _, Description1, _, Teeth1), Services),
+    member(service(Service2, _, _, _, _, Description2, _, Teeth2), Services),
+    Service1 \= Service2,
+    subset(Teeth1, Teeth2),
+    sub_string(Description2, _, _, _, Description1),
+    print('Invoice is invalid because a service is included in the description and evaluation of another service.'),
+    true.
+```
+Please note that the `subset/2` and `sub_string/5` predicates are used to check if a list is a subset of another list and if a string is a substring of another string, respectively.",,"[""Given this rules from the german GOZ:\n---\nFür eine Leistung, die Bestandteil oder eine besondere Ausführung einer anderen Leistung nach dem Gebührenverzeichnis ist, kann der Zahnarzt eine Gebühr nicht berechnen, wenn er für die andere Leistung eine Gebühr berechnet.\n---\nDies gilt auch für die zur Erbringung der im Gebührenverzeichnis aufgeführten operativen Leistungen methodisch notwendigen operativen Einzelschritte.\n---\nEine Leistung ist methodisch notwendiger Bestandteil einer anderen Leistung, wenn sie inhaltlich von der Leistungsbeschreibung der anderen Leistung (Zielleistung) umfasst und auch in deren Bewertung berücksichtigt worden ist.\n---\n\n\nAnd this predicates:\n```prolog\ninvoice(\n    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...\n    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...\n    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    invoice_date(date(Year, Month, Day)),\n    invoice_amount(InvoiceAmount)\n).\n% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100\n% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema\n% Area = 1 -> Right upper jaw\n% Area = 2 -> Left upper jaw\n% Area = 3 -> Left lower jaw\n% Area = 4 -> Right lower jaw\n% Position is exact position of this tooth in its area (from 1 to 8)\n% Example invoice\ninvoice(\n    [\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),\n        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),\n        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])\n    ],\n    [\n        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])\n    ]\n    invoice_date(date(2023, 10, 04),\n    invoice_amount(110.01)\n).\n```\nThe 3 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.\nWe want to mark invoices as invalid if they do not adhere to those rules.\nWhich of those rules can you translate into prolog code given following restriction:\nOnly translate the rules as they are, do not include any examples.\nBe as accurate as possible.\nYou must be able to exactly define every new predicate based on the given ones.\nDo not make any assumptions which are not given.\nTranslate the rules where a translation given the restrictions is possible.\nTo determine if an invoice is correct, use the predicate \n```prolog\nis_invoice_invalid(Invoice) : -\n    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),\n    % The corresponding rule (only one rule for each predicate)\n    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.\n    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice\n    true. % Then the invoice is invalid.\n```\nUse this predicate to check each rule individually. Before you translate a rule, think about it.\nExpected format:\n---\nRule 1:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\nRule 2:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\n... \n\nWhen you can not translate leaf the code section empty like this:\n---\nRule X:\nThoughts: ...\nTranslation:\n```prolog\n```\n---\n\nSo you should have a block for each of the 3 given rules at the end.\nFor translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.\nWhen you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).\nI only want to have exactly defined rules.\nFirst, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.""]",1.0,1298.0,646.0,0.0777,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service1, _, _, _, _, _, _, Teeth1), Services),
+    member(service(Service2, _, _, _, _, _, _, Teeth2), Services),
+    Service1 \= Service2,
+    subset(Teeth1, Teeth2),
+    print('Invoice is invalid because a service is a subset of another service.'),
+    true.
+"
+16,§ 4 Gebühren ,(2),"Der Zahnarzt kann Gebühren nur für selbstständige zahnärztliche Leistungen berechnen, die er selbst erbracht hat oder die unter seiner Aufsicht nach fachlicher Weisung erbracht wurden (eigene Leistungen). Für eine Leistung, die Bestandteil oder eine besondere Ausführung einer anderen Leistung nach dem Gebührenverzeichnis ist, kann der Zahnarzt eine Gebühr nicht berechnen, wenn er für die andere Leistung eine Gebühr berechnet. Dies gilt auch für die zur Erbringung der im Gebührenverzeichnis aufgeführten operativen Leistungen methodisch notwendigen operativen Einzelschritte. Eine Leistung ist methodisch notwendiger Bestandteil einer anderen Leistung, wenn sie inhaltlich von der Leistungsbeschreibung der anderen Leistung (Zielleistung) umfasst und auch in deren Bewertung berücksichtigt worden ist.",The text does not mention any references to other paragraphs.,4.0,2.0,,Dies gilt auch für die zur Erbringung der im Gebührenverzeichnis aufgeführten operativen Leistungen methodisch notwendigen operativen Einzelschritte.,,,,,,,,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, _, _, _, _, _, Teeth), Services),
+    findall(S, (member(service(S, _, _, _, _, _, _, T), Services), Service \= S, subset(T, Teeth)), Steps),
+    length(Steps, L),
+    L > 0,
+    print('Invoice is invalid because the dentist has charged for individual steps of a service.'),
+    true.
+"
+17,§ 4 Gebühren ,(2),"Der Zahnarzt kann Gebühren nur für selbstständige zahnärztliche Leistungen berechnen, die er selbst erbracht hat oder die unter seiner Aufsicht nach fachlicher Weisung erbracht wurden (eigene Leistungen). Für eine Leistung, die Bestandteil oder eine besondere Ausführung einer anderen Leistung nach dem Gebührenverzeichnis ist, kann der Zahnarzt eine Gebühr nicht berechnen, wenn er für die andere Leistung eine Gebühr berechnet. Dies gilt auch für die zur Erbringung der im Gebührenverzeichnis aufgeführten operativen Leistungen methodisch notwendigen operativen Einzelschritte. Eine Leistung ist methodisch notwendiger Bestandteil einer anderen Leistung, wenn sie inhaltlich von der Leistungsbeschreibung der anderen Leistung (Zielleistung) umfasst und auch in deren Bewertung berücksichtigt worden ist.",The text does not mention any references to other paragraphs.,4.0,2.0,,"Eine Leistung ist methodisch notwendiger Bestandteil einer anderen Leistung, wenn sie inhaltlich von der Leistungsbeschreibung der anderen Leistung (Zielleistung) umfasst und auch in deren Bewertung berücksichtigt worden ist.",,,,,,,,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service1, _, _, _, _, Description1, _, Teeth1), Services),
+    member(service(Service2, _, _, _, _, Description2, _, Teeth2), Services),
+    Service1 \= Service2,
+    subset(Teeth1, Teeth2),
+    sub_string(Description2, _, _, _, Description1),
+    print('Invoice is invalid because a service is included in the description and evaluation of another service.'),
+    true.
+"
+18,§ 4 Gebühren ,(3),"Mit den Gebühren sind die Praxiskosten einschließlich der Kosten für Füllungsmaterial, für den Sprechstundenbedarf, für die Anwendung von Instrumenten und Apparaten sowie für Lagerhaltung abgegolten, soweit nicht im Gebührenverzeichnis etwas anderes bestimmt ist. Hat der Zahnarzt zahnärztliche Leistungen unter Inanspruchnahme Dritter, die nach dieser Verordnung selbst nicht liquidationsberechtigt sind, erbracht, so sind die hierdurch entstandenen Kosten ebenfalls mit der Gebühr abgegolten.",The text does not mention any specific paragraphs for reference.,4.0,3.0,,,,,,,,,,
+19,§ 4 Gebühren ,(4),"Kosten, die nach Absatz 3 mit den Gebühren abgegolten sind, dürfen nicht gesondert berechnet werden. Eine Abtretung des Vergütungsanspruchs in Höhe solcher Kosten ist gegenüber dem Zahlungspflichtigen unwirksam.",The text does not mention any references to other paragraphs.,4.0,4.0,,,,,,,,,,
+20,§ 4 Gebühren ,(5),"Sollen Leistungen durch Dritte erbracht werden, die diese dem Zahlungspflichtigen unmittelbar berechnen, so hat der Zahnarzt ihn darüber zu unterrichten.",The text does not mention any references to other paragraphs.,4.0,5.0,,,,,,,,,,
+21,§ 5 Bemessung der Gebühren für Leistungen des Gebührenverzeichnisses ,(1),"Die Höhe der einzelnen Gebühr bemisst sich nach dem Einfachen bis Dreieinhalbfachen des Gebührensatzes. Gebührensatz ist der Betrag, der sich ergibt, wenn die Punktzahl der einzelnen Leistung des Gebührenverzeichnisses mit dem Punktwert vervielfacht wird. Der Punktwert beträgt 5,62421 Cent. Bei der Bemessung von Gebühren sind sich ergebende Bruchteile eines Cents unter 0,5 abzurunden und Bruchteile von 0,5 und mehr aufzurunden; die Rundung ist erst nach der Multiplikation mit dem Steigerungsfaktor nach Satz 1 vorzunehmen.",The text does not mention any references to other paragraphs.,5.0,1.0,,"Die Höhe der einzelnen Gebühr bemisst sich nach dem Einfachen bis Dreieinhalbfachen (Multiplikator) des Gebührensatzes. Gebührensatz ist der Betrag, der sich ergibt, wenn die Punktzahl der einzelnen Leistung des Gebührenverzeichnisses mit dem Punktwert vervielfacht wird. Der Punktwert beträgt 5,62421 Cent.","---
+Rule 1:
+Thoughts: This rule is about the calculation of the charge for a service. It states that the charge is calculated by multiplying the point score of the service with the point value (which is 5,62421 Cent or 0.0562421 Euro) and the multiplier. The result is then rounded to the nearest cent. This rule can be translated into Prolog by defining a predicate that calculates the charge for a service and compares it with the charge given in the invoice. If the calculated charge does not match the given charge, the invoice is invalid.
+
+Translation:
+```prolog
+calculate_charge(PointScore, Multiplier, Charge) :-
+    PointValue = 0.0562421,
+    CalculatedCharge is round(PointValue * Multiplier * PointScore * 100) / 100,
+    Charge = CalculatedCharge.
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, PointScore, Charge, _, _, _), Services),
+    \+ calculate_charge(PointScore, Multiplier, Charge),
+    print('Invalid invoice: The charge for a service does not match the calculated charge.'),
+    true.
+```
+---
+Rule 2:
+Thoughts: This rule is about rounding of the charge. It states that fractions of a cent less than 0.5 are rounded down and fractions of 0.5 and more are rounded up. This rule is already implicitly included in the calculation of the charge in the first rule, because the `round/1` function in Prolog rounds to the nearest integer.
+
+Translation:
+```prolog
+```
+---
+Rule 3:
+Thoughts: This rule is about the multiplier for the charge. It states that the 2.3-fold charge rate represents the average service. If the multiplier exceeds this rate, there must be a justification for this in the invoice. This rule can be translated into Prolog by defining a predicate that checks if the multiplier for a service exceeds 2.3 and if so, checks if there is a justification for this in the invoice. If the multiplier exceeds 2.3 and there is no justification, the invoice is invalid.
+
+Translation:
+```prolog
+is_multiplier_valid(Multiplier, Justification) :-
+    Multiplier =< 2.3;
+    (Multiplier > 2.3, Justification \= '').
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, _, Justification, _), Services),
+    \+ is_multiplier_valid(Multiplier, Justification),
+    print('Invalid invoice: The multiplier for a service exceeds 2.3 and there is no justification for this.'),
+    true.
+```",,"Given this rules from the german GOZ:
+---
+Die Höhe der einzelnen Gebühr bemisst sich nach dem Einfachen bis Dreieinhalbfachen (Multiplikator) des Gebührensatzes. Gebührensatz ist der Betrag, der sich ergibt, wenn die Punktzahl der einzelnen Leistung des Gebührenverzeichnisses mit dem Punktwert vervielfacht wird. Der Punktwert beträgt 5,62421 Cent.
+---
+Bei der Bemessung von Gebühren sind sich ergebende Bruchteile eines Cents unter 0,5 abzurunden und Bruchteile von 0,5 und mehr aufzurunden; die Rundung ist erst nach der Multiplikation mit dem Steigerungsfaktor (Multiplikator) nach Satz 1 vorzunehmen.
+---
+Der 2,3fache Gebührensatz bildet die nach Schwierigkeit und Zeitaufwand durchschnittliche Leistung ab; ein Überschreiten dieses Gebührensatzes ist nur zulässig, wenn Besonderheiten der in Satz 1 genannten Bemessungskriterien dies rechtfertigen; Leistungen mit unterdurchschnittlichem Schwierigkeitsgrad oder Zeitaufwand sind mit einem niedrigeren Gebührensatz zu berechnen.
+---
+
+
+And this predicates:
+```prolog
+invoice(
+    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...
+    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...
+    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],
+    invoice_date(date(Year, Month, Day)),
+    invoice_amount(InvoiceAmount)
+).
+% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100
+% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema
+% Area = 1 -> Right upper jaw
+% Area = 2 -> Left upper jaw
+% Area = 3 -> Left lower jaw
+% Area = 4 -> Right lower jaw
+% Position is exact position of this tooth in its area (from 1 to 8)
+% Example invoice
+invoice(
+    [
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),
+        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),
+        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),
+        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])
+    ],
+    [
+        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])
+    ]
+    invoice_date(date(2023, 10, 04),
+    invoice_amount(110.01)
+).
+```
+The 3 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.
+We want to mark invoices as invalid if they do not adhere to those rules.
+Which of those rules can you translate into prolog code given following restriction:
+Only translate the rules as they are, do not include any examples.
+Be as accurate as possible.
+You must be able to exactly define every new predicate based on the given ones.
+Do not make any assumptions which are not given.
+Translate the rules where a translation given the restrictions is possible.
+To determine if an invoice is correct, use the predicate 
+```prolog
+is_invoice_invalid(Invoice) : -
+    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),
+    % The corresponding rule (only one rule for each predicate)
+    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.
+    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice
+    true. % Then the invoice is invalid.
+```
+Use this predicate to check each rule individually. Before you translate a rule, think about it.
+Expected format:
+---
+Rule 1:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+Rule 2:
+Thoughts: ...
+Translation:
+```prolog
+% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)
+```
+---
+... 
+
+When you can not translate leaf the code section empty like this:
+---
+Rule X:
+Thoughts: ...
+Translation:
+```prolog
+```
+---
+
+So you should have a block for each of the 3 given rules at the end.
+For translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.
+When you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).
+I only want to have exactly defined rules.
+First, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.",1.0,1436.0,567.0,0.07709999999999999,"
+calculate_charge(PointScore, Multiplier, Charge) :-
+    PointValue = 0.0562421,
+    CalculatedCharge is round(PointValue * Multiplier * PointScore * 100) / 100,
+    Charge = CalculatedCharge.
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, PointScore, Charge, _, _, _), Services),
+    \+ calculate_charge(PointScore, Multiplier, Charge),
+    print('Invalid invoice: The charge for a service does not match the calculated charge.'),
+    true.
+"
+22,§ 5 Bemessung der Gebühren für Leistungen des Gebührenverzeichnisses ,(1),"Die Höhe der einzelnen Gebühr bemisst sich nach dem Einfachen bis Dreieinhalbfachen des Gebührensatzes. Gebührensatz ist der Betrag, der sich ergibt, wenn die Punktzahl der einzelnen Leistung des Gebührenverzeichnisses mit dem Punktwert vervielfacht wird. Der Punktwert beträgt 5,62421 Cent. Bei der Bemessung von Gebühren sind sich ergebende Bruchteile eines Cents unter 0,5 abzurunden und Bruchteile von 0,5 und mehr aufzurunden; die Rundung ist erst nach der Multiplikation mit dem Steigerungsfaktor nach Satz 1 vorzunehmen.",The text does not mention any references to other paragraphs.,5.0,1.0,,"Bei der Bemessung von Gebühren sind sich ergebende Bruchteile eines Cents unter 0,5 abzurunden und Bruchteile von 0,5 und mehr aufzurunden; die Rundung ist erst nach der Multiplikation mit dem Steigerungsfaktor (Multiplikator) nach Satz 1 vorzunehmen.",,,,,,,,"
+"
+23,§ 5 Bemessung der Gebühren für Leistungen des Gebührenverzeichnisses ,(2),"Innerhalb des Gebührenrahmens sind die Gebühren unter Berücksichtigung der Schwierigkeit und des Zeitaufwandes der einzelnen Leistung sowie der Umstände bei der Ausführung nach billigem Ermessen zu bestimmen. Die Schwierigkeit der einzelnen Leistung kann auch durch die Schwierigkeit des Krankheitsfalles begründet sein. Bemessungskriterien, die bereits in der Leistungsbeschreibung berücksichtigt worden sind, haben hierbei außer Betracht zu bleiben. Der 2,3fache Gebührensatz bildet die nach Schwierigkeit und Zeitaufwand durchschnittliche Leistung ab; ein Überschreiten dieses Gebührensatzes ist nur zulässig, wenn Besonderheiten der in Satz 1 genannten Bemessungskriterien dies rechtfertigen; Leistungen mit unterdurchschnittlichem Schwierigkeitsgrad oder Zeitaufwand sind mit einem niedrigeren Gebührensatz zu berechnen.",The text does not mention any references to other paragraphs.,5.0,2.0,,"Der 2,3fache Gebührensatz bildet die nach Schwierigkeit und Zeitaufwand durchschnittliche Leistung ab; ein Überschreiten dieses Gebührensatzes ist nur zulässig, wenn Besonderheiten der in Satz 1 genannten Bemessungskriterien dies rechtfertigen; Leistungen mit unterdurchschnittlichem Schwierigkeitsgrad oder Zeitaufwand sind mit einem niedrigeren Gebührensatz zu berechnen.",,,,,,,,"
+is_multiplier_valid(Multiplier, Justification) :-
+    Multiplier =< 2.3;
+    (Multiplier > 2.3, Justification \= '').
+
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, _, Justification, _), Services),
+    \+ is_multiplier_valid(Multiplier, Justification),
+    print('Invalid invoice: The multiplier for a service exceeds 2.3 and there is no justification for this.'),
+    true.
+"
+24,§ 6 Gebühren für andere Leistungen ,(1),"Selbstständige zahnärztliche Leistungen, die in das Gebührenverzeichnis nicht aufgenommen sind, können entsprechend einer nach Art, Kosten- und Zeitaufwand gleichwertigen Leistung des Gebührenver zeichnisses dieser Verordnung berechnet werden. Sofern auch eine nach Art, Kosten- und Zeitaufwand gleichwertige Leistung im Gebührenverzeichnis dieser Verordnung nicht enthalten ist, kann die selbstständige zahnärztliche Leistung entsprechend einer nach Art, Kosten- und Zeitaufwand gleichwertigen Leistung der in Absatz 2 genannten Leistungen des Gebührenverzeichnisses der Gebührenordnung für Ärzte berechnet werden.",The text does not mention any specific references to other paragraphs.,6.0,1.0,,,,,,,,,,
+25,§ 6 Gebühren für andere Leistungen ,(2),"Die Vergütungen sind nach den Vorschriften der Gebührenordnung für Ärzte zu berechnen, soweit die Leistung nicht als selbstständige Leistung oder Teil einer anderen Leistung im Gebührenverzeichnis der Gebührenordnung für Zahnärzte enthalten ist und wenn die Leistungen, die der Zahnarzt erbringt, in den folgenden Abschnitten des Gebührenverzeichnisses der Gebührenordnung für Ärzte aufgeführt sind: 1. B I, B II, B III unter den Nummern 30, 31 und 34, B IV bis B VI, 2. C I unter den Nummern 200, 204, 210 und 211, C II, C III bis C VII, C VIII nur soweit eine zugrunde liegende ambulante operative Leistung berechnet wird, 3. E V und E VI, 4. J, 5. L I, L II unter den Nummern 2072 bis 2074, L III, L V unter den Nummern 2253 bis 2256 im Rahmen der Behandlung von Kieferbrüchen, L VI unter den Nummern 2321, 2355 und 2356 im Rahmen der Behandlung von Kieferbrüchen, L VII, L IX, 6. M unter den Nummern 3511, 3712, 3714, 3715, 4504, 4530, 4538, 4605, 4606 und 4715, 7. N unter der Nummer 4852 sowie 8. O.","References: B I, B II, B III (30, 31, 34), B IV, B V, B VI, C I (200, 204, 210, 211), C II, C III, C IV, C V, C VI, C VII, C VIII, E V, E VI, J, L I, L II (2072, 2073, 2074), L III, L V (2253, 2254, 2255, 2256), L VI (2321, 2355, 2356), L VII, L IX, M (3511, 3712, 3714, 3715, 4504, 4530, 4538, 4605, 4606, 4715), N (4852), O.",6.0,2.0,,,,,,,,,,
+26,§7 Gebühren bei stationärer Behandlung ,(1),"Bei vollstationären, teilstationären sowie vor- und nachstationären privatzahnärztlichen Leistungen sind die nach dieser Verordnung berechneten Gebühren einschließlich der darauf entfallenden Zuschläge um 25 vom Hundert zu mindern. Abweichend davon beträgt die Minderung für Leistungen und Zuschläge nach Satz 1 von Belegzahnärzten oder niedergelassenen anderen Zahnärzten 15 vom Hundert. Ausgenommen von dieser Minderungspflicht ist der Zuschlag nach Buchstabe J in Abschnitt B V des Gebührenverzeichnisses der Gebührenordnung für Ärzte.",The text does not mention any specific paragraphs for reference.,7.0,1.0,,"Bei vollstationären, teilstationären sowie vor- und nachstationären privatzahnärztlichen Leistungen sind die nach dieser Verordnung berechneten Gebühren einschließlich der darauf entfallenden Zuschläge um 25 vom Hundert zu mindern.","Rule 1:
+Thoughts: This rule states that for certain types of services, the fees calculated according to the GOZ, including any surcharges, should be reduced by 25%. However, the rule does not specify how to identify these types of services. Therefore, we cannot translate this rule into Prolog code without making assumptions.
+
+Translation:
+```prolog
+```
+
+Rule 2:
+Thoughts: This rule is a modification of the previous rule, stating that the reduction for certain services and surcharges is 15% instead of 25%. However, like the previous rule, it does not specify how to identify these services. Therefore, we cannot translate this rule into Prolog code without making assumptions.
+
+Translation:
+```prolog
+```
+
+Rule 3:
+Thoughts: This rule states that a certain surcharge, identified by the letter J in section B V of the GOZ, is exempt from the reduction requirement. However, the rule does not specify how to identify this surcharge in the given predicates. Therefore, we cannot translate this rule into Prolog code without making assumptions.
+
+Translation:
+```prolog
+```
+
+Rule 4:
+Thoughts: This rule specifies the fees for visits by the dentist, depending on the distance and time of the visit. However, the given predicates do not include information about visits, such as the distance or time. Therefore, we cannot translate this rule into Prolog code without making assumptions.
+
+Translation:
+```prolog
+```
+
+Rule 5:
+Thoughts: This rule specifies conditions for billing for dental technical services. It states that the dentist can charge for these services as expenses, provided that they are not already included in the fees for individual dental services. It also specifies conditions for providing a cost estimate to the patient. However, the given predicates do not include information about dental technical services or cost estimates. Therefore, we cannot translate this rule into Prolog code without making assumptions.
+
+Translation:
+```prolog
+```",,"[""Given this rules from the german GOZ:\n---\nBei vollstationären, teilstationären sowie vor- und nachstationären privatzahnärztlichen Leistungen sind die nach dieser Verordnung berechneten Gebühren einschließlich der darauf entfallenden Zuschläge um 25 vom Hundert zu mindern.\n---\nAbweichend davon beträgt die Minderung für Leistungen und Zuschläge nach Satz 1 von Belegzahnärzten oder niedergelassenen anderen Zahnärzten 15 vom Hundert.\n---\nAusgenommen von dieser Minderungspflicht ist der Zuschlag nach Buchstabe J in Abschnitt B V des Gebührenverzeichnisses der Gebührenordnung für Ärzte.\n---\n§ 8\r\nAls Entschädigungen für Besuche erhält der Zahnarzt Wegegeld oder Reiseentschädigung; hierdurch sind Zeitversäumnisse und die durch den Besuch bedingten Mehrkosten abgegolten.\r\nDer Zahnarzt kann für jeden Besuch ein Wegegeld berechnen. Das Wegegeld beträgt für einen Besuch innerhalb eines Radius um die Praxisstelle des Zahnarztes von 1. bis zu zwei Kilometern 4,30 Euro, bei Nacht (zwischen 20 und 8 Uhr) 8,60 Euro, 2. mehr als zwei Kilometern bis zu fünf Kilometern 8,00 Euro, bei Nacht 12,30 Euro, 3. mehr als fünf Kilometern bis zu zehn Kilometern 12,30 Euro, bei Nacht 18,40 Euro, 4. mehr als zehn Kilometern bis zu 25 Kilometern 18,40 Euro, bei Nacht 30,70 Euro. Erfolgt der Besuch von der Wohnung des Zahnarztes aus, so tritt bei der Berechnung des Radius die Wohnung des Zahnarztes an die Stelle der Praxisstelle. Werden mehrere Patienten in derselben häuslichen Gemeinschaft oder in einem Heim, insbesondere in einem Alten- oder Pflegeheim besucht, darf der Zahnarzt das Wegegeld unabhängig von der Anzahl der besuchten Patienten und deren Versichertenstatus insgesamt nur einmal und nur anteilig berechnen.\n---\n§ 9\r\nNeben den für die einzelnen zahnärztlichen Leistungen vorgesehenen Gebühren können als Auslagen die dem Zahnarzt tatsächlich entstandenen angemessenen Kosten für zahntechnische Leistungen berechnet werden, soweit diese Kosten nicht nach den Bestimmungen des Gebührenverzeichnisses mit den Gebühren abgegolten sind.\r\nDer Zahnarzt hat dem Zahlungspflichtigen vor der Behandlung einen Kostenvoranschlag des gewerblichen oder des praxiseigenen Labors über die voraussichtlich entstehenden Kosten für zahntechnische Leistungen anzubieten und auf dessen Verlangen in Textform vorzulegen, sofern die Kosten insgesamt voraussichtlich einen Betrag von 1.000 Euro überschreiten. Für Behandlungen, die auf der Grundlage eines Heil- und Kostenplans für einen Behandlungszeitraum von mehr als zwölf Monaten geplant werden, gilt Satz 1 nur, sofern voraussichtlich bereits innerhalb eines Zeitraums von sechs Monaten Kosten von mehr als 1.000 Euro entstehen. Der Kostenvoranschlag muss die voraussichtlichen Gesamtkosten für zahntechnische Leistungen und die dabei verwendeten Materialien angeben. Art, Umfang und Ausführung der einzelnen Leistungen, Berechnungsgrundlage und Herstellungsort der zahntechnischen Leistungen sind dem Zahlungspflichtigen auf Verlangen näher zu erläutern. Ist eine Überschreitung der im Kostenvoranschlag genannten Kosten um mehr als 15 vom Hundert zu erwarten, hat der Zahnarzt den Zahlungspflichtigen hierüber unverzüglich in Textform zu unterrichten.\n---\n\n\nAnd this predicates:\n```prolog\ninvoice(\n    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...\n    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...\n    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    invoice_date(date(Year, Month, Day)),\n    invoice_amount(InvoiceAmount)\n).\n% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100\n% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema\n% Area = 1 -> Right upper jaw\n% Area = 2 -> Left upper jaw\n% Area = 3 -> Left lower jaw\n% Area = 4 -> Right lower jaw\n% Position is exact position of this tooth in its area (from 1 to 8)\n% Example invoice\ninvoice(\n    [\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),\n        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),\n        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])\n    ],\n    [\n        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])\n    ]\n    invoice_date(date(2023, 10, 04),\n    invoice_amount(110.01)\n).\n```\nThe 5 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.\nWe want to mark invoices as invalid if they do not adhere to those rules.\nWhich of those rules can you translate into prolog code given following restriction:\nOnly translate the rules as they are, do not include any examples.\nBe as accurate as possible.\nYou must be able to exactly define every new predicate based on the given ones.\nDo not make any assumptions which are not given.\nTranslate the rules where a translation given the restrictions is possible.\nTo determine if an invoice is correct, use the predicate \n```prolog\nis_invoice_invalid(Invoice) : -\n    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),\n    % The corresponding rule (only one rule for each predicate)\n    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.\n    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice\n    true. % Then the invoice is invalid.\n```\nUse this predicate to check each rule individually. Before you translate a rule, think about it.\nExpected format:\n---\nRule 1:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\nRule 2:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\n... \n\nWhen you can not translate leaf the code section empty like this:\n---\nRule X:\nThoughts: ...\nTranslation:\n```prolog\n```\n---\n\nSo you should have a block for each of the 5 given rules at the end.\nFor translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.\nWhen you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).\nI only want to have exactly defined rules.\nFirst, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.\n\nThe rules references some already translated section.\nAs references for you, here are the translations of the referenced sections:\n§ 9:\n\n""]",1.0,2117.0,398.0,0.08739,"
+"
+27,§7 Gebühren bei stationärer Behandlung ,(1),"Bei vollstationären, teilstationären sowie vor- und nachstationären privatzahnärztlichen Leistungen sind die nach dieser Verordnung berechneten Gebühren einschließlich der darauf entfallenden Zuschläge um 25 vom Hundert zu mindern. Abweichend davon beträgt die Minderung für Leistungen und Zuschläge nach Satz 1 von Belegzahnärzten oder niedergelassenen anderen Zahnärzten 15 vom Hundert. Ausgenommen von dieser Minderungspflicht ist der Zuschlag nach Buchstabe J in Abschnitt B V des Gebührenverzeichnisses der Gebührenordnung für Ärzte.",The text does not mention any specific paragraphs for reference.,7.0,1.0,,Abweichend davon beträgt die Minderung für Leistungen und Zuschläge nach Satz 1 von Belegzahnärzten oder niedergelassenen anderen Zahnärzten 15 vom Hundert.,,,,,,,,"
+"
+28,§7 Gebühren bei stationärer Behandlung ,(1),"Bei vollstationären, teilstationären sowie vor- und nachstationären privatzahnärztlichen Leistungen sind die nach dieser Verordnung berechneten Gebühren einschließlich der darauf entfallenden Zuschläge um 25 vom Hundert zu mindern. Abweichend davon beträgt die Minderung für Leistungen und Zuschläge nach Satz 1 von Belegzahnärzten oder niedergelassenen anderen Zahnärzten 15 vom Hundert. Ausgenommen von dieser Minderungspflicht ist der Zuschlag nach Buchstabe J in Abschnitt B V des Gebührenverzeichnisses der Gebührenordnung für Ärzte.",The text does not mention any specific paragraphs for reference.,7.0,1.0,,Ausgenommen von dieser Minderungspflicht ist der Zuschlag nach Buchstabe J in Abschnitt B V des Gebührenverzeichnisses der Gebührenordnung für Ärzte.,,,,,,,,"
+"
+29,§7 Gebühren bei stationärer Behandlung ,(2),Neben den nach Absatz 1 geminderten Gebühren darf der Zahnarzt Kosten nicht berechnen; die §§ 8 und 9 bleiben unberührt.,"References: §8, §9",7.0,2.0,"[{'section': '8'}, {'section': '9'}]","§ 8
+Als Entschädigungen für Besuche erhält der Zahnarzt Wegegeld oder Reiseentschädigung; hierdurch sind Zeitversäumnisse und die durch den Besuch bedingten Mehrkosten abgegolten.
+Der Zahnarzt kann für jeden Besuch ein Wegegeld berechnen. Das Wegegeld beträgt für einen Besuch innerhalb eines Radius um die Praxisstelle des Zahnarztes von 1. bis zu zwei Kilometern 4,30 Euro, bei Nacht (zwischen 20 und 8 Uhr) 8,60 Euro, 2. mehr als zwei Kilometern bis zu fünf Kilometern 8,00 Euro, bei Nacht 12,30 Euro, 3. mehr als fünf Kilometern bis zu zehn Kilometern 12,30 Euro, bei Nacht 18,40 Euro, 4. mehr als zehn Kilometern bis zu 25 Kilometern 18,40 Euro, bei Nacht 30,70 Euro. Erfolgt der Besuch von der Wohnung des Zahnarztes aus, so tritt bei der Berechnung des Radius die Wohnung des Zahnarztes an die Stelle der Praxisstelle. Werden mehrere Patienten in derselben häuslichen Gemeinschaft oder in einem Heim, insbesondere in einem Alten- oder Pflegeheim besucht, darf der Zahnarzt das Wegegeld unabhängig von der Anzahl der besuchten Patienten und deren Versichertenstatus insgesamt nur einmal und nur anteilig berechnen.",,,,,,,,"
+"
+30,§7 Gebühren bei stationärer Behandlung ,(2),Neben den nach Absatz 1 geminderten Gebühren darf der Zahnarzt Kosten nicht berechnen; die §§ 8 und 9 bleiben unberührt.,"References: §8, §9",7.0,2.0,"[{'section': '8'}, {'section': '9'}]","§ 9
+Neben den für die einzelnen zahnärztlichen Leistungen vorgesehenen Gebühren können als Auslagen die dem Zahnarzt tatsächlich entstandenen angemessenen Kosten für zahntechnische Leistungen berechnet werden, soweit diese Kosten nicht nach den Bestimmungen des Gebührenverzeichnisses mit den Gebühren abgegolten sind.
+Der Zahnarzt hat dem Zahlungspflichtigen vor der Behandlung einen Kostenvoranschlag des gewerblichen oder des praxiseigenen Labors über die voraussichtlich entstehenden Kosten für zahntechnische Leistungen anzubieten und auf dessen Verlangen in Textform vorzulegen, sofern die Kosten insgesamt voraussichtlich einen Betrag von 1.000 Euro überschreiten. Für Behandlungen, die auf der Grundlage eines Heil- und Kostenplans für einen Behandlungszeitraum von mehr als zwölf Monaten geplant werden, gilt Satz 1 nur, sofern voraussichtlich bereits innerhalb eines Zeitraums von sechs Monaten Kosten von mehr als 1.000 Euro entstehen. Der Kostenvoranschlag muss die voraussichtlichen Gesamtkosten für zahntechnische Leistungen und die dabei verwendeten Materialien angeben. Art, Umfang und Ausführung der einzelnen Leistungen, Berechnungsgrundlage und Herstellungsort der zahntechnischen Leistungen sind dem Zahlungspflichtigen auf Verlangen näher zu erläutern. Ist eine Überschreitung der im Kostenvoranschlag genannten Kosten um mehr als 15 vom Hundert zu erwarten, hat der Zahnarzt den Zahlungspflichtigen hierüber unverzüglich in Textform zu unterrichten.",,,,,,,,"
+"
+31,§ 8 Entschädigungen ,(1),Als Entschädigungen für Besuche erhält der Zahnarzt Wegegeld oder Reiseentschädigung; hierdurch sind Zeitversäumnisse und die durch den Besuch bedingten Mehrkosten abgegolten.,The text does not mention any references to other paragraphs.,8.0,1.0,,,,,,,,,,
+32,§ 8 Entschädigungen ,(2),"Der Zahnarzt kann für jeden Besuch ein Wegegeld berechnen. Das Wegegeld beträgt für einen Besuch innerhalb eines Radius um die Praxisstelle des Zahnarztes von 1. bis zu zwei Kilometern 4,30 Euro, bei Nacht (zwischen 20 und 8 Uhr) 8,60 Euro, 2. mehr als zwei Kilometern bis zu fünf Kilometern 8,00 Euro, bei Nacht 12,30 Euro, 3. mehr als fünf Kilometern bis zu zehn Kilometern 12,30 Euro, bei Nacht 18,40 Euro, 4. mehr als zehn Kilometern bis zu 25 Kilometern 18,40 Euro, bei Nacht 30,70 Euro. Erfolgt der Besuch von der Wohnung des Zahnarztes aus, so tritt bei der Berechnung des Radius die Wohnung des Zahnarztes an die Stelle der Praxisstelle. Werden mehrere Patienten in derselben häuslichen Gemeinschaft oder in einem Heim, insbesondere in einem Alten- oder Pflegeheim besucht, darf der Zahnarzt das Wegegeld unabhängig von der Anzahl der besuchten Patienten und deren Versichertenstatus insgesamt nur einmal und nur anteilig berechnen.",The text does not mention any references to other paragraphs.,8.0,2.0,,,,,,,,,,
+33,§ 8 Entschädigungen ,(3),"Bei Besuchen außerhalb eines Radius von 25 Kilometern um die Praxisstelle des Zahnarztes tritt an die Stelle des Wegegeldes eine Reiseentschädigung. Als Reiseentschädigung erhält der Zahnarzt 1. 0,42 Euro für jeden zurückgelegten Kilometer, wenn er einen eigenen Kraftwagen benutzt, bei Benutzung anderer Verkehrsmittel die tatsächlichen Aufwendungen, 2. bei Abwesenheit bis zu acht Stunden 56,00 Euro, bei Abwesenheit von mehr als acht Stunden 112,50 Euro je Tag, 3. Ersatz der Kosten für notwendige Übernachtungen. Absatz 2 Satz 3 und 4 gilt entsprechend.",The text does not contain any references to other paragraphs.,8.0,3.0,,,,,,,,,,
+34,§ 9 Ersatz von Auslagen für zahntechnische Leistungen ,(1),"Neben den für die einzelnen zahnärztlichen Leistungen vorgesehenen Gebühren können als Auslagen die dem Zahnarzt tatsächlich entstandenen angemessenen Kosten für zahntechnische Leistungen berechnet werden, soweit diese Kosten nicht nach den Bestimmungen des Gebührenverzeichnisses mit den Gebühren abgegolten sind.",The text does not mention any references to other paragraphs.,9.0,1.0,,,,,,,,,,
+35,§ 9 Ersatz von Auslagen für zahntechnische Leistungen ,(2),"Der Zahnarzt hat dem Zahlungspflichtigen vor der Behandlung einen Kostenvoranschlag des gewerblichen oder des praxiseigenen Labors über die voraussichtlich entstehenden Kosten für zahntechnische Leistungen anzubieten und auf dessen Verlangen in Textform vorzulegen, sofern die Kosten insgesamt voraussichtlich einen Betrag von 1.000 Euro überschreiten. Für Behandlungen, die auf der Grundlage eines Heil- und Kostenplans für einen Behandlungszeitraum von mehr als zwölf Monaten geplant werden, gilt Satz 1 nur, sofern voraussichtlich bereits innerhalb eines Zeitraums von sechs Monaten Kosten von mehr als 1.000 Euro entstehen. Der Kostenvoranschlag muss die voraussichtlichen Gesamtkosten für zahntechnische Leistungen und die dabei verwendeten Materialien angeben. Art, Umfang und Ausführung der einzelnen Leistungen, Berechnungsgrundlage und Herstellungsort der zahntechnischen Leistungen sind dem Zahlungspflichtigen auf Verlangen näher zu erläutern. Ist eine Überschreitung der im Kostenvoranschlag genannten Kosten um mehr als 15 vom Hundert zu erwarten, hat der Zahnarzt den Zahlungspflichtigen hierüber unverzüglich in Textform zu unterrichten.",The text does not contain any references to other paragraphs.,9.0,2.0,,"Ist eine Überschreitung der im Kostenvoranschlag genannten Kosten um mehr als 15 vom Hundert zu erwarten, hat der Zahnarzt den Zahlungspflichtigen hierüber unverzüglich in Textform zu unterrichten.","Rule 1:
+Thoughts: The rule states that if the cost exceeds the cost mentioned in the cost estimate by more than 15%, the dentist must inform the payer immediately in text form. In the context of the given predicates, we don't have a cost estimate to compare with the invoice amount. Therefore, this rule cannot be translated into a Prolog predicate as we don't have the necessary information to do so.
+
+Translation:
+```prolog
+```",,"[""Given this rules from the german GOZ:\n---\nIst eine Überschreitung der im Kostenvoranschlag genannten Kosten um mehr als 15 vom Hundert zu erwarten, hat der Zahnarzt den Zahlungspflichtigen hierüber unverzüglich in Textform zu unterrichten.\n---\n\n\nAnd this predicates:\n```prolog\ninvoice(\n    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...\n    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...\n    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    invoice_date(date(Year, Month, Day)),\n    invoice_amount(InvoiceAmount)\n).\n% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100\n% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema\n% Area = 1 -> Right upper jaw\n% Area = 2 -> Left upper jaw\n% Area = 3 -> Left lower jaw\n% Area = 4 -> Right lower jaw\n% Position is exact position of this tooth in its area (from 1 to 8)\n% Example invoice\ninvoice(\n    [\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),\n        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),\n        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])\n    ],\n    [\n        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])\n    ]\n    invoice_date(date(2023, 10, 04),\n    invoice_amount(110.01)\n).\n```\nThe 1 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.\nWe want to mark invoices as invalid if they do not adhere to those rules.\nWhich of those rules can you translate into prolog code given following restriction:\nOnly translate the rules as they are, do not include any examples.\nBe as accurate as possible.\nYou must be able to exactly define every new predicate based on the given ones.\nDo not make any assumptions which are not given.\nTranslate the rules where a translation given the restrictions is possible.\nTo determine if an invoice is correct, use the predicate \n```prolog\nis_invoice_invalid(Invoice) : -\n    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),\n    % The corresponding rule (only one rule for each predicate)\n    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.\n    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice\n    true. % Then the invoice is invalid.\n```\nUse this predicate to check each rule individually. Before you translate a rule, think about it.\nExpected format:\n---\nRule 1:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\nRule 2:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\n... \n\nWhen you can not translate leaf the code section empty like this:\n---\nRule X:\nThoughts: ...\nTranslation:\n```prolog\n```\n---\n\nSo you should have a block for each of the 1 given rules at the end.\nFor translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.\nWhen you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).\nI only want to have exactly defined rules.\nFirst, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.""]",1.0,1201.0,92.0,0.04155,"
+"
+36,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(1),"Die Vergütung wird fällig, wenn dem Zahlungspflichtigen eine dieser Verordnung entsprechende Rechnung nach der Anlage 2 erteilt worden ist. Künftige Änderungen der Anlage 2 werden durch das Bundesministerium für Gesundheit durch Bekanntmachung veröffentlicht.",The text does not mention any references to other paragraphs.,10.0,1.0,,,,,,,,,,
+37,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(2),"Die Rechnung muss insbesondere enthalten: 1. das Datum der Erbringung der Leistung, 2. bei Gebühren die Nummer und die Bezeichnung der einzelnen berechneten Leistung einschließlich einer verständlichen Bezeichnung des behandelten Zahnes und einer in der Leistungsbeschreibung oder einer Abrechnungsbestimmung gegebenenfalls genannten Mindestdauer sowie den jeweiligen Betrag und den Steigerungssatz, 3. bei Gebühren für vollstationäre, teilstationäre sowie vor- und nachstationäre und privatzahnärztliche Leistungen zusätzlich den Minderungsbetrag nach § 7, 4. bei Entschädigungen nach § 8 den Betrag, die Art der Entschädigung und die Berechnung, 5. bei Ersatz von Auslagen nach § 9 Art, Umfang und Ausführung der einzelnen Leistungen und deren Preise sowie die direkt zurechenbaren Materialien und deren Preise, insbesondere Bezeichnung, Gewicht und Tagespreis der verwendeten Legierungen, 6. bei nach dem Gebührenverzeichnis gesondert berechnungsfähigen Kosten Art, Menge und Preis verwendeter Materialien; die Auslagen sind dem Zahlungspflichtigen auf Verlangen näher zu erläutern.","References: §7, §8, §9",10.0,2.0,"[{'section': '7'}, {'section': '8'}, {'section': '9'}]",Die Rechnung muss insbesondere enthalten: 1. das Datum der Erbringung der Leistung,"Rule 1:
+Thoughts: This rule states that the invoice must contain the date of the service. This can be checked by verifying that the date field in the service predicate is not empty.
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, date(Year, Month, Day), _, _, _, _, _, _), Services),
+    (Year = '', Month = '', Day = ''),
+    print('Invalid invoice: The date of the service is missing.'),
+    true.
+```
+---
+Rule 2:
+Thoughts: This rule states that the invoice must contain the number and the description of the service, the tooth treated, the minimum duration, the amount and the rate of increase. This can be checked by verifying that these fields in the service predicate are not empty.
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, _, _, _, Description, _, Teeth), Services),
+    (Service = '', Description = '', Teeth = []),
+    print('Invalid invoice: The service number, description or treated tooth is missing.'),
+    true.
+```
+---
+Rule 3:
+Thoughts: This rule states that for certain types of services, the invoice must also contain the reduction amount according to § 7. However, the translation of § 7 is not provided, so this rule cannot be translated.
+Translation:
+```prolog
+```
+---
+Rule 4:
+Thoughts: This rule states that for compensations according to § 8, the invoice must contain the amount, the type of compensation and the calculation. However, the translation of § 8 is not provided, so this rule cannot be translated.
+Translation:
+```prolog
+```
+---
+Rule 5:
+Thoughts: This rule states that for replacement of expenses according to § 9, the invoice must contain the type, scope and execution of the services and their prices, as well as the directly attributable materials and their prices. However, the translation of § 9 is not provided, so this rule cannot be translated.
+Translation:
+```prolog
+```
+---
+Rule 6:
+Thoughts: This rule states that for separately billable costs according to the fee schedule, the invoice must contain the type, quantity and price of used materials. This can be checked by verifying that these fields in the material_cost predicate are not empty.
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(_, Material_Costs, _, _),
+    member(material_cost(_, _, _, Count, Charge, Description, _, _), Material_Costs),
+    (Count = '', Charge = '', Description = ''),
+    print('Invalid invoice: The type, quantity or price of used materials is missing.'),
+    true.
+```
+---
+Rule 7:
+Thoughts: This rule states that if the calculated fee exceeds 2.3 times the fee rate, this must be justified in writing. This can be checked by verifying that the justification field in the service predicate is not empty when the multiplier is greater than 2.3.
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, _, Justification, _), Services),
+    Multiplier > 2.3, Justification = '',
+    print('Invalid invoice: The justification for the fee exceeding 2.3 times the fee rate is missing.'),
+    true.
+```
+---
+Rule 8:
+Thoughts: This rule states that in case of a deviating agreement according to § 2, an exceeding of the increase rates must be justified in writing. However, the translation of § 2 is provided, but it does not contain any information about increase rates, so this rule cannot be translated.
+Translation:
+```prolog
+```
+---
+Rule 9:
+Thoughts: This rule states that the designation of the service can be omitted if the invoice is accompanied by a compilation from which the designation for the invoiced service number can be taken. However, the provided predicates do not contain any information about such a compilation, so this rule cannot be translated.
+Translation:
+```prolog
+```
+---
+Rule 10:
+Thoughts: This rule states that for expenses according to paragraph 2 No. 5, the receipt or other proof must be attached. However, the provided predicates do not contain any information about receipts or proofs, so this rule cannot be translated.
+Translation:
+```prolog
+```
+---
+Rule 11:
+Thoughts: This rule states that if dental technical services have been commissioned, an invoice from the dental laboratory must be attached. However, the provided predicates do not contain any information about dental technical services or invoices from dental laboratories, so this rule cannot be translated.
+Translation:
+```prolog
+```
+---
+Rule 12:
+Thoughts: This rule states that services that have been provided on request must be designated as such. However, the provided predicates do not contain any information about whether a service was provided on request, so this rule cannot be translated.
+Translation:
+```prolog
+```
+---
+Rule 13:
+Thoughts: This rule states that if a service according to § 6 paragraph 1 is calculated, the corresponding rated service must be described in a comprehensible way for the person liable to pay. However, the translation of § 6 paragraph 1 is not provided, so this rule cannot be translated.
+Translation:
+```prolog
+```",,"['Given this rules from the german GOZ:\n---\nDie Rechnung muss insbesondere enthalten: 1. das Datum der Erbringung der Leistung\n---\n2. bei Gebühren die Nummer und die Bezeichnung der einzelnen berechneten Leistung einschließlich einer verständlichen Bezeichnung des behandelten Zahnes und einer in der Leistungsbeschreibung oder einer Abrechnungsbestimmung gegebenenfalls genannten Mindestdauer sowie den jeweiligen Betrag und den Steigerungssatz\n---\n3. bei Gebühren für vollstationäre, teilstationäre sowie vor- und nachstationäre und privatzahnärztliche Leistungen zusätzlich den Minderungsbetrag nach § 7\n---\n4. bei Entschädigungen nach § 8 den Betrag, die Art der Entschädigung und die Berechnung\n---\n5. bei Ersatz von Auslagen nach § 9 Art, Umfang und Ausführung der einzelnen Leistungen und deren Preise sowie die direkt zurechenbaren Materialien und deren Preise, insbesondere Bezeichnung, Gewicht und Tagespreis der verwendeten Legierungen\n---\n6. bei nach dem Gebührenverzeichnis gesondert berechnungsfähigen Kosten Art, Menge und Preis verwendeter Materialien; die Auslagen sind dem Zahlungspflichtigen auf Verlangen näher zu erläutern.\n---\nIf the calculated fee according to paragraph 2 number 2 exceeds 2.3 times the fee rate, this must be justified in writing in a comprehensible and traceable manner for the person liable to pay. The justification must be explained in more detail on request.\n---\nIf in the case of a deviating agreement according to § 2, an exceeding of the increase rates mentioned in sentence 1 would have been justified even without the agreement made, the exceeding must be justified in writing at the request of the person liable to pay; sentences 1 and 2 apply accordingly.\n---\nThe designation of the service according to paragraph 2 No. 2 can be omitted if the invoice is accompanied by a compilation from which the designation for the invoiced service number can be taken.\n---\nFor expenses according to paragraph 2 No. 5, the receipt or other proof must be attached.\n---\nIf dental technical services have been commissioned, an invoice from the dental laboratory corresponding to the requirements of paragraph 2 No. 5 must be attached; in this respect, it is sufficient to state the total amount for these services in the dentist\'s invoice.\n---\nServices that have been provided on request (§ 1 paragraph 2 sentence 2 and § 2 paragraph 3) must be designated as such.\n---\nWird eine Leistung nach § 6 Absatz 1 berechnet, ist die entsprechend bewertete Leistung für den Zahlungspflichtigen verständlich zu beschreiben und mit dem Hinweis ""entsprechend"" sowie der Nummer und der Bezeichnung der als gleichwertig erachteten Leistung zu versehen.\n---\n\n\nAnd this predicates:\n```prolog\ninvoice(\n    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...\n    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...\n    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    invoice_date(date(Year, Month, Day)),\n    invoice_amount(InvoiceAmount)\n).\n% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100\n% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema\n% Area = 1 -> Right upper jaw\n% Area = 2 -> Left upper jaw\n% Area = 3 -> Left lower jaw\n% Area = 4 -> Right lower jaw\n% Position is exact position of this tooth in its area (from 1 to 8)\n% Example invoice\ninvoice(\n    [\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, \'Teeth Cleaning\', \'\', [tooth(1,7)]),\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, \'Teeth Cleaning\', \'\', [tooth(1,6)]),\n        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, \'Tooth Filling\', \'Very time consuming\', [tooth(1,7), tooth(1,6)]),\n        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, \'Consultation\', \'\', [])\n    ],\n    [\n        material_cost(\'§ 4 (1)\', date(2023, 10, 02), 1, 1, 40.00, \'Fill Material\', \'Auslagen\', [tooth(1,7), tooth(1,6)])\n    ]\n    invoice_date(date(2023, 10, 04),\n    invoice_amount(110.01)\n).\n```\nThe 13 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.\nWe want to mark invoices as invalid if they do not adhere to those rules.\nWhich of those rules can you translate into prolog code given following restriction:\nOnly translate the rules as they are, do not include any examples.\nBe as accurate as possible.\nYou must be able to exactly define every new predicate based on the given ones.\nDo not make any assumptions which are not given.\nTranslate the rules where a translation given the restrictions is possible.\nTo determine if an invoice is correct, use the predicate \n```prolog\nis_invoice_invalid(Invoice) : -\n    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),\n    % The corresponding rule (only one rule for each predicate)\n    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.\n    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice\n    true. % Then the invoice is invalid.\n```\nUse this predicate to check each rule individually. Before you translate a rule, think about it.\nExpected format:\n---\nRule 1:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\nRule 2:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\n... \n\nWhen you can not translate leaf the code section empty like this:\n---\nRule X:\nThoughts: ...\nTranslation:\n```prolog\n```\n---\n\nSo you should have a block for each of the 13 given rules at the end.\nFor translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.\nWhen you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).\nI only want to have exactly defined rules.\nFirst, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.\n\nThe rules references some already translated section.\nAs references for you, here are the translations of the referenced sections:\n§ 7:\n\n\n§ 2:\n\nis_invoice_invalid(Invoice) :-\n    Invoice = invoice(Services, _, _, _),\n    member(service(_, _, _, PointScore, Charge, _, _, _), Services),\n    \\+ calculate_charge(PointScore, _, Charge),\n    print(\'Invalid invoice: The point score or point value for a service does not match the standard.\'),\n    true.\n\n\nis_invoice_invalid(Invoice) :-\n    Invoice = invoice(Services, _, invoice_date(AgreementDate), _),\n    member(service(_, ServiceDate, _, _, _, _, _, _), Services),\n    ServiceDate @< AgreementDate,\n    print(\'Invalid invoice: A service was provided before the agreement was made.\'),\n    true.\n\n\n§ 9:\n\n']",1.0,1960.0,1131.0,0.12666,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, date(Year, Month, Day), _, _, _, _, _, _), Services),
+    (Year = '', Month = '', Day = ''),
+    print('Invalid invoice: The date of the service is missing.'),
+    true.
+"
+38,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(2),"Die Rechnung muss insbesondere enthalten: 1. das Datum der Erbringung der Leistung, 2. bei Gebühren die Nummer und die Bezeichnung der einzelnen berechneten Leistung einschließlich einer verständlichen Bezeichnung des behandelten Zahnes und einer in der Leistungsbeschreibung oder einer Abrechnungsbestimmung gegebenenfalls genannten Mindestdauer sowie den jeweiligen Betrag und den Steigerungssatz, 3. bei Gebühren für vollstationäre, teilstationäre sowie vor- und nachstationäre und privatzahnärztliche Leistungen zusätzlich den Minderungsbetrag nach § 7, 4. bei Entschädigungen nach § 8 den Betrag, die Art der Entschädigung und die Berechnung, 5. bei Ersatz von Auslagen nach § 9 Art, Umfang und Ausführung der einzelnen Leistungen und deren Preise sowie die direkt zurechenbaren Materialien und deren Preise, insbesondere Bezeichnung, Gewicht und Tagespreis der verwendeten Legierungen, 6. bei nach dem Gebührenverzeichnis gesondert berechnungsfähigen Kosten Art, Menge und Preis verwendeter Materialien; die Auslagen sind dem Zahlungspflichtigen auf Verlangen näher zu erläutern.","References: §7, §8, §9",10.0,2.0,"[{'section': '7'}, {'section': '8'}, {'section': '9'}]",2. bei Gebühren die Nummer und die Bezeichnung der einzelnen berechneten Leistung einschließlich einer verständlichen Bezeichnung des behandelten Zahnes und einer in der Leistungsbeschreibung oder einer Abrechnungsbestimmung gegebenenfalls genannten Mindestdauer sowie den jeweiligen Betrag und den Steigerungssatz,,,,,,,,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, _, _, _, _, Description, _, Teeth), Services),
+    (Service = '', Description = '', Teeth = []),
+    print('Invalid invoice: The service number, description or treated tooth is missing.'),
+    true.
+"
+39,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(2),"Die Rechnung muss insbesondere enthalten: 1. das Datum der Erbringung der Leistung, 2. bei Gebühren die Nummer und die Bezeichnung der einzelnen berechneten Leistung einschließlich einer verständlichen Bezeichnung des behandelten Zahnes und einer in der Leistungsbeschreibung oder einer Abrechnungsbestimmung gegebenenfalls genannten Mindestdauer sowie den jeweiligen Betrag und den Steigerungssatz, 3. bei Gebühren für vollstationäre, teilstationäre sowie vor- und nachstationäre und privatzahnärztliche Leistungen zusätzlich den Minderungsbetrag nach § 7, 4. bei Entschädigungen nach § 8 den Betrag, die Art der Entschädigung und die Berechnung, 5. bei Ersatz von Auslagen nach § 9 Art, Umfang und Ausführung der einzelnen Leistungen und deren Preise sowie die direkt zurechenbaren Materialien und deren Preise, insbesondere Bezeichnung, Gewicht und Tagespreis der verwendeten Legierungen, 6. bei nach dem Gebührenverzeichnis gesondert berechnungsfähigen Kosten Art, Menge und Preis verwendeter Materialien; die Auslagen sind dem Zahlungspflichtigen auf Verlangen näher zu erläutern.","References: §7, §8, §9",10.0,2.0,"[{'section': '7'}, {'section': '8'}, {'section': '9'}]","3. bei Gebühren für vollstationäre, teilstationäre sowie vor- und nachstationäre und privatzahnärztliche Leistungen zusätzlich den Minderungsbetrag nach § 7",,,,,,,,"
+"
+40,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(2),"Die Rechnung muss insbesondere enthalten: 1. das Datum der Erbringung der Leistung, 2. bei Gebühren die Nummer und die Bezeichnung der einzelnen berechneten Leistung einschließlich einer verständlichen Bezeichnung des behandelten Zahnes und einer in der Leistungsbeschreibung oder einer Abrechnungsbestimmung gegebenenfalls genannten Mindestdauer sowie den jeweiligen Betrag und den Steigerungssatz, 3. bei Gebühren für vollstationäre, teilstationäre sowie vor- und nachstationäre und privatzahnärztliche Leistungen zusätzlich den Minderungsbetrag nach § 7, 4. bei Entschädigungen nach § 8 den Betrag, die Art der Entschädigung und die Berechnung, 5. bei Ersatz von Auslagen nach § 9 Art, Umfang und Ausführung der einzelnen Leistungen und deren Preise sowie die direkt zurechenbaren Materialien und deren Preise, insbesondere Bezeichnung, Gewicht und Tagespreis der verwendeten Legierungen, 6. bei nach dem Gebührenverzeichnis gesondert berechnungsfähigen Kosten Art, Menge und Preis verwendeter Materialien; die Auslagen sind dem Zahlungspflichtigen auf Verlangen näher zu erläutern.","References: §7, §8, §9",10.0,2.0,"[{'section': '7'}, {'section': '8'}, {'section': '9'}]","4. bei Entschädigungen nach § 8 den Betrag, die Art der Entschädigung und die Berechnung",,,,,,,,"
+"
+41,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(2),"Die Rechnung muss insbesondere enthalten: 1. das Datum der Erbringung der Leistung, 2. bei Gebühren die Nummer und die Bezeichnung der einzelnen berechneten Leistung einschließlich einer verständlichen Bezeichnung des behandelten Zahnes und einer in der Leistungsbeschreibung oder einer Abrechnungsbestimmung gegebenenfalls genannten Mindestdauer sowie den jeweiligen Betrag und den Steigerungssatz, 3. bei Gebühren für vollstationäre, teilstationäre sowie vor- und nachstationäre und privatzahnärztliche Leistungen zusätzlich den Minderungsbetrag nach § 7, 4. bei Entschädigungen nach § 8 den Betrag, die Art der Entschädigung und die Berechnung, 5. bei Ersatz von Auslagen nach § 9 Art, Umfang und Ausführung der einzelnen Leistungen und deren Preise sowie die direkt zurechenbaren Materialien und deren Preise, insbesondere Bezeichnung, Gewicht und Tagespreis der verwendeten Legierungen, 6. bei nach dem Gebührenverzeichnis gesondert berechnungsfähigen Kosten Art, Menge und Preis verwendeter Materialien; die Auslagen sind dem Zahlungspflichtigen auf Verlangen näher zu erläutern.","References: §7, §8, §9",10.0,2.0,"[{'section': '7'}, {'section': '8'}, {'section': '9'}]","5. bei Ersatz von Auslagen nach § 9 Art, Umfang und Ausführung der einzelnen Leistungen und deren Preise sowie die direkt zurechenbaren Materialien und deren Preise, insbesondere Bezeichnung, Gewicht und Tagespreis der verwendeten Legierungen",,,,,,,,"
+"
+42,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(2),"Die Rechnung muss insbesondere enthalten: 1. das Datum der Erbringung der Leistung, 2. bei Gebühren die Nummer und die Bezeichnung der einzelnen berechneten Leistung einschließlich einer verständlichen Bezeichnung des behandelten Zahnes und einer in der Leistungsbeschreibung oder einer Abrechnungsbestimmung gegebenenfalls genannten Mindestdauer sowie den jeweiligen Betrag und den Steigerungssatz, 3. bei Gebühren für vollstationäre, teilstationäre sowie vor- und nachstationäre und privatzahnärztliche Leistungen zusätzlich den Minderungsbetrag nach § 7, 4. bei Entschädigungen nach § 8 den Betrag, die Art der Entschädigung und die Berechnung, 5. bei Ersatz von Auslagen nach § 9 Art, Umfang und Ausführung der einzelnen Leistungen und deren Preise sowie die direkt zurechenbaren Materialien und deren Preise, insbesondere Bezeichnung, Gewicht und Tagespreis der verwendeten Legierungen, 6. bei nach dem Gebührenverzeichnis gesondert berechnungsfähigen Kosten Art, Menge und Preis verwendeter Materialien; die Auslagen sind dem Zahlungspflichtigen auf Verlangen näher zu erläutern.","References: §7, §8, §9",10.0,2.0,"[{'section': '7'}, {'section': '8'}, {'section': '9'}]","6. bei nach dem Gebührenverzeichnis gesondert berechnungsfähigen Kosten Art, Menge und Preis verwendeter Materialien; die Auslagen sind dem Zahlungspflichtigen auf Verlangen näher zu erläutern.",,,,,,,,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(_, Material_Costs, _, _),
+    member(material_cost(_, _, _, Count, Charge, Description, _, _), Material_Costs),
+    (Count = '', Charge = '', Description = ''),
+    print('Invalid invoice: The type, quantity or price of used materials is missing.'),
+    true.
+"
+43,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(3),"Überschreitet die berechnete Gebühr nach Absatz 2 Nummer 2 das 2,3fache des Gebührensatzes, ist dies auf die einzelne Leistung bezogen für den Zahlungspflichtigen verständlich und nachvollziehbar schriftlich zu begründen. Auf Verlangen ist die Begründung näher zu erläutern. Soweit im Fall einer abweichenden Vereinbarung nach § 2 auch ohne die getroffene Vereinbarung ein Überschreiten der in Satz 1 genannten Steigerungssätze gerechtfertigt gewesen wäre, ist das Überschreiten auf Verlangen des Zahlungspflichtigen schriftlich zu begründen; die Sätze 1 und 2 gelten entsprechend. Die Bezeichnung der Leistung nach Absatz 2 Nr. 2 kann entfallen, wenn der Rechnung eine Zusammenstellung beigefügt ist, der die Bezeichnung für die abgerechnete Leistungsnummer entnommen werden kann. Bei Auslagen nach Absatz 2 Nr. 5 ist der Beleg oder ein sonstiger Nachweis beizufügen. Wurden zahntechnische Leistungen in Auftrag gegeben, ist eine den Erfordernissen des Absatzes 2 Nr. 5 entsprechende Rechnung des Dentallabors beizufügen; insoweit genügt es, in der Rechnung des Zahnarztes den Gesamtbetrag für diese Leistungen anzugeben. Leistungen, die auf Verlangen erbracht worden sind (§ 1 Abs. 2 Satz 2 und § 2 Abs. 3) sind als solche zu bezeichnen.","References: § 2, § 1 Abs. 2 Satz 2, § 2 Abs. 3",10.0,3.0,"[{'section': '2'}, {'section': '1', 'paragraph': '2', 'sentence': '2'}, {'section': '2', 'paragraph': '3'}]","If the calculated fee according to paragraph 2 number 2 exceeds 2.3 times the fee rate, this must be justified in writing in a comprehensible and traceable manner for the person liable to pay. The justification must be explained in more detail on request.",,,,,,,,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, _, Multiplier, _, _, _, Justification, _), Services),
+    Multiplier > 2.3, Justification = '',
+    print('Invalid invoice: The justification for the fee exceeding 2.3 times the fee rate is missing.'),
+    true.
+"
+44,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(3),"Überschreitet die berechnete Gebühr nach Absatz 2 Nummer 2 das 2,3fache des Gebührensatzes, ist dies auf die einzelne Leistung bezogen für den Zahlungspflichtigen verständlich und nachvollziehbar schriftlich zu begründen. Auf Verlangen ist die Begründung näher zu erläutern. Soweit im Fall einer abweichenden Vereinbarung nach § 2 auch ohne die getroffene Vereinbarung ein Überschreiten der in Satz 1 genannten Steigerungssätze gerechtfertigt gewesen wäre, ist das Überschreiten auf Verlangen des Zahlungspflichtigen schriftlich zu begründen; die Sätze 1 und 2 gelten entsprechend. Die Bezeichnung der Leistung nach Absatz 2 Nr. 2 kann entfallen, wenn der Rechnung eine Zusammenstellung beigefügt ist, der die Bezeichnung für die abgerechnete Leistungsnummer entnommen werden kann. Bei Auslagen nach Absatz 2 Nr. 5 ist der Beleg oder ein sonstiger Nachweis beizufügen. Wurden zahntechnische Leistungen in Auftrag gegeben, ist eine den Erfordernissen des Absatzes 2 Nr. 5 entsprechende Rechnung des Dentallabors beizufügen; insoweit genügt es, in der Rechnung des Zahnarztes den Gesamtbetrag für diese Leistungen anzugeben. Leistungen, die auf Verlangen erbracht worden sind (§ 1 Abs. 2 Satz 2 und § 2 Abs. 3) sind als solche zu bezeichnen.","References: § 2, § 1 Abs. 2 Satz 2, § 2 Abs. 3",10.0,3.0,"[{'section': '2'}, {'section': '1', 'paragraph': '2', 'sentence': '2'}, {'section': '2', 'paragraph': '3'}]","If in the case of a deviating agreement according to § 2, an exceeding of the increase rates mentioned in sentence 1 would have been justified even without the agreement made, the exceeding must be justified in writing at the request of the person liable to pay; sentences 1 and 2 apply accordingly.",,,,,,,,"
+"
+45,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(3),"Überschreitet die berechnete Gebühr nach Absatz 2 Nummer 2 das 2,3fache des Gebührensatzes, ist dies auf die einzelne Leistung bezogen für den Zahlungspflichtigen verständlich und nachvollziehbar schriftlich zu begründen. Auf Verlangen ist die Begründung näher zu erläutern. Soweit im Fall einer abweichenden Vereinbarung nach § 2 auch ohne die getroffene Vereinbarung ein Überschreiten der in Satz 1 genannten Steigerungssätze gerechtfertigt gewesen wäre, ist das Überschreiten auf Verlangen des Zahlungspflichtigen schriftlich zu begründen; die Sätze 1 und 2 gelten entsprechend. Die Bezeichnung der Leistung nach Absatz 2 Nr. 2 kann entfallen, wenn der Rechnung eine Zusammenstellung beigefügt ist, der die Bezeichnung für die abgerechnete Leistungsnummer entnommen werden kann. Bei Auslagen nach Absatz 2 Nr. 5 ist der Beleg oder ein sonstiger Nachweis beizufügen. Wurden zahntechnische Leistungen in Auftrag gegeben, ist eine den Erfordernissen des Absatzes 2 Nr. 5 entsprechende Rechnung des Dentallabors beizufügen; insoweit genügt es, in der Rechnung des Zahnarztes den Gesamtbetrag für diese Leistungen anzugeben. Leistungen, die auf Verlangen erbracht worden sind (§ 1 Abs. 2 Satz 2 und § 2 Abs. 3) sind als solche zu bezeichnen.","References: § 2, § 1 Abs. 2 Satz 2, § 2 Abs. 3",10.0,3.0,"[{'section': '2'}, {'section': '1', 'paragraph': '2', 'sentence': '2'}, {'section': '2', 'paragraph': '3'}]",The designation of the service according to paragraph 2 No. 2 can be omitted if the invoice is accompanied by a compilation from which the designation for the invoiced service number can be taken.,,,,,,,,"
+"
+46,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(3),"Überschreitet die berechnete Gebühr nach Absatz 2 Nummer 2 das 2,3fache des Gebührensatzes, ist dies auf die einzelne Leistung bezogen für den Zahlungspflichtigen verständlich und nachvollziehbar schriftlich zu begründen. Auf Verlangen ist die Begründung näher zu erläutern. Soweit im Fall einer abweichenden Vereinbarung nach § 2 auch ohne die getroffene Vereinbarung ein Überschreiten der in Satz 1 genannten Steigerungssätze gerechtfertigt gewesen wäre, ist das Überschreiten auf Verlangen des Zahlungspflichtigen schriftlich zu begründen; die Sätze 1 und 2 gelten entsprechend. Die Bezeichnung der Leistung nach Absatz 2 Nr. 2 kann entfallen, wenn der Rechnung eine Zusammenstellung beigefügt ist, der die Bezeichnung für die abgerechnete Leistungsnummer entnommen werden kann. Bei Auslagen nach Absatz 2 Nr. 5 ist der Beleg oder ein sonstiger Nachweis beizufügen. Wurden zahntechnische Leistungen in Auftrag gegeben, ist eine den Erfordernissen des Absatzes 2 Nr. 5 entsprechende Rechnung des Dentallabors beizufügen; insoweit genügt es, in der Rechnung des Zahnarztes den Gesamtbetrag für diese Leistungen anzugeben. Leistungen, die auf Verlangen erbracht worden sind (§ 1 Abs. 2 Satz 2 und § 2 Abs. 3) sind als solche zu bezeichnen.","References: § 2, § 1 Abs. 2 Satz 2, § 2 Abs. 3",10.0,3.0,"[{'section': '2'}, {'section': '1', 'paragraph': '2', 'sentence': '2'}, {'section': '2', 'paragraph': '3'}]","For expenses according to paragraph 2 No. 5, the receipt or other proof must be attached.",,,,,,,,"
+"
+47,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(3),"Überschreitet die berechnete Gebühr nach Absatz 2 Nummer 2 das 2,3fache des Gebührensatzes, ist dies auf die einzelne Leistung bezogen für den Zahlungspflichtigen verständlich und nachvollziehbar schriftlich zu begründen. Auf Verlangen ist die Begründung näher zu erläutern. Soweit im Fall einer abweichenden Vereinbarung nach § 2 auch ohne die getroffene Vereinbarung ein Überschreiten der in Satz 1 genannten Steigerungssätze gerechtfertigt gewesen wäre, ist das Überschreiten auf Verlangen des Zahlungspflichtigen schriftlich zu begründen; die Sätze 1 und 2 gelten entsprechend. Die Bezeichnung der Leistung nach Absatz 2 Nr. 2 kann entfallen, wenn der Rechnung eine Zusammenstellung beigefügt ist, der die Bezeichnung für die abgerechnete Leistungsnummer entnommen werden kann. Bei Auslagen nach Absatz 2 Nr. 5 ist der Beleg oder ein sonstiger Nachweis beizufügen. Wurden zahntechnische Leistungen in Auftrag gegeben, ist eine den Erfordernissen des Absatzes 2 Nr. 5 entsprechende Rechnung des Dentallabors beizufügen; insoweit genügt es, in der Rechnung des Zahnarztes den Gesamtbetrag für diese Leistungen anzugeben. Leistungen, die auf Verlangen erbracht worden sind (§ 1 Abs. 2 Satz 2 und § 2 Abs. 3) sind als solche zu bezeichnen.","References: § 2, § 1 Abs. 2 Satz 2, § 2 Abs. 3",10.0,3.0,"[{'section': '2'}, {'section': '1', 'paragraph': '2', 'sentence': '2'}, {'section': '2', 'paragraph': '3'}]","If dental technical services have been commissioned, an invoice from the dental laboratory corresponding to the requirements of paragraph 2 No. 5 must be attached; in this respect, it is sufficient to state the total amount for these services in the dentist's invoice.",,,,,,,,"
+"
+48,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(3),"Überschreitet die berechnete Gebühr nach Absatz 2 Nummer 2 das 2,3fache des Gebührensatzes, ist dies auf die einzelne Leistung bezogen für den Zahlungspflichtigen verständlich und nachvollziehbar schriftlich zu begründen. Auf Verlangen ist die Begründung näher zu erläutern. Soweit im Fall einer abweichenden Vereinbarung nach § 2 auch ohne die getroffene Vereinbarung ein Überschreiten der in Satz 1 genannten Steigerungssätze gerechtfertigt gewesen wäre, ist das Überschreiten auf Verlangen des Zahlungspflichtigen schriftlich zu begründen; die Sätze 1 und 2 gelten entsprechend. Die Bezeichnung der Leistung nach Absatz 2 Nr. 2 kann entfallen, wenn der Rechnung eine Zusammenstellung beigefügt ist, der die Bezeichnung für die abgerechnete Leistungsnummer entnommen werden kann. Bei Auslagen nach Absatz 2 Nr. 5 ist der Beleg oder ein sonstiger Nachweis beizufügen. Wurden zahntechnische Leistungen in Auftrag gegeben, ist eine den Erfordernissen des Absatzes 2 Nr. 5 entsprechende Rechnung des Dentallabors beizufügen; insoweit genügt es, in der Rechnung des Zahnarztes den Gesamtbetrag für diese Leistungen anzugeben. Leistungen, die auf Verlangen erbracht worden sind (§ 1 Abs. 2 Satz 2 und § 2 Abs. 3) sind als solche zu bezeichnen.","References: § 2, § 1 Abs. 2 Satz 2, § 2 Abs. 3",10.0,3.0,"[{'section': '2'}, {'section': '1', 'paragraph': '2', 'sentence': '2'}, {'section': '2', 'paragraph': '3'}]",Services that have been provided on request (§ 1 paragraph 2 sentence 2 and § 2 paragraph 3) must be designated as such.,,,,,,,,"
+"
+49,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(4),"Wird eine Leistung nach § 6 Absatz 1 berechnet, ist die entsprechend bewertete Leistung für den Zahlungspflichtigen verständlich zu beschreiben und mit dem Hinweis ""entsprechend"" sowie der Nummer und der Bezeichnung der als gleichwertig erachteten Leistung zu versehen.",References: §6 (1),10.0,4.0,"[{'section': '6', 'paragraph': '1'}]","Wird eine Leistung nach § 6 Absatz 1 berechnet, ist die entsprechend bewertete Leistung für den Zahlungspflichtigen verständlich zu beschreiben und mit dem Hinweis ""entsprechend"" sowie der Nummer und der Bezeichnung der als gleichwertig erachteten Leistung zu versehen.",,,,,,,,"
+"
+50,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(5),Durch Vereinbarung mit öffentlich-rechtlichen Kostenträgern kann eine von den Vorschriften der Absätze 1 bis 4 abweichende Regelung getroffen werden.,References: Absätze 1 bis 4,10.0,5.0,,,,,,,,,,
+51,§ 10 Fälligkeit und Abrechnung der Vergütung; Rechnung ,(6),"Die Übermittlung von Daten an einen Dritten zum Zwecke der Abrechnung ist nur zulässig, wenn der Betroffene gegenüber dem Zahnarzt in die Übermittlung der für die Abrechnung erforderlichen Daten schriftlich eingewilligt und den Zahnarzt insoweit schriftlich von seiner Schweigepflicht entbunden hat.",The text does not mention any references to other paragraphs.,10.0,6.0,,,,,,,,,,
+52,§ 11 Übergangsvorschrift ,,"Die Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung gilt weiter für 1. Leistungen, die vor dem Inkrafttreten der Verordnung vom 5. Dezember 2011 (BGBl. I S. 2661) erbracht worden sind, 2. vor dem Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) begonnene Leistungen nach den Nummern 215 bis 222, 500 bis 523 und 531 bis 534 des Gebührenverzeichnisses der Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung, wenn sie erst nach Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) beendet werden, 3. Leistungen des Gebührenverzeichnisses der Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung, die auf Grund einer vor dem Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) geplanten und begonnenen kieferorthopädischen Behandlung bis zum Behandlungsabschluss, längstens jedoch bis zum Ablauf von vier Jahren nach Inkrafttreten dieser Verordnung, erbracht werden.",The text does not mention any references to other paragraphs.,11.0,,,"1. Leistungen, die vor dem Inkrafttreten der Verordnung vom 5. Dezember 2011 (BGBl. I S. 2661) erbracht worden sind.","Rule 1:
+Thoughts: This rule states that services rendered before the enactment of the regulation on December 5, 2011 are valid. This means that any service rendered on a date before December 5, 2011 should be considered valid. We can check this by comparing the date of the service with the date December 5, 2011. If the date of the service is before December 5, 2011, then the invoice is valid, otherwise it is invalid.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, date(Year, Month, Day), _, _, _, _, _, _), Services),
+    (Year > 2011 ; (Year = 2011, Month > 12) ; (Year = 2011, Month = 12, Day >= 5)),
+    print('Invalid invoice: Service rendered after the enactment of the regulation on December 5, 2011.'),
+    true.
+```
+
+Rule 2:
+Thoughts: This rule states that services that began before the enactment of the regulation on December 5, 2011 and ended after the enactment of the regulation, and are listed under the numbers 215 to 222, 500 to 523, and 531 to 534 in the fee schedule of the GOZ, are valid. This means that any service that began before December 5, 2011, ended after December 5, 2011, and is listed under the specified numbers in the fee schedule, should be considered valid. We can check this by comparing the date of the service with the date December 5, 2011, and checking if the service number is within the specified range. If the date of the service is before December 5, 2011, the service ended after December 5, 2011, and the service number is within the specified range, then the invoice is valid, otherwise it is invalid.
+
+Translation:
+```prolog
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, date(Year, Month, Day), _, _, _, _, _, _), Services),
+    (Year > 2011 ; (Year = 2011, Month > 12) ; (Year = 2011, Month = 12, Day >= 5)),
+    ((Service >= 215, Service =< 222) ; (Service >= 500, Service =< 523) ; (Service >= 531, Service =< 534)),
+    print('Invalid invoice: Service rendered after the enactment of the regulation on December 5, 2011 and not listed under the specified numbers in the fee schedule.'),
+    true.
+```
+
+Rule 3:
+Thoughts: This rule is complex and involves multiple conditions. It involves a planned and started orthodontic treatment before the enactment of the regulation on December 5, 2011, and the treatment must be completed within four years after the enactment of the regulation. Given the current predicates, it is not possible to translate this rule into Prolog code as we do not have information about the planning and start of the orthodontic treatment, the completion of the treatment, and the four-year period after the enactment of the regulation.
+
+Translation:
+```prolog
+```",,"[""Given this rules from the german GOZ:\n---\n1. Leistungen, die vor dem Inkrafttreten der Verordnung vom 5. Dezember 2011 (BGBl. I S. 2661) erbracht worden sind.\n---\n2. vor dem Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) begonnene Leistungen nach den Nummern 215 bis 222, 500 bis 523 und 531 bis 534 des Gebührenverzeichnisses der Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung, wenn sie erst nach Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) beendet werden.\n---\n3. Leistungen des Gebührenverzeichnisses der Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung, die auf Grund einer vor dem Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) geplanten und begonnenen kieferorthopädischen Behandlung bis zum Behandlungsabschluss, längstens jedoch bis zum Ablauf von vier Jahren nach Inkrafttreten dieser Verordnung, erbracht werden.\n---\n\n\nAnd this predicates:\n```prolog\ninvoice(\n    % A Service is defined trough its Service Number (Service), the date / session when it was rendered, its multiplier, the teeth it is applied to, ...\n    [service(Service, date(Year, Month, Day), Multiplier, PointScore, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    % Billed Material Costs are defined trough the Section of the GOZ which allows its billing, the date / session when it was rendered, its multiplier, ...\n    [material_cost(GOZ_Section, date(Year, Month, Day), Multiplier, Count, Charge, Description, Justification, [tooth(Area, Postion), ...]), ... ],\n    invoice_date(date(Year, Month, Day)),\n    invoice_amount(InvoiceAmount)\n).\n% Charge = (round(PointValue in Euros * Multiplier * PointScore * 100)) / 100\n% A Tooth on which a Service is applied is uniquely defined by the combination of its area and position in this area: tooth(Area, Postion) nummerated after the FDI-Zahnschema\n% Area = 1 -> Right upper jaw\n% Area = 2 -> Left upper jaw\n% Area = 3 -> Left lower jaw\n% Area = 4 -> Right lower jaw\n% Position is exact position of this tooth in its area (from 1 to 8)\n% Example invoice\ninvoice(\n    [\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,7)]),\n        service(11111, date(2023, 10, 01), 1, 100, 5.62, 'Teeth Cleaning', '', [tooth(1,6)]),\n        service(987654, date(2023, 10, 01), 3.5, 200, 39.37, 'Tooth Filling', 'Very time consuming', [tooth(1,7), tooth(1,6)]),\n        service(123456, date(2023, 10, 02), 2.3, 150, 19.40, 'Consultation', '', [])\n    ],\n    [\n        material_cost('§ 4 (1)', date(2023, 10, 02), 1, 1, 40.00, 'Fill Material', 'Auslagen', [tooth(1,7), tooth(1,6)])\n    ]\n    invoice_date(date(2023, 10, 04),\n    invoice_amount(110.01)\n).\n```\nThe 3 rules indicate conditions and restrictions stated in the GOZ that should be adhered to when creating an invoice.\nWe want to mark invoices as invalid if they do not adhere to those rules.\nWhich of those rules can you translate into prolog code given following restriction:\nOnly translate the rules as they are, do not include any examples.\nBe as accurate as possible.\nYou must be able to exactly define every new predicate based on the given ones.\nDo not make any assumptions which are not given.\nTranslate the rules where a translation given the restrictions is possible.\nTo determine if an invoice is correct, use the predicate \n```prolog\nis_invoice_invalid(Invoice) : -\n    Invoice = invoice(Services, Material_Costs, invoice_date(date(Year, Month, Day), invoice_amount(InvoiceAmount)),\n    % The corresponding rule (only one rule for each predicate)\n    % Please double check that the prolog code you write in here is semantically equivalent to the rule in the text.\n    print(...), % When rule is not fulfilled and therefore the invoice is invalid, print the reason for the invalidity of the invoice\n    true. % Then the invoice is invalid.\n```\nUse this predicate to check each rule individually. Before you translate a rule, think about it.\nExpected format:\n---\nRule 1:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\nRule 2:\nThoughts: ...\nTranslation:\n```prolog\n% code here (is_invoice_invalid/1 predicate with potential helper predicates for this rule)\n```\n---\n... \n\nWhen you can not translate leaf the code section empty like this:\n---\nRule X:\nThoughts: ...\nTranslation:\n```prolog\n```\n---\n\nSo you should have a block for each of the 3 given rules at the end.\nFor translated rules include print statements, so that the user can see the reason for the invalidity of the invoice.\nWhen you calculate with currencies, always round the result to two digits with round(X*100)/100 and always calculate in Euros (even after summation).\nI only want to have exactly defined rules.\nFirst, think step by step how you would translate a rule, then translate it. Explain your thoughts step by step.""]",1.0,1448.0,690.0,0.08484,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(_, date(Year, Month, Day), _, _, _, _, _, _), Services),
+    (Year > 2011 ; (Year = 2011, Month > 12) ; (Year = 2011, Month = 12, Day >= 5)),
+    print('Invalid invoice: Service rendered after the enactment of the regulation on December 5, 2011.'),
+    true.
+"
+53,§ 11 Übergangsvorschrift ,,"Die Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung gilt weiter für 1. Leistungen, die vor dem Inkrafttreten der Verordnung vom 5. Dezember 2011 (BGBl. I S. 2661) erbracht worden sind, 2. vor dem Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) begonnene Leistungen nach den Nummern 215 bis 222, 500 bis 523 und 531 bis 534 des Gebührenverzeichnisses der Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung, wenn sie erst nach Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) beendet werden, 3. Leistungen des Gebührenverzeichnisses der Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung, die auf Grund einer vor dem Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) geplanten und begonnenen kieferorthopädischen Behandlung bis zum Behandlungsabschluss, längstens jedoch bis zum Ablauf von vier Jahren nach Inkrafttreten dieser Verordnung, erbracht werden.",The text does not mention any references to other paragraphs.,11.0,,,"2. vor dem Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) begonnene Leistungen nach den Nummern 215 bis 222, 500 bis 523 und 531 bis 534 des Gebührenverzeichnisses der Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung, wenn sie erst nach Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) beendet werden.",,,,,,,,"
+is_invoice_invalid(Invoice) :-
+    Invoice = invoice(Services, _, _, _),
+    member(service(Service, date(Year, Month, Day), _, _, _, _, _, _), Services),
+    (Year > 2011 ; (Year = 2011, Month > 12) ; (Year = 2011, Month = 12, Day >= 5)),
+    ((Service >= 215, Service =< 222) ; (Service >= 500, Service =< 523) ; (Service >= 531, Service =< 534)),
+    print('Invalid invoice: Service rendered after the enactment of the regulation on December 5, 2011 and not listed under the specified numbers in the fee schedule.'),
+    true.
+"
+54,§ 11 Übergangsvorschrift ,,"Die Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung gilt weiter für 1. Leistungen, die vor dem Inkrafttreten der Verordnung vom 5. Dezember 2011 (BGBl. I S. 2661) erbracht worden sind, 2. vor dem Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) begonnene Leistungen nach den Nummern 215 bis 222, 500 bis 523 und 531 bis 534 des Gebührenverzeichnisses der Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung, wenn sie erst nach Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) beendet werden, 3. Leistungen des Gebührenverzeichnisses der Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung, die auf Grund einer vor dem Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) geplanten und begonnenen kieferorthopädischen Behandlung bis zum Behandlungsabschluss, längstens jedoch bis zum Ablauf von vier Jahren nach Inkrafttreten dieser Verordnung, erbracht werden.",The text does not mention any references to other paragraphs.,11.0,,,"3. Leistungen des Gebührenverzeichnisses der Gebührenordnung für Zahnärzte in der vor dem 1. Januar 2012 geltenden Fassung, die auf Grund einer vor dem Inkrafttreten der Verordnung vom  5. Dezember 2011 (BGBl I S. 2661) geplanten und begonnenen kieferorthopädischen Behandlung bis zum Behandlungsabschluss, längstens jedoch bis zum Ablauf von vier Jahren nach Inkrafttreten dieser Verordnung, erbracht werden.",,,,,,,,"
+"
+55,§ 12 Überprüfung ,,Die Bundesregierung prüft die Auswirkungen der Neustrukturierung und Obewertung der Leistungen der Gebührenordnung für Zahnärzte. Sie berichtet dem Bundesrat bis spätestens Mitte des Jahres 2015 über das Ergebnis der Prüfung und die tragenden Gründe.,The text does not mention any references to other paragraphs.,12.0,,,,,,,,,,,

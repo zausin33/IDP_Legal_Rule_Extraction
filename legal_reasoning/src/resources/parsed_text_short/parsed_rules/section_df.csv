@@ -1,0 +1,341 @@
+section,content,reference,extr_ref_calls,extr_ref_prompt_tokens,extr_ref_completion_tokens,extr_ref_total_cost,parsed_references,section_letter,commentary,rule,extr_rules_calls,extr_rules_prompt_tokens,extr_rules_completion_tokens,extr_rules_total_cost
+A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",A,"A Allgemeine zahnärztliche Leistungen
+Allgemeine Bestimmungen Teil A Kommentar zur Leistungsbeschreibung
+Die Berechnung einer Beratungsgebühr ist auf
+1. den Behandlungsfall begrenzt.
+Eine Beratungsgebühr nach der Nummer 1 des Werden nach der ersten Beratung im Behand-
+Gebührenverzeichnisses für ärztliche Leistungen - lungsfall weitere Beratungen zusammen mit einer
+Anlage zur Gebührenordnung für Ärzte in der am weiteren Leistung des Gebührenverzeichnisses in
+[Datum des Inkrafttretens der GOZ-Novelle] gel- einer folgenden Sitzung erbracht, sind diese Bera-
+tenden Fassung - darf im Behandlungsfall nur ein- tungen nicht gesondert berechnungsfähig, son-
+mal zusammen mit einer Gebühr für eine Leistung dern mit der ersten Beratung abgegolten. Dies gilt
+nach diesem Gebührenverzeichnis und für eine nur insoweit, bis der Behandlungsfall beendet ist.
+Leistung aus den Abschnitten C bis O des Gebüh- Überdauert eine Erkrankung einen Zeitraum von
+renverzeichnisses für ärztliche Leistungen berech- einem Monat, beginnt gebührenrechtlich ein
+net werden. neuer Behandlungsfall, der die erneute Berech-
+Eine Beratungsgebühr nach der Nummer 3 des nung einer Beratung zulässt. Tritt innerhalb des
+Gebührenverzeichnisses für ärztliche Leistungen ist Zeitraums von einem Monat nach Beginn der ers-
+nur berechnungsfähig als einzige Leistung oder im ten Erkrankung eine neue Erkrankung ein, zählt
+Zusammenhang mit einer Untersuchung nach der diese als neuer Behandlungsfall, sodass dann
+Nummer 0010 oder einer Untersuchung nach den auch nach weniger als einem Monat seit der ers-
+Nummern 5 oder 6 des Gebührenverzeichnisses ten Beratung eine erneute Beratung berechnet
+für ärztliche Leistungen. Andere weitere Leistun- werden kann.
+gen dürfen neben der Leistung nach der Nummer Die Einschränkungen zur Berechnung der Bera-
+3 nicht berechnet werden. tung gelten immer nur, sofern eine weitere Leis-
+Als Behandlungsfall gilt für die Behandlung dersel- tung aus den Gebührenverzeichnissen zu der
+ben Erkrankung der Zeitraum eines Monats nach Beratung hinzutritt. Sofern die Beratung als allei-
+der jeweils ersten Inanspruchnahme des Zahnarztes. nige Leistung erbracht wird, ist sie unabhängig
+von den genannten Einschränkungen immer be-
+2. rechnungsfähig.
+Das bei Leistungen nach diesem Gebührenver-
+zeichnis verwendete Abformungsmaterial ist ge- Die Beratungsgebühr nach Nummer Ä3 kann nur
+sondert berechnungsfähig. dann mit einer anderen Leistung in derselben Sit-
+zung berechnet werden, wenn es sich um eine
+3. Untersuchungsleistung nach den Nummern 0010
+Material- und Laborkosten im Sinne dieses Gebüh- (GOZ) oder 5 oder 6 (GOÄ) handelt. Im Übrigen
+renverzeichnisses umfassen Praxiskosten nach § 4 gelten die Abrechnungsbestimmungen zur GOÄ
+Abs. 3 und Auslagen für zahntechnische Leistun- 3 - Mindestdauer 10 Minuten - auf Grund der Ge-
+gen nach § 9 dieser Gebührenordnung. neralvorschrift des § 6 Absatz 2 GOZ auch für die
+Anwendung der GOÄ 3 durch Zahnärzte.
+Als Abformungsmaterial sind alle Materialien zu ver-
+stehen, die die Oberflächen von Hartsubstanzen
+oder von Weichgeweben im Mund wiedergeben.
+<<
+Inhalt Die Höhe der Kosten ist vom Zahnarzt auf der
+Grundlage der Beschaffungskosten und auf-
+grund des Verbrauchs im individuellen Einzelfall
+festzulegen.
+36
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeichnisses für ärztliche Leistungen darf im Behandlungsfall nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.,1,1004,335,0.0
+A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",A,"A Allgemeine zahnärztliche Leistungen
+Allgemeine Bestimmungen Teil A Kommentar zur Leistungsbeschreibung
+Die Berechnung einer Beratungsgebühr ist auf
+1. den Behandlungsfall begrenzt.
+Eine Beratungsgebühr nach der Nummer 1 des Werden nach der ersten Beratung im Behand-
+Gebührenverzeichnisses für ärztliche Leistungen - lungsfall weitere Beratungen zusammen mit einer
+Anlage zur Gebührenordnung für Ärzte in der am weiteren Leistung des Gebührenverzeichnisses in
+[Datum des Inkrafttretens der GOZ-Novelle] gel- einer folgenden Sitzung erbracht, sind diese Bera-
+tenden Fassung - darf im Behandlungsfall nur ein- tungen nicht gesondert berechnungsfähig, son-
+mal zusammen mit einer Gebühr für eine Leistung dern mit der ersten Beratung abgegolten. Dies gilt
+nach diesem Gebührenverzeichnis und für eine nur insoweit, bis der Behandlungsfall beendet ist.
+Leistung aus den Abschnitten C bis O des Gebüh- Überdauert eine Erkrankung einen Zeitraum von
+renverzeichnisses für ärztliche Leistungen berech- einem Monat, beginnt gebührenrechtlich ein
+net werden. neuer Behandlungsfall, der die erneute Berech-
+Eine Beratungsgebühr nach der Nummer 3 des nung einer Beratung zulässt. Tritt innerhalb des
+Gebührenverzeichnisses für ärztliche Leistungen ist Zeitraums von einem Monat nach Beginn der ers-
+nur berechnungsfähig als einzige Leistung oder im ten Erkrankung eine neue Erkrankung ein, zählt
+Zusammenhang mit einer Untersuchung nach der diese als neuer Behandlungsfall, sodass dann
+Nummer 0010 oder einer Untersuchung nach den auch nach weniger als einem Monat seit der ers-
+Nummern 5 oder 6 des Gebührenverzeichnisses ten Beratung eine erneute Beratung berechnet
+für ärztliche Leistungen. Andere weitere Leistun- werden kann.
+gen dürfen neben der Leistung nach der Nummer Die Einschränkungen zur Berechnung der Bera-
+3 nicht berechnet werden. tung gelten immer nur, sofern eine weitere Leis-
+Als Behandlungsfall gilt für die Behandlung dersel- tung aus den Gebührenverzeichnissen zu der
+ben Erkrankung der Zeitraum eines Monats nach Beratung hinzutritt. Sofern die Beratung als allei-
+der jeweils ersten Inanspruchnahme des Zahnarztes. nige Leistung erbracht wird, ist sie unabhängig
+von den genannten Einschränkungen immer be-
+2. rechnungsfähig.
+Das bei Leistungen nach diesem Gebührenver-
+zeichnis verwendete Abformungsmaterial ist ge- Die Beratungsgebühr nach Nummer Ä3 kann nur
+sondert berechnungsfähig. dann mit einer anderen Leistung in derselben Sit-
+zung berechnet werden, wenn es sich um eine
+3. Untersuchungsleistung nach den Nummern 0010
+Material- und Laborkosten im Sinne dieses Gebüh- (GOZ) oder 5 oder 6 (GOÄ) handelt. Im Übrigen
+renverzeichnisses umfassen Praxiskosten nach § 4 gelten die Abrechnungsbestimmungen zur GOÄ
+Abs. 3 und Auslagen für zahntechnische Leistun- 3 - Mindestdauer 10 Minuten - auf Grund der Ge-
+gen nach § 9 dieser Gebührenordnung. neralvorschrift des § 6 Absatz 2 GOZ auch für die
+Anwendung der GOÄ 3 durch Zahnärzte.
+Als Abformungsmaterial sind alle Materialien zu ver-
+stehen, die die Oberflächen von Hartsubstanzen
+oder von Weichgeweben im Mund wiedergeben.
+<<
+Inhalt Die Höhe der Kosten ist vom Zahnarzt auf der
+Grundlage der Beschaffungskosten und auf-
+grund des Verbrauchs im individuellen Einzelfall
+festzulegen.
+36
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung oder im Zusammenhang mit einer Untersuchung nach der Nummer 0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Gebührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistungen dürfen neben der Leistung nach der Nummer 3 nicht berechnet werden.,1,1004,335,0.0
+A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",A,"A Allgemeine zahnärztliche Leistungen
+Allgemeine Bestimmungen Teil A Kommentar zur Leistungsbeschreibung
+Die Berechnung einer Beratungsgebühr ist auf
+1. den Behandlungsfall begrenzt.
+Eine Beratungsgebühr nach der Nummer 1 des Werden nach der ersten Beratung im Behand-
+Gebührenverzeichnisses für ärztliche Leistungen - lungsfall weitere Beratungen zusammen mit einer
+Anlage zur Gebührenordnung für Ärzte in der am weiteren Leistung des Gebührenverzeichnisses in
+[Datum des Inkrafttretens der GOZ-Novelle] gel- einer folgenden Sitzung erbracht, sind diese Bera-
+tenden Fassung - darf im Behandlungsfall nur ein- tungen nicht gesondert berechnungsfähig, son-
+mal zusammen mit einer Gebühr für eine Leistung dern mit der ersten Beratung abgegolten. Dies gilt
+nach diesem Gebührenverzeichnis und für eine nur insoweit, bis der Behandlungsfall beendet ist.
+Leistung aus den Abschnitten C bis O des Gebüh- Überdauert eine Erkrankung einen Zeitraum von
+renverzeichnisses für ärztliche Leistungen berech- einem Monat, beginnt gebührenrechtlich ein
+net werden. neuer Behandlungsfall, der die erneute Berech-
+Eine Beratungsgebühr nach der Nummer 3 des nung einer Beratung zulässt. Tritt innerhalb des
+Gebührenverzeichnisses für ärztliche Leistungen ist Zeitraums von einem Monat nach Beginn der ers-
+nur berechnungsfähig als einzige Leistung oder im ten Erkrankung eine neue Erkrankung ein, zählt
+Zusammenhang mit einer Untersuchung nach der diese als neuer Behandlungsfall, sodass dann
+Nummer 0010 oder einer Untersuchung nach den auch nach weniger als einem Monat seit der ers-
+Nummern 5 oder 6 des Gebührenverzeichnisses ten Beratung eine erneute Beratung berechnet
+für ärztliche Leistungen. Andere weitere Leistun- werden kann.
+gen dürfen neben der Leistung nach der Nummer Die Einschränkungen zur Berechnung der Bera-
+3 nicht berechnet werden. tung gelten immer nur, sofern eine weitere Leis-
+Als Behandlungsfall gilt für die Behandlung dersel- tung aus den Gebührenverzeichnissen zu der
+ben Erkrankung der Zeitraum eines Monats nach Beratung hinzutritt. Sofern die Beratung als allei-
+der jeweils ersten Inanspruchnahme des Zahnarztes. nige Leistung erbracht wird, ist sie unabhängig
+von den genannten Einschränkungen immer be-
+2. rechnungsfähig.
+Das bei Leistungen nach diesem Gebührenver-
+zeichnis verwendete Abformungsmaterial ist ge- Die Beratungsgebühr nach Nummer Ä3 kann nur
+sondert berechnungsfähig. dann mit einer anderen Leistung in derselben Sit-
+zung berechnet werden, wenn es sich um eine
+3. Untersuchungsleistung nach den Nummern 0010
+Material- und Laborkosten im Sinne dieses Gebüh- (GOZ) oder 5 oder 6 (GOÄ) handelt. Im Übrigen
+renverzeichnisses umfassen Praxiskosten nach § 4 gelten die Abrechnungsbestimmungen zur GOÄ
+Abs. 3 und Auslagen für zahntechnische Leistun- 3 - Mindestdauer 10 Minuten - auf Grund der Ge-
+gen nach § 9 dieser Gebührenordnung. neralvorschrift des § 6 Absatz 2 GOZ auch für die
+Anwendung der GOÄ 3 durch Zahnärzte.
+Als Abformungsmaterial sind alle Materialien zu ver-
+stehen, die die Oberflächen von Hartsubstanzen
+oder von Weichgeweben im Mund wiedergeben.
+<<
+Inhalt Die Höhe der Kosten ist vom Zahnarzt auf der
+Grundlage der Beschaffungskosten und auf-
+grund des Verbrauchs im individuellen Einzelfall
+festzulegen.
+36
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",Als Behandlungsfall gilt für die Behandlung derselben Erkrankung der Zeitraum eines Monats nach der jeweils ersten Inanspruchnahme des Zahnarztes.,1,1004,335,0.0
+A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",A,"A Allgemeine zahnärztliche Leistungen
+Allgemeine Bestimmungen Teil A Kommentar zur Leistungsbeschreibung
+Die Berechnung einer Beratungsgebühr ist auf
+1. den Behandlungsfall begrenzt.
+Eine Beratungsgebühr nach der Nummer 1 des Werden nach der ersten Beratung im Behand-
+Gebührenverzeichnisses für ärztliche Leistungen - lungsfall weitere Beratungen zusammen mit einer
+Anlage zur Gebührenordnung für Ärzte in der am weiteren Leistung des Gebührenverzeichnisses in
+[Datum des Inkrafttretens der GOZ-Novelle] gel- einer folgenden Sitzung erbracht, sind diese Bera-
+tenden Fassung - darf im Behandlungsfall nur ein- tungen nicht gesondert berechnungsfähig, son-
+mal zusammen mit einer Gebühr für eine Leistung dern mit der ersten Beratung abgegolten. Dies gilt
+nach diesem Gebührenverzeichnis und für eine nur insoweit, bis der Behandlungsfall beendet ist.
+Leistung aus den Abschnitten C bis O des Gebüh- Überdauert eine Erkrankung einen Zeitraum von
+renverzeichnisses für ärztliche Leistungen berech- einem Monat, beginnt gebührenrechtlich ein
+net werden. neuer Behandlungsfall, der die erneute Berech-
+Eine Beratungsgebühr nach der Nummer 3 des nung einer Beratung zulässt. Tritt innerhalb des
+Gebührenverzeichnisses für ärztliche Leistungen ist Zeitraums von einem Monat nach Beginn der ers-
+nur berechnungsfähig als einzige Leistung oder im ten Erkrankung eine neue Erkrankung ein, zählt
+Zusammenhang mit einer Untersuchung nach der diese als neuer Behandlungsfall, sodass dann
+Nummer 0010 oder einer Untersuchung nach den auch nach weniger als einem Monat seit der ers-
+Nummern 5 oder 6 des Gebührenverzeichnisses ten Beratung eine erneute Beratung berechnet
+für ärztliche Leistungen. Andere weitere Leistun- werden kann.
+gen dürfen neben der Leistung nach der Nummer Die Einschränkungen zur Berechnung der Bera-
+3 nicht berechnet werden. tung gelten immer nur, sofern eine weitere Leis-
+Als Behandlungsfall gilt für die Behandlung dersel- tung aus den Gebührenverzeichnissen zu der
+ben Erkrankung der Zeitraum eines Monats nach Beratung hinzutritt. Sofern die Beratung als allei-
+der jeweils ersten Inanspruchnahme des Zahnarztes. nige Leistung erbracht wird, ist sie unabhängig
+von den genannten Einschränkungen immer be-
+2. rechnungsfähig.
+Das bei Leistungen nach diesem Gebührenver-
+zeichnis verwendete Abformungsmaterial ist ge- Die Beratungsgebühr nach Nummer Ä3 kann nur
+sondert berechnungsfähig. dann mit einer anderen Leistung in derselben Sit-
+zung berechnet werden, wenn es sich um eine
+3. Untersuchungsleistung nach den Nummern 0010
+Material- und Laborkosten im Sinne dieses Gebüh- (GOZ) oder 5 oder 6 (GOÄ) handelt. Im Übrigen
+renverzeichnisses umfassen Praxiskosten nach § 4 gelten die Abrechnungsbestimmungen zur GOÄ
+Abs. 3 und Auslagen für zahntechnische Leistun- 3 - Mindestdauer 10 Minuten - auf Grund der Ge-
+gen nach § 9 dieser Gebührenordnung. neralvorschrift des § 6 Absatz 2 GOZ auch für die
+Anwendung der GOÄ 3 durch Zahnärzte.
+Als Abformungsmaterial sind alle Materialien zu ver-
+stehen, die die Oberflächen von Hartsubstanzen
+oder von Weichgeweben im Mund wiedergeben.
+<<
+Inhalt Die Höhe der Kosten ist vom Zahnarzt auf der
+Grundlage der Beschaffungskosten und auf-
+grund des Verbrauchs im individuellen Einzelfall
+festzulegen.
+36
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",Das bei Leistungen nach diesem Gebührenverzeichnis verwendete Abformungsmaterial ist gesondert berechnungsfähig.,1,1004,335,0.0
+A_Allgemeine_zahnärztliche_Leistungen,"Allgemeine Bestimmungen
+1. Eine Beratungsgebühr nach der Nummer 1 des Gebührenverzeich -
+nisses für ärztliche Leistungen €Anlage zur Gebührenordnung für Ärzte
+in der am 01. Januar 2012 geltenden Fassung €darf im Behandlungsfall
+nur einmal zusammen mit einer Gebühr für eine Leistung nach diesem
+Gebührenverzeichnis und für eine Leistung aus den Abschnitten C bis O
+des Gebührenverzeichnisses für ärztliche Leistungen berechnet werden.
+Eine Beratungsgebühr nach der Nummer 3 des Gebührenverzeichnisses
+für ärztliche Leistungen ist nur berechnungsfähig als einzige Leistung
+oder im Zusammenhang mit einer Untersuchung nach der Nummer
+0010 oder einer Untersuchung nach den Nummern 5 oder 6 des Ge -
+bührenverzeichnisses für ärztliche Leistungen. Andere weitere Leistun -
+gen dürfen neben der Leistung nach der Nummer 3 nicht berechnet
+werden. Als Behandlungsfall gilt für die Behandlung derselben Erkran -
+kung der Zeitraum eines Monats nach der jeweils ersten Inanspruch -
+nahme des Zahnarztes.
+2. Das bei Leistungen nach diesem Gebührenverzeichnis verwendete
+Abformungsmaterial ist gesondert berechnungsfähig.
+3. Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses
+umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechni -
+sche Leistungen nach § 9 dieser Gebührenordnung.","References: § 4 Absatz 3, § 9",1,457,13,0.01449,"[{'section': '4', 'paragraph': '3', 'sentence': '3'}, {'section': '9'}]",A,"A Allgemeine zahnärztliche Leistungen
+Allgemeine Bestimmungen Teil A Kommentar zur Leistungsbeschreibung
+Die Berechnung einer Beratungsgebühr ist auf
+1. den Behandlungsfall begrenzt.
+Eine Beratungsgebühr nach der Nummer 1 des Werden nach der ersten Beratung im Behand-
+Gebührenverzeichnisses für ärztliche Leistungen - lungsfall weitere Beratungen zusammen mit einer
+Anlage zur Gebührenordnung für Ärzte in der am weiteren Leistung des Gebührenverzeichnisses in
+[Datum des Inkrafttretens der GOZ-Novelle] gel- einer folgenden Sitzung erbracht, sind diese Bera-
+tenden Fassung - darf im Behandlungsfall nur ein- tungen nicht gesondert berechnungsfähig, son-
+mal zusammen mit einer Gebühr für eine Leistung dern mit der ersten Beratung abgegolten. Dies gilt
+nach diesem Gebührenverzeichnis und für eine nur insoweit, bis der Behandlungsfall beendet ist.
+Leistung aus den Abschnitten C bis O des Gebüh- Überdauert eine Erkrankung einen Zeitraum von
+renverzeichnisses für ärztliche Leistungen berech- einem Monat, beginnt gebührenrechtlich ein
+net werden. neuer Behandlungsfall, der die erneute Berech-
+Eine Beratungsgebühr nach der Nummer 3 des nung einer Beratung zulässt. Tritt innerhalb des
+Gebührenverzeichnisses für ärztliche Leistungen ist Zeitraums von einem Monat nach Beginn der ers-
+nur berechnungsfähig als einzige Leistung oder im ten Erkrankung eine neue Erkrankung ein, zählt
+Zusammenhang mit einer Untersuchung nach der diese als neuer Behandlungsfall, sodass dann
+Nummer 0010 oder einer Untersuchung nach den auch nach weniger als einem Monat seit der ers-
+Nummern 5 oder 6 des Gebührenverzeichnisses ten Beratung eine erneute Beratung berechnet
+für ärztliche Leistungen. Andere weitere Leistun- werden kann.
+gen dürfen neben der Leistung nach der Nummer Die Einschränkungen zur Berechnung der Bera-
+3 nicht berechnet werden. tung gelten immer nur, sofern eine weitere Leis-
+Als Behandlungsfall gilt für die Behandlung dersel- tung aus den Gebührenverzeichnissen zu der
+ben Erkrankung der Zeitraum eines Monats nach Beratung hinzutritt. Sofern die Beratung als allei-
+der jeweils ersten Inanspruchnahme des Zahnarztes. nige Leistung erbracht wird, ist sie unabhängig
+von den genannten Einschränkungen immer be-
+2. rechnungsfähig.
+Das bei Leistungen nach diesem Gebührenver-
+zeichnis verwendete Abformungsmaterial ist ge- Die Beratungsgebühr nach Nummer Ä3 kann nur
+sondert berechnungsfähig. dann mit einer anderen Leistung in derselben Sit-
+zung berechnet werden, wenn es sich um eine
+3. Untersuchungsleistung nach den Nummern 0010
+Material- und Laborkosten im Sinne dieses Gebüh- (GOZ) oder 5 oder 6 (GOÄ) handelt. Im Übrigen
+renverzeichnisses umfassen Praxiskosten nach § 4 gelten die Abrechnungsbestimmungen zur GOÄ
+Abs. 3 und Auslagen für zahntechnische Leistun- 3 - Mindestdauer 10 Minuten - auf Grund der Ge-
+gen nach § 9 dieser Gebührenordnung. neralvorschrift des § 6 Absatz 2 GOZ auch für die
+Anwendung der GOÄ 3 durch Zahnärzte.
+Als Abformungsmaterial sind alle Materialien zu ver-
+stehen, die die Oberflächen von Hartsubstanzen
+oder von Weichgeweben im Mund wiedergeben.
+<<
+Inhalt Die Höhe der Kosten ist vom Zahnarzt auf der
+Grundlage der Beschaffungskosten und auf-
+grund des Verbrauchs im individuellen Einzelfall
+festzulegen.
+36
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014",Material- und Laborkosten im Sinne dieses Gebührenverzeichnisses umfassen Praxiskosten nach § 4 Absatz 3 und Auslagen für zahntechnische Leistungen nach § 9 dieser Gebührenordnung.,1,1004,335,0.0

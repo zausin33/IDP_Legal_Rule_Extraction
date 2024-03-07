@@ -1,0 +1,811 @@
+section,subsection,content,reference,extr_ref_calls,extr_ref_prompt_tokens,extr_ref_completion_tokens,extr_ref_total_cost,section_number,paragraph_number,parsed_references,commentary
+§ 5 Bemessung der Gebühren für Leistungen des Gebührenverzeichnisses ,(1),"Die Höhe der einzelnen Gebühr bemisst sich nach dem Einfachen bis Dreieinhalbfachen des Gebührensatzes. Gebührensatz ist der Betrag, der sich ergibt, wenn die Punktzahl der einzelnen Leistung des Gebührenverzeichnisses mit dem Punktwert vervielfacht wird. Der Punktwert beträgt 5,62421 Cent. Bei der Bemessung von Gebühren sind sich ergebende Bruchteile eines Cents unter 0,5 abzurunden und Bruchteile von 0,5 und mehr aufzurunden; die Rundung ist erst nach der Multiplikation mit dem Steigerungsfaktor nach Satz 1 vorzunehmen.","References: §5 (1), §4 (2)",1,226,12,0.000363,5,1,"[{'section': '5', 'paragraph': '1'}, {'section': '4', 'paragraph': '2'}]","§ 5 Bemessung der Gebühren für Leistungen des Gebührenverzeichnisses
+(1) Die Höhe der einzelnen Gebühr bemisst sich „dem Punktwert (kommt)... die Funktion zu, den
+nach dem Einfachen bis Dreieinhalbfachen des Wert der Punktzahlen im Preisgefüge anderer
+Gebührensatzes.1 Gebührensatz ist der Betrag, der Dienstleistungen zu bestimmen“ ... „der Punktwert
+sich ergibt, wenn die Punktzahl der einzelnen Leis- wird anhand der wirtschaftlichen Entwicklung von
+tung des Gebührenverzeichnisses mit dem Punkt- Zeit zu Zeit überprüft und je nach Datenlage
+wert vervielfacht wird.2 Der Punktwert beträgt eventuell nach oben oder unten angepasst wer-
+5,62421 Cent.3 Bei der Bemessung von Gebühren den müssen.“
+sind sich ergebende Bruchteile eines Cents unter Der Punktwert hat also die Funktion, den Wert der
+0,5 abzurunden und Bruchteile von 0,5 und mehr Punktzahlen im Preisgefüge anderer Dienstleistun-
+aufzurunden; die Rundung ist erst nach der Multi- gen - ausgehend von der wirtschaftlichen Ent-
+plikation mit dem Steigerungsfaktor nach Satz 1 wicklung - zu bestimmen. Aus diesem Grund
+vorzunehmen.4 wurden mit der GOZ 1988 auch die bis dahin im
+Rahmen der Gebührenbemessung zu berücksich-
+(2) Innerhalb des Gebührenrahmens sind die tigenden Kriterien „Vermögens- und Einkommens-
+Gebühren unter Berücksichtigung der Schwierig- verhältnisse des Zahlungspflichtigen“ und
+keit und des Zeitaufwandes der einzelnen Leistung „örtliche Verhältnisse“ abgeschafft. Damit hat der
+sowie der Umstände bei der Ausführung nach bil- Verordnungsgeber den wirtschaftlichen Ausgleich
+ligem Ermessen zu bestimmen.5 Die Schwierigkeit aus der Privatvereinbarung gelöst und die Auf-
+der einzelnen Leistung kann auch durch die gabe übernommen, selbst im Verordnungswege
+Schwierigkeit des Krankheitsfalles begründet sein.6 tätig zu werden. Dieser Aufgabe ist er jedoch
+Bemessungskriterien, die bereits in der Leistungs- durch die auch in der GOZ-2012 unterlassene An-
+beschreibung berücksichtigt worden sind, haben passung des Punktwertes nicht nachgekommen.
+hierbei außer Betracht zu bleiben.7 Der 2,3fache
+Gebührensatz bildet die nach Schwierigkeit und 4 Mit der neuen Rundungsvorschrift „Bei der
+Zeitaufwand durchschnittliche Leistung ab; ein Bemessung von Gebühren sind sich ergebende
+Überschreiten dieses Gebührensatzes ist nur zuläs- Bruchteile eines Cents unter 0,5 abzurunden und
+sig, wenn Besonderheiten der in Satz 1 genannten Bruchteile von 0,5 und mehr aufzurunden“ wird die
+Bemessungskriterien dies rechtfertigen; Leistungen entsprechende Regelung der GOÄ in der GOZ
+mit unterdurchschnittlichem Schwierigkeitsgrad verankert. Bislang gebot die GOZ-1988 eine gene-
+oder Zeitaufwand sind mit einem niedrigeren Ge- relle Abrundung der Gebühren, entgegen den
+bührensatz zu berechnen.8 kaufmännischen Rundungsregeln. Nunmehr wird
+– mathematisch sauberer – auf- bzw. abgerundet.
+Bei Gebührenbemessung nach § 5 GOZ, d. h.
+Kurzkommentar wenn zusätzlich der Steigerungssatz und ggf. die
+1 § 5 Absatz 1 Satz 1 eröffnet für die Berech- Anzahl der Leistung berücksichtigt wird, bestan-
+nung der Höhe der einzelnen Gebühr einen Ge- den zwei Rundungsalternativen, die sich nach
+bührenrahmen vom Einfachen bis zum dem Zeitpunkt des Rundens (erst das Ergebnis
+Dreieinhalbfachen des Gebührensatzes. Was der oder bereits der Einfachsatz) unterschieden. Die
+„Gebührensatz“ ist, definiert Satz 2. Alternativen führten ggf. zu leicht von einander
+abweichenden Beträgen. Um dem zu begegnen,
+2 Der „Gebührensatz“ ist der Betrag, der sich ist die Rundung erst nach der Multiplikation mit
+<<
+ergibt, wenn die der Leistung zugeordnete Punkt- dem Steigerungsfaktor vorzunehmen.
+zahl mit dem Punktwert von 5,62421 Cent (§ 5 Ab- Inhalt
+satz 1 Satz 3) multipliziert wird. 5 § 5 Absatz 2 legt fest, wie die individuell
+„richtige“ Höhe der Gebühr in dem von Absatz 1
+3 § 5 Abs. 1 Satz 3 der GOZ-1988 setzte den Satz 1 eröffneten Gebührenrahmen zu finden ist.
+Punktwert zum 1. Januar 1988 auf 11 Deutsche Pfen- Die Norm gibt dem Zahnarzt hierfür folgende Be-
+nige bzw. 5,62421 Cent fest. In der damaligen Ver- messungskriterien an die Hand:
+ordnungsbegründung wurde hierzu festgehalten: – Schwierigkeit der einzelnen Leistung, 13
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014
+
+Kommentar zum Allgemeinen Teil
+– Zeitaufwand der einzelnen Leistung sowie einen Entscheidungsspielraum zu, verpflichtet ihn
+– Umstände bei der Ausführung aber gleichzeitig, diesen Entscheidungsspielraum
+Das Kriterium der Schwierigkeit – auch Schwierig- nicht willkürlich, sondern nach den Grundsätzen
+keit des Krankheitsfalles (vgl. Abs. Satz 2) – bietet der Billigkeit auszuüben. Was billigem Ermessen
+eine Möglichkeit, körperliche und geistige Belas- entspricht, ist unter Berücksichtigung der Interes-
+tungsaspekte bei der Leistungserbringung zu be- sen beider Parteien und des in vergleichbaren Fäl-
+rücksichtigen. Da die Berücksichtigung subjektiver len Üblichen festzustellen.
+Schwierigkeiten nicht unumstritten ist, empfiehlt es
+sich gleichwohl, die ursächlichen objektiven, zur 6 Da die Schwierigkeit des Krankheitsfalles, be-
+subjektiven Schwierigkeit führenden Umstände in dingt etwa durch den Schweregrad der Erkran-
+der Rechnung aufzuzeigen. kung, auch die Schwierigkeit der einzelnen
+Die Beanspruchungshöhe, etwa durch konzentra- Leistungen beeinflusst, ist Absatz 2 Satz 2 eigentlich
+tive Anforderungen kann, muss aber nicht zur überflüssig.
+einem erhöhten Zeitaufwand führen. Eine gewisse
+Wechselwirkung zwischen den beiden Kriterien 7 Nach § 5 Abs. 2 Satz 3 GOZ haben bei der
+liegt auf der Hand. Sofern im Gebührenverzeich- Gebührenbemessung diejenigen Bemessungskri-
+nis Leistungen mit Mindestdauern versehen sind, terien außer Acht zu bleiben, die bereits in der Be-
+kann ein entsprechender Zeitaufwand nicht über schreibung der Leistung im Gebührenverzeichnis
+den Multiplikator berücksichtigt werden, sondern berücksichtigt wurden. Das können Leistungen
+erst bei einer Überschreitung. Der Zusatz „der ein- sein, die nach Schwierigkeiten gestuft sind (z.B.
+zelnen Leistung“ stellt klar, dass die Schwierigkeit Umfang bei den Geb.-Nrn. 6060 ff. GOZ), Leistun-
+individuell und leistungsbezogen zu berücksichti- gen bei denen die Schwierigkeit in die Leistungs-
+gen ist und nicht auf die gesamte Honorarforde- beschreibung aufgenommen sind (z.B. die
+rung ausgedehnt werden darf. Gefährdung anatomischer Nachbarstrukturen in
+Das Kriterium Umstände bei der Ausführung bildet der Geb.-Nr. 3045 GOZ) oder Leistungen bei
+einen Auffangtatbestand für einen besonderen denen bestimmte Mindestzeiten vorgesehen sind.
+Aufwand, der sich nicht in der Schwierigkeit oder Die derart aufgenommenen Umstände, Schwie-
+dem Zeitaufwand niederschlägt. Hierzu zählen ins- rigkeiten oder Zeiten gelten als bei der Gebühr
+besondere Verständigungsschwierigkeiten oder berücksichtigt und sollen nicht „nochmals“ heran-
+Behandlungen außerhalb der Praxis z.B. im Zusam- gezogen werden können.
+menhang mit Unfällen, aber durchaus auch an-
+dere Behandlungsumstände, die in der Person 8 Der neue § 5 Absatz 2 Satz 4 stellt eine Reak-
+des Patienten bzw. seinem aktuellen Zustand be- tion auf die Rechtsprechung (insbesondere des
+gründet sind. BGH, Urteil vom 8. November 2007, Aktenzeichen III
+Die in § 5 Abs. 2 aufgeführten Bemessungskriterien ZR 54/07) zur Anwendung des Gebührenrahmens
+„Schwierigkeit, Zeitaufwand und Umstände bei dar. Die Frage, ob der 2,3fache Gebührensatz die
+der Ausführung“ stehen gleichberechtigt neben- nach Schwierigkeit und Zeitaufwand durchschnitt-
+einander. Dabei ist – etwa wenn mehrere Ge- liche Leistung abbildet, oder nicht, war strittig, wenn
+sichtspunkte in die Bemessung einfließen – keine auch nach Ansicht des Bundesgerichtshofes „eine
+schematische Aufteilung der Kriterien erforderlich. seit vielen Jahren gängige Abrechnungspraxis“.
+Vielmehr hat der Zahnarzt in jedem Fall eine Ge- Gleichwohl vertraten einige Gerichte die Auffas-
+<<
+samtbetrachtung aller relevanten Faktoren vorzu- sung, dass sich bei durchschnittlichen Leistungen
+Inhalt nehmen und auf diese Weise in Ausübung des der Mittelwert innerhalb der „Regelspanne“ zu be-
+Ermessens die jeweilige Gebühr zu bestimmen. wegen hätte. Die Neufassung des Absatzes 2 Satz
+Innerhalb des Gebührenrahmens sind die Gebüh- 5 räumt mit dieser Auffassung auf. Der 2,3fache Ge-
+ren unter Berücksichtigung der genannten Krite- bührensatz bildet die nach Schwierigkeit und Zeit-
+rien nach billigem Ermessen zu bestimmen. Die aufwand durchschnittliche Leistung ab. Ein
+Regelung gesteht dem Zahnarzt bei der Anwen- Überschreiten dieses Gebührensatzes ist zulässig,
+14 dung der Bemessungskriterien des Abs. 2 Satz 1 wenn Besonderheiten der in Satz 1 genannten Be-
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014
+
+messungskriterien dies rechtfertigen. Im Einzelnen
+siehe oben Anmerkungen 5 und 6.
+Der 2. Halbsatz, nach dem Leistungen mit unter-
+durchschnittlichem Schwierigkeitsgrad oder Zeit-
+aufwand mit einem niedrigeren Gebührensatz zu
+berechnen sind, ist insoweit überflüssig. Wenn der
+2,3fache Gebührensatz die durchschnittliche
+Schwierigkeit abbildet, dann sind unterdurch-
+schnittliche Schwierigkeitsgrade begriffsnotwen-
+dig mit einem niedrigeren Gebührensatz zu
+berechnen, wie überdurchschnittliche Schwierig-
+keitsgrade mit einem höheren Gebührensatz.
+Einen über einen Klarstellung hinausgehenden Re-
+gelungsgehalt hat der 2. Halbsatz nicht.
+Begründung der Bundesregierung zur GOZ-No-
+velle 2012
+§ 5
+Absatz 1
+Die Neufassung des Satzes 4 entspricht der Formu-
+lierung in § 5 Abs. 1 Satz 4 GOÄ. Damit wird auf
+die im Geschäftsverkehr allgemein übliche kauf-
+männische Rundung abgestellt. Mit der Ergän-
+zung im zweiten Halbsatz wird klargestellt, dass die
+Rundung einmal nach Abschluss des Gesamtre-
+chenganges (Produkt aus Punktzahl x Punktwert x
+Steigerungsfaktor) durchgeführt wird.
+Absatz 2
+Mit der Neufassung des Satzes 4 wird der üblichen
+Abrechnungspraxis, nach der die nach Schwierig-
+keit und Zeitaufwand durchschnittliche Leistung
+mit dem 2,3fachen Gebührensatz berechnet
+wird, Rechnung getragen. Diese Praxis wurde
+auch durch die Rechtsprechung des Bundesge-
+richtshof bestätigt (BGH-Urteil vom 8. November
+2007 – III ZR 54/07 -). Mit dem zweiten Satzteil wird
+das bisherige Recht übernommen, wonach das
+Überschreiten des 2,3fachen Gebührensatzes
+durch Besonderheiten des konkreten Behand-
+lungsfalles nach den Bemessungskriterien des Sat-
+<<
+zes 1 gerechtfertigt sein muss.
+Mit dem letzten Satzteil wird ausdrücklich klarge- Inhalt
+stellt, dass der 2,3fache Gebührensatz nicht sche-
+matisch berechnet werden darf; vielmehr ist bei
+einer einfacheren, unter dem Durchschnitt liegen-
+den Leistung auch ein niedrigerer Gebührensatz
+zu berechnen. Hierauf hatte auch der BGH
+(a.a.O.) bereits hingewiesen. 15
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014"
+§ 5 Bemessung der Gebühren für Leistungen des Gebührenverzeichnisses ,(2),"Innerhalb des Gebührenrahmens sind die Gebühren unter Berücksichtigung der Schwierigkeit und des Zeitaufwandes der einzelnen Leistung sowie der Umstände bei der Ausführung nach billigem Ermessen zu bestimmen. Die Schwierigkeit der einzelnen Leistung kann auch durch die Schwierigkeit des Krankheitsfalles begründet sein. Bemessungskriterien, die bereits in der Leistungsbeschreibung berücksichtigt worden sind, haben hierbei außer Betracht zu bleiben. Der 2,3fache Gebührensatz bildet die nach Schwierigkeit und Zeitaufwand durchschnittliche Leistung ab; ein Überschreiten dieses Gebührensatzes ist nur zulässig, wenn Besonderheiten der in Satz 1 genannten Bemessungskriterien dies rechtfertigen; Leistungen mit unterdurchschnittlichem Schwierigkeitsgrad oder Zeitaufwand sind mit einem niedrigeren Gebührensatz zu berechnen.","References: §1 (1), §1 (2), §1 (3), §1 (4), §1 (5), §1 (6), §1 (7), §1 (8), §1 (9), §1 (10), §1 (11), §1 (12), §1 (13), §1 (14), §1 (15), §1 (16), §1 (17), §1 (18), §1 (19), §1 (20), §1 (21), §1 (22), §1 (23), §1 (24), §1 (25), §1 (26), §1 (27), §1 (28), §1 (29), §1 (30), §1 (31), §1 (32), §1 (33), §1 (34), §1 (35), §1 (36), §1 (37), §1 (38), §1 (39), §1 (40), §1 (41), §1 (42), §1 (43), §1 (44), §1 (45), §1 (46), §1 (47), §1 (48), §1 (49), §1 (50), §1 (51), §1 (52), §1 (53), §1 (54), §1 (55), §1 (56), §1 (57), §1 (58), §1 (59), §1 (60), §1 (61), §1 (62), §1 (63), §1 (64), §1 (65), §1 (66), §1 (67), §1 (68), §1 (69), §1 (70), §1 (71), §1 (72), §1 (73), §1 (74), §1 (75), §1 (76), §1 (77), §1 (78), §1 (79), §1 (80), §1 (81), §1 (82), §1 (83), §1 (84), §1 (85), §1 (86), §1 (87), §1 (88), §1 (89), §1 (90), §1 (91), §1 (92), §1 (93), §1 (94), §1 (95), §1 (96), §1 (97), §1 (98), §1 (99), §1 (100), §1 (101), §1 (102), §1 (103), §1 (104), §1 (105), §1 (106), §1 (107), §1 (108), §1 (109), §1 (110), §1 (111), §1 (112), §1 (113), §1 (114), §1 (115), §1 (116), §1 (117), §1 (118), §1 (119), §1 (120), §1 (121), §1 (122), §1 (123), §1 (124), §1 (125), §1 (126), §1 (127), §1 (128), §1 (129), §1 (130), §1 (131), §1 (132), §1 (133), §1 (134), §1 (135), §1 (136), §1 (137), §1 (138), §1 (139), §1 (140), §1 (141), §1 (142), §1 (143), §1 (144), §1 (145), §1 (146), §1 (147), §1 (148), §1 (149), §1 (150), §1 (151), §1 (152), §1 (153), §1 (154), §1 (155), §1 (156), §1 (157), §1 (158), §1 (159), §1 (160), §1 (161), §1 (162), §1 (163), §1 (164), §1 (165), §1 (166), §1 (167), §1 (168), §1 (169), §1 (170), §1 (171), §1 (172), §1 (173), §1 (174), §1 (175), §1 (176), §1 (177), §1 (178), §1 (179), §1 (180), §1 (181), §1 (182), §1 (183), §1 (184), §1 (185), §1 (186), §1 (187), §1 (188), §1 (189), §1 (190), §1 (191), §1 (192), §1 (193), §1 (194), §1 (195), §1 (196), §1 (197), §1 (198), §1 (199), §1 (200), §1 (201), §1 (202), §1 (203), §1 (204), §1 (205), §1 (206), §1 (207), §1 (208), §1 (209), §1 (210), §1 (211), §1 (212), §1 (213), §1 (214), §1 (215), §1 (216), §1 (217), §1 (218), §1 (219), §1 (220), §1 (221), §1 (222), §1 (223), §1 (224), §1 (225), §1 (226), §1 (227), §1 (228), §1 (229), §1 (230), §1 (231), §1 (232), §1 (233), §1 (234), §1 (235), §1 (236), §1 (237), §1 (238), §1 (239), §1 (240), §1 (241), §1 (242), §1 (243), §1 (244), §1 (245), §1 (246), §1 (247), §1 (248), §1 (249), §1 (250), §1 (251), §1 (252), §1 (253), §1 (254), §1 (255), §1 (256), §1 (257), §1 (258), §1 (259), §1 (260), §1 (261), §1 (262), §1 (263), §1 (264), §1 (265), §1 (266), §1 (267), §1 (268), §1 (269), §1 (270), §1 (271), §1 (272), §1 (273), §1 (274), §1 (275), §1 (276), §1 (277), §1 (278), §1 (279), §1 (280), §1 (281), §1 (282), §1 (283), §1 (284), §1 (285), §1 (286), §1 (287), §1 (288), §1 (289), §1 (290), §1 (291), §1 (292), §1 (293), §1 (294), §1 (295), §1 (296), §1 (297), §1 (298), §1 (299), §1 (300), §1 (301), §1 (302), §1 (303), §1 (304), §1 (305), §1 (306), §1 (307), §1 (308), §1 (309), §1 (310), §1 (311), §1 (312), §1 (313), §1 (314), §1 (315), §1 (316), §1 (317), §1 (318), §1 (319), §1 (320), §1 (321), §1 (322), §1 (323), §1 (324), §1 (325), §1 (326), §1 (327), §1 (328), §1 (329), §1 (330), §1 (331), §1 (332), §1 (333), §1 (334), §1 (335), §1 (336), §1 (337), §1 (338), §1 (339), §1 (340), §1 (341), §1 (342), §1 (343), §1 (344), §1 (345), §1 (346), §1 (347), §1 (348), §1 (349), §1 (350), §1 (351), §1 (352), §1 (353), §1 (354), §1 (355), §1 (356), §1 (357), §1 (358), §1 (359), §1 (360), §1 (361), §1 (362), §1 (363), §1 (364), §1 (365), §1 (366), §1 (367), §1 (368), §1 (369), §1 (370), §1 (371), §1 (372), §1 (373), §1 (374), §1 (375), §1 (376), §1 (377), §1 (378), §1 (379), §1 (380), §1 (381), §1 (382), §1 (383), §1 (384), §1 (385), §1 (386), §1 (387), §1 (388), §1 (389), §1 (390), §1 (391), §1 (392), §1 (393), §1 (394), §1 (395), §1 (396), §1 (397), §1 (398), §1 (399), §1 (400), §1 (401), §1 (402), §1 (403), §1 (404), §1 (405), §1 (406), §1 (407), §1 (408), §1 (409), §1 (410), §1 (411), §1 (412), §1 (413), §1 (414), §1 (415), §1 (416), §1 (417), §1 (418), §1 (419), §1 (420), §1 (421), §1 (422), §1 (423), §1 (424), §1 (425), §1 (426), §1 (427), §1 (428), §1 (429), §1 (430), §1 (431), §1 (432), §1 (433), §1 (434), §1 (435), §1 (436), §1 (437), §1 (438), §1 (439), §1 (440), §1 (441), §1 (442), §1 (443), §1 (444), §1 (445), §1 (446), §1 (447), §1 (448), §1 (449), §1 (450), §1 (451), §1 (452), §1 (453), §1 (454), §1 (455), §1 (456), §1 (457), §1 (458), §1 (459), §1 (460), §1 (461), §1 (462), §1 (463), §1 (464), §1 (465), §1 (466), §1 (467), §1 (468), §1 (469), §1 (470), §1 (471), §1 (472), §1 (473), §1 (474), §1 (475), §1 (476), §1 (477), §1 (478), §1 (479), §1 (480), §1 (481), §1 (482), §1 (483), §1 (484), §1 (485), §1 (486), §1 (487), §1 (488), §1 (489), §1 (490), §1 (491), §1 (492), §1 (493), §1 (494), §1 (495), §1 (496), §1 (497), §1 (498), §1 (499), §1 (500), §1 (501), §1 (502), §1 (503), §1 (504), §1 (505), §1 (506), §1 (507), §1 (508), §1 (509), §1 (510), §1 (511), §1 (512), §1 (513), §1 (514), §1 (515), §1 (516), §1 (517), §1 (518), §1 (519), §1 (520), §1 (521), §1 (522), §1 (523), §1 (524), §1 (525), §1 (526), §1 (527), §1 (528), §1 (529), §1 (530), §1 (531), §1 (532), §1 (533), §1 (534), §1 (535), §1 (536), §1 (537), §1 (538), §1 (539), §1 (540), §1 (541), §1 (542), §1 (543), §1 (544), §1 (545), §1 (546), §1 (547), §1 (548), §1 (549), §1 (550), §1 (551), §1 (552), §1 (553), §1 (554), §1 (555), §1 (556), §1 (557), §1 (558), §1 (559), §1 (560), §1 (561), §1 (562), §1 (563), §1 (564), §1 (565), §1 (566), §1 (567), §1 (568), §1 (569), §1 (570), §1 (571), §1 (572), §1 (573), §1 (574), §1 (575), §1 (576), §1 (577), §1 (578), §1 (579), §1 (580), §1 (581), §1 (582), §1 (583), §1 (584), §1 (585), §1 (586), §1 (587), §1 (588), §1 (589), §1 (590), §1 (591), §1 (592), §1 (593), §1 (594), §1 (595), §1 (596), §1 (597), §1 (598), §1 (599), §1 (600), §1 (601), §1 (602), §1 (603), §1 (604), §1 (605), §1 (606), §1 (607), §1 (608), §1 (609), §1 (610), §1 (611), §1 (612), §1 (613), §1 (614), §1 (615), §1 (616), §1 (617), §1 (618), §1 (619), §1 (620), §1 (621), §1 (622), §1 (623), §1 (624), §1 (625), §1 (626), §1 (627), §1 (628), §1 (629), §1 (630), §1 (631), §1 (632), §1 (633), §1 (634), §1 (635), §1 (636), §1 (637), §1 (638), §1 (639), §1 (640), §1 (641), §1 (642), §1 (643), §1 (644), §1 (645), §1 (646), §1 (647), §1 (648), §1 (649), §1 (650), §1 (651), §1 (652), §1 (653), §1 (654), §1 (655), §1 (656), §1 (657), §1 (658), §1 (659), §1 (660), §1 (661), §1 (662), §1 (663), §1 (664), §1 (665), §1 (666), §1 (667), §1 (668), §1 (669), §1 (670), §1 (671), §1 (672), §1 (673), §1 (674), §1 (675), §1 (676), §1 (677), §1 (678), §1 (679), §1 (680), §1 (681), §1 (682), §1 (683), §1 (684), §1 (685), §1 (686), §1 (687), §1 (688), §1 (689), §1 (690), §1 (691), §1 (692), §1 (693), §1 (694), §1 (695), §1 (696), §1 (697), §1 (698), §1 (699), §1 (700), §1 (701), §1 (702), §1 (703), §1 (704), §1 (705), §1 (706), §1 (707), §1 (708), §1 (709), §1 (710), §1 (711), §1 (712), §1 (713), §1 (714), §1 (715), §1 (716), §1 (717), §1 (718), §1 (719), §1 (720), §1 (721), §1 (722), §1 (723), §1 (724), §1 (725), §1 (726), §1 (727), §1 (728), §1 (729), §1 (730), §1 (731), §1 (732), §1 (733), §1 (734), §1 (735), §1 (736), §1 (737), §1 (738), §1 (739), §1 (740), §1 (741), §1 (742), §1 (743), §1 (744), §1 (745), §1 (746), §1 (747), §1 (748), §1 (749), §1 (750), §1 (751), §1 (752), §1 (753), §1 (754), §1 (755), §1 (756), §1 (757), §1 (758), §1 (759), §1 (760), §1 (",1,293,3805,0.008049500000000001,5,2,"[{'section': '1', 'paragraph': '1'}, {'section': '1', 'paragraph': '2'}, {'section': '1', 'paragraph': '3'}, {'section': '1', 'paragraph': '4'}, {'section': '1', 'paragraph': '5'}, {'section': '1', 'paragraph': '6'}, {'section': '1', 'paragraph': '7'}, {'section': '1', 'paragraph': '8'}, {'section': '1', 'paragraph': '9'}, {'section': '1', 'paragraph': '10'}, {'section': '1', 'paragraph': '11'}, {'section': '1', 'paragraph': '12'}, {'section': '1', 'paragraph': '13'}, {'section': '1', 'paragraph': '14'}, {'section': '1', 'paragraph': '15'}, {'section': '1', 'paragraph': '16'}, {'section': '1', 'paragraph': '17'}, {'section': '1', 'paragraph': '18'}, {'section': '1', 'paragraph': '19'}, {'section': '1', 'paragraph': '20'}, {'section': '1', 'paragraph': '21'}, {'section': '1', 'paragraph': '22'}, {'section': '1', 'paragraph': '23'}, {'section': '1', 'paragraph': '24'}, {'section': '1', 'paragraph': '25'}, {'section': '1', 'paragraph': '26'}, {'section': '1', 'paragraph': '27'}, {'section': '1', 'paragraph': '28'}, {'section': '1', 'paragraph': '29'}, {'section': '1', 'paragraph': '30'}, {'section': '1', 'paragraph': '31'}, {'section': '1', 'paragraph': '32'}, {'section': '1', 'paragraph': '33'}, {'section': '1', 'paragraph': '34'}, {'section': '1', 'paragraph': '35'}, {'section': '1', 'paragraph': '36'}, {'section': '1', 'paragraph': '37'}, {'section': '1', 'paragraph': '38'}, {'section': '1', 'paragraph': '39'}, {'section': '1', 'paragraph': '40'}, {'section': '1', 'paragraph': '41'}, {'section': '1', 'paragraph': '42'}, {'section': '1', 'paragraph': '43'}, {'section': '1', 'paragraph': '44'}, {'section': '1', 'paragraph': '45'}, {'section': '1', 'paragraph': '46'}, {'section': '1', 'paragraph': '47'}, {'section': '1', 'paragraph': '48'}, {'section': '1', 'paragraph': '49'}, {'section': '1', 'paragraph': '50'}, {'section': '1', 'paragraph': '51'}, {'section': '1', 'paragraph': '52'}, {'section': '1', 'paragraph': '53'}, {'section': '1', 'paragraph': '54'}, {'section': '1', 'paragraph': '55'}, {'section': '1', 'paragraph': '56'}, {'section': '1', 'paragraph': '57'}, {'section': '1', 'paragraph': '58'}, {'section': '1', 'paragraph': '59'}, {'section': '1', 'paragraph': '60'}, {'section': '1', 'paragraph': '61'}, {'section': '1', 'paragraph': '62'}, {'section': '1', 'paragraph': '63'}, {'section': '1', 'paragraph': '64'}, {'section': '1', 'paragraph': '65'}, {'section': '1', 'paragraph': '66'}, {'section': '1', 'paragraph': '67'}, {'section': '1', 'paragraph': '68'}, {'section': '1', 'paragraph': '69'}, {'section': '1', 'paragraph': '70'}, {'section': '1', 'paragraph': '71'}, {'section': '1', 'paragraph': '72'}, {'section': '1', 'paragraph': '73'}, {'section': '1', 'paragraph': '74'}, {'section': '1', 'paragraph': '75'}, {'section': '1', 'paragraph': '76'}, {'section': '1', 'paragraph': '77'}, {'section': '1', 'paragraph': '78'}, {'section': '1', 'paragraph': '79'}, {'section': '1', 'paragraph': '80'}, {'section': '1', 'paragraph': '81'}, {'section': '1', 'paragraph': '82'}, {'section': '1', 'paragraph': '83'}, {'section': '1', 'paragraph': '84'}, {'section': '1', 'paragraph': '85'}, {'section': '1', 'paragraph': '86'}, {'section': '1', 'paragraph': '87'}, {'section': '1', 'paragraph': '88'}, {'section': '1', 'paragraph': '89'}, {'section': '1', 'paragraph': '90'}, {'section': '1', 'paragraph': '91'}, {'section': '1', 'paragraph': '92'}, {'section': '1', 'paragraph': '93'}, {'section': '1', 'paragraph': '94'}, {'section': '1', 'paragraph': '95'}, {'section': '1', 'paragraph': '96'}, {'section': '1', 'paragraph': '97'}, {'section': '1', 'paragraph': '98'}, {'section': '1', 'paragraph': '99'}, {'section': '1', 'paragraph': '100'}, {'section': '1', 'paragraph': '101'}, {'section': '1', 'paragraph': '102'}, {'section': '1', 'paragraph': '103'}, {'section': '1', 'paragraph': '104'}, {'section': '1', 'paragraph': '105'}, {'section': '1', 'paragraph': '106'}, {'section': '1', 'paragraph': '107'}, {'section': '1', 'paragraph': '108'}, {'section': '1', 'paragraph': '109'}, {'section': '1', 'paragraph': '110'}, {'section': '1', 'paragraph': '111'}, {'section': '1', 'paragraph': '112'}, {'section': '1', 'paragraph': '113'}, {'section': '1', 'paragraph': '114'}, {'section': '1', 'paragraph': '115'}, {'section': '1', 'paragraph': '116'}, {'section': '1', 'paragraph': '117'}, {'section': '1', 'paragraph': '118'}, {'section': '1', 'paragraph': '119'}, {'section': '1', 'paragraph': '120'}, {'section': '1', 'paragraph': '121'}, {'section': '1', 'paragraph': '122'}, {'section': '1', 'paragraph': '123'}, {'section': '1', 'paragraph': '124'}, {'section': '1', 'paragraph': '125'}, {'section': '1', 'paragraph': '126'}, {'section': '1', 'paragraph': '127'}, {'section': '1', 'paragraph': '128'}, {'section': '1', 'paragraph': '129'}, {'section': '1', 'paragraph': '130'}, {'section': '1', 'paragraph': '131'}, {'section': '1', 'paragraph': '132'}, {'section': '1', 'paragraph': '133'}, {'section': '1', 'paragraph': '134'}, {'section': '1', 'paragraph': '135'}, {'section': '1', 'paragraph': '136'}, {'section': '1', 'paragraph': '137'}, {'section': '1', 'paragraph': '138'}, {'section': '1', 'paragraph': '139'}, {'section': '1', 'paragraph': '140'}, {'section': '1', 'paragraph': '141'}, {'section': '1', 'paragraph': '142'}, {'section': '1', 'paragraph': '143'}, {'section': '1', 'paragraph': '144'}, {'section': '1', 'paragraph': '145'}, {'section': '1', 'paragraph': '146'}, {'section': '1', 'paragraph': '147'}, {'section': '1', 'paragraph': '148'}, {'section': '1', 'paragraph': '149'}, {'section': '1', 'paragraph': '150'}, {'section': '1', 'paragraph': '151'}, {'section': '1', 'paragraph': '152'}, {'section': '1', 'paragraph': '153'}, {'section': '1', 'paragraph': '154'}, {'section': '1', 'paragraph': '155'}, {'section': '1', 'paragraph': '156'}, {'section': '1', 'paragraph': '157'}, {'section': '1', 'paragraph': '158'}, {'section': '1', 'paragraph': '159'}, {'section': '1', 'paragraph': '160'}, {'section': '1', 'paragraph': '161'}, {'section': '1', 'paragraph': '162'}, {'section': '1', 'paragraph': '163'}, {'section': '1', 'paragraph': '164'}, {'section': '1', 'paragraph': '165'}, {'section': '1', 'paragraph': '166'}, {'section': '1', 'paragraph': '167'}, {'section': '1', 'paragraph': '168'}, {'section': '1', 'paragraph': '169'}, {'section': '1', 'paragraph': '170'}, {'section': '1', 'paragraph': '171'}, {'section': '1', 'paragraph': '172'}, {'section': '1', 'paragraph': '173'}, {'section': '1', 'paragraph': '174'}, {'section': '1', 'paragraph': '175'}, {'section': '1', 'paragraph': '176'}, {'section': '1', 'paragraph': '177'}, {'section': '1', 'paragraph': '178'}, {'section': '1', 'paragraph': '179'}, {'section': '1', 'paragraph': '180'}, {'section': '1', 'paragraph': '181'}, {'section': '1', 'paragraph': '182'}, {'section': '1', 'paragraph': '183'}, {'section': '1', 'paragraph': '184'}, {'section': '1', 'paragraph': '185'}, {'section': '1', 'paragraph': '186'}, {'section': '1', 'paragraph': '187'}, {'section': '1', 'paragraph': '188'}, {'section': '1', 'paragraph': '189'}, {'section': '1', 'paragraph': '190'}, {'section': '1', 'paragraph': '191'}, {'section': '1', 'paragraph': '192'}, {'section': '1', 'paragraph': '193'}, {'section': '1', 'paragraph': '194'}, {'section': '1', 'paragraph': '195'}, {'section': '1', 'paragraph': '196'}, {'section': '1', 'paragraph': '197'}, {'section': '1', 'paragraph': '198'}, {'section': '1', 'paragraph': '199'}, {'section': '1', 'paragraph': '200'}, {'section': '1', 'paragraph': '201'}, {'section': '1', 'paragraph': '202'}, {'section': '1', 'paragraph': '203'}, {'section': '1', 'paragraph': '204'}, {'section': '1', 'paragraph': '205'}, {'section': '1', 'paragraph': '206'}, {'section': '1', 'paragraph': '207'}, {'section': '1', 'paragraph': '208'}, {'section': '1', 'paragraph': '209'}, {'section': '1', 'paragraph': '210'}, {'section': '1', 'paragraph': '211'}, {'section': '1', 'paragraph': '212'}, {'section': '1', 'paragraph': '213'}, {'section': '1', 'paragraph': '214'}, {'section': '1', 'paragraph': '215'}, {'section': '1', 'paragraph': '216'}, {'section': '1', 'paragraph': '217'}, {'section': '1', 'paragraph': '218'}, {'section': '1', 'paragraph': '219'}, {'section': '1', 'paragraph': '220'}, {'section': '1', 'paragraph': '221'}, {'section': '1', 'paragraph': '222'}, {'section': '1', 'paragraph': '223'}, {'section': '1', 'paragraph': '224'}, {'section': '1', 'paragraph': '225'}, {'section': '1', 'paragraph': '226'}, {'section': '1', 'paragraph': '227'}, {'section': '1', 'paragraph': '228'}, {'section': '1', 'paragraph': '229'}, {'section': '1', 'paragraph': '230'}, {'section': '1', 'paragraph': '231'}, {'section': '1', 'paragraph': '232'}, {'section': '1', 'paragraph': '233'}, {'section': '1', 'paragraph': '234'}, {'section': '1', 'paragraph': '235'}, {'section': '1', 'paragraph': '236'}, {'section': '1', 'paragraph': '237'}, {'section': '1', 'paragraph': '238'}, {'section': '1', 'paragraph': '239'}, {'section': '1', 'paragraph': '240'}, {'section': '1', 'paragraph': '241'}, {'section': '1', 'paragraph': '242'}, {'section': '1', 'paragraph': '243'}, {'section': '1', 'paragraph': '244'}, {'section': '1', 'paragraph': '245'}, {'section': '1', 'paragraph': '246'}, {'section': '1', 'paragraph': '247'}, {'section': '1', 'paragraph': '248'}, {'section': '1', 'paragraph': '249'}, {'section': '1', 'paragraph': '250'}, {'section': '1', 'paragraph': '251'}, {'section': '1', 'paragraph': '252'}, {'section': '1', 'paragraph': '253'}, {'section': '1', 'paragraph': '254'}, {'section': '1', 'paragraph': '255'}, {'section': '1', 'paragraph': '256'}, {'section': '1', 'paragraph': '257'}, {'section': '1', 'paragraph': '258'}, {'section': '1', 'paragraph': '259'}, {'section': '1', 'paragraph': '260'}, {'section': '1', 'paragraph': '261'}, {'section': '1', 'paragraph': '262'}, {'section': '1', 'paragraph': '263'}, {'section': '1', 'paragraph': '264'}, {'section': '1', 'paragraph': '265'}, {'section': '1', 'paragraph': '266'}, {'section': '1', 'paragraph': '267'}, {'section': '1', 'paragraph': '268'}, {'section': '1', 'paragraph': '269'}, {'section': '1', 'paragraph': '270'}, {'section': '1', 'paragraph': '271'}, {'section': '1', 'paragraph': '272'}, {'section': '1', 'paragraph': '273'}, {'section': '1', 'paragraph': '274'}, {'section': '1', 'paragraph': '275'}, {'section': '1', 'paragraph': '276'}, {'section': '1', 'paragraph': '277'}, {'section': '1', 'paragraph': '278'}, {'section': '1', 'paragraph': '279'}, {'section': '1', 'paragraph': '280'}, {'section': '1', 'paragraph': '281'}, {'section': '1', 'paragraph': '282'}, {'section': '1', 'paragraph': '283'}, {'section': '1', 'paragraph': '284'}, {'section': '1', 'paragraph': '285'}, {'section': '1', 'paragraph': '286'}, {'section': '1', 'paragraph': '287'}, {'section': '1', 'paragraph': '288'}, {'section': '1', 'paragraph': '289'}, {'section': '1', 'paragraph': '290'}, {'section': '1', 'paragraph': '291'}, {'section': '1', 'paragraph': '292'}, {'section': '1', 'paragraph': '293'}, {'section': '1', 'paragraph': '294'}, {'section': '1', 'paragraph': '295'}, {'section': '1', 'paragraph': '296'}, {'section': '1', 'paragraph': '297'}, {'section': '1', 'paragraph': '298'}, {'section': '1', 'paragraph': '299'}, {'section': '1', 'paragraph': '300'}, {'section': '1', 'paragraph': '301'}, {'section': '1', 'paragraph': '302'}, {'section': '1', 'paragraph': '303'}, {'section': '1', 'paragraph': '304'}, {'section': '1', 'paragraph': '305'}, {'section': '1', 'paragraph': '306'}, {'section': '1', 'paragraph': '307'}, {'section': '1', 'paragraph': '308'}, {'section': '1', 'paragraph': '309'}, {'section': '1', 'paragraph': '310'}, {'section': '1', 'paragraph': '311'}, {'section': '1', 'paragraph': '312'}, {'section': '1', 'paragraph': '313'}, {'section': '1', 'paragraph': '314'}, {'section': '1', 'paragraph': '315'}, {'section': '1', 'paragraph': '316'}, {'section': '1', 'paragraph': '317'}, {'section': '1', 'paragraph': '318'}, {'section': '1', 'paragraph': '319'}, {'section': '1', 'paragraph': '320'}, {'section': '1', 'paragraph': '321'}, {'section': '1', 'paragraph': '322'}, {'section': '1', 'paragraph': '323'}, {'section': '1', 'paragraph': '324'}, {'section': '1', 'paragraph': '325'}, {'section': '1', 'paragraph': '326'}, {'section': '1', 'paragraph': '327'}, {'section': '1', 'paragraph': '328'}, {'section': '1', 'paragraph': '329'}, {'section': '1', 'paragraph': '330'}, {'section': '1', 'paragraph': '331'}, {'section': '1', 'paragraph': '332'}, {'section': '1', 'paragraph': '333'}, {'section': '1', 'paragraph': '334'}, {'section': '1', 'paragraph': '335'}, {'section': '1', 'paragraph': '336'}, {'section': '1', 'paragraph': '337'}, {'section': '1', 'paragraph': '338'}, {'section': '1', 'paragraph': '339'}, {'section': '1', 'paragraph': '340'}, {'section': '1', 'paragraph': '341'}, {'section': '1', 'paragraph': '342'}, {'section': '1', 'paragraph': '343'}, {'section': '1', 'paragraph': '344'}, {'section': '1', 'paragraph': '345'}, {'section': '1', 'paragraph': '346'}, {'section': '1', 'paragraph': '347'}, {'section': '1', 'paragraph': '348'}, {'section': '1', 'paragraph': '349'}, {'section': '1', 'paragraph': '350'}, {'section': '1', 'paragraph': '351'}, {'section': '1', 'paragraph': '352'}, {'section': '1', 'paragraph': '353'}, {'section': '1', 'paragraph': '354'}, {'section': '1', 'paragraph': '355'}, {'section': '1', 'paragraph': '356'}, {'section': '1', 'paragraph': '357'}, {'section': '1', 'paragraph': '358'}, {'section': '1', 'paragraph': '359'}, {'section': '1', 'paragraph': '360'}, {'section': '1', 'paragraph': '361'}, {'section': '1', 'paragraph': '362'}, {'section': '1', 'paragraph': '363'}, {'section': '1', 'paragraph': '364'}, {'section': '1', 'paragraph': '365'}, {'section': '1', 'paragraph': '366'}, {'section': '1', 'paragraph': '367'}, {'section': '1', 'paragraph': '368'}, {'section': '1', 'paragraph': '369'}, {'section': '1', 'paragraph': '370'}, {'section': '1', 'paragraph': '371'}, {'section': '1', 'paragraph': '372'}, {'section': '1', 'paragraph': '373'}, {'section': '1', 'paragraph': '374'}, {'section': '1', 'paragraph': '375'}, {'section': '1', 'paragraph': '376'}, {'section': '1', 'paragraph': '377'}, {'section': '1', 'paragraph': '378'}, {'section': '1', 'paragraph': '379'}, {'section': '1', 'paragraph': '380'}, {'section': '1', 'paragraph': '381'}, {'section': '1', 'paragraph': '382'}, {'section': '1', 'paragraph': '383'}, {'section': '1', 'paragraph': '384'}, {'section': '1', 'paragraph': '385'}, {'section': '1', 'paragraph': '386'}, {'section': '1', 'paragraph': '387'}, {'section': '1', 'paragraph': '388'}, {'section': '1', 'paragraph': '389'}, {'section': '1', 'paragraph': '390'}, {'section': '1', 'paragraph': '391'}, {'section': '1', 'paragraph': '392'}, {'section': '1', 'paragraph': '393'}, {'section': '1', 'paragraph': '394'}, {'section': '1', 'paragraph': '395'}, {'section': '1', 'paragraph': '396'}, {'section': '1', 'paragraph': '397'}, {'section': '1', 'paragraph': '398'}, {'section': '1', 'paragraph': '399'}, {'section': '1', 'paragraph': '400'}, {'section': '1', 'paragraph': '401'}, {'section': '1', 'paragraph': '402'}, {'section': '1', 'paragraph': '403'}, {'section': '1', 'paragraph': '404'}, {'section': '1', 'paragraph': '405'}, {'section': '1', 'paragraph': '406'}, {'section': '1', 'paragraph': '407'}, {'section': '1', 'paragraph': '408'}, {'section': '1', 'paragraph': '409'}, {'section': '1', 'paragraph': '410'}, {'section': '1', 'paragraph': '411'}, {'section': '1', 'paragraph': '412'}, {'section': '1', 'paragraph': '413'}, {'section': '1', 'paragraph': '414'}, {'section': '1', 'paragraph': '415'}, {'section': '1', 'paragraph': '416'}, {'section': '1', 'paragraph': '417'}, {'section': '1', 'paragraph': '418'}, {'section': '1', 'paragraph': '419'}, {'section': '1', 'paragraph': '420'}, {'section': '1', 'paragraph': '421'}, {'section': '1', 'paragraph': '422'}, {'section': '1', 'paragraph': '423'}, {'section': '1', 'paragraph': '424'}, {'section': '1', 'paragraph': '425'}, {'section': '1', 'paragraph': '426'}, {'section': '1', 'paragraph': '427'}, {'section': '1', 'paragraph': '428'}, {'section': '1', 'paragraph': '429'}, {'section': '1', 'paragraph': '430'}, {'section': '1', 'paragraph': '431'}, {'section': '1', 'paragraph': '432'}, {'section': '1', 'paragraph': '433'}, {'section': '1', 'paragraph': '434'}, {'section': '1', 'paragraph': '435'}, {'section': '1', 'paragraph': '436'}, {'section': '1', 'paragraph': '437'}, {'section': '1', 'paragraph': '438'}, {'section': '1', 'paragraph': '439'}, {'section': '1', 'paragraph': '440'}, {'section': '1', 'paragraph': '441'}, {'section': '1', 'paragraph': '442'}, {'section': '1', 'paragraph': '443'}, {'section': '1', 'paragraph': '444'}, {'section': '1', 'paragraph': '445'}, {'section': '1', 'paragraph': '446'}, {'section': '1', 'paragraph': '447'}, {'section': '1', 'paragraph': '448'}, {'section': '1', 'paragraph': '449'}, {'section': '1', 'paragraph': '450'}, {'section': '1', 'paragraph': '451'}, {'section': '1', 'paragraph': '452'}, {'section': '1', 'paragraph': '453'}, {'section': '1', 'paragraph': '454'}, {'section': '1', 'paragraph': '455'}, {'section': '1', 'paragraph': '456'}, {'section': '1', 'paragraph': '457'}, {'section': '1', 'paragraph': '458'}, {'section': '1', 'paragraph': '459'}, {'section': '1', 'paragraph': '460'}, {'section': '1', 'paragraph': '461'}, {'section': '1', 'paragraph': '462'}, {'section': '1', 'paragraph': '463'}, {'section': '1', 'paragraph': '464'}, {'section': '1', 'paragraph': '465'}, {'section': '1', 'paragraph': '466'}, {'section': '1', 'paragraph': '467'}, {'section': '1', 'paragraph': '468'}, {'section': '1', 'paragraph': '469'}, {'section': '1', 'paragraph': '470'}, {'section': '1', 'paragraph': '471'}, {'section': '1', 'paragraph': '472'}, {'section': '1', 'paragraph': '473'}, {'section': '1', 'paragraph': '474'}, {'section': '1', 'paragraph': '475'}, {'section': '1', 'paragraph': '476'}, {'section': '1', 'paragraph': '477'}, {'section': '1', 'paragraph': '478'}, {'section': '1', 'paragraph': '479'}, {'section': '1', 'paragraph': '480'}, {'section': '1', 'paragraph': '481'}, {'section': '1', 'paragraph': '482'}, {'section': '1', 'paragraph': '483'}, {'section': '1', 'paragraph': '484'}, {'section': '1', 'paragraph': '485'}, {'section': '1', 'paragraph': '486'}, {'section': '1', 'paragraph': '487'}, {'section': '1', 'paragraph': '488'}, {'section': '1', 'paragraph': '489'}, {'section': '1', 'paragraph': '490'}, {'section': '1', 'paragraph': '491'}, {'section': '1', 'paragraph': '492'}, {'section': '1', 'paragraph': '493'}, {'section': '1', 'paragraph': '494'}, {'section': '1', 'paragraph': '495'}, {'section': '1', 'paragraph': '496'}, {'section': '1', 'paragraph': '497'}, {'section': '1', 'paragraph': '498'}, {'section': '1', 'paragraph': '499'}, {'section': '1', 'paragraph': '500'}, {'section': '1', 'paragraph': '501'}, {'section': '1', 'paragraph': '502'}, {'section': '1', 'paragraph': '503'}, {'section': '1', 'paragraph': '504'}, {'section': '1', 'paragraph': '505'}, {'section': '1', 'paragraph': '506'}, {'section': '1', 'paragraph': '507'}, {'section': '1', 'paragraph': '508'}, {'section': '1', 'paragraph': '509'}, {'section': '1', 'paragraph': '510'}, {'section': '1', 'paragraph': '511'}, {'section': '1', 'paragraph': '512'}, {'section': '1', 'paragraph': '513'}, {'section': '1', 'paragraph': '514'}, {'section': '1', 'paragraph': '515'}, {'section': '1', 'paragraph': '516'}, {'section': '1', 'paragraph': '517'}, {'section': '1', 'paragraph': '518'}, {'section': '1', 'paragraph': '519'}, {'section': '1', 'paragraph': '520'}, {'section': '1', 'paragraph': '521'}, {'section': '1', 'paragraph': '522'}, {'section': '1', 'paragraph': '523'}, {'section': '1', 'paragraph': '524'}, {'section': '1', 'paragraph': '525'}, {'section': '1', 'paragraph': '526'}, {'section': '1', 'paragraph': '527'}, {'section': '1', 'paragraph': '528'}, {'section': '1', 'paragraph': '529'}, {'section': '1', 'paragraph': '530'}, {'section': '1', 'paragraph': '531'}, {'section': '1', 'paragraph': '532'}, {'section': '1', 'paragraph': '533'}, {'section': '1', 'paragraph': '534'}, {'section': '1', 'paragraph': '535'}, {'section': '1', 'paragraph': '536'}, {'section': '1', 'paragraph': '537'}, {'section': '1', 'paragraph': '538'}, {'section': '1', 'paragraph': '539'}, {'section': '1', 'paragraph': '540'}, {'section': '1', 'paragraph': '541'}, {'section': '1', 'paragraph': '542'}, {'section': '1', 'paragraph': '543'}, {'section': '1', 'paragraph': '544'}, {'section': '1', 'paragraph': '545'}, {'section': '1', 'paragraph': '546'}, {'section': '1', 'paragraph': '547'}, {'section': '1', 'paragraph': '548'}, {'section': '1', 'paragraph': '549'}, {'section': '1', 'paragraph': '550'}, {'section': '1', 'paragraph': '551'}, {'section': '1', 'paragraph': '552'}, {'section': '1', 'paragraph': '553'}, {'section': '1', 'paragraph': '554'}, {'section': '1', 'paragraph': '555'}, {'section': '1', 'paragraph': '556'}, {'section': '1', 'paragraph': '557'}, {'section': '1', 'paragraph': '558'}, {'section': '1', 'paragraph': '559'}, {'section': '1', 'paragraph': '560'}, {'section': '1', 'paragraph': '561'}, {'section': '1', 'paragraph': '562'}, {'section': '1', 'paragraph': '563'}, {'section': '1', 'paragraph': '564'}, {'section': '1', 'paragraph': '565'}, {'section': '1', 'paragraph': '566'}, {'section': '1', 'paragraph': '567'}, {'section': '1', 'paragraph': '568'}, {'section': '1', 'paragraph': '569'}, {'section': '1', 'paragraph': '570'}, {'section': '1', 'paragraph': '571'}, {'section': '1', 'paragraph': '572'}, {'section': '1', 'paragraph': '573'}, {'section': '1', 'paragraph': '574'}, {'section': '1', 'paragraph': '575'}, {'section': '1', 'paragraph': '576'}, {'section': '1', 'paragraph': '577'}, {'section': '1', 'paragraph': '578'}, {'section': '1', 'paragraph': '579'}, {'section': '1', 'paragraph': '580'}, {'section': '1', 'paragraph': '581'}, {'section': '1', 'paragraph': '582'}, {'section': '1', 'paragraph': '583'}, {'section': '1', 'paragraph': '584'}, {'section': '1', 'paragraph': '585'}, {'section': '1', 'paragraph': '586'}, {'section': '1', 'paragraph': '587'}, {'section': '1', 'paragraph': '588'}, {'section': '1', 'paragraph': '589'}, {'section': '1', 'paragraph': '590'}, {'section': '1', 'paragraph': '591'}, {'section': '1', 'paragraph': '592'}, {'section': '1', 'paragraph': '593'}, {'section': '1', 'paragraph': '594'}, {'section': '1', 'paragraph': '595'}, {'section': '1', 'paragraph': '596'}, {'section': '1', 'paragraph': '597'}, {'section': '1', 'paragraph': '598'}, {'section': '1', 'paragraph': '599'}, {'section': '1', 'paragraph': '600'}, {'section': '1', 'paragraph': '601'}, {'section': '1', 'paragraph': '602'}, {'section': '1', 'paragraph': '603'}, {'section': '1', 'paragraph': '604'}, {'section': '1', 'paragraph': '605'}, {'section': '1', 'paragraph': '606'}, {'section': '1', 'paragraph': '607'}, {'section': '1', 'paragraph': '608'}, {'section': '1', 'paragraph': '609'}, {'section': '1', 'paragraph': '610'}, {'section': '1', 'paragraph': '611'}, {'section': '1', 'paragraph': '612'}, {'section': '1', 'paragraph': '613'}, {'section': '1', 'paragraph': '614'}, {'section': '1', 'paragraph': '615'}, {'section': '1', 'paragraph': '616'}, {'section': '1', 'paragraph': '617'}, {'section': '1', 'paragraph': '618'}, {'section': '1', 'paragraph': '619'}, {'section': '1', 'paragraph': '620'}, {'section': '1', 'paragraph': '621'}, {'section': '1', 'paragraph': '622'}, {'section': '1', 'paragraph': '623'}, {'section': '1', 'paragraph': '624'}, {'section': '1', 'paragraph': '625'}, {'section': '1', 'paragraph': '626'}, {'section': '1', 'paragraph': '627'}, {'section': '1', 'paragraph': '628'}, {'section': '1', 'paragraph': '629'}, {'section': '1', 'paragraph': '630'}, {'section': '1', 'paragraph': '631'}, {'section': '1', 'paragraph': '632'}, {'section': '1', 'paragraph': '633'}, {'section': '1', 'paragraph': '634'}, {'section': '1', 'paragraph': '635'}, {'section': '1', 'paragraph': '636'}, {'section': '1', 'paragraph': '637'}, {'section': '1', 'paragraph': '638'}, {'section': '1', 'paragraph': '639'}, {'section': '1', 'paragraph': '640'}, {'section': '1', 'paragraph': '641'}, {'section': '1', 'paragraph': '642'}, {'section': '1', 'paragraph': '643'}, {'section': '1', 'paragraph': '644'}, {'section': '1', 'paragraph': '645'}, {'section': '1', 'paragraph': '646'}, {'section': '1', 'paragraph': '647'}, {'section': '1', 'paragraph': '648'}, {'section': '1', 'paragraph': '649'}, {'section': '1', 'paragraph': '650'}, {'section': '1', 'paragraph': '651'}, {'section': '1', 'paragraph': '652'}, {'section': '1', 'paragraph': '653'}, {'section': '1', 'paragraph': '654'}, {'section': '1', 'paragraph': '655'}, {'section': '1', 'paragraph': '656'}, {'section': '1', 'paragraph': '657'}, {'section': '1', 'paragraph': '658'}, {'section': '1', 'paragraph': '659'}, {'section': '1', 'paragraph': '660'}, {'section': '1', 'paragraph': '661'}, {'section': '1', 'paragraph': '662'}, {'section': '1', 'paragraph': '663'}, {'section': '1', 'paragraph': '664'}, {'section': '1', 'paragraph': '665'}, {'section': '1', 'paragraph': '666'}, {'section': '1', 'paragraph': '667'}, {'section': '1', 'paragraph': '668'}, {'section': '1', 'paragraph': '669'}, {'section': '1', 'paragraph': '670'}, {'section': '1', 'paragraph': '671'}, {'section': '1', 'paragraph': '672'}, {'section': '1', 'paragraph': '673'}, {'section': '1', 'paragraph': '674'}, {'section': '1', 'paragraph': '675'}, {'section': '1', 'paragraph': '676'}, {'section': '1', 'paragraph': '677'}, {'section': '1', 'paragraph': '678'}, {'section': '1', 'paragraph': '679'}, {'section': '1', 'paragraph': '680'}, {'section': '1', 'paragraph': '681'}, {'section': '1', 'paragraph': '682'}, {'section': '1', 'paragraph': '683'}, {'section': '1', 'paragraph': '684'}, {'section': '1', 'paragraph': '685'}, {'section': '1', 'paragraph': '686'}, {'section': '1', 'paragraph': '687'}, {'section': '1', 'paragraph': '688'}, {'section': '1', 'paragraph': '689'}, {'section': '1', 'paragraph': '690'}, {'section': '1', 'paragraph': '691'}, {'section': '1', 'paragraph': '692'}, {'section': '1', 'paragraph': '693'}, {'section': '1', 'paragraph': '694'}, {'section': '1', 'paragraph': '695'}, {'section': '1', 'paragraph': '696'}, {'section': '1', 'paragraph': '697'}, {'section': '1', 'paragraph': '698'}, {'section': '1', 'paragraph': '699'}, {'section': '1', 'paragraph': '700'}, {'section': '1', 'paragraph': '701'}, {'section': '1', 'paragraph': '702'}, {'section': '1', 'paragraph': '703'}, {'section': '1', 'paragraph': '704'}, {'section': '1', 'paragraph': '705'}, {'section': '1', 'paragraph': '706'}, {'section': '1', 'paragraph': '707'}, {'section': '1', 'paragraph': '708'}, {'section': '1', 'paragraph': '709'}, {'section': '1', 'paragraph': '710'}, {'section': '1', 'paragraph': '711'}, {'section': '1', 'paragraph': '712'}, {'section': '1', 'paragraph': '713'}, {'section': '1', 'paragraph': '714'}, {'section': '1', 'paragraph': '715'}, {'section': '1', 'paragraph': '716'}, {'section': '1', 'paragraph': '717'}, {'section': '1', 'paragraph': '718'}, {'section': '1', 'paragraph': '719'}, {'section': '1', 'paragraph': '720'}, {'section': '1', 'paragraph': '721'}, {'section': '1', 'paragraph': '722'}, {'section': '1', 'paragraph': '723'}, {'section': '1', 'paragraph': '724'}, {'section': '1', 'paragraph': '725'}, {'section': '1', 'paragraph': '726'}, {'section': '1', 'paragraph': '727'}, {'section': '1', 'paragraph': '728'}, {'section': '1', 'paragraph': '729'}, {'section': '1', 'paragraph': '730'}, {'section': '1', 'paragraph': '731'}, {'section': '1', 'paragraph': '732'}, {'section': '1', 'paragraph': '733'}, {'section': '1', 'paragraph': '734'}, {'section': '1', 'paragraph': '735'}, {'section': '1', 'paragraph': '736'}, {'section': '1', 'paragraph': '737'}, {'section': '1', 'paragraph': '738'}, {'section': '1', 'paragraph': '739'}, {'section': '1', 'paragraph': '740'}, {'section': '1', 'paragraph': '741'}, {'section': '1', 'paragraph': '742'}, {'section': '1', 'paragraph': '743'}, {'section': '1', 'paragraph': '744'}, {'section': '1', 'paragraph': '745'}, {'section': '1', 'paragraph': '746'}, {'section': '1', 'paragraph': '747'}, {'section': '1', 'paragraph': '748'}, {'section': '1', 'paragraph': '749'}, {'section': '1', 'paragraph': '750'}, {'section': '1', 'paragraph': '751'}, {'section': '1', 'paragraph': '752'}, {'section': '1', 'paragraph': '753'}, {'section': '1', 'paragraph': '754'}, {'section': '1', 'paragraph': '755'}, {'section': '1', 'paragraph': '756'}, {'section': '1', 'paragraph': '757'}, {'section': '1', 'paragraph': '758'}, {'section': '1', 'paragraph': '759'}, {'section': '1', 'paragraph': '760'}, {'section': '1'}]","§ 5 Bemessung der Gebühren für Leistungen des Gebührenverzeichnisses
+(1) Die Höhe der einzelnen Gebühr bemisst sich „dem Punktwert (kommt)... die Funktion zu, den
+nach dem Einfachen bis Dreieinhalbfachen des Wert der Punktzahlen im Preisgefüge anderer
+Gebührensatzes.1 Gebührensatz ist der Betrag, der Dienstleistungen zu bestimmen“ ... „der Punktwert
+sich ergibt, wenn die Punktzahl der einzelnen Leis- wird anhand der wirtschaftlichen Entwicklung von
+tung des Gebührenverzeichnisses mit dem Punkt- Zeit zu Zeit überprüft und je nach Datenlage
+wert vervielfacht wird.2 Der Punktwert beträgt eventuell nach oben oder unten angepasst wer-
+5,62421 Cent.3 Bei der Bemessung von Gebühren den müssen.“
+sind sich ergebende Bruchteile eines Cents unter Der Punktwert hat also die Funktion, den Wert der
+0,5 abzurunden und Bruchteile von 0,5 und mehr Punktzahlen im Preisgefüge anderer Dienstleistun-
+aufzurunden; die Rundung ist erst nach der Multi- gen - ausgehend von der wirtschaftlichen Ent-
+plikation mit dem Steigerungsfaktor nach Satz 1 wicklung - zu bestimmen. Aus diesem Grund
+vorzunehmen.4 wurden mit der GOZ 1988 auch die bis dahin im
+Rahmen der Gebührenbemessung zu berücksich-
+(2) Innerhalb des Gebührenrahmens sind die tigenden Kriterien „Vermögens- und Einkommens-
+Gebühren unter Berücksichtigung der Schwierig- verhältnisse des Zahlungspflichtigen“ und
+keit und des Zeitaufwandes der einzelnen Leistung „örtliche Verhältnisse“ abgeschafft. Damit hat der
+sowie der Umstände bei der Ausführung nach bil- Verordnungsgeber den wirtschaftlichen Ausgleich
+ligem Ermessen zu bestimmen.5 Die Schwierigkeit aus der Privatvereinbarung gelöst und die Auf-
+der einzelnen Leistung kann auch durch die gabe übernommen, selbst im Verordnungswege
+Schwierigkeit des Krankheitsfalles begründet sein.6 tätig zu werden. Dieser Aufgabe ist er jedoch
+Bemessungskriterien, die bereits in der Leistungs- durch die auch in der GOZ-2012 unterlassene An-
+beschreibung berücksichtigt worden sind, haben passung des Punktwertes nicht nachgekommen.
+hierbei außer Betracht zu bleiben.7 Der 2,3fache
+Gebührensatz bildet die nach Schwierigkeit und 4 Mit der neuen Rundungsvorschrift „Bei der
+Zeitaufwand durchschnittliche Leistung ab; ein Bemessung von Gebühren sind sich ergebende
+Überschreiten dieses Gebührensatzes ist nur zuläs- Bruchteile eines Cents unter 0,5 abzurunden und
+sig, wenn Besonderheiten der in Satz 1 genannten Bruchteile von 0,5 und mehr aufzurunden“ wird die
+Bemessungskriterien dies rechtfertigen; Leistungen entsprechende Regelung der GOÄ in der GOZ
+mit unterdurchschnittlichem Schwierigkeitsgrad verankert. Bislang gebot die GOZ-1988 eine gene-
+oder Zeitaufwand sind mit einem niedrigeren Ge- relle Abrundung der Gebühren, entgegen den
+bührensatz zu berechnen.8 kaufmännischen Rundungsregeln. Nunmehr wird
+– mathematisch sauberer – auf- bzw. abgerundet.
+Bei Gebührenbemessung nach § 5 GOZ, d. h.
+Kurzkommentar wenn zusätzlich der Steigerungssatz und ggf. die
+1 § 5 Absatz 1 Satz 1 eröffnet für die Berech- Anzahl der Leistung berücksichtigt wird, bestan-
+nung der Höhe der einzelnen Gebühr einen Ge- den zwei Rundungsalternativen, die sich nach
+bührenrahmen vom Einfachen bis zum dem Zeitpunkt des Rundens (erst das Ergebnis
+Dreieinhalbfachen des Gebührensatzes. Was der oder bereits der Einfachsatz) unterschieden. Die
+„Gebührensatz“ ist, definiert Satz 2. Alternativen führten ggf. zu leicht von einander
+abweichenden Beträgen. Um dem zu begegnen,
+2 Der „Gebührensatz“ ist der Betrag, der sich ist die Rundung erst nach der Multiplikation mit
+<<
+ergibt, wenn die der Leistung zugeordnete Punkt- dem Steigerungsfaktor vorzunehmen.
+zahl mit dem Punktwert von 5,62421 Cent (§ 5 Ab- Inhalt
+satz 1 Satz 3) multipliziert wird. 5 § 5 Absatz 2 legt fest, wie die individuell
+„richtige“ Höhe der Gebühr in dem von Absatz 1
+3 § 5 Abs. 1 Satz 3 der GOZ-1988 setzte den Satz 1 eröffneten Gebührenrahmen zu finden ist.
+Punktwert zum 1. Januar 1988 auf 11 Deutsche Pfen- Die Norm gibt dem Zahnarzt hierfür folgende Be-
+nige bzw. 5,62421 Cent fest. In der damaligen Ver- messungskriterien an die Hand:
+ordnungsbegründung wurde hierzu festgehalten: – Schwierigkeit der einzelnen Leistung, 13
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014
+
+Kommentar zum Allgemeinen Teil
+– Zeitaufwand der einzelnen Leistung sowie einen Entscheidungsspielraum zu, verpflichtet ihn
+– Umstände bei der Ausführung aber gleichzeitig, diesen Entscheidungsspielraum
+Das Kriterium der Schwierigkeit – auch Schwierig- nicht willkürlich, sondern nach den Grundsätzen
+keit des Krankheitsfalles (vgl. Abs. Satz 2) – bietet der Billigkeit auszuüben. Was billigem Ermessen
+eine Möglichkeit, körperliche und geistige Belas- entspricht, ist unter Berücksichtigung der Interes-
+tungsaspekte bei der Leistungserbringung zu be- sen beider Parteien und des in vergleichbaren Fäl-
+rücksichtigen. Da die Berücksichtigung subjektiver len Üblichen festzustellen.
+Schwierigkeiten nicht unumstritten ist, empfiehlt es
+sich gleichwohl, die ursächlichen objektiven, zur 6 Da die Schwierigkeit des Krankheitsfalles, be-
+subjektiven Schwierigkeit führenden Umstände in dingt etwa durch den Schweregrad der Erkran-
+der Rechnung aufzuzeigen. kung, auch die Schwierigkeit der einzelnen
+Die Beanspruchungshöhe, etwa durch konzentra- Leistungen beeinflusst, ist Absatz 2 Satz 2 eigentlich
+tive Anforderungen kann, muss aber nicht zur überflüssig.
+einem erhöhten Zeitaufwand führen. Eine gewisse
+Wechselwirkung zwischen den beiden Kriterien 7 Nach § 5 Abs. 2 Satz 3 GOZ haben bei der
+liegt auf der Hand. Sofern im Gebührenverzeich- Gebührenbemessung diejenigen Bemessungskri-
+nis Leistungen mit Mindestdauern versehen sind, terien außer Acht zu bleiben, die bereits in der Be-
+kann ein entsprechender Zeitaufwand nicht über schreibung der Leistung im Gebührenverzeichnis
+den Multiplikator berücksichtigt werden, sondern berücksichtigt wurden. Das können Leistungen
+erst bei einer Überschreitung. Der Zusatz „der ein- sein, die nach Schwierigkeiten gestuft sind (z.B.
+zelnen Leistung“ stellt klar, dass die Schwierigkeit Umfang bei den Geb.-Nrn. 6060 ff. GOZ), Leistun-
+individuell und leistungsbezogen zu berücksichti- gen bei denen die Schwierigkeit in die Leistungs-
+gen ist und nicht auf die gesamte Honorarforde- beschreibung aufgenommen sind (z.B. die
+rung ausgedehnt werden darf. Gefährdung anatomischer Nachbarstrukturen in
+Das Kriterium Umstände bei der Ausführung bildet der Geb.-Nr. 3045 GOZ) oder Leistungen bei
+einen Auffangtatbestand für einen besonderen denen bestimmte Mindestzeiten vorgesehen sind.
+Aufwand, der sich nicht in der Schwierigkeit oder Die derart aufgenommenen Umstände, Schwie-
+dem Zeitaufwand niederschlägt. Hierzu zählen ins- rigkeiten oder Zeiten gelten als bei der Gebühr
+besondere Verständigungsschwierigkeiten oder berücksichtigt und sollen nicht „nochmals“ heran-
+Behandlungen außerhalb der Praxis z.B. im Zusam- gezogen werden können.
+menhang mit Unfällen, aber durchaus auch an-
+dere Behandlungsumstände, die in der Person 8 Der neue § 5 Absatz 2 Satz 4 stellt eine Reak-
+des Patienten bzw. seinem aktuellen Zustand be- tion auf die Rechtsprechung (insbesondere des
+gründet sind. BGH, Urteil vom 8. November 2007, Aktenzeichen III
+Die in § 5 Abs. 2 aufgeführten Bemessungskriterien ZR 54/07) zur Anwendung des Gebührenrahmens
+„Schwierigkeit, Zeitaufwand und Umstände bei dar. Die Frage, ob der 2,3fache Gebührensatz die
+der Ausführung“ stehen gleichberechtigt neben- nach Schwierigkeit und Zeitaufwand durchschnitt-
+einander. Dabei ist – etwa wenn mehrere Ge- liche Leistung abbildet, oder nicht, war strittig, wenn
+sichtspunkte in die Bemessung einfließen – keine auch nach Ansicht des Bundesgerichtshofes „eine
+schematische Aufteilung der Kriterien erforderlich. seit vielen Jahren gängige Abrechnungspraxis“.
+Vielmehr hat der Zahnarzt in jedem Fall eine Ge- Gleichwohl vertraten einige Gerichte die Auffas-
+<<
+samtbetrachtung aller relevanten Faktoren vorzu- sung, dass sich bei durchschnittlichen Leistungen
+Inhalt nehmen und auf diese Weise in Ausübung des der Mittelwert innerhalb der „Regelspanne“ zu be-
+Ermessens die jeweilige Gebühr zu bestimmen. wegen hätte. Die Neufassung des Absatzes 2 Satz
+Innerhalb des Gebührenrahmens sind die Gebüh- 5 räumt mit dieser Auffassung auf. Der 2,3fache Ge-
+ren unter Berücksichtigung der genannten Krite- bührensatz bildet die nach Schwierigkeit und Zeit-
+rien nach billigem Ermessen zu bestimmen. Die aufwand durchschnittliche Leistung ab. Ein
+Regelung gesteht dem Zahnarzt bei der Anwen- Überschreiten dieses Gebührensatzes ist zulässig,
+14 dung der Bemessungskriterien des Abs. 2 Satz 1 wenn Besonderheiten der in Satz 1 genannten Be-
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014
+
+messungskriterien dies rechtfertigen. Im Einzelnen
+siehe oben Anmerkungen 5 und 6.
+Der 2. Halbsatz, nach dem Leistungen mit unter-
+durchschnittlichem Schwierigkeitsgrad oder Zeit-
+aufwand mit einem niedrigeren Gebührensatz zu
+berechnen sind, ist insoweit überflüssig. Wenn der
+2,3fache Gebührensatz die durchschnittliche
+Schwierigkeit abbildet, dann sind unterdurch-
+schnittliche Schwierigkeitsgrade begriffsnotwen-
+dig mit einem niedrigeren Gebührensatz zu
+berechnen, wie überdurchschnittliche Schwierig-
+keitsgrade mit einem höheren Gebührensatz.
+Einen über einen Klarstellung hinausgehenden Re-
+gelungsgehalt hat der 2. Halbsatz nicht.
+Begründung der Bundesregierung zur GOZ-No-
+velle 2012
+§ 5
+Absatz 1
+Die Neufassung des Satzes 4 entspricht der Formu-
+lierung in § 5 Abs. 1 Satz 4 GOÄ. Damit wird auf
+die im Geschäftsverkehr allgemein übliche kauf-
+männische Rundung abgestellt. Mit der Ergän-
+zung im zweiten Halbsatz wird klargestellt, dass die
+Rundung einmal nach Abschluss des Gesamtre-
+chenganges (Produkt aus Punktzahl x Punktwert x
+Steigerungsfaktor) durchgeführt wird.
+Absatz 2
+Mit der Neufassung des Satzes 4 wird der üblichen
+Abrechnungspraxis, nach der die nach Schwierig-
+keit und Zeitaufwand durchschnittliche Leistung
+mit dem 2,3fachen Gebührensatz berechnet
+wird, Rechnung getragen. Diese Praxis wurde
+auch durch die Rechtsprechung des Bundesge-
+richtshof bestätigt (BGH-Urteil vom 8. November
+2007 – III ZR 54/07 -). Mit dem zweiten Satzteil wird
+das bisherige Recht übernommen, wonach das
+Überschreiten des 2,3fachen Gebührensatzes
+durch Besonderheiten des konkreten Behand-
+lungsfalles nach den Bemessungskriterien des Sat-
+<<
+zes 1 gerechtfertigt sein muss.
+Mit dem letzten Satzteil wird ausdrücklich klarge- Inhalt
+stellt, dass der 2,3fache Gebührensatz nicht sche-
+matisch berechnet werden darf; vielmehr ist bei
+einer einfacheren, unter dem Durchschnitt liegen-
+den Leistung auch ein niedrigerer Gebührensatz
+zu berechnen. Hierauf hatte auch der BGH
+(a.a.O.) bereits hingewiesen. 15
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014"
+§ 6 Gebühren für andere Leistungen ,(1),"Selbstständige zahnärztliche Leistungen, die in das Gebührenverzeichnis nicht aufgenommen sind, können entsprechend einer nach Art, Kosten- und Zeitaufwand gleichwertigen Leistung des Gebührenver zeichnisses dieser Verordnung berechnet werden. Sofern auch eine nach Art, Kosten- und Zeitaufwand gleichwertige Leistung im Gebührenverzeichnis dieser Verordnung nicht enthalten ist, kann die selbstständige zahnärztliche Leistung entsprechend einer nach Art, Kosten- und Zeitaufwand gleichwertigen Leistung der in Absatz 2 genannten Leistungen des Gebührenverzeichnisses der Gebührenordnung für Ärzte berechnet werden.",References: Absatz 2,1,224,6,0.00034800000000000006,6,1,"[{'paragraph': '2', 'sentence': '2', 'section': '6'}]","Kommentar zum Allgemeinen Teil
+§ 6 Gebühren für andere Leistungen
+(1) Selbstständige zahnärztliche Leistungen, die in
+des Verordnungsgebers, mit dem Gebührenver-
+das Gebührenverzeichnis nicht aufgenommen sind,
+zeichnis der GOZ 1988 das gesamte Spektrum der
+können entsprechend einer nach Art, Kosten- und
+wissenschaftlich allgemein anerkannten zahnärztli-
+Zeitaufwand gleichwertigen Leistung des Gebüh-
+chen Leistungen abgedeckt zu haben. Ausgehend
+renverzeichnisses dieser Verordnung berechnet wer-
+von dieser Annahme konnte es „vergessene“ Leistun-
+den.1 Sofern auch eine nach Art, Kosten- und
+gen praktisch nicht geben und nur für „neue“ Leis-
+Zeitaufwand gleichwertige Leistung im Gebühren-
+tungen bestünde daneben Abrechnungsbedarf.
+verzeichnis dieser Verordnung nicht enthalten ist,
+Mit der Neufassung von § 6 Absatz 1 Satz 1 kön-
+kann die selbstständige zahnärztliche Leistung ent-
+nen Leistungen, die im Gebührenverzeichnis feh-
+sprechend einer nach Art, Kosten- und Zeitaufwand
+len, analog berechnet werden, egal wann
+gleichwertigen Leistung der in Absatz 2 genannten
+Anwendungsreife bestand und egal aus wel-
+Leistungen des Gebührenverzeichnisses der Gebüh-
+chem Grund die Leistung nicht in das Gebühren-
+renordnung für Ärzte berechnet werden.2
+verzeichnis aufgenommen wurde.
+Voraussetzung ist die Erbringung einer nicht im
+(2) Die Vergütungen sind nach den Vorschriften
+Gebührenverzeichnis enthaltenen selbständi-
+der Gebührenordnung für Ärzte zu berechnen, so-
+gen zahnärztlichen Leistung. Das sind Leistun-
+weit die Leistung nicht als selbständige Leistung
+gen, die weder Bestandteil, noch besondere
+oder Teil einer anderen Leistung im Gebührenver-
+Ausführung einer anderen, ebenfalls berechne-
+zeichnis der Gebührenordnung für Zahnärzte ent-
+ten Leistung sind (vgl. § 4 Absatz 2). Die Weiter-
+halten ist und wenn die Leistungen, die der
+entwicklung der Zahnmedizin kann allerdings
+Zahnarzt erbringt, in den folgenden Abschnitten
+dazu führen, dass sich Leistungsbestandteile
+des Gebührenverzeichnisses der Gebührenord-
+fachlich verselbständigen.
+nung für Ärzte aufgeführt sind:
+Die selbständige, nicht im Gebührenverzeichnis ent-
+1. B I, B II, B III unter den Nummern 30, 31 und
+haltene Leistung kann entsprechend einer nach Art,
+34, B IV bis B VI, 3
+Kosten- und Zeitaufwand gleichwertigen Leistung
+2. C I unter den Nummern 200, 204, 210 und
+des Gebührenverzeichnisses berechnet werden.
+211, C II, C III bis C VII, C VIII nur soweit eine
+Die Regelung stellt damit auf die Gleichwertigkeit
+zugrunde liegende ambulante operative
+und nicht auf die Gleichartigkeit ab. Die Gleichwer-
+Leistung berechnet wird,4
+tigkeitsprüfung hat demnach nicht zwingend an-
+3. E V und E VI,5
+hand des Leistungsinhalts zu erfolgen.
+4. J,6
+Für die Feststellung der Gleichwertigkeit hat der
+5. L I, L II unter den Nummern 2072 bis 2074, L III,
+Zahnarzt Art, Kosten- und Zeitaufwand der neuen
+L V unter den Nummern 2253 bis 2256 im
+Leistung mit der hilfsweise zur Berechnung ausge-
+Rahmen der Behandlung von Kieferbrü-
+suchten Analogleistung zu vergleichen.
+chen, L VI unter den Nummern 2321, 2355
+Das Kriterium der Artder Leistungserbringung stellt
+und 2356 im Rahmen der Behandlung von
+im Wesentlichen auf das Ziel der Leistung ab. Der
+Kieferbrüchen, L VII, L IX,7
+Kostenaufwandvergleicht die Kosten der Leistungs-
+6. M unter den Nummern 3511, 3712, 3714,
+erbringung – auch die nach § 4 Absatz 3 abgegol-
+3715, 4504, 4530, 4538, 4605, 4606 und 4715,8
+tenen Kosten – und ggf. den Einsatz besonders
+7. N unter der Nummer 4852 sowie9
+qualifizierten Personals. Der Zeitaufwanderfordert
+8. O10
+einen Vergleich der individuell notwendigen Zeit
+<<
+der Leistungserbringung der nicht erfassten Leistung
+Inhalt mit dem Zeitaufwand des Zahnarztesfür die analog
+Kurzkommentar herangezogene Leistung.
+1 Der neue § 6 Absatz 1 schafft eine Analogiere- Der Zahnarzt hat bei der Analogiebewertung und der
+gelung entsprechend § 6 Abs. 2 GOÄ. Das zeitliche Feststellung der Gleichwertigkeit einen Ermessens-
+Abgrenzungskriterium (Entwicklung nach dem In- spielraum. Nicht alle drei Kriterien müssen nebenei-
+krafttreten der GOZ)wird aufgegeben. Die alte Re- nander gleichrangig erfüllt werden, sondern müssen
+16 gelung beruhte auf der – widerlegten – Zuversicht in einer Gesamtschau zur Gleichwertigkeit führen.
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014
+
+2 § 6 Absatz 1 Satz 2 stellt klar, dass bei der schriften der GOÄzu erfolgen hat, ist die GOÄ in-
+Analogbewertung zunächst eine nach Art, Kos- soweit insgesamt anzuwenden.
+ten- und Zeitaufwand gleichwertige Leistung aus
+dem Gebührenverzeichnis der GOZ heranzuzie- Im Einzelnen eröffnet sind folgende Leistungen:
+hen ist und für den Analogabgriff erst nachrangig Abschnitt B I:Allgemeine Beratungen und Unter-
+eine Leistung aus dem Gebührenverzeichnisses suchungen
+der GOÄ als Analogbewertung in Frage kommt. Abschnitt B II:Zuschläge zu I.
+Das Gebührenverzeichnis der GOÄ ist allerdings Abschnitt B III:
+auf die Leistungen beschränkt, die nach § 6 Ab- GOÄ 30: Erhebung der homöopathischen
+satz 2 eröffnet sind. Diejenigen Leistungen des Erstanamnese mit einer Mindestdauer von
+GOÄ-Gebührenverzeichnisses, für die der Zugriff einer Stunde nach biographischen und ho-
+nach Absatz 2 nicht eröffnet ist, stehen auch für möopathisch-individuellen Gesichtspunkten
+eine Analogie nicht zur Verfügung. mit schriftlicher Aufzeichnung zur Einleitung
+einer homöopathischen Behandlung ein-
+schließlich homöopathischer Repertorisation
+und Gewichtung der charakteristischen psy-
+chischen, allgemeinen und lokalen Zeichen
+und Symptome des jeweiligen Krankheitsfalls,
+unter Berücksichtigung der Modalitäten, Al-
+ternanzen, Kausal- und Begleitsymptome, zur
+Auffindung des homöopathischen Einzelmit-
+tels, einschließlich Anwendung und Auswer-
+tung standardisierter Fragebogen
+GOÄ 31: Homöopathische Folgeanamnese
+mit einer Mindestdauer von 30 Minuten unter
+laufender Behandlung nach den Regeln der
+Einzelmittelhomöopathie zur Beurteilung des
+Verlaufs und Feststellung des weiteren Vorge-
+hens einschließlich schriftlicher Aufzeichnungen
+GOÄ 34: Erörterung (Dauer mindestens 20 Mi-
+nuten) der Auswirkungen einer Krankheit auf
+die Lebensgestaltung in unmittelbarem Zu-
+sammenhang mit der Feststellung oder er-
+heblichen Verschlimmerung einer nachhaltig
+lebensverändernden oder lebensbedrohen-
+den Erkrankung gegebenenfalls einschließ-
+lich Planung eines operativen Eingriffs und
+Abwägung seiner Konsequenzen und Risiken,
+einschließlich Beratung gegebenenfalls unter
+3 Selbständigen zahnärztlichen Leistung, d.h. Einbeziehung von Bezugspersonen
+Leistungen, die weder Bestandteil, noch beson- Abschnitt B IV.:Visiten, Konsiliartätigkeit, Besuche,
+<<
+dere Ausführung einer anderen, ebenfalls berech- Assistenz
+neten Leistung des Gebührenverzeichnisses der Abschnitt B V.:Zuschläge zu den Leistungen nach Inhalt
+GOZ sind, sind nach den Vorschriften der GOÄ zu den Nummern 45 bis 62
+vergüten, wenn diese Leistungen nicht im Gebüh- Abschnitt B VI.:Berichte, Briefe
+renverzeichnis der GOZ enthalten und von der
+Aufzählung des § 6 Absatz 2 Ziffern 1 - 10 erfasst 4 Abschnitt C I Anlegen von Verbänden
+sind. Da nicht nur die Gebührenhöhe der GOÄ GOÄ 200: Verband ausgenommen Schnell-
+folgt, sondern die Berechnung nach den Vor- und Sprühverbände, Augen-, Ohrenklappen 17
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014
+
+Kommentar zum Allgemeinen Teil
+oder Dreiecktücher GOÄ 2256: Knochenaufmeißelung oder Ne-
+GOÄ 204: Zirkulärer Verband des Kopfes oder krotomie bei kleinen Knochen
+des Rumpfes (auch als Wundverband); stabi- Abschnitt L VI Frakturbehandlung (im Rahmen
+lisierender Verband des Halses, des Schulter- der Behandlung von Kieferbrüchen)
+oder Hüftgelenks oder einer Extremität über GOÄ 2321: Einrichtung eines gebrochenen
+mindestens zwei große Gelenke; Schanzscher Gesichtsknochens gegebenenfalls ein-
+Halskrawattenverband; Kompressionsverband schließlich Wundverband
+GOÄ 210: Kleiner Schienenverband - auch GOÄ 2355: Operative Stabilisierung einer
+als Notverband bei Frakturen Pseudarthrose oder operative Korrektur eines
+GOÄ 211: Kleiner Schienenverband - bei in Fehlstellung verheilten Knochenbruchs
+Wiederanlegung derselben, gegebenenfalls GOÄ 2356: Operative Stabilisierung einer
+auch veränderten Schiene Pseudarthrose oder operative Korrektur
+Abschnitt C II Blutentnahmen, Injektionen, eines in Fehlstellung verheilten Knochen-
+Infiltrationen, Infusionen, Transfusionen, Implan- bruchs nach Osteotomie mittels Nagelung,
+tation, Abstrichentnahmen Verschraubung und/oder Metallplatten
+Abschnitt C III bis C VII: und/oder äußerem Spanner auch zusätzli-
+C III. Punktionen ches Einpflanzen von Knochenspan
+C IV. Kontrastmitteleinbringungen Abschnitt L VII Chirurgie der Körperoberfläche
+C V. Impfungen und Testungen Abschnitt L IX Mund-, Kiefer- und Gesichtschirurgie
+C VI. Sonographische Leistungen Abschnitte
+C VII. Intensivmedizinische und sonstige Leistungen
+C VIII. Zuschläge zu ambulanten Operations- 8 Abschnitt M Labor
+und Anästhesieleistungen (nur soweit eine GOÄ 3511: Untersuchung eines Körpermate-
+zugrunde liegende ambulante operative rials mit vorgefertigten Reagenzträgern oder
+Leistung berechnet wird) Reagenzzubereitungen und visueller Aus-
+wertung (z. B. Glukose, Harnstoff, Urinteststrei-
+5 Abschnitt E V. Wärmebehandlung und E VI. fen), qualitativ oder semiquantitativ, auch
+Elektrotherapie bei Verwendung eines Mehrfachreagenzträ-
+gers, je Untersuchung
+6 Abschnitt J Hals-, Nasen-, Ohrenheilkunde GOÄ 3712: Viskosität (z. B. Blut, Serum,
+Plasma), viskosimetrisch
+7 Abschnitt L I Wundversorgung, Fremdkörper- GOÄ 3714: Wasserstoffionenkonzentration
+entfernung (pH), potentiometrisch, jedoch nicht aus Blut
+Abschnitt L II Extremitätenchirurgie oder Urin
+GOÄ 2072: Offene Sehnen- oder Muskel- GOÄ 3715: Bikarbonat
+durchschneidung GOÄ 4504: Untersuchungen mit ähnlichem
+GOÄ 2073: Sehnen-, Muskel- und/oder Fas- methodischem Aufwand
+ziennaht gegebenenfalls einschließlich Ver- GOÄ 4530: Untersuchung zum Nachweis von
+sorgung einer frischen Wunde Bakterien durch einfache Anzüchtung oder
+GOÄ 2074: Verpflanzung einer Sehne oder Weiterzüchtung auf Nährböden, aerob (z. B.
+eines Muskels Blut-, Endo-, McConkey-Agar, Nährbouillon),
+<<
+Abschnitt L III: Gelenkchirurgie je Nährmedium
+Inhalt Abschnitt L V Knochenchirurgie (nur soweit eine GOÄ 4538: Untersuchung zum Nachweis von
+zugrunde liegende ambulante operative Leis- Bakterien durch Anzüchtung oder Weiterzüch-
+tung berechnet wird) tung auf Selektiv- oder Anreicherungsmedien,
+GOÄ 2253: Knochenspanentnahme aerob (z. B. Blutagar mit Antibiotikazusätzen,
+GOÄ 2254: Implantation von Knochen Schokoladen-, Yersinien-, Columbia-, Koch-
+GOÄ 2255: Freie Verpflanzung eines Knochens salz-Mannit-Agar, Thayer- Martin-Medium), je
+18 oder von Knochenteilen (Knochenspäne) Nährmedium
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014
+
+GOÄ 4605: Untersuchung zur Bestimmung Analogabgriff erst nachrangig eine Leistung aus
+der Keimzahl mittels Eintauchobjektträger- den nach Absatz 2 eröffneten Leistungen des Ge-
+kultur (z. B. Cult-dip Plus, Dip-Slide, Uricount, bührenverzeichnisses der GOÄ in der jeweils gelten-
+Uricult, Uriline, Urotube), semiquantitativ, je den Fassung als Analogbewertung in Frage kommt.
+Urinuntersuchung
+GOÄ 4606: Untersuchung zur Bestimmung Absatz 2
+der Keimzahl in Flüssigkeiten mittels Oberflä- Absatz 2 regelt den gebührenrechtlichen Zugriff auf
+chenkulturen oder Plattengussverfahren die Leistungen, die im Gebührenverzeichnis der
+nach quantitativer Aufbringung des Untersu- GOÄ enthalten sind. Es handelt sich – wie bisher in
+chungsmaterials, je Untersuchungsmaterial Absatz 1 – um eine gleitende Verweisung auf das
+GOÄ 4715: Untersuchung zum Nachweis von Gebührenverzeichnis der GOÄ in der jeweils gelten-
+Pilzen durch An- oder Weiterzüchtung auf den Fassung. In bestimmten Fällen ist es möglich,
+einfachen Nährmedien (z. B. Sabouraud- dass der Zahnarzt auch Leistungen erbringen kann,
+Agar), je Nährmedium die nicht im Gebührenverzeichnis der GOZ enthal-
+ten sind, aber im Gebührenverzeichnis der GOÄ be-
+9 Abschnitt N Histologie, Zytologie schrieben werden. In Satz 1 werden bestimmte
+GOÄ 4852: Zytologische Untersuchung von Abschnitte, Unterabschnitte oder einzelne Gebüh-
+z. B. Punktaten, Sputum, Sekreten, Spülflüs- renpositionen des Gebührenverzeichnisses der GOÄ
+sigkeiten mit besonderen Aufbereitungsver- aufgeführt, für die dies zutreffen kann. Zwingende
+fahren gegebenenfalls einschließlich der Voraussetzung für die Berechnung einer Leistung
+Beurteilung nichtzytologischer mikroskopi- nach GOÄ durch den Zahnarzt ist, dass der Zahnarzt
+scher Befunde an demselben Material, je diese Leistung berufsrechtlich erbringen darf. Der
+Untersuchungsmaterial gebührenrechtlich zulässige Zugriff auf eine Leistung
+aus dem Gebührenverzeichnis der GOÄ ersetzt
+10 Abschnitt O Strahlenmedizin/MRT diese Voraussetzung nicht. Das zahnärztliche Berufs-
+recht ist insoweit dem privatzahnärztlichen Gebüh-
+Begründung der Bundesregierung zur GOZ-No- renrecht vorgelagert. Aus der Nennung eines
+velle 2012 Abschnittes oder Unterabschnittes des Gebühren-
+§ 6 verzeichnisses der GOÄ in Absatz 2 kann somit nicht
+Absatz 1 gefolgert werden, dass ein Zahnarzt alle in diesem
+Die Regelung in Absatz 1 Satz 1 ermöglicht die Be- Abschnitt oder Unterabschnitt aufgeführten Leistun-
+rechnung von Leistungen, die nicht in das Gebüh- gen berufsrechtlich erbringen und gebührenrecht-
+renverzeichnis der GOZ aufgenommen worden lich berechnen darf. Darüber hinaus ist zu
+sind, mit einer nach Art, Kosten- und Zeitaufwand beachten, dass ein Zugriff auf das Gebührenver-
+gleichwertigen Leistung (sog. Analogbewertung). zeichnis der GOÄ nur dann gebührenrechtlich zu-
+Die bisher geltende Regelung, die dies erst für nach lässig ist, wenn die zu berechnende Leistung nicht
+Inkrafttreten der GOZ aufgrund wissenschaftlicher im Gebührenverzeichnis der GOZ enthalten ist. Es ist
+Erkenntnisse entwickelter Verfahren zuließ, hat sich z.B. für das Aufbereiten eines Wurzelkanals (GOZ Nr.
+nicht bewährt. Voraussetzung für die Anwendung 2410) nicht möglich, die in dem Gebührenverzeich-
+der Analogbewertung ist jedoch – wie in der ver- nis der GOÄ enthaltenen Leistungen nach den
+gleichbaren Regelung der GOÄ – nach wie vor, Nummern 321 (Untersuchung von natürlichen Gän-
+<<
+dass es sich um eine selbstständige zahnärztliche gen oder Fisteln), 370 (Einbringung eines Kontrast-
+Leistung und keine besondere Ausführung oder Teil- mittels zur Darstellung natürlicher oder künstlicher Inhalt
+leistung einer bereits im Gebührenverzeichnis der Gänge) oder 5260 (Röntgenuntersuchung natürli-
+GOZ enthaltenen Leistung handeln muss. cher künstlicher oder krankhaft entstandener
+Satz 2 stellt klar, dass bei der Analogbewertung zu- Gänge) zu berechnen, da der Gebührentatbe-
+nächst eine nach Art, Kosten- und Zeitaufwand stand durch die o.g. GOZ Nummer 2410 als speziel-
+gleichwertige Leistung aus dem Gebührenver- lere Regelung wiedergegeben wird.
+zeichnis der GOZ heranzuziehen ist und für den 19
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014"
+§ 6 Gebühren für andere Leistungen ,(2),"Die Vergütungen sind nach den Vorschriften der Gebührenordnung für Ärzte zu berechnen, soweit die Leistung nicht als selbstständige Leistung oder Teil einer anderen Leistung im Gebührenverzeichnis der Gebührenordnung für Zahnärzte enthalten ist und wenn die Leistungen, die der Zahnarzt erbringt, in den folgenden Abschnitten des Gebührenverzeichnisses der Gebührenordnung für Ärzte aufgeführt sind: 1. B I, B II, B III unter den Nummern 30, 31 und 34, B IV bis B VI, 2. C I unter den Nummern 200, 204, 210 und 211, C II, C III bis C VII, C VIII nur soweit eine zugrunde liegende ambulante operative Leistung berechnet wird, 3. E V und E VI, 4. J, 5. L I, L II unter den Nummern 2072 bis 2074, L III, L V unter den Nummern 2253 bis 2256 im Rahmen der Behandlung von Kieferbrüchen, L VI unter den Nummern 2321, 2355 und 2356 im Rahmen der Behandlung von Kieferbrüchen, L VII, L IX, 6. M unter den Nummern 3511, 3712, 3714, 3715, 4504, 4530, 4538, 4605, 4606 und 4715, 7. N unter der Nummer 4852 sowie 8. O.","References: B I, B II, B III (30, 31, 34), B IV, B V, B VI, C I (200, 204, 210, 211), C II, C III, C IV, C V, C VI, C VII, C VIII, E V, E VI, J, L I, L II (2072-2074), L III, L V (2253-2256), L VI (2321, 2355, 2356), L VII, L IX, M (3511, 3712, 3714, 3715, 4504, 4530, 4538, 4605, 4606, 4715), N (4852), O.",1,428,163,0.000968,6,2,,"Kommentar zum Allgemeinen Teil
+§ 6 Gebühren für andere Leistungen
+(1) Selbstständige zahnärztliche Leistungen, die in
+des Verordnungsgebers, mit dem Gebührenver-
+das Gebührenverzeichnis nicht aufgenommen sind,
+zeichnis der GOZ 1988 das gesamte Spektrum der
+können entsprechend einer nach Art, Kosten- und
+wissenschaftlich allgemein anerkannten zahnärztli-
+Zeitaufwand gleichwertigen Leistung des Gebüh-
+chen Leistungen abgedeckt zu haben. Ausgehend
+renverzeichnisses dieser Verordnung berechnet wer-
+von dieser Annahme konnte es „vergessene“ Leistun-
+den.1 Sofern auch eine nach Art, Kosten- und
+gen praktisch nicht geben und nur für „neue“ Leis-
+Zeitaufwand gleichwertige Leistung im Gebühren-
+tungen bestünde daneben Abrechnungsbedarf.
+verzeichnis dieser Verordnung nicht enthalten ist,
+Mit der Neufassung von § 6 Absatz 1 Satz 1 kön-
+kann die selbstständige zahnärztliche Leistung ent-
+nen Leistungen, die im Gebührenverzeichnis feh-
+sprechend einer nach Art, Kosten- und Zeitaufwand
+len, analog berechnet werden, egal wann
+gleichwertigen Leistung der in Absatz 2 genannten
+Anwendungsreife bestand und egal aus wel-
+Leistungen des Gebührenverzeichnisses der Gebüh-
+chem Grund die Leistung nicht in das Gebühren-
+renordnung für Ärzte berechnet werden.2
+verzeichnis aufgenommen wurde.
+Voraussetzung ist die Erbringung einer nicht im
+(2) Die Vergütungen sind nach den Vorschriften
+Gebührenverzeichnis enthaltenen selbständi-
+der Gebührenordnung für Ärzte zu berechnen, so-
+gen zahnärztlichen Leistung. Das sind Leistun-
+weit die Leistung nicht als selbständige Leistung
+gen, die weder Bestandteil, noch besondere
+oder Teil einer anderen Leistung im Gebührenver-
+Ausführung einer anderen, ebenfalls berechne-
+zeichnis der Gebührenordnung für Zahnärzte ent-
+ten Leistung sind (vgl. § 4 Absatz 2). Die Weiter-
+halten ist und wenn die Leistungen, die der
+entwicklung der Zahnmedizin kann allerdings
+Zahnarzt erbringt, in den folgenden Abschnitten
+dazu führen, dass sich Leistungsbestandteile
+des Gebührenverzeichnisses der Gebührenord-
+fachlich verselbständigen.
+nung für Ärzte aufgeführt sind:
+Die selbständige, nicht im Gebührenverzeichnis ent-
+1. B I, B II, B III unter den Nummern 30, 31 und
+haltene Leistung kann entsprechend einer nach Art,
+34, B IV bis B VI, 3
+Kosten- und Zeitaufwand gleichwertigen Leistung
+2. C I unter den Nummern 200, 204, 210 und
+des Gebührenverzeichnisses berechnet werden.
+211, C II, C III bis C VII, C VIII nur soweit eine
+Die Regelung stellt damit auf die Gleichwertigkeit
+zugrunde liegende ambulante operative
+und nicht auf die Gleichartigkeit ab. Die Gleichwer-
+Leistung berechnet wird,4
+tigkeitsprüfung hat demnach nicht zwingend an-
+3. E V und E VI,5
+hand des Leistungsinhalts zu erfolgen.
+4. J,6
+Für die Feststellung der Gleichwertigkeit hat der
+5. L I, L II unter den Nummern 2072 bis 2074, L III,
+Zahnarzt Art, Kosten- und Zeitaufwand der neuen
+L V unter den Nummern 2253 bis 2256 im
+Leistung mit der hilfsweise zur Berechnung ausge-
+Rahmen der Behandlung von Kieferbrü-
+suchten Analogleistung zu vergleichen.
+chen, L VI unter den Nummern 2321, 2355
+Das Kriterium der Artder Leistungserbringung stellt
+und 2356 im Rahmen der Behandlung von
+im Wesentlichen auf das Ziel der Leistung ab. Der
+Kieferbrüchen, L VII, L IX,7
+Kostenaufwandvergleicht die Kosten der Leistungs-
+6. M unter den Nummern 3511, 3712, 3714,
+erbringung – auch die nach § 4 Absatz 3 abgegol-
+3715, 4504, 4530, 4538, 4605, 4606 und 4715,8
+tenen Kosten – und ggf. den Einsatz besonders
+7. N unter der Nummer 4852 sowie9
+qualifizierten Personals. Der Zeitaufwanderfordert
+8. O10
+einen Vergleich der individuell notwendigen Zeit
+<<
+der Leistungserbringung der nicht erfassten Leistung
+Inhalt mit dem Zeitaufwand des Zahnarztesfür die analog
+Kurzkommentar herangezogene Leistung.
+1 Der neue § 6 Absatz 1 schafft eine Analogiere- Der Zahnarzt hat bei der Analogiebewertung und der
+gelung entsprechend § 6 Abs. 2 GOÄ. Das zeitliche Feststellung der Gleichwertigkeit einen Ermessens-
+Abgrenzungskriterium (Entwicklung nach dem In- spielraum. Nicht alle drei Kriterien müssen nebenei-
+krafttreten der GOZ)wird aufgegeben. Die alte Re- nander gleichrangig erfüllt werden, sondern müssen
+16 gelung beruhte auf der – widerlegten – Zuversicht in einer Gesamtschau zur Gleichwertigkeit führen.
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014
+
+2 § 6 Absatz 1 Satz 2 stellt klar, dass bei der schriften der GOÄzu erfolgen hat, ist die GOÄ in-
+Analogbewertung zunächst eine nach Art, Kos- soweit insgesamt anzuwenden.
+ten- und Zeitaufwand gleichwertige Leistung aus
+dem Gebührenverzeichnis der GOZ heranzuzie- Im Einzelnen eröffnet sind folgende Leistungen:
+hen ist und für den Analogabgriff erst nachrangig Abschnitt B I:Allgemeine Beratungen und Unter-
+eine Leistung aus dem Gebührenverzeichnisses suchungen
+der GOÄ als Analogbewertung in Frage kommt. Abschnitt B II:Zuschläge zu I.
+Das Gebührenverzeichnis der GOÄ ist allerdings Abschnitt B III:
+auf die Leistungen beschränkt, die nach § 6 Ab- GOÄ 30: Erhebung der homöopathischen
+satz 2 eröffnet sind. Diejenigen Leistungen des Erstanamnese mit einer Mindestdauer von
+GOÄ-Gebührenverzeichnisses, für die der Zugriff einer Stunde nach biographischen und ho-
+nach Absatz 2 nicht eröffnet ist, stehen auch für möopathisch-individuellen Gesichtspunkten
+eine Analogie nicht zur Verfügung. mit schriftlicher Aufzeichnung zur Einleitung
+einer homöopathischen Behandlung ein-
+schließlich homöopathischer Repertorisation
+und Gewichtung der charakteristischen psy-
+chischen, allgemeinen und lokalen Zeichen
+und Symptome des jeweiligen Krankheitsfalls,
+unter Berücksichtigung der Modalitäten, Al-
+ternanzen, Kausal- und Begleitsymptome, zur
+Auffindung des homöopathischen Einzelmit-
+tels, einschließlich Anwendung und Auswer-
+tung standardisierter Fragebogen
+GOÄ 31: Homöopathische Folgeanamnese
+mit einer Mindestdauer von 30 Minuten unter
+laufender Behandlung nach den Regeln der
+Einzelmittelhomöopathie zur Beurteilung des
+Verlaufs und Feststellung des weiteren Vorge-
+hens einschließlich schriftlicher Aufzeichnungen
+GOÄ 34: Erörterung (Dauer mindestens 20 Mi-
+nuten) der Auswirkungen einer Krankheit auf
+die Lebensgestaltung in unmittelbarem Zu-
+sammenhang mit der Feststellung oder er-
+heblichen Verschlimmerung einer nachhaltig
+lebensverändernden oder lebensbedrohen-
+den Erkrankung gegebenenfalls einschließ-
+lich Planung eines operativen Eingriffs und
+Abwägung seiner Konsequenzen und Risiken,
+einschließlich Beratung gegebenenfalls unter
+3 Selbständigen zahnärztlichen Leistung, d.h. Einbeziehung von Bezugspersonen
+Leistungen, die weder Bestandteil, noch beson- Abschnitt B IV.:Visiten, Konsiliartätigkeit, Besuche,
+<<
+dere Ausführung einer anderen, ebenfalls berech- Assistenz
+neten Leistung des Gebührenverzeichnisses der Abschnitt B V.:Zuschläge zu den Leistungen nach Inhalt
+GOZ sind, sind nach den Vorschriften der GOÄ zu den Nummern 45 bis 62
+vergüten, wenn diese Leistungen nicht im Gebüh- Abschnitt B VI.:Berichte, Briefe
+renverzeichnis der GOZ enthalten und von der
+Aufzählung des § 6 Absatz 2 Ziffern 1 - 10 erfasst 4 Abschnitt C I Anlegen von Verbänden
+sind. Da nicht nur die Gebührenhöhe der GOÄ GOÄ 200: Verband ausgenommen Schnell-
+folgt, sondern die Berechnung nach den Vor- und Sprühverbände, Augen-, Ohrenklappen 17
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014
+
+Kommentar zum Allgemeinen Teil
+oder Dreiecktücher GOÄ 2256: Knochenaufmeißelung oder Ne-
+GOÄ 204: Zirkulärer Verband des Kopfes oder krotomie bei kleinen Knochen
+des Rumpfes (auch als Wundverband); stabi- Abschnitt L VI Frakturbehandlung (im Rahmen
+lisierender Verband des Halses, des Schulter- der Behandlung von Kieferbrüchen)
+oder Hüftgelenks oder einer Extremität über GOÄ 2321: Einrichtung eines gebrochenen
+mindestens zwei große Gelenke; Schanzscher Gesichtsknochens gegebenenfalls ein-
+Halskrawattenverband; Kompressionsverband schließlich Wundverband
+GOÄ 210: Kleiner Schienenverband - auch GOÄ 2355: Operative Stabilisierung einer
+als Notverband bei Frakturen Pseudarthrose oder operative Korrektur eines
+GOÄ 211: Kleiner Schienenverband - bei in Fehlstellung verheilten Knochenbruchs
+Wiederanlegung derselben, gegebenenfalls GOÄ 2356: Operative Stabilisierung einer
+auch veränderten Schiene Pseudarthrose oder operative Korrektur
+Abschnitt C II Blutentnahmen, Injektionen, eines in Fehlstellung verheilten Knochen-
+Infiltrationen, Infusionen, Transfusionen, Implan- bruchs nach Osteotomie mittels Nagelung,
+tation, Abstrichentnahmen Verschraubung und/oder Metallplatten
+Abschnitt C III bis C VII: und/oder äußerem Spanner auch zusätzli-
+C III. Punktionen ches Einpflanzen von Knochenspan
+C IV. Kontrastmitteleinbringungen Abschnitt L VII Chirurgie der Körperoberfläche
+C V. Impfungen und Testungen Abschnitt L IX Mund-, Kiefer- und Gesichtschirurgie
+C VI. Sonographische Leistungen Abschnitte
+C VII. Intensivmedizinische und sonstige Leistungen
+C VIII. Zuschläge zu ambulanten Operations- 8 Abschnitt M Labor
+und Anästhesieleistungen (nur soweit eine GOÄ 3511: Untersuchung eines Körpermate-
+zugrunde liegende ambulante operative rials mit vorgefertigten Reagenzträgern oder
+Leistung berechnet wird) Reagenzzubereitungen und visueller Aus-
+wertung (z. B. Glukose, Harnstoff, Urinteststrei-
+5 Abschnitt E V. Wärmebehandlung und E VI. fen), qualitativ oder semiquantitativ, auch
+Elektrotherapie bei Verwendung eines Mehrfachreagenzträ-
+gers, je Untersuchung
+6 Abschnitt J Hals-, Nasen-, Ohrenheilkunde GOÄ 3712: Viskosität (z. B. Blut, Serum,
+Plasma), viskosimetrisch
+7 Abschnitt L I Wundversorgung, Fremdkörper- GOÄ 3714: Wasserstoffionenkonzentration
+entfernung (pH), potentiometrisch, jedoch nicht aus Blut
+Abschnitt L II Extremitätenchirurgie oder Urin
+GOÄ 2072: Offene Sehnen- oder Muskel- GOÄ 3715: Bikarbonat
+durchschneidung GOÄ 4504: Untersuchungen mit ähnlichem
+GOÄ 2073: Sehnen-, Muskel- und/oder Fas- methodischem Aufwand
+ziennaht gegebenenfalls einschließlich Ver- GOÄ 4530: Untersuchung zum Nachweis von
+sorgung einer frischen Wunde Bakterien durch einfache Anzüchtung oder
+GOÄ 2074: Verpflanzung einer Sehne oder Weiterzüchtung auf Nährböden, aerob (z. B.
+eines Muskels Blut-, Endo-, McConkey-Agar, Nährbouillon),
+<<
+Abschnitt L III: Gelenkchirurgie je Nährmedium
+Inhalt Abschnitt L V Knochenchirurgie (nur soweit eine GOÄ 4538: Untersuchung zum Nachweis von
+zugrunde liegende ambulante operative Leis- Bakterien durch Anzüchtung oder Weiterzüch-
+tung berechnet wird) tung auf Selektiv- oder Anreicherungsmedien,
+GOÄ 2253: Knochenspanentnahme aerob (z. B. Blutagar mit Antibiotikazusätzen,
+GOÄ 2254: Implantation von Knochen Schokoladen-, Yersinien-, Columbia-, Koch-
+GOÄ 2255: Freie Verpflanzung eines Knochens salz-Mannit-Agar, Thayer- Martin-Medium), je
+18 oder von Knochenteilen (Knochenspäne) Nährmedium
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014
+
+GOÄ 4605: Untersuchung zur Bestimmung Analogabgriff erst nachrangig eine Leistung aus
+der Keimzahl mittels Eintauchobjektträger- den nach Absatz 2 eröffneten Leistungen des Ge-
+kultur (z. B. Cult-dip Plus, Dip-Slide, Uricount, bührenverzeichnisses der GOÄ in der jeweils gelten-
+Uricult, Uriline, Urotube), semiquantitativ, je den Fassung als Analogbewertung in Frage kommt.
+Urinuntersuchung
+GOÄ 4606: Untersuchung zur Bestimmung Absatz 2
+der Keimzahl in Flüssigkeiten mittels Oberflä- Absatz 2 regelt den gebührenrechtlichen Zugriff auf
+chenkulturen oder Plattengussverfahren die Leistungen, die im Gebührenverzeichnis der
+nach quantitativer Aufbringung des Untersu- GOÄ enthalten sind. Es handelt sich – wie bisher in
+chungsmaterials, je Untersuchungsmaterial Absatz 1 – um eine gleitende Verweisung auf das
+GOÄ 4715: Untersuchung zum Nachweis von Gebührenverzeichnis der GOÄ in der jeweils gelten-
+Pilzen durch An- oder Weiterzüchtung auf den Fassung. In bestimmten Fällen ist es möglich,
+einfachen Nährmedien (z. B. Sabouraud- dass der Zahnarzt auch Leistungen erbringen kann,
+Agar), je Nährmedium die nicht im Gebührenverzeichnis der GOZ enthal-
+ten sind, aber im Gebührenverzeichnis der GOÄ be-
+9 Abschnitt N Histologie, Zytologie schrieben werden. In Satz 1 werden bestimmte
+GOÄ 4852: Zytologische Untersuchung von Abschnitte, Unterabschnitte oder einzelne Gebüh-
+z. B. Punktaten, Sputum, Sekreten, Spülflüs- renpositionen des Gebührenverzeichnisses der GOÄ
+sigkeiten mit besonderen Aufbereitungsver- aufgeführt, für die dies zutreffen kann. Zwingende
+fahren gegebenenfalls einschließlich der Voraussetzung für die Berechnung einer Leistung
+Beurteilung nichtzytologischer mikroskopi- nach GOÄ durch den Zahnarzt ist, dass der Zahnarzt
+scher Befunde an demselben Material, je diese Leistung berufsrechtlich erbringen darf. Der
+Untersuchungsmaterial gebührenrechtlich zulässige Zugriff auf eine Leistung
+aus dem Gebührenverzeichnis der GOÄ ersetzt
+10 Abschnitt O Strahlenmedizin/MRT diese Voraussetzung nicht. Das zahnärztliche Berufs-
+recht ist insoweit dem privatzahnärztlichen Gebüh-
+Begründung der Bundesregierung zur GOZ-No- renrecht vorgelagert. Aus der Nennung eines
+velle 2012 Abschnittes oder Unterabschnittes des Gebühren-
+§ 6 verzeichnisses der GOÄ in Absatz 2 kann somit nicht
+Absatz 1 gefolgert werden, dass ein Zahnarzt alle in diesem
+Die Regelung in Absatz 1 Satz 1 ermöglicht die Be- Abschnitt oder Unterabschnitt aufgeführten Leistun-
+rechnung von Leistungen, die nicht in das Gebüh- gen berufsrechtlich erbringen und gebührenrecht-
+renverzeichnis der GOZ aufgenommen worden lich berechnen darf. Darüber hinaus ist zu
+sind, mit einer nach Art, Kosten- und Zeitaufwand beachten, dass ein Zugriff auf das Gebührenver-
+gleichwertigen Leistung (sog. Analogbewertung). zeichnis der GOÄ nur dann gebührenrechtlich zu-
+Die bisher geltende Regelung, die dies erst für nach lässig ist, wenn die zu berechnende Leistung nicht
+Inkrafttreten der GOZ aufgrund wissenschaftlicher im Gebührenverzeichnis der GOZ enthalten ist. Es ist
+Erkenntnisse entwickelter Verfahren zuließ, hat sich z.B. für das Aufbereiten eines Wurzelkanals (GOZ Nr.
+nicht bewährt. Voraussetzung für die Anwendung 2410) nicht möglich, die in dem Gebührenverzeich-
+der Analogbewertung ist jedoch – wie in der ver- nis der GOÄ enthaltenen Leistungen nach den
+gleichbaren Regelung der GOÄ – nach wie vor, Nummern 321 (Untersuchung von natürlichen Gän-
+<<
+dass es sich um eine selbstständige zahnärztliche gen oder Fisteln), 370 (Einbringung eines Kontrast-
+Leistung und keine besondere Ausführung oder Teil- mittels zur Darstellung natürlicher oder künstlicher Inhalt
+leistung einer bereits im Gebührenverzeichnis der Gänge) oder 5260 (Röntgenuntersuchung natürli-
+GOZ enthaltenen Leistung handeln muss. cher künstlicher oder krankhaft entstandener
+Satz 2 stellt klar, dass bei der Analogbewertung zu- Gänge) zu berechnen, da der Gebührentatbe-
+nächst eine nach Art, Kosten- und Zeitaufwand stand durch die o.g. GOZ Nummer 2410 als speziel-
+gleichwertige Leistung aus dem Gebührenver- lere Regelung wiedergegeben wird.
+zeichnis der GOZ heranzuziehen ist und für den 19
+Bundeszahnärztekammer|GOZ-Kommentar|Stand 25.4.2014"
