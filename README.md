@@ -1,11 +1,15 @@
 # Utilizing Large Language Models for Causal Discovery and Legal Text Interpretation: A Case Study on the German GoZ
-This is the source code to "Utilizing Large Language Models for Causal Discovery and Legal Text Interpretation: A Case Study on the German GoZ"   
+This is the source code to "Utilizing Large Language Models for Causal Discovery and Legal Text Interpretation: A Case Study on the German GoZ"
+The paper can be found [here](resources%2FReport.pdf) and the presentation [Presentation.pdf](resources%2FPresentation.pdf).
 
 The project is split into two parts. The first part is in [causal_discovery](causal_discovery) where preliminary experiments were conducted.
 The second and most important part of this project is the Python application in [legal_reasoning](legal_reasoning).
 
 It is a application that uses the OpenAI API to translate and process rules from the German Dentist Fee Schedule (GOZ) into a logical programming language. 
 The data is preprocessed and stored in CSV files. The application uses the LLMs (Language Model) from OpenAI to extract rules and translate them into Prolog.
+
+The workflow of the application can be seen in the following image:
+![rule_extraction.png](resources%2Frule_extraction.png)
 
 ## Getting Started
 
